@@ -17,11 +17,11 @@ export default function FinalCTA() {
                 transition={{ duration: 0.8 }}
             >
                 <h2 className={styles.title}>
-                    Pronto a Fare sul <span className={styles.highlight}>Serio</span>?
+                    Espandi il Tuo <span className={styles.highlight}>Business</span> con Winblu
                 </h2>
 
                 <p className={styles.subtitle}>
-                    Configuratore avanzato o consulenza diretta. Costruiamo insieme il tuo setup perfetto.
+                    Unisciti al nostro network di rivenditori autorizzati. Offri ai tuoi clienti l'eccellenza dell'assemblaggio italiano.
                 </p>
 
                 <div className={styles.ctaButtons}>
@@ -30,7 +30,7 @@ export default function FinalCTA() {
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.95 }}
                     >
-                        <span className={styles.buttonText}>Configura il Tuo PC</span>
+                        <span className={styles.buttonText}>Candidati come Rivenditore</span>
                         <span className={styles.buttonIcon}>→</span>
                     </motion.button>
 
@@ -39,8 +39,8 @@ export default function FinalCTA() {
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.95 }}
                     >
-                        <span className={styles.buttonText}>Parla con un Tecnico</span>
-                        <span className={styles.buttonIcon}>💬</span>
+                        <span className={styles.buttonText}>Richiedi Info B2B</span>
+                        <span className={styles.buttonIcon}>✉️</span>
                     </motion.button>
                 </div>
 

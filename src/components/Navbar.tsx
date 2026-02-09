@@ -45,9 +45,10 @@ export default function Navbar() {
                     <button className={styles.iconBtn}>
                         <Search size={20} />
                     </button>
-                    <button className={styles.iconBtn}>
+                    {/* B2B Pivot: Hidden shopping bag icon */}
+                    {/* <button className={styles.iconBtn}>
                         <ShoppingBag size={20} />
-                    </button>
+                    </button> */}
                     <button className={`${styles.iconBtn} ${styles.mobileMenuBtn}`}>
                         <Menu size={20} />
                     </button>
@@ -56,7 +57,7 @@ export default function Navbar() {
                         href="#"
                         className={`${styles.ctaBtn} ${styles.hideMobile}`}
                     >
-                        Configura
+                        Diventa Rivenditore
                     </Link>
                 </div>
             </div>

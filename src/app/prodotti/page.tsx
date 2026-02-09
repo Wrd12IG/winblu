@@ -229,8 +229,8 @@ export default function ProdottiPage() {
 
                                 <div className={styles.productFooter} style={{ position: 'relative', zIndex: 2 }}>
                                     <div className={styles.price}>
-                                        <span className={styles.priceLabel}>Da</span>
-                                        <span className={styles.priceValue}>€{product.price}</span>
+                                        <span className={styles.priceLabel}>Prezzo</span>
+                                        <span className={styles.priceValue} style={{ fontSize: '1rem' }}>Richiedi Listino</span>
                                     </div>
                                     <span className={styles.ctaButton}>
                                         Scopri <span className={styles.arrow}>→</span>

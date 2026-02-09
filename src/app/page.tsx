@@ -15,33 +15,33 @@ import { motion, AnimatePresence } from "framer-motion";
 const heroSlides = [
   {
     id: 1,
-    eyebrow: "Ultimate Gaming Power",
-    title: "Domina Ogni Arena",
-    subtitle: "Competitiva",
-    description: "PC da gaming estremo con illuminazione RGB personalizzabile. Potenza bruta per 4K, ray tracing e streaming simultaneo.",
+    eyebrow: "Partnership Strategica",
+    title: "Cresci con",
+    subtitle: "Winblu B2B",
+    description: "Siamo il partner tecnologico ideale per il tuo business. PC assemblati a mano in Italia, supporto dedicato e logistica efficiente per rivenditori.",
     image: "/hero-gaming.png",
-    ctaPrimary: "Esplora Gaming",
-    ctaSecondary: "Configura Ora"
+    ctaPrimary: "Diventa Rivenditore",
+    ctaSecondary: "Richiedi Listino"
   },
   {
     id: 2,
-    eyebrow: "Professional Workstation",
-    title: "Creato per",
-    subtitle: "i Professionisti",
-    description: "Workstation certificate per rendering 3D, editing video 8K e sviluppo AI. Componentistica enterprise, affidabilità garantita.",
+    eyebrow: "Professional Solutions",
+    title: "Forniture",
+    subtitle: "High-Performance",
+    description: "Workstation certificate e server enterprise per i tuoi clienti più esigenti. Qualità garantita 3 anni e assistenza tecnica diretta 🇮🇹.",
     image: "/hero-workstation.png",
-    ctaPrimary: "Scopri Workstation",
-    ctaSecondary: "Richiedi Preventivo"
+    ctaPrimary: "Canale Rivenditori",
+    ctaSecondary: "Richiedi Info B2B"
   },
   {
     id: 3,
-    eyebrow: "Compact Excellence",
-    title: "Potenza in",
-    subtitle: "Formato Mini",
-    description: "Design compatto senza compromessi. Perfetto per setup minimalisti che richiedono massime prestazioni in spazi ridotti.",
+    eyebrow: "Custom Manufacturing",
+    title: "Progetti",
+    subtitle: "Su Misura",
+    description: "Dalle forniture per il settore Educational ai setup per uffici professionali. Progettiamo e assembliamo la soluzione perfetta per ogni azienda.",
     image: "/hero-compact.png",
-    ctaPrimary: "Vedi Compatti",
-    ctaSecondary: "Configura Ora"
+    ctaPrimary: "Contattaci Ora",
+    ctaSecondary: "Richiedi Consulenza"
   }
 ];
 

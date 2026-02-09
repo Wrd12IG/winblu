@@ -70,7 +70,7 @@ export default function Footer() {
                             <li><a href="#" className={styles.footerLink}>Chi Siamo</a></li>
                             <li><a href="#" className={styles.footerLink}>News</a></li>
                             <li><a href="#" className={styles.footerLink}>Partnership</a></li>
-                            <li><Link href="/punti-vendita" className={styles.footerLink}>Punti Vendita</Link></li>
+                            <li><Link href="#" className={styles.footerLink}>Diventa Rivenditore</Link></li>
                         </ul>
                     </div>
 
