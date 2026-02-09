@@ -3,6 +3,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { Instagram, Youtube, Twitter, Phone, Mail, MapPin } from "lucide-react";
 import styles from "./Footer.module.css";
 
 export default function Footer() {
@@ -27,16 +28,16 @@ export default function Footer() {
                         </p>
                         <div className={styles.socialLinks}>
                             <a href="#" className={styles.socialLink} aria-label="Facebook">
-                                <span>f</span>
+                                <span style={{ fontWeight: 'bold' }}>f</span>
                             </a>
                             <a href="#" className={styles.socialLink} aria-label="Instagram">
-                                <span>📷</span>
+                                <Instagram size={18} />
                             </a>
                             <a href="#" className={styles.socialLink} aria-label="YouTube">
-                                <span>▶</span>
+                                <Youtube size={18} />
                             </a>
                             <a href="#" className={styles.socialLink} aria-label="Twitter">
-                                <span>𝕏</span>
+                                <Twitter size={18} />
                             </a>
                         </div>
                     </div>
@@ -79,15 +80,15 @@ export default function Footer() {
                         <h4 className={styles.columnTitle}>Contattaci</h4>
                         <ul className={styles.contactList}>
                             <li className={styles.contactItem}>
-                                <span className={styles.contactIcon}>📞</span>
+                                <Phone size={18} className={styles.contactIcon} />
                                 <span>+39 02 1234 5678</span>
                             </li>
                             <li className={styles.contactItem}>
-                                <span className={styles.contactIcon}>✉️</span>
+                                <Mail size={18} className={styles.contactIcon} />
                                 <span>info@winblu.it</span>
                             </li>
                             <li className={styles.contactItem}>
-                                <span className={styles.contactIcon}>📍</span>
+                                <MapPin size={18} className={styles.contactIcon} />
                                 <span>Milano, Italia</span>
                             </li>
                         </ul>

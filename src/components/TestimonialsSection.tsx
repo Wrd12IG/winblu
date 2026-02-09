@@ -2,6 +2,7 @@
 
 import React from "react";
 import { motion } from "framer-motion";
+import { User, Star } from "lucide-react";
 import styles from "./TestimonialsSection.module.css";
 
 const testimonials = [
@@ -9,7 +10,7 @@ const testimonials = [
         id: 1,
         name: "Marco Santini",
         role: "Pro Gamer - Team Esports Italia",
-        image: "👤",
+        image: <User size={24} />,
         text: "Sono passato a Winblu dopo anni di problemi con i brand mainstream. Zero microstuttering, zero thermal throttling. Il supporto tecnico risponde in 10 minuti, non in 10 giorni. Una macchina da guerra.",
         rating: 5
     },
@@ -17,7 +18,7 @@ const testimonials = [
         id: 2,
         name: "Giulia Romano",
         role: "Video Editor Freelance",
-        image: "👤",
+        image: <User size={24} />,
         text: "Lavoro su progetti 4K/8K ogni giorno. La mia workstation Winblu non ha mai crashato, nemmeno in timeline da 200 layer. L'assemblaggio italiano si sente eccome: dettagli curati che fanno la differenza quando hai scadenze strette.",
         rating: 5
     },
@@ -25,7 +26,7 @@ const testimonials = [
         id: 3,
         name: "Alessandro Ferri",
         role: "3D Artist - Studio Architettura",
-        image: "👤",
+        image: <User size={24} />,
         text: "Rendering V-Ray che prima richiedevano ore, ora in minuti. Ma soprattutto: assistenza che capisce cosa chiedi. Non devi perdere tempo a spiegare cosa sia un raytracing. Persone competenti, prodotto premium.",
         rating: 5
     }
@@ -66,7 +67,7 @@ export default function TestimonialsSection() {
 
                             <div className={styles.rating}>
                                 {[...Array(testimonial.rating)].map((_, i) => (
-                                    <span key={i} className={styles.star}>★</span>
+                                    <Star key={i} size={16} fill="#FFD700" color="#FFD700" />
                                 ))}
                             </div>
 

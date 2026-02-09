@@ -2,26 +2,27 @@
 
 import React from "react";
 import { motion } from "framer-motion";
+import { Shield, Zap, Headphones, Check } from "lucide-react";
 import styles from "./USPSection.module.css";
 
 const uspData = [
     {
         id: 1,
-        icon: "🇮🇹",
+        icon: <Shield size={24} />,
         title: "Assemblaggio Italiano Certificato",
         description: "Ogni PC è assemblato e testato a mano nel nostro laboratorio in Italia. Non semplice assemblaggio: cura artigianale e controllo qualità totale.",
         features: ["100% Made in Italy", "Test individuale 48h", "Certificato di autenticità"]
     },
     {
         id: 2,
-        icon: "⚡",
+        icon: <Zap size={24} />,
         title: "Componenti Zero Compromessi",
         description: "Solo brand Tier-1 selezionati. ASUS, MSI, Corsair, Noctua. Niente componenti generici: ogni parte è scelta per affidabilità e prestazioni.",
         features: ["Garanzia estesa", "Componentistica premium", "Partnership dirette"]
     },
     {
         id: 3,
-        icon: "🎯",
+        icon: <Headphones size={24} />,
         title: "Assistenza Diretta, Non un Call Center",
         description: "Quando chiami, parli con i tecnici che conoscono le macchine. Supporto italiano, competente, rapido. Non ticket anonimi.",
         features: ["Supporto tecnico H24", "Tecnici certificati", "Intervento remoto"]
@@ -59,7 +60,7 @@ export default function USPSection() {
                         >
                             <div className={styles.iconWrapper}>
                                 <div className={styles.iconBg} />
-                                <span className={styles.icon}>{usp.icon}</span>
+                                <div className={styles.icon}>{usp.icon}</div>
                             </div>
 
                             <h3 className={styles.uspTitle}>{usp.title}</h3>
@@ -68,7 +69,7 @@ export default function USPSection() {
                             <ul className={styles.featureList}>
                                 {usp.features.map((feature, idx) => (
                                     <li key={idx} className={styles.featureItem}>
-                                        <span className={styles.checkmark}>✓</span>
+                                        <Check size={14} className={styles.checkmark} />
                                         {feature}
                                     </li>
                                 ))}

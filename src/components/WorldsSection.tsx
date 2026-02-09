@@ -4,6 +4,7 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import { Zap, Gamepad2, Snowflake, Palette, Settings, Lock, ArrowRight } from "lucide-react";
 import styles from "./WorldsSection.module.css";
 
 export default function WorldsSection() {
@@ -49,21 +50,21 @@ export default function WorldsSection() {
                             </p>
                             <div className={styles.cardFeatures}>
                                 <div className={styles.feature}>
-                                    <span className={styles.featureIcon}>⚡</span>
+                                    <Zap size={16} className={styles.featureIcon} />
                                     <span>4K/144Hz Ready</span>
                                 </div>
                                 <div className={styles.feature}>
-                                    <span className={styles.featureIcon}>🎮</span>
+                                    <Gamepad2 size={16} className={styles.featureIcon} />
                                     <span>RGB Sync</span>
                                 </div>
                                 <div className={styles.feature}>
-                                    <span className={styles.featureIcon}>❄️</span>
+                                    <Snowflake size={16} className={styles.featureIcon} />
                                     <span>Raffreddamento Avanzato</span>
                                 </div>
                             </div>
                             <Link href="/linea-t-rok" className={styles.cardButton}>
                                 Esplora Gaming
-                                <span className={styles.arrow}>→</span>
+                                <ArrowRight size={18} className={styles.arrow} />
                             </Link>
                         </div>
                     </motion.div>
@@ -96,21 +97,21 @@ export default function WorldsSection() {
                             </p>
                             <div className={styles.cardFeatures}>
                                 <div className={styles.feature}>
-                                    <span className={styles.featureIcon}>🎨</span>
+                                    <Palette size={16} className={styles.featureIcon} />
                                     <span>Certificata Adobe</span>
                                 </div>
                                 <div className={styles.feature}>
-                                    <span className={styles.featureIcon}>⚙️</span>
+                                    <Settings size={16} className={styles.featureIcon} />
                                     <span>ECC Memory</span>
                                 </div>
                                 <div className={styles.feature}>
-                                    <span className={styles.featureIcon}>🔒</span>
+                                    <Lock size={16} className={styles.featureIcon} />
                                     <span>Business Grade</span>
                                 </div>
                             </div>
                             <Link href="/linea-experience" className={styles.cardButton}>
                                 Esplora Workstation
-                                <span className={styles.arrow}>→</span>
+                                <ArrowRight size={18} className={styles.arrow} />
                             </Link>
                         </div>
                     </motion.div>

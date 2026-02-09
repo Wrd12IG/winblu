@@ -2,6 +2,7 @@
 
 import React from "react";
 import { motion } from "framer-motion";
+import { Mail, ArrowRight, Check, ShieldCheck, Truck } from "lucide-react";
 import styles from "./FinalCTA.module.css";
 
 export default function FinalCTA() {
@@ -31,7 +32,7 @@ export default function FinalCTA() {
                         whileTap={{ scale: 0.95 }}
                     >
                         <span className={styles.buttonText}>Candidati come Rivenditore</span>
-                        <span className={styles.buttonIcon}>→</span>
+                        <ArrowRight size={20} className={styles.buttonIcon} />
                     </motion.button>
 
                     <motion.button
@@ -40,21 +41,21 @@ export default function FinalCTA() {
                         whileTap={{ scale: 0.95 }}
                     >
                         <span className={styles.buttonText}>Richiedi Info</span>
-                        <span className={styles.buttonIcon}>✉️</span>
+                        <Mail size={20} className={styles.buttonIcon} />
                     </motion.button>
                 </div>
 
                 <div className={styles.trustBadges}>
                     <div className={styles.badge}>
-                        <span className={styles.badgeIcon}>🇮🇹</span>
+                        <span className={styles.badgeIcon}><Check size={18} /></span>
                         <span className={styles.badgeText}>Made in Italy</span>
                     </div>
                     <div className={styles.badge}>
-                        <span className={styles.badgeIcon}>✓</span>
+                        <span className={styles.badgeIcon}><ShieldCheck size={18} /></span>
                         <span className={styles.badgeText}>3 Anni Garanzia</span>
                     </div>
                     <div className={styles.badge}>
-                        <span className={styles.badgeIcon}>🚚</span>
+                        <span className={styles.badgeIcon}><Truck size={18} /></span>
                         <span className={styles.badgeText}>Spedizione Assicurata</span>
                     </div>
                 </div>

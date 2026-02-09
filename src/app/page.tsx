@@ -28,7 +28,7 @@ const heroSlides = [
     eyebrow: "Professional Solutions",
     title: "Forniture",
     subtitle: "High-Performance",
-    description: "Workstation certificate e server enterprise per i tuoi clienti più esigenti. Qualità garantita 3 anni e assistenza tecnica diretta 🇮🇹.",
+    description: "Workstation certificate e server enterprise per i tuoi clienti più esigenti. Qualità garantita 3 anni e assistenza tecnica diretta professionale.",
     image: "/hero-workstation.png",
     ctaPrimary: "Canale Rivenditori",
     ctaSecondary: "Richiedi Info"
