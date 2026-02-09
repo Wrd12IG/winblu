@@ -1,0 +1,233 @@
+.sliderContainer {
+    position: relative;
+    width: 100%;
+    min-height: 90vh;
+    /* Taller hero */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    perspective: 1000px;
+}
+
+/* Background elements */
+.gridBg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image:
+        linear-gradient(var(--glass-border) 1px, transparent 1px),
+        linear-gradient(90deg, var(--glass-border) 1px, transparent 1px);
+    background-size: 50px 50px;
+    opacity: 0.1;
+    z-index: 0;
+    mask-image: radial-gradient(circle at center, black 40%, transparent 80%);
+}
+
+/* Layer 1: Panther Animation */
+/* Positioned absolutely to move across the entire container */
+.pantherWrapper {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    transform: translateY(-50%);
+    z-index: 5;
+    /* Low z-index to stay behind content */
+    pointer-events: none;
+    opacity: 0.15;
+    /* Subtle presence in the background */
+}
+
+.pantherImage {
+    width: 800px;
+    /* Large silhouette */
+    height: auto;
+    opacity: 0.8;
+    filter: drop-shadow(0 0 30px var(--accent-cyan));
+}
+
+/* Layer 2: Main Slider Content */
+.slideContent {
+    position: relative;
+    z-index: 10;
+    width: 100%;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+.textContent {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.eyebrow {
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: var(--accent-cyan);
+    font-weight: 600;
+}
+
+.headline {
+    font-size: 4rem;
+    line-height: 1.1;
+    font-weight: 800;
+    background: linear-gradient(135deg, #fff 0%, #94a3b8 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.highlight {
+    color: var(--accent-cyan);
+    background: none;
+    -webkit-text-fill-color: var(--accent-cyan);
+}
+
+.description {
+    font-size: 1.125rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+    max-width: 90%;
+}
+
+.specsContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.specItem {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.specLabel {
+    font-size: 0.75rem;
+    color: var(--accent-cyan);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    display: block;
+    margin-bottom: 0.25rem;
+}
+
+.specValue {
+    font-size: 0.9rem;
+    color: #fff;
+    font-weight: 500;
+}
+
+.ctaGroup {
+    display: flex;
+    gap: 1rem;
+}
+
+.primaryBtn,
+.secondaryBtn {
+    padding: 1rem 2rem;
+    border-radius: 4px;
+    /* Sharper corners for tech feel */
+    font-weight: 600;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-size: 0.9rem;
+}
+
+.primaryBtn {
+    background: var(--accent-cyan);
+    color: #000;
+    border: none;
+    box-shadow: 0 0 20px rgba(0, 182, 255, 0.4);
+}
+
+.primaryBtn:hover {
+    background: #fff;
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.6);
+    transform: translateY(-2px);
+}
+
+.secondaryBtn {
+    background: transparent;
+    border: 1px solid var(--accent-cyan);
+    color: var(--accent-cyan);
+}
+
+.secondaryBtn:hover {
+    background: rgba(0, 182, 255, 0.1);
+    transform: translateY(-2px);
+}
+
+.visualContent {
+    position: relative;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.productImage {
+    object-fit: contain;
+    filter: drop-shadow(0 0 40px rgba(0, 182, 255, 0.15));
+}
+
+.controls {
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 1rem;
+    z-index: 30;
+}
+
+.controlDot {
+    width: 50px;
+    height: 4px;
+    background: rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+    transition: all 0.3s;
+    border-radius: 2px;
+}
+
+.controlDot.active {
+    background: var(--accent-cyan);
+    box-shadow: 0 0 10px var(--accent-cyan);
+}
+
+@media (max-width: 968px) {
+    .slideContent {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 2rem;
+    }
+
+    .textContent {
+        align-items: center;
+    }
+
+    .specsContainer {
+        width: 100%;
+        text-align: left;
+    }
+
+    .visualContent {
+        height: 400px;
+        order: -1;
+        /* Image first on mobile */
+    }
+}

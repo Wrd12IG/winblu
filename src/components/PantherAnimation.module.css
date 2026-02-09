@@ -1,0 +1,34 @@
+.pantherContainer {
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+}
+
+.pantherImage {
+    width: auto;
+    height: auto;
+    max-width: 600px;
+    filter: drop-shadow(0 0 40px rgba(0, 182, 255, 0.6));
+    opacity: 0.25;
+    /* Subtle but visible presence */
+}
+
+/* Add breathing/living effect */
+@keyframes pantherGlow {
+
+    0%,
+    100% {
+        filter: drop-shadow(0 0 40px rgba(0, 182, 255, 0.6));
+    }
+
+    50% {
+        filter: drop-shadow(0 0 60px rgba(0, 182, 255, 0.9));
+    }
+}
+
+.pantherImage {
+    animation: pantherGlow 3s ease-in-out infinite;
+}

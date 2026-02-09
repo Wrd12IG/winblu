@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="it-IT" prefix="og: https://ogp.me/ns#">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />		<script type="text/javascript">
+/* <![CDATA[ */
+(()=>{var e={};e.g=function(){if("object"==typeof globalThis)return globalThis;try{return this||new Function("return this")()}catch(e){if("object"==typeof window)return window}}(),function({ampUrl:n,isCustomizePreview:t,isAmpDevMode:r,noampQueryVarName:o,noampQueryVarValue:s,disabledStorageKey:i,mobileUserAgents:a,regexRegex:c}){if("undefined"==typeof sessionStorage)return;const d=new RegExp(c);if(!a.some((e=>{const n=e.match(d);return!(!n||!new RegExp(n[1],n[2]).test(navigator.userAgent))||navigator.userAgent.includes(e)})))return;e.g.addEventListener("DOMContentLoaded",(()=>{const e=document.getElementById("amp-mobile-version-switcher");if(!e)return;e.hidden=!1;const n=e.querySelector("a[href]");n&&n.addEventListener("click",(()=>{sessionStorage.removeItem(i)}))}));const g=r&&["paired-browsing-non-amp","paired-browsing-amp"].includes(window.name);if(sessionStorage.getItem(i)||t||g)return;const u=new URL(location.href),m=new URL(n);m.hash=u.hash,u.searchParams.has(o)&&s===u.searchParams.get(o)?sessionStorage.setItem(i,"1"):m.href!==u.href&&(window.stop(),location.replace(m.href))}({"ampUrl":"https:\/\/www.winblu.it\/errore\/?amp=1","noampQueryVarName":"noamp","noampQueryVarValue":"mobile","disabledStorageKey":"amp_mobile_redirect_disabled","mobileUserAgents":["Mobile","Android","Silk\/","Kindle","BlackBerry","Opera Mini","Opera Mobi"],"regexRegex":"^\\\/((?:.|\\n)+)\\\/([i]*)$","isCustomizePreview":false,"isAmpDevMode":false})})();
+/* ]]> */
+</script>
+<script type="text/javascript">
+	window.dataLayer = window.dataLayer || [];
+
+	function gtag() {
+		dataLayer.push(arguments);
+	}
+
+	gtag("consent", "default", {
+		ad_personalization: "denied",
+		ad_storage: "denied",
+		ad_user_data: "denied",
+		analytics_storage: "denied",
+		functionality_storage: "denied",
+		personalization_storage: "denied",
+		security_storage: "granted",
+		wait_for_update: 500,
+	});
+	gtag("set", "ads_data_redaction", true);
+	</script>
+<script type="text/javascript"
+		id="Cookiebot"
+		src="https://consent.cookiebot.com/uc.js"
+		data-implementation="wp"
+		data-cbid="f0c38eeb-3457-48bc-bc97-5a62970bce25"
+						data-culture="IT"
+				async	></script>
+    <script>
+        (function (exports, d) {
+            var _isReady = false,
+                _event,
+                _fns = [];
+
+            function onReady(event) {
+                d.removeEventListener("DOMContentLoaded", onReady);
+                _isReady = true;
+                _event = event;
+                _fns.forEach(function (_fn) {
+                    var fn = _fn[0],
+                        context = _fn[1];
+                    fn.call(context || exports, window.jQuery);
+                });
+            }
+
+            function onReadyIe(event) {
+                if (d.readyState === "complete") {
+                    d.detachEvent("onreadystatechange", onReadyIe);
+                    _isReady = true;
+                    _event = event;
+                    _fns.forEach(function (_fn) {
+                        var fn = _fn[0],
+                            context = _fn[1];
+                        fn.call(context || exports, event);
+                    });
+                }
+            }
+
+            d.addEventListener && d.addEventListener("DOMContentLoaded", onReady) ||
+            d.attachEvent && d.attachEvent("onreadystatechange", onReadyIe);
+
+            function domReady(fn, context) {
+                if (_isReady) {
+                    fn.call(context, _event);
+                }
+
+                _fns.push([fn, context]);
+            }
+
+            exports.mesmerizeDomReady = domReady;
+        })(window, document);
+    </script>
+	
+<!-- Ottimizzazione per i motori di ricerca di Rank Math - https://rankmath.com/ -->
+<title>Errore | Winblu</title>
+<meta name="robots" content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"/>
+<link rel="canonical" href="https://www.winblu.it/errore/" />
+<meta property="og:locale" content="it_IT" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Errore | Winblu" />
+<meta property="og:url" content="https://www.winblu.it/errore/" />
+<meta property="og:site_name" content="Winblu" />
+<meta property="article:publisher" content="https://www.facebook.com/WinbluItalia.Personal.Computer/" />
+<meta property="article:author" content="https://www.facebook.com/WinbluItalia.Personal.Computer" />
+<meta property="og:updated_time" content="2022-01-03T15:50:40+01:00" />
+<meta property="og:image" content="https://www.winblu.it/wp-content/uploads/2022/01/Winblu_error404-page.jpg" />
+<meta property="og:image:secure_url" content="https://www.winblu.it/wp-content/uploads/2022/01/Winblu_error404-page.jpg" />
+<meta property="og:image:width" content="1400" />
+<meta property="og:image:height" content="600" />
+<meta property="og:image:alt" content="Errore" />
+<meta property="og:image:type" content="image/jpeg" />
+<meta property="article:published_time" content="2022-01-03T15:48:57+01:00" />
+<meta property="article:modified_time" content="2022-01-03T15:50:40+01:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Errore | Winblu" />
+<meta name="twitter:image" content="https://www.winblu.it/wp-content/uploads/2022/01/Winblu_error404-page.jpg" />
+<meta name="twitter:label1" content="Tempo di lettura" />
+<meta name="twitter:data1" content="Meno di un minuto" />
+<script type="application/ld+json" class="rank-math-schema">{"@context":"https://schema.org","@graph":[{"@type":["ComputerStore","Organization"],"@id":"https://www.winblu.it/#organization","name":"Winblu","url":"https://www.winblu.it","sameAs":["https://www.facebook.com/WinbluItalia.Personal.Computer/","https://www.instagram.com/winblu_personal_computer/","https://www.linkedin.com/company/winblu-personal-computer/?viewAsMember=true"],"logo":{"@type":"ImageObject","@id":"https://www.winblu.it/#logo","url":"https://www.winblu.it/wp-content/uploads/2021/11/Logo-Winblu-Quadrato.png","contentUrl":"https://www.winblu.it/wp-content/uploads/2021/11/Logo-Winblu-Quadrato.png","caption":"Winblu","inLanguage":"it-IT","width":"872","height":"872"},"openingHours":["Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday 09:00-17:00"],"image":{"@id":"https://www.winblu.it/#logo"}},{"@type":"WebSite","@id":"https://www.winblu.it/#website","url":"https://www.winblu.it","name":"Winblu","publisher":{"@id":"https://www.winblu.it/#organization"},"inLanguage":"it-IT"},{"@type":"ImageObject","@id":"https://www.winblu.it/wp-content/uploads/2022/01/Winblu_error404-page.jpg","url":"https://www.winblu.it/wp-content/uploads/2022/01/Winblu_error404-page.jpg","width":"200","height":"200","inLanguage":"it-IT"},{"@type":"WebPage","@id":"https://www.winblu.it/errore/#webpage","url":"https://www.winblu.it/errore/","name":"Errore | Winblu","datePublished":"2022-01-03T15:48:57+01:00","dateModified":"2022-01-03T15:50:40+01:00","isPartOf":{"@id":"https://www.winblu.it/#website"},"primaryImageOfPage":{"@id":"https://www.winblu.it/wp-content/uploads/2022/01/Winblu_error404-page.jpg"},"inLanguage":"it-IT"},{"@type":"Person","@id":"https://www.winblu.it/author/marcellomolinari/","name":"Marcello Molinari","url":"https://www.winblu.it/author/marcellomolinari/","image":{"@type":"ImageObject","@id":"https://secure.gravatar.com/avatar/9d9f25c9ce979cc8f1b4ba33f514022f5ce0b94a83363286cdec4a234ecebef2?s=96&amp;d=mm&amp;r=g","url":"https://secure.gravatar.com/avatar/9d9f25c9ce979cc8f1b4ba33f514022f5ce0b94a83363286cdec4a234ecebef2?s=96&amp;d=mm&amp;r=g","caption":"Marcello Molinari","inLanguage":"it-IT"},"worksFor":{"@id":"https://www.winblu.it/#organization"}},{"@type":"Article","headline":"Errore | Winblu","datePublished":"2022-01-03T15:48:57+01:00","dateModified":"2022-01-03T15:50:40+01:00","author":{"@id":"https://www.winblu.it/author/marcellomolinari/","name":"Marcello Molinari"},"publisher":{"@id":"https://www.winblu.it/#organization"},"name":"Errore | Winblu","@id":"https://www.winblu.it/errore/#richSnippet","isPartOf":{"@id":"https://www.winblu.it/errore/#webpage"},"image":{"@id":"https://www.winblu.it/wp-content/uploads/2022/01/Winblu_error404-page.jpg"},"inLanguage":"it-IT","mainEntityOfPage":{"@id":"https://www.winblu.it/errore/#webpage"}}]}</script>
+<!-- /Rank Math WordPress SEO plugin -->
+
+<link rel='dns-prefetch' href='//cdn.elementor.com' />
+<link rel='dns-prefetch' href='//www.googletagmanager.com' />
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel="alternate" type="application/rss+xml" title="Winblu &raquo; Feed" href="https://www.winblu.it/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Winblu &raquo; Feed dei commenti" href="https://www.winblu.it/comments/feed/" />
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://www.winblu.it/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.winblu.it%2Ferrore%2F" />
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://www.winblu.it/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.winblu.it%2Ferrore%2F&#038;format=xml" />
+<style id='wp-img-auto-sizes-contain-inline-css' type='text/css'>
+img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
+/*# sourceURL=wp-img-auto-sizes-contain-inline-css */
+</style>
+<link rel='stylesheet' id='sbi_styles-css' href='https://www.winblu.it/wp-content/plugins/instagram-feed/css/sbi-styles.min.css?ver=6.10.0' type='text/css' media='all' />
+<style id='wp-emoji-styles-inline-css' type='text/css'>
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+/*# sourceURL=wp-emoji-styles-inline-css */
+</style>
+<style id='classic-theme-styles-inline-css' type='text/css'>
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+/*# sourceURL=/wp-includes/css/classic-themes.min.css */
+</style>
+<style id='global-styles-inline-css' type='text/css'>
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgb(6,147,227) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgb(252,185,0) 0%,rgb(255,105,0) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgb(255,105,0) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgb(255, 255, 255), 6px 6px rgb(0, 0, 0);--wp--preset--shadow--crisp: 6px 6px 0px rgb(0, 0, 0);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-term-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-term-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+:root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
+/*# sourceURL=global-styles-inline-css */
+</style>
+<link rel='stylesheet' id='wpsl-styles-css' href='https://www.winblu.it/wp-content/plugins/wp-store-locator/css/styles.min.css?ver=2.2.261' type='text/css' media='all' />
+<link rel='stylesheet' id='ea11y-widget-fonts-css' href='https://www.winblu.it/wp-content/plugins/pojo-accessibility/assets/build/fonts.css?ver=3.9.1' type='text/css' media='all' />
+<link rel='stylesheet' id='ea11y-skip-link-css' href='https://www.winblu.it/wp-content/plugins/pojo-accessibility/assets/build/skip-link.css?ver=3.9.1' type='text/css' media='all' />
+<link rel='stylesheet' id='mesmerize-style-css' href='https://www.winblu.it/wp-content/themes/highlight-pro/style.min.css?ver=1.1.68' type='text/css' media='all' />
+<style id='mesmerize-style-inline-css' type='text/css'>
+img.logo.dark, img.custom-logo{width:auto;max-height:25px !important;}
+/*# sourceURL=mesmerize-style-inline-css */
+</style>
+<link crossorigin="anonymous" rel='stylesheet' id='mesmerize-fonts-css' href="" data-href='https://fonts.googleapis.com/css?family=Open+Sans%3A300%2C400%2C600%2C700%7CMuli%3A300%2C300italic%2C400%2C400italic%2C600%2C600italic%2C700%2C700italic%2C900%2C900italic%7CPlayfair+Display%3A400%2C400italic%2C700%2C700italic&#038;subset=latin%2Clatin-ext&#038;display=swap' type='text/css' media='all' />
+<link rel='stylesheet' id='mesmerize-child-css' href='https://www.winblu.it/wp-content/themes/highlight-pro/child/style.min.css?ver=6.9' type='text/css' media='all' />
+<style id='mesmerize-child-inline-css' type='text/css'>
+/** cached kirki style */#side-navigation ul[data-preset] li.active a, #side-navigation ul[data-preset] li:hover a{background-color:#03a9f4;}#side-navigation ul[data-preset]:not([data-preset="preset-2"]) li.active a:after, #side-navigation ul[data-preset]:not([data-preset="preset-2"]) li:hover a:after{background-color:#03a9f4;}#side-navigation ul li.active a, #side-navigation ul li:hover a{color:#ffffff;}#side-navigation ul[data-preset] > li > a{border-color:#ffffff;font-family:"Open Sans", Helvetica, Arial, sans-serif;font-weight:400;font-style:normal;font-size:1em;line-height:190%;letter-spacing:0px;text-transform:capitalize;}#side-navigation ul[data-preset=preset-4] > li > a{border-color:#ffffff!important;}.footer .footer-content{background-color:#FFF;border-top-color:#e8e8e8;border-top-width:1px;border-top-style:solid;}.footer h1, .footer h2, .footer h3, .footer h4, .footer h5, .footer h6{color:#262D3F!important;}.footer p, .footer{color:#989898;}.footer a{color:#9B9B9B;}.footer a:hover{color:#03A9F4;}.footer a .fa, .footer .fa{color:#3F464C;}.footer a:hover .fa{color:#3F464C;}body{font-family:"Open Sans", Helvetica, Arial, sans-serif;color:#6B7C93;}body h1{font-family:"Open Sans", Helvetica, Arial, sans-serif;font-weight:400;font-size:2.625rem;line-height:4rem;letter-spacing:normal;color:#3C424F;}body h2{font-family:"Open Sans", Helvetica, Arial, sans-serif;font-weight:400;font-size:2.188rem;line-height:3rem;letter-spacing:normal;text-transform:none;color:#3C424F;}body h3{font-family:"Open Sans", Helvetica, Arial, sans-serif;font-weight:400;font-size:1.313rem;line-height:2.25rem;letter-spacing:normal;text-transform:none;color:#3C424F;}body h4{font-family:"Open Sans", Helvetica, Arial, sans-serif;font-weight:400;font-size:0.963rem;line-height:1.75rem;letter-spacing:0.0625rem;text-transform:none;color:#3C424F;}body h5{font-family:"Open Sans", Helvetica, Arial, sans-serif;font-weight:400;font-size:0.875rem;line-height:1.5rem;letter-spacing:2px;text-transform:none;color:#3C424F;}body h6{font-family:"Open Sans", Helvetica, Arial, sans-serif;font-weight:400;font-size:0.766rem;line-height:1.375rem;letter-spacing:0.1875rem;color:#3C424F;}.header-homepage-arrow{font-size:calc( 50px * 0.84 );bottom:20px;background:rgba(255,255,255,0);}.header-homepage-arrow > i.fa{width:50px;height:50px;}.header-homepage-arrow > i{color:#ffffff;}.header.color-overlay:after{filter:invert(0%) ;}.header-homepage p.header-subtitle2{margin-top:0;margin-bottom:20px;font-family:Roboto, Helvetica, Arial, sans-serif;font-weight:300;font-size:1.4em;line-height:130%;letter-spacing:0px;text-transform:none;color:#ffffff;background:rgba(0,0,0,0);padding-top:0px;padding-bottom:0px;padding-left:0px;padding-right:0px;-webkit-border-radius:0px;-moz-border-radius:0px;border-radius:0px;}.header-homepage h1.hero-title{font-family:"Open Sans", Helvetica, Arial, sans-serif;font-weight:300;font-size:3.3em;line-height:114%;letter-spacing:0.9px;text-transform:none;color:#ffffff;}.header-homepage .hero-title{margin-top:0;margin-bottom:20px;background:rgba(0,0,0,0);padding-top:0px;padding-bottom:0px;padding-left:0px;padding-right:0px;-webkit-border-radius:0px;-moz-border-radius:0px;border-radius:0px;}.header-homepage p.header-subtitle{margin-top:0;margin-bottom:20px;font-family:Muli, Helvetica, Arial, sans-serif;font-weight:300;font-size:1.3em;line-height:130%;letter-spacing:0px;text-transform:none;color:#ffffff;background:rgba(0,0,0,0);padding-top:0px;padding-bottom:0px;padding-left:0px;padding-right:0px;-webkit-border-radius:0px;-moz-border-radius:0px;border-radius:0px;}.header-buttons-wrapper{background:rgba(0,0,0,0);padding-top:0px;padding-bottom:0px;padding-left:0px;padding-right:0px;-webkit-border-radius:0px;-moz-border-radius:0px;border-radius:0px;}.header-homepage .header-description-row{padding-top:30%;padding-bottom:0%;}.inner-header-description{padding-top:;padding-bottom:;}.inner-header-description .header-subtitle{font-family:"Open Sans", Helvetica, Arial, sans-serif;font-weight:400;font-style:normal;font-size:1.3em;line-height:130%;letter-spacing:0px;text-transform:none;color:#FFFFFF;}.inner-header-description h1.hero-title{font-family:"Open Sans", Helvetica, Arial, sans-serif;font-weight:300;font-style:normal;font-size:3.5em;line-height:114%;letter-spacing:0.9px;text-transform:inherit;color:#FFFFFF;}.header-top-bar .header-top-bar-area.area-left span{color:#FFFFFF;}.header-top-bar .header-top-bar-area.area-left i.fa{color:#999;}.header-top-bar .header-top-bar-area.area-left .top-bar-social-icons i{color:#fff;}.header-top-bar .header-top-bar-area.area-left .top-bar-social-icons i:hover{color:#fff;}.header-top-bar .header-top-bar-area.area-left .top-bar-menu > li > a{color:#fff;}.header-top-bar .header-top-bar-area.area-left .top-bar-menu > li > a:hover{color:#fff!important;}.header-top-bar .header-top-bar-area.area-left .top-bar-menu > li > a:visited{color:#fff;}.header-top-bar .header-top-bar-area.area-left span.top-bar-text{color:#fff;}.header-top-bar .header-top-bar-area.area-right span{color:#FFFFFF;}.header-top-bar .header-top-bar-area.area-right i.fa{color:#999;}.header-top-bar .header-top-bar-area.area-right .top-bar-social-icons i{color:#fff;}.header-top-bar .header-top-bar-area.area-right .top-bar-social-icons i:hover{color:#fff;}.header-top-bar .header-top-bar-area.area-right .top-bar-menu > li > a{color:#fff;}.header-top-bar .header-top-bar-area.area-right .top-bar-menu > li > a:hover{color:#fff!important;}.header-top-bar .header-top-bar-area.area-right .top-bar-menu > li > a:visited{color:#fff;}.header-top-bar .header-top-bar-area.area-right span.top-bar-text{color:#fff;}.mesmerize-inner-page .fixto-fixed .main_menu_col, .mesmerize-inner-page .fixto-fixed .main-menu{justify-content:flex-end!important;}.mesmerize-inner-page .navigation-bar.fixto-fixed{background-color:rgba(255, 255, 255, 1)!important;}.mesmerize-inner-page #main_menu > li > a{font-family:"Open Sans", Helvetica, Arial, sans-serif;font-weight:600;font-style:normal;font-size:14px;line-height:160%;letter-spacing:1px;text-transform:uppercase;}.mesmerize-front-page .fixto-fixed .main_menu_col, .mesmerize-front-page .fixto-fixed .main-menu{justify-content:flex-end!important;}.mesmerize-front-page .navigation-bar.fixto-fixed{background-color:rgba(255, 255, 255, 1)!important;}.mesmerize-front-page #main_menu > li > a{font-family:"Open Sans", Helvetica, Arial, sans-serif;font-weight:600;font-style:normal;font-size:14px;line-height:160%;letter-spacing:1px;text-transform:uppercase;}.mesmerize-front-page #main_menu > li li > a{font-family:"Open Sans", Helvetica, Arial, sans-serif;font-weight:600;font-style:normal;font-size:0.875rem;line-height:120%;letter-spacing:0px;text-transform:none;}.mesmerize-front-page .header-nav-area .social-icons a{color:#FFFFFF!important;}.mesmerize-front-page .fixto-fixed .header-nav-area .social-icons a{color:#000000!important;}.mesmerize-front-page  .nav-search.widget_search *{color:#FFFFFF;}.mesmerize-front-page  .nav-search.widget_search input{border-color:#FFFFFF;}.mesmerize-front-page  .nav-search.widget_search input::-webkit-input-placeholder{color:#FFFFFF;}.mesmerize-front-page  .nav-search.widget_search input:-ms-input-placeholder{color:#FFFFFF;}.mesmerize-front-page  .nav-search.widget_search input:-moz-placeholder{color:#FFFFFF;}.mesmerize-front-page .fixto-fixed  .nav-search.widget_search *{color:#000000;}.mesmerize-front-page .fixto-fixed  .nav-search.widget_search input{border-color:#000000;}.mesmerize-front-page .fixto-fixed  .nav-search.widget_search input::-webkit-input-placeholder{color:#000000;}.mesmerize-front-page .fixto-fixed  .nav-search.widget_search input:-ms-input-placeholder{color:#000000;}.mesmerize-front-page .fixto-fixed  .nav-search.widget_search input:-moz-placeholder{color:#000000;}.mesmerize-inner-page .inner_header-nav-area .social-icons a{color:#FFFFFF!important;}.mesmerize-inner-page .fixto-fixed .inner_header-nav-area .social-icons a{color:#000000!important;}.mesmerize-inner-page .nav-search.widget_search *{color:#FFFFFF;}.mesmerize-inner-page .nav-search.widget_search input{border-color:#FFFFFF;}.mesmerize-inner-page .nav-search.widget_search input::-webkit-input-placeholder{color:#FFFFFF;}.mesmerize-inner-page .nav-search.widget_search input:-ms-input-placeholder{color:#FFFFFF;}.mesmerize-inner-page .nav-search.widget_search input:-moz-placeholder{color:#FFFFFF;}.mesmerize-inner-page .fixto-fixed .nav-search.widget_search *{color:#000000;}.mesmerize-inner-page .fixto-fixed .nav-search.widget_search input{border-color:#000000;}.mesmerize-inner-page .fixto-fixed .nav-search.widget_search input::-webkit-input-placeholder{color:#000000;}.mesmerize-inner-page .fixto-fixed .nav-search.widget_search input:-ms-input-placeholder{color:#000000;}.mesmerize-inner-page .fixto-fixed .nav-search.widget_search input:-moz-placeholder{color:#000000;}[data-component="offcanvas"] i.fa{color:#fff!important;}[data-component="offcanvas"] .bubble{background-color:#fff!important;}.fixto-fixed [data-component="offcanvas"] i.fa{color:#000000!important;}.fixto-fixed [data-component="offcanvas"] .bubble{background-color:#000000!important;}#offcanvas-wrapper{background-color:#222B34!important;}html.has-offscreen body:after{background-color:rgba(34, 43, 52, 0.7)!important;}#offcanvas-wrapper *:not(.arrow){color:#ffffff!important;}#offcanvas_menu li.open, #offcanvas_menu li.current-menu-item, #offcanvas_menu li.current-menu-item > a, #offcanvas_menu li.current_page_item, #offcanvas_menu li.current_page_item > a{background-color:#FFFFFF;}#offcanvas_menu li.open > a, #offcanvas_menu li.open > a > i, #offcanvas_menu li.current-menu-item > a, #offcanvas_menu li.current_page_item > a{color:#2395F6!important;}#offcanvas_menu li.open > a, #offcanvas_menu li.current-menu-item > a, #offcanvas_menu li.current_page_item > a{border-left-color:#2395F6!important;}#offcanvas_menu li > ul{background-color:#686B77;}#offcanvas_menu li > a{font-family:"Open Sans", Helvetica, Arial, sans-serif;font-weight:400;font-size:0.875rem;line-height:100%;letter-spacing:0px;text-transform:none;}.navigation-bar.homepage:not(.coloured-nav) a.text-logo,.navigation-bar.homepage:not(.coloured-nav) #main_menu li.logo > a.text-logo,.navigation-bar.homepage:not(.coloured-nav) #main_menu li.logo > a.text-logo:hover{color:#fff;font-family:inherit;font-weight:600;font-size:1.6rem;line-height:100%;letter-spacing:0px;text-transform:uppercase;}.navigation-bar.homepage.fixto-fixed a.text-logo,.navigation-bar.homepage.fixto-fixed .dark-logo a.text-logo{color:#4a4a4a!important;}.navigation-bar:not(.homepage) a.text-logo,.navigation-bar:not(.homepage) #main_menu li.logo > a.text-logo,.navigation-bar:not(.homepage) #main_menu li.logo > a.text-logo:hover,.navigation-bar:not(.homepage) a.text-logo,.navigation-bar:not(.homepage) #main_menu li.logo > a.text-logo,.navigation-bar:not(.homepage) #main_menu li.logo > a.text-logo:hover{color:#fff;font-family:inherit;font-weight:600;font-size:1.6rem;line-height:100%;letter-spacing:0px;text-transform:uppercase;}.navigation-bar.fixto-fixed:not(.homepage) a.text-logo,.navigation-bar.fixto-fixed:not(.homepage) .dark-logo a.text-logo, .navigation-bar.alternate:not(.homepage) a.text-logo, .navigation-bar.alternate:not(.homepage) .dark-logo a.text-logo{color:#4a4a4a!important;}.slide-progress{background:rgba(3, 169, 244, 0.5);height:5px;}.header-slider-navigation.separated .owl-nav .owl-next,.header-slider-navigation.separated .owl-nav .owl-prev{margin-left:40px;margin-right:40px;}.header-slider-navigation .owl-nav .owl-next,.header-slider-navigation .owl-nav .owl-prev{padding:0px;background:rgba(0, 0, 0, 0);}.header-slider-navigation .owl-nav .owl-next i,.header-slider-navigation .owl-nav .owl-prev i{font-size:50px;width:50px;height:50px;color:#ffffff;}.header-slider-navigation .owl-nav .owl-next:hover,.header-slider-navigation .owl-nav .owl-prev:hover{background:rgba(0, 0, 0, 0);}.header-slider-navigation .owl-dots{margin-bottom:0px;margin-top:0px;}.header-slider-navigation .owl-dots .owl-dot span{background:rgba(255,255,255,0.3);}.header-slider-navigation .owl-dots .owl-dot.active span,.header-slider-navigation .owl-dots .owl-dot:hover span{background:#ffffff;}.header-slider-navigation .owl-dots .owl-dot{margin:0px 7px;}@media (min-width: 767px){.footer .footer-content{padding-top:20px;padding-bottom:20px;}}@media (max-width: 1023px){body{font-size:calc( 16px * 0.875 );}}@media (min-width: 1024px){body{font-size:16px;}}@media only screen and (min-width: 768px){body h1{font-size:3rem;}body h2{font-size:2.5rem;}body h3{font-size:1.5rem;}body h4{font-size:1.1rem;}body h5{font-size:1rem;}body h6{font-size:0.875rem;}.header-homepage p.header-subtitle2{font-size:1.4em;}.header-homepage h1.hero-title{font-size:3.5rem;}.header-homepage p.header-subtitle{font-size:1.3em;}.header-content .align-holder{width:80%!important;}.inner-header-description{text-align:left!important;}.inner-header-description .header-subtitle{font-size:1.3em;}.inner-header-description h1.hero-title{font-size:3.5em;}}@media screen and (min-width: 768px){.header-homepage{background-position:center center;}}@media screen and (max-width:767px){.header-homepage .header-description-row{padding-top:15%;padding-bottom:15%;}}
+/*# sourceURL=mesmerize-child-inline-css */
+</style>
+<link rel='stylesheet' id='elementor-frontend-css' href='https://www.winblu.it/wp-content/plugins/elementor/assets/css/frontend.min.css?ver=3.34.1' type='text/css' media='all' />
+<link rel='stylesheet' id='widget-image-css' href='https://www.winblu.it/wp-content/plugins/elementor/assets/css/widget-image.min.css?ver=3.34.1' type='text/css' media='all' />
+<link rel='stylesheet' id='widget-nav-menu-css' href='https://www.winblu.it/wp-content/plugins/elementor-pro/assets/css/widget-nav-menu.min.css?ver=3.34.0' type='text/css' media='all' />
+<link rel='stylesheet' id='e-sticky-css' href='https://www.winblu.it/wp-content/plugins/elementor-pro/assets/css/modules/sticky.min.css?ver=3.34.0' type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-post-1599-css' href='https://www.winblu.it/wp-content/uploads/elementor/css/post-1599.css?ver=1767972606' type='text/css' media='all' />
+<link rel='stylesheet' id='font-awesome-5-all-css' href='https://www.winblu.it/wp-content/plugins/elementor/assets/lib/font-awesome/css/all.min.css?ver=3.34.1' type='text/css' media='all' />
+<link rel='stylesheet' id='font-awesome-4-shim-css' href='https://www.winblu.it/wp-content/plugins/elementor/assets/lib/font-awesome/css/v4-shims.min.css?ver=3.34.1' type='text/css' media='all' />
+<link rel='stylesheet' id='sbistyles-css' href='https://www.winblu.it/wp-content/plugins/instagram-feed/css/sbi-styles.min.css?ver=6.10.0' type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-post-3318-css' href='https://www.winblu.it/wp-content/uploads/elementor/css/post-3318.css?ver=1767974235' type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-post-3417-css' href='https://www.winblu.it/wp-content/uploads/elementor/css/post-3417.css?ver=1767972891' type='text/css' media='all' />
+<link rel='stylesheet' id='mesmerize-style-bundle-css' href='https://www.winblu.it/wp-content/themes/highlight-pro/pro/assets/css/theme.bundle.min.css?ver=1.1.68' type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-gf-local-roboto-css' href="https://www.winblu.it/wp-content/uploads/elementor/google-fonts/css/roboto.css?ver=1742223146" type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-gf-local-robotoslab-css' href="https://www.winblu.it/wp-content/uploads/elementor/google-fonts/css/robotoslab.css?ver=1742223096" type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-gf-local-varelaround-css' href="https://www.winblu.it/wp-content/uploads/elementor/google-fonts/css/varelaround.css?ver=1742223097" type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-gf-local-montserrat-css' href="https://www.winblu.it/wp-content/uploads/elementor/google-fonts/css/montserrat.css?ver=1742223116" type='text/css' media='all' />
+<script type="text/javascript" src="https://www.winblu.it/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<script type="text/javascript" src="https://www.winblu.it/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+<script type="text/javascript" id="jquery-js-after">
+/* <![CDATA[ */
+    
+        (function () {
+            function setHeaderTopSpacing() {
+
+                setTimeout(function() {
+                  var headerTop = document.querySelector('.header-top');
+                  var headers = document.querySelectorAll('.header-wrapper .header,.header-wrapper .header-homepage');
+
+                  for (var i = 0; i < headers.length; i++) {
+                      var item = headers[i];
+                      item.style.paddingTop = headerTop.getBoundingClientRect().height + "px";
+                  }
+
+                    var languageSwitcher = document.querySelector('.mesmerize-language-switcher');
+
+                    if(languageSwitcher){
+                        languageSwitcher.style.top = "calc( " +  headerTop.getBoundingClientRect().height + "px + 1rem)" ;
+                    }
+                    
+                }, 100);
+
+             
+            }
+
+            window.addEventListener('resize', setHeaderTopSpacing);
+            window.mesmerizeSetHeaderTopSpacing = setHeaderTopSpacing
+            mesmerizeDomReady(setHeaderTopSpacing);
+        })();
+    
+    
+//# sourceURL=jquery-js-after
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.winblu.it/wp-content/plugins/elementor/assets/lib/font-awesome/js/v4-shims.min.js?ver=3.34.1" id="font-awesome-4-shim-js"></script>
+
+<!-- Snippet del tag Google (gtag.js) aggiunto da Site Kit -->
+<!-- Snippet Google Analytics aggiunto da Site Kit -->
+<script type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=GT-5MC6B26" id="google_gtagjs-js" async></script>
+<script type="text/javascript" id="google_gtagjs-js-after">
+/* <![CDATA[ */
+window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}
+gtag("set","linker",{"domains":["www.winblu.it"]});
+gtag("js", new Date());
+gtag("set", "developer_id.dZTNiMT", true);
+gtag("config", "GT-5MC6B26");
+//# sourceURL=google_gtagjs-js-after
+/* ]]> */
+</script>
+<link rel="https://api.w.org/" href="https://www.winblu.it/wp-json/" /><link rel="alternate" title="JSON" type="application/json" href="https://www.winblu.it/wp-json/wp/v2/pages/3318" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.winblu.it/xmlrpc.php?rsd" />
+<meta name="generator" content="WordPress 6.9" />
+<link rel='shortlink' href='https://www.winblu.it/?p=3318' />
+<meta name="cdp-version" content="1.5.0" /><meta name="generator" content="Site Kit by Google 1.168.0" /><link rel="alternate" type="text/html" media="only screen and (max-width: 640px)" href="https://www.winblu.it/errore/?amp=1">    <script type="text/javascript" data-name="async-styles">
+        (function () {
+            var links = document.querySelectorAll('link[data-href]');
+            for (var i = 0; i < links.length; i++) {
+                var item = links[i];
+                item.href = item.getAttribute('data-href')
+            }
+        })();
+    </script>
+	<style data-prefix="inner_header" data-name="menu-variant-style">
+/** cached menu style */.mesmerize-inner-page ul.dropdown-menu > li {  color: #fff; } .mesmerize-inner-page .fixto-fixed ul.dropdown-menu > li {  color: #000; }  .mesmerize-inner-page ul.dropdown-menu.active-line-bottom > li > a, .mesmerize-inner-page ul.dropdown-menu.active-line-bottom > li > a, ul.dropdown-menu.default > li > a, .mesmerize-inner-page ul.dropdown-menu.default > li > a {   border-bottom: 3px solid transparent; } .mesmerize-inner-page ul.dropdown-menu.active-line-bottom > .current_page_item > a, .mesmerize-inner-page ul.dropdown-menu.active-line-bottom > .current-menu-item > a, ul.dropdown-menu.default > .current_page_item > a, .mesmerize-inner-page ul.dropdown-menu.default > .current-menu-item > a {  border-bottom-color: #03a9f4; } .mesmerize-inner-page ul.dropdown-menu.active-line-bottom > li:not(.current-menu-item):not(.current_page_item):hover > a, .mesmerize-inner-page ul.dropdown-menu.active-line-bottom > li:not(.current-menu-item):not(.current_page_item).hover > a, ul.dropdown-menu.default > li:not(.current-menu-item):not(.current_page_item):hover > a, .mesmerize-inner-page ul.dropdown-menu.default > li:not(.current-menu-item):not(.current_page_item).hover > a {  color: #03a9f4; } .mesmerize-inner-page .fixto-fixed ul.dropdown-menu.active-line-bottom > .current_page_item > a, .mesmerize-inner-page .fixto-fixed ul.dropdown-menu.active-line-bottom > .current-menu-item > a, .mesmerize-inner-page .fixto-fixed ul.dropdown-menu.default > .current_page_item > a, .mesmerize-inner-page .fixto-fixed ul.dropdown-menu.default > .current-menu-item > a {  border-bottom-color: #03a9f4; } .mesmerize-inner-page .fixto-fixed ul.dropdown-menu.active-line-bottom > li:not(.current-menu-item):not(.current_page_item):hover > a, .mesmerize-inner-page .fixto-fixed ul.dropdown-menu.active-line-bottom > li:not(.current-menu-item):not(.current_page_item).hover > a, .mesmerize-inner-page .fixto-fixed ul.dropdown-menu.default > li:not(.current-menu-item):not(.current_page_item):hover > a, .mesmerize-inner-page .fixto-fixed ul.dropdown-menu.default > li:not(.current-menu-item):not(.current_page_item).hover > a {  color: #03a9f4; }  .mesmerize-inner-page ul.dropdown-menu.active-line-bottom > .current_page_item > a, .mesmerize-inner-page ul.dropdown-menu.active-line-bottom > .current-menu-item > a {  color: #fff; } .mesmerize-inner-page .fixto-fixed ul.dropdown-menu.active-line-bottom > .current_page_item > a, .mesmerize-inner-page .fixto-fixed ul.dropdown-menu.active-line-bottom > .current-menu-item > a {  color: #000; } .mesmerize-inner-page ul.dropdown-menu ul {  background-color: #fff; }  .mesmerize-inner-page ul.dropdown-menu ul li {  color: #6b7c93; } .mesmerize-inner-page ul.dropdown-menu ul li.hover, .mesmerize-inner-page ul.dropdown-menu ul li:hover {  background-color: #f8f8f8;  color: #000; }</style>
+<style data-name="menu-align">
+.mesmerize-inner-page .main-menu, .mesmerize-inner-page .main_menu_col {justify-content:flex-end;}</style>
+<meta name="generator" content="Elementor 3.34.1; features: e_font_icon_svg, additional_custom_breakpoints; settings: css_print_method-external, google_font-enabled, font_display-auto">
+
+<!-- Meta Pixel Code -->
+<script type='text/javascript'>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','https://connect.facebook.net/en_US/fbevents.js');
+</script>
+<!-- End Meta Pixel Code -->
+<script type='text/javascript'>var url = window.location.origin + '?ob=open-bridge';
+            fbq('set', 'openbridge', '3379428932371752', url);
+fbq('init', '3379428932371752', {}, {
+    "agent": "wordpress-6.9-4.1.5"
+})</script><script type='text/javascript'>
+    fbq('track', 'PageView', []);
+  </script><style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
+<!-- BEGIN recaptcha, injected by plugin wp-recaptcha-integration  -->
+
+<!-- END recaptcha -->
+			<style>
+				.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload),
+				.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload) * {
+					background-image: none !important;
+				}
+				@media screen and (max-height: 1024px) {
+					.e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload),
+					.e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload) * {
+						background-image: none !important;
+					}
+				}
+				@media screen and (max-height: 640px) {
+					.e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload),
+					.e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload) * {
+						background-image: none !important;
+					}
+				}
+			</style>
+			<link rel="amphtml" href="https://www.winblu.it/errore/?amp=1"><style>#amp-mobile-version-switcher{left:0;position:absolute;width:100%;z-index:100}#amp-mobile-version-switcher>a{background-color:#444;border:0;color:#eaeaea;display:block;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;font-size:16px;font-weight:600;padding:15px 0;text-align:center;-webkit-text-decoration:none;text-decoration:none}#amp-mobile-version-switcher>a:active,#amp-mobile-version-switcher>a:focus,#amp-mobile-version-switcher>a:hover{-webkit-text-decoration:underline;text-decoration:underline}</style><link rel="icon" href="https://www.winblu.it/wp-content/uploads/2021/05/Progetto-senza-titolo-5.png" sizes="32x32" />
+<link rel="icon" href="https://www.winblu.it/wp-content/uploads/2021/05/Progetto-senza-titolo-5.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://www.winblu.it/wp-content/uploads/2021/05/Progetto-senza-titolo-5.png" />
+<meta name="msapplication-TileImage" content="https://www.winblu.it/wp-content/uploads/2021/05/Progetto-senza-titolo-5.png" />
+		<style type="text/css" id="wp-custom-css">
+			.home .hero-title,
+.home .header-subtitle {
+	display: none;
+}
+
+/*domenico Saggese per blocchi grigi con dettagli tecnici linee pc*/
+.blocchino h3{min-height:3.5em;
+margin-bottom:0px;
+}
+.blocchino{
+	margin-right:5px;
+}
+.elementor-post {
+	background: red;
+}
+
+article:after, article:before, aside:after, aside:before, details:after, details:before, div:after, div:before, figcaption:after, figcaption:before, figure:after, figure:before, footer:after, footer:before, header:after, header:before, hgroup:after, hgroup:before, menu:after, menu:before, nav:after, nav:before, section:after, section:before, ul:after, ul:before {
+    content: none;
+}		</style>
+			<style id="page-content-custom-styles">
+			</style>
+	        <style data-name="header-shapes">
+            .header.color-overlay:after {background:url(https://www.winblu.it/wp-content/themes/highlight-pro/pro/assets/shapes/circles-gradient.png) center center/ cover no-repeat}        </style>
+            <style data-name="background-content-colors">
+        .mesmerize-inner-page .page-content,
+        .mesmerize-inner-page .content,
+        .mesmerize-front-page.mesmerize-content-padding .page-content {
+            background-color: #ffffff;
+        }
+    </style>
+                <style data-name="site-colors">
+                /** cached colors style */
+                 p.color-white{ color : #ffffff; } span.color-white{ color : #ffffff; } h1.color-white{ color : #ffffff; } h2.color-white{ color : #ffffff; } h3.color-white{ color : #ffffff; } h4.color-white{ color : #ffffff; } h5.color-white{ color : #ffffff; } h6.color-white{ color : #ffffff; } .card.bg-color-white, .bg-color-white{ background-color:#ffffff; } a.color-white:not(.button){ color:#ffffff; } a.color-white:not(.button):hover{ color:#FFFFFF; } button.color-white, .button.color-white{ background-color:#ffffff; border-color:#ffffff; } button.color-white:hover, .button.color-white:hover{ background-color:#FFFFFF; border-color:#FFFFFF; } button.outline.color-white, .button.outline.color-white{ background:none; border-color:#ffffff; color:#ffffff; } button.outline.color-white:hover, .button.outline.color-white:hover{ background:none; border-color:rgba(255,255,255,0.7); color:rgba(255,255,255,0.9); } i.fa.color-white{ color:#ffffff; } i.fa.icon.bordered.color-white{ border-color:#ffffff; } i.fa.icon.reverse.color-white{ background-color:#ffffff; color: #ffffff; } i.fa.icon.reverse.color-white{ color: #d5d5d5; } i.fa.icon.bordered.color-white{ border-color:#ffffff; } i.fa.icon.reverse.bordered.color-white{ background-color:#ffffff; color: #ffffff; } .top-right-triangle.color-white{ border-right-color:#ffffff; } .checked.decoration-color-white li:before { color:#ffffff; } .stared.decoration-color-white li:before { color:#ffffff; } .card.card-color-white{ background-color:#ffffff; } .card.bottom-border-color-white{ border-bottom-color: #ffffff; } .grad-180-transparent-color-white{  background-image: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 50%, rgba(255,255,255,0.6) 78%, rgba(255,255,255,0.9) 100%) !important; } .border-color-white{ border-color: #ffffff; } .circle-counter.color-white .circle-bar{ stroke: #ffffff; } p.color-black{ color : #000000; } span.color-black{ color : #000000; } h1.color-black{ color : #000000; } h2.color-black{ color : #000000; } h3.color-black{ color : #000000; } h4.color-black{ color : #000000; } h5.color-black{ color : #000000; } h6.color-black{ color : #000000; } .card.bg-color-black, .bg-color-black{ background-color:#000000; } a.color-black:not(.button){ color:#000000; } a.color-black:not(.button):hover{ color:#141414; } button.color-black, .button.color-black{ background-color:#000000; border-color:#000000; } button.color-black:hover, .button.color-black:hover{ background-color:#141414; border-color:#141414; } button.outline.color-black, .button.outline.color-black{ background:none; border-color:#000000; color:#000000; } button.outline.color-black:hover, .button.outline.color-black:hover{ background:none; border-color:rgba(0,0,0,0.7); color:rgba(0,0,0,0.9); } i.fa.color-black{ color:#000000; } i.fa.icon.bordered.color-black{ border-color:#000000; } i.fa.icon.reverse.color-black{ background-color:#000000; color: #ffffff; } i.fa.icon.reverse.color-white{ color: #d5d5d5; } i.fa.icon.bordered.color-black{ border-color:#000000; } i.fa.icon.reverse.bordered.color-black{ background-color:#000000; color: #ffffff; } .top-right-triangle.color-black{ border-right-color:#000000; } .checked.decoration-color-black li:before { color:#000000; } .stared.decoration-color-black li:before { color:#000000; } .card.card-color-black{ background-color:#000000; } .card.bottom-border-color-black{ border-bottom-color: #000000; } .grad-180-transparent-color-black{  background-image: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 50%, rgba(0,0,0,0.6) 78%, rgba(0,0,0,0.9) 100%) !important; } .border-color-black{ border-color: #000000; } .circle-counter.color-black .circle-bar{ stroke: #000000; }                 /** cached colors style */
+            </style>
+            </head>
+<body class="wp-singular page-template-default page page-id-3318 wp-custom-logo wp-theme-highlight-pro eio-default ally-default mesmerize-inner-page elementor-default elementor-kit-1599 elementor-page elementor-page-3318">
+		<script>
+			const onSkipLinkClick = () => {
+				const htmlElement = document.querySelector('html');
+
+				htmlElement.style['scroll-behavior'] = 'smooth';
+
+				setTimeout( () => htmlElement.style['scroll-behavior'] = null, 1000 );
+			}
+			document.addEventListener("DOMContentLoaded", () => {
+				if (!document.querySelector('#content')) {
+					document.querySelector('.ea11y-skip-to-content-link').remove();
+				}
+			});
+		</script>
+		<nav aria-label="Vai alla navigazione dei contenuti">
+			<a class="ea11y-skip-to-content-link"
+				href="#content"
+				tabindex="1"
+				onclick="onSkipLinkClick()"
+			>
+				Salta al contenuto
+				<svg width="24" height="24" viewBox="0 0 24 24" fill="none" role="presentation">
+					<path d="M18 6V12C18 12.7956 17.6839 13.5587 17.1213 14.1213C16.5587 14.6839 15.7956 15 15 15H5M5 15L9 11M5 15L9 19"
+								stroke="black"
+								stroke-width="1.5"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+					/>
+				</svg>
+			</a>
+			<div class="ea11y-skip-to-content-backdrop"></div>
+		</nav>
+
+		
+<!-- Meta Pixel Code -->
+<noscript>
+<img height="1" width="1" style="display:none" alt="fbpx"
+src="https://www.facebook.com/tr?id=3379428932371752&ev=PageView&noscript=1" />
+</noscript>
+<!-- End Meta Pixel Code -->
+		<header data-elementor-type="header" data-elementor-id="3417" class="elementor elementor-3417 elementor-location-header" data-elementor-post-type="elementor_library">
+					<section class="elementor-section elementor-top-section elementor-element elementor-element-7bdfb447 elementor-section-height-min-height elementor-section-boxed elementor-section-height-default elementor-section-items-middle" data-id="7bdfb447" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;gradient&quot;,&quot;sticky&quot;:&quot;top&quot;,&quot;sticky_on&quot;:[&quot;desktop&quot;,&quot;tablet&quot;,&quot;mobile&quot;],&quot;sticky_offset&quot;:0,&quot;sticky_effects_offset&quot;:0,&quot;sticky_anchor_link_offset&quot;:0}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-4f2bd845" data-id="4f2bd845" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-1b29e1a3 elementor-widget elementor-widget-image" data-id="1b29e1a3" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+																<a href="https://www.winblu.it">
+							<img width="872" height="219" src="https://www.winblu.it/wp-content/uploads/2021/05/PER-SFONDO-SCURO.png" class="attachment-full size-full wp-image-3030" alt="" />								</a>
+															</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-59f53134" data-id="59f53134" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-44a6cb84 elementor-nav-menu__align-start elementor-nav-menu--stretch elementor-nav-menu__text-align-center elementor-nav-menu--dropdown-tablet elementor-nav-menu--toggle elementor-nav-menu--burger elementor-widget elementor-widget-nav-menu" data-id="44a6cb84" data-element_type="widget" data-settings="{&quot;full_width&quot;:&quot;stretch&quot;,&quot;submenu_icon&quot;:{&quot;value&quot;:&quot;&lt;svg aria-hidden=\&quot;true\&quot; class=\&quot;fa-svg-chevron-down e-font-icon-svg e-fas-chevron-down\&quot; viewBox=\&quot;0 0 448 512\&quot; xmlns=\&quot;http:\/\/www.w3.org\/2000\/svg\&quot;&gt;&lt;path d=\&quot;M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z\&quot;&gt;&lt;\/path&gt;&lt;\/svg&gt;&quot;,&quot;library&quot;:&quot;fa-solid&quot;},&quot;layout&quot;:&quot;horizontal&quot;,&quot;toggle&quot;:&quot;burger&quot;}" data-widget_type="nav-menu.default">
+				<div class="elementor-widget-container">
+								<nav aria-label="Menu" class="elementor-nav-menu--main elementor-nav-menu__container elementor-nav-menu--layout-horizontal e--pointer-underline e--animation-drop-out">
+				<ul id="menu-1-44a6cb84" class="elementor-nav-menu"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1076"><a href="#" class="elementor-item elementor-item-anchor">Prodotti e soluzioni</a>
+<ul class="sub-menu elementor-nav-menu--dropdown">
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2306"><a href="https://www.winblu.it/winblu_e_motion/" class="elementor-sub-item">Notebook</a>
+	<ul class="sub-menu elementor-nav-menu--dropdown">
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3505"><a href="https://www.winblu.it/winblu_e_motion/" class="elementor-sub-item">Linea e-Motion</a></li>
+	</ul>
+</li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-4168"><a href="https://www.winblu.it/linea-evision/" class="elementor-sub-item">LCDPC All in One</a>
+	<ul class="sub-menu elementor-nav-menu--dropdown">
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4209"><a href="https://www.winblu.it/linea-evision/" class="elementor-sub-item">Linea eVision</a></li>
+	</ul>
+</li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-4268"><a href="https://www.winblu.it/linea-t-rok/" class="elementor-sub-item">Linea Gaming</a>
+	<ul class="sub-menu elementor-nav-menu--dropdown">
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4259"><a href="https://www.winblu.it/linea-t-rok/" class="elementor-sub-item">Linea T-Rok</a></li>
+	</ul>
+</li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-4049"><a href="https://www.winblu.it/personal-computer-2023/" class="elementor-sub-item">Personal Computer</a>
+	<ul class="sub-menu elementor-nav-menu--dropdown">
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3517"><a href="https://www.winblu.it/winblu_easy_pro/" class="elementor-sub-item">Linea Easy Pro</a></li>
+		<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4417"><a href="https://www.winblu.it/essential-3/" class="elementor-sub-item">Linea Essential</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3515"><a href="https://www.winblu.it/winblu_energy/" class="elementor-sub-item">Linea Energy</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3514"><a href="https://www.winblu.it/winblu_expert/" class="elementor-sub-item">Linea Expert</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3518"><a href="https://www.winblu.it/winblu_academic/" class="elementor-sub-item">Linea Academic</a></li>
+	</ul>
+</li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-3822"><a href="https://www.winblu.it/winblu_experience/" class="elementor-sub-item">Workstation</a>
+	<ul class="sub-menu elementor-nav-menu--dropdown">
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3527"><a href="https://www.winblu.it/winblu_experience/" class="elementor-sub-item">Linea Experience</a></li>
+	</ul>
+</li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-386"><a href="https://www.winblu.it/server/" class="elementor-sub-item">Server</a>
+	<ul class="sub-menu elementor-nav-menu--dropdown">
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3525"><a href="https://www.winblu.it/enterprise_1151/" class="elementor-sub-item">Enterprise 1151 mono</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3526"><a href="https://www.winblu.it/enterprise_3647/" class="elementor-sub-item">Enterprise 3647 dual</a></li>
+	</ul>
+</li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3529"><a href="https://www.winblu.it/winblu_academic/" class="elementor-sub-item">Soluzioni Educational per le scuole</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-115"><a class="elementor-item">Perché sceglierci</a>
+<ul class="sub-menu elementor-nav-menu--dropdown">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-113"><a href="https://www.winblu.it/perche-sceglierci/garanzia/" class="elementor-sub-item">Garanzia</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-114"><a href="https://www.winblu.it/perche-sceglierci/plus/" class="elementor-sub-item">Plus</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-112"><a href="https://www.winblu.it/perche-sceglierci/produzione/" class="elementor-sub-item">Produzione</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-111"><a href="https://www.winblu.it/perche-sceglierci/partner/" class="elementor-sub-item">Partner</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-110"><a href="https://www.winblu.it/perche-sceglierci/certificazioni/" class="elementor-sub-item">Certificazioni</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-109"><a href="https://www.winblu.it/perche-sceglierci/raee/" class="elementor-sub-item">RAEE</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-100"><a href="https://www.winblu.it/punti-vendita/" class="elementor-item">Punti vendita</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2030"><a target="_blank" href="https://garanzie.winblu.it/" class="elementor-item">Garanzia</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1990"><a href="https://www.winblu.it/supporto/" class="elementor-item">Supporto</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1780"><a href="https://www.winblu.it/news/" class="elementor-item">News</a></li>
+</ul>			</nav>
+					<div class="elementor-menu-toggle" role="button" tabindex="0" aria-label="Menu di commutazione" aria-expanded="false">
+			<svg aria-hidden="true" role="presentation" class="elementor-menu-toggle__icon--open e-font-icon-svg e-eicon-menu-bar" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg"><path d="M104 333H896C929 333 958 304 958 271S929 208 896 208H104C71 208 42 237 42 271S71 333 104 333ZM104 583H896C929 583 958 554 958 521S929 458 896 458H104C71 458 42 487 42 521S71 583 104 583ZM104 833H896C929 833 958 804 958 771S929 708 896 708H104C71 708 42 737 42 771S71 833 104 833Z"></path></svg><svg aria-hidden="true" role="presentation" class="elementor-menu-toggle__icon--close e-font-icon-svg e-eicon-close" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg"><path d="M742 167L500 408 258 167C246 154 233 150 217 150 196 150 179 158 167 167 154 179 150 196 150 212 150 229 154 242 171 254L408 500 167 742C138 771 138 800 167 829 196 858 225 858 254 829L496 587 738 829C750 842 767 846 783 846 800 846 817 842 829 829 842 817 846 804 846 783 846 767 842 750 829 737L588 500 833 258C863 229 863 200 833 171 804 137 775 137 742 167Z"></path></svg>		</div>
+					<nav class="elementor-nav-menu--dropdown elementor-nav-menu__container" aria-hidden="true">
+				<ul id="menu-2-44a6cb84" class="elementor-nav-menu"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1076"><a href="#" class="elementor-item elementor-item-anchor" tabindex="-1">Prodotti e soluzioni</a>
+<ul class="sub-menu elementor-nav-menu--dropdown">
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2306"><a href="https://www.winblu.it/winblu_e_motion/" class="elementor-sub-item" tabindex="-1">Notebook</a>
+	<ul class="sub-menu elementor-nav-menu--dropdown">
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3505"><a href="https://www.winblu.it/winblu_e_motion/" class="elementor-sub-item" tabindex="-1">Linea e-Motion</a></li>
+	</ul>
+</li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-4168"><a href="https://www.winblu.it/linea-evision/" class="elementor-sub-item" tabindex="-1">LCDPC All in One</a>
+	<ul class="sub-menu elementor-nav-menu--dropdown">
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4209"><a href="https://www.winblu.it/linea-evision/" class="elementor-sub-item" tabindex="-1">Linea eVision</a></li>
+	</ul>
+</li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-4268"><a href="https://www.winblu.it/linea-t-rok/" class="elementor-sub-item" tabindex="-1">Linea Gaming</a>
+	<ul class="sub-menu elementor-nav-menu--dropdown">
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4259"><a href="https://www.winblu.it/linea-t-rok/" class="elementor-sub-item" tabindex="-1">Linea T-Rok</a></li>
+	</ul>
+</li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-4049"><a href="https://www.winblu.it/personal-computer-2023/" class="elementor-sub-item" tabindex="-1">Personal Computer</a>
+	<ul class="sub-menu elementor-nav-menu--dropdown">
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3517"><a href="https://www.winblu.it/winblu_easy_pro/" class="elementor-sub-item" tabindex="-1">Linea Easy Pro</a></li>
+		<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4417"><a href="https://www.winblu.it/essential-3/" class="elementor-sub-item" tabindex="-1">Linea Essential</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3515"><a href="https://www.winblu.it/winblu_energy/" class="elementor-sub-item" tabindex="-1">Linea Energy</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3514"><a href="https://www.winblu.it/winblu_expert/" class="elementor-sub-item" tabindex="-1">Linea Expert</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3518"><a href="https://www.winblu.it/winblu_academic/" class="elementor-sub-item" tabindex="-1">Linea Academic</a></li>
+	</ul>
+</li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-3822"><a href="https://www.winblu.it/winblu_experience/" class="elementor-sub-item" tabindex="-1">Workstation</a>
+	<ul class="sub-menu elementor-nav-menu--dropdown">
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3527"><a href="https://www.winblu.it/winblu_experience/" class="elementor-sub-item" tabindex="-1">Linea Experience</a></li>
+	</ul>
+</li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-386"><a href="https://www.winblu.it/server/" class="elementor-sub-item" tabindex="-1">Server</a>
+	<ul class="sub-menu elementor-nav-menu--dropdown">
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3525"><a href="https://www.winblu.it/enterprise_1151/" class="elementor-sub-item" tabindex="-1">Enterprise 1151 mono</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3526"><a href="https://www.winblu.it/enterprise_3647/" class="elementor-sub-item" tabindex="-1">Enterprise 3647 dual</a></li>
+	</ul>
+</li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3529"><a href="https://www.winblu.it/winblu_academic/" class="elementor-sub-item" tabindex="-1">Soluzioni Educational per le scuole</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-115"><a class="elementor-item" tabindex="-1">Perché sceglierci</a>
+<ul class="sub-menu elementor-nav-menu--dropdown">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-113"><a href="https://www.winblu.it/perche-sceglierci/garanzia/" class="elementor-sub-item" tabindex="-1">Garanzia</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-114"><a href="https://www.winblu.it/perche-sceglierci/plus/" class="elementor-sub-item" tabindex="-1">Plus</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-112"><a href="https://www.winblu.it/perche-sceglierci/produzione/" class="elementor-sub-item" tabindex="-1">Produzione</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-111"><a href="https://www.winblu.it/perche-sceglierci/partner/" class="elementor-sub-item" tabindex="-1">Partner</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-110"><a href="https://www.winblu.it/perche-sceglierci/certificazioni/" class="elementor-sub-item" tabindex="-1">Certificazioni</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-109"><a href="https://www.winblu.it/perche-sceglierci/raee/" class="elementor-sub-item" tabindex="-1">RAEE</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-100"><a href="https://www.winblu.it/punti-vendita/" class="elementor-item" tabindex="-1">Punti vendita</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2030"><a target="_blank" href="https://garanzie.winblu.it/" class="elementor-item" tabindex="-1">Garanzia</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1990"><a href="https://www.winblu.it/supporto/" class="elementor-item" tabindex="-1">Supporto</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1780"><a href="https://www.winblu.it/news/" class="elementor-item" tabindex="-1">News</a></li>
+</ul>			</nav>
+						</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				</header>
+		
+    <div id='page-content' class="page-content">
+        <div class="gridContainer content">
+            <div id="post-3318" class="post-3318 page type-page status-publish hentry">
+  <div>
+   		<div data-elementor-type="wp-page" data-elementor-id="3318" class="elementor elementor-3318" data-elementor-post-type="page">
+						<section class="elementor-section elementor-top-section elementor-element elementor-element-9549829 elementor-section-full_width elementor-section-stretched elementor-section-height-default elementor-section-height-default" data-id="9549829" data-element_type="section" data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-de019d4" data-id="de019d4" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-f175c10 elementor-widget elementor-widget-image" data-id="f175c10" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img fetchpriority="high" decoding="async" width="1400" height="600" src="https://www.winblu.it/wp-content/uploads/2022/01/Winblu_error404-page.jpg" class="attachment-large size-large wp-image-3319" alt="" />															</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				</div>
+		  </div>
+    </div>
+        </div>
+    </div>
+
+
+<script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":["/wp-*.php","/wp-admin/*","/wp-content/uploads/*","/wp-content/*","/wp-content/plugins/*","/wp-content/themes/highlight-pro/*","/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+<script>function loadScript(a){var b=document.getElementsByTagName("head")[0],c=document.createElement("script");c.type="text/javascript",c.src="https://tracker.metricool.com/app/resources/be.js",c.onreadystatechange=a,c.onload=a,b.appendChild(c)}loadScript(function(){beTracker.t({hash:'7bcee9aeba32b76b14cd69ca99cd749a'})})</script>			<script>
+				const registerAllyAction = () => {
+					if ( ! window?.elementorAppConfig?.hasPro || ! window?.elementorFrontend?.utils?.urlActions ) {
+						return;
+					}
+
+					elementorFrontend.utils.urlActions.addAction( 'allyWidget:open', () => {
+						if ( window?.ea11yWidget?.widget?.open ) {
+							window.ea11yWidget.widget.open();
+						}
+					} );
+				};
+
+				const waitingLimit = 30;
+				let retryCounter = 0;
+
+				const waitForElementorPro = () => {
+					return new Promise( ( resolve ) => {
+						const intervalId = setInterval( () => {
+							if ( retryCounter === waitingLimit ) {
+								resolve( null );
+							}
+
+							retryCounter++;
+
+							if ( window.elementorFrontend && window?.elementorFrontend?.utils?.urlActions ) {
+								clearInterval( intervalId );
+								resolve( window.elementorFrontend );
+							}
+								}, 100 ); // Check every 100 milliseconds for availability of elementorFrontend
+					});
+				};
+
+				waitForElementorPro().then( () => { registerAllyAction(); });
+			</script>
+			    <!-- Meta Pixel Event Code -->
+    <script type='text/javascript'>
+        document.addEventListener( 'wpcf7mailsent', function( event ) {
+        if( "fb_pxl_code" in event.detail.apiResponse){
+            eval(event.detail.apiResponse.fb_pxl_code);
+        }
+        }, false );
+    </script>
+    <!-- End Meta Pixel Event Code -->
+        <div id='fb-pxl-ajax-code'></div>
+<!-- BEGIN recaptcha, injected by plugin wp-recaptcha-integration  -->
+<script type="text/javascript">
+		var recaptcha_widgets={};
+		function wp_recaptchaLoadCallback(){
+			try {
+				grecaptcha;
+			} catch(err){
+				return;
+			}
+			var e = document.querySelectorAll ? document.querySelectorAll('.g-recaptcha:not(.wpcf7-form-control)') : document.getElementsByClassName('g-recaptcha'),
+				form_submits;
+
+			for (var i=0;i<e.length;i++) {
+				(function(el){
+					var wid;
+					// check if captcha element is unrendered
+					if ( ! el.childNodes.length) {
+						wid = grecaptcha.render(el,{
+							'sitekey':'6LcZ3wYhAAAAAJQ28xAmjL7EoZGRIDYGmJ55AE8J',
+							'theme':el.getAttribute('data-theme') || 'light'
+						});
+						el.setAttribute('data-widget-id',wid);
+					} else {
+						wid = el.getAttribute('data-widget-id');
+						grecaptcha.reset(wid);
+					}
+				})(e[i]);
+			}
+		}
+
+		// if jquery present re-render jquery/ajax loaded captcha elements
+		if ( typeof jQuery !== 'undefined' )
+			jQuery(document).ajaxComplete( function(evt,xhr,set){
+				if( xhr.responseText && xhr.responseText.indexOf('6LcZ3wYhAAAAAJQ28xAmjL7EoZGRIDYGmJ55AE8J') !== -1)
+					wp_recaptchaLoadCallback();
+			} );
+
+		</script><script src="https://www.google.com/recaptcha/api.js?onload=wp_recaptchaLoadCallback&#038;render=explicit" async defer></script>
+<!-- END recaptcha -->
+<!-- Instagram Feed JS -->
+<script type="text/javascript">
+var sbiajaxurl = "https://www.winblu.it/wp-admin/admin-ajax.php";
+</script>
+			<script>
+				const lazyloadRunObserver = () => {
+					const lazyloadBackgrounds = document.querySelectorAll( `.e-con.e-parent:not(.e-lazyloaded)` );
+					const lazyloadBackgroundObserver = new IntersectionObserver( ( entries ) => {
+						entries.forEach( ( entry ) => {
+							if ( entry.isIntersecting ) {
+								let lazyloadBackground = entry.target;
+								if( lazyloadBackground ) {
+									lazyloadBackground.classList.add( 'e-lazyloaded' );
+								}
+								lazyloadBackgroundObserver.unobserve( entry.target );
+							}
+						});
+					}, { rootMargin: '200px 0px 200px 0px' } );
+					lazyloadBackgrounds.forEach( ( lazyloadBackground ) => {
+						lazyloadBackgroundObserver.observe( lazyloadBackground );
+					} );
+				};
+				const events = [
+					'DOMContentLoaded',
+					'elementor/lazyload/observe',
+				];
+				events.forEach( ( event ) => {
+					document.addEventListener( event, lazyloadRunObserver );
+				} );
+			</script>
+					<div id="amp-mobile-version-switcher" hidden>
+			<a rel="" href="https://www.winblu.it/errore/?amp=1">
+				Go to mobile version			</a>
+		</div>
+
+				<script type="text/javascript" id="ea11y-widget-js-extra">
+/* <![CDATA[ */
+var ea11yWidget = {"iconSettings":{"style":{"icon":"person","size":"large","color":"#2563eb","cornerRadius":{"radius":32,"unit":"px"}},"position":{"desktop":{"hidden":false,"enableExactPosition":false,"exactPosition":{"horizontal":{"direction":"right","value":10,"unit":"px"},"vertical":{"direction":"bottom","value":10,"unit":"px"}},"position":"bottom-right"},"mobile":{"hidden":false,"enableExactPosition":false,"exactPosition":{"horizontal":{"direction":"right","value":10,"unit":"px"},"vertical":{"direction":"bottom","value":10,"unit":"px"}},"position":"bottom-right"}}},"toolsSettings":{"bigger-text":{"enabled":true},"bigger-line-height":{"enabled":true},"text-align":{"enabled":true},"readable-font":{"enabled":true},"grayscale":{"enabled":true},"contrast":{"enabled":true},"page-structure":{"enabled":true},"sitemap":{"enabled":false,"url":"https://www.winblu.it/wp-sitemap.xml"},"reading-mask":{"enabled":true},"hide-images":{"enabled":true},"pause-animations":{"enabled":true},"highlight-links":{"enabled":true},"focus-outline":{"enabled":true},"screen-reader":{"enabled":false},"remove-elementor-label":{"enabled":false}},"accessibilityStatementURL":"","analytics":{"enabled":false,"url":null}};
+//# sourceURL=ea11y-widget-js-extra
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://cdn.elementor.com/a11y/widget.js?api_key=ea11y-90f34e56-72c9-4106-8d45-feec2b9deb6b&amp;ver=3.9.1" id="ea11y-widget-js"referrerPolicy="origin"></script>
+<script type="text/javascript" src="https://www.winblu.it/wp-content/themes/highlight-pro/child/assets/js/theme-child.js" id="theme-child-js"></script>
+<script type="text/javascript" src="https://www.winblu.it/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js?ver=3.34.1" id="elementor-webpack-runtime-js"></script>
+<script type="text/javascript" src="https://www.winblu.it/wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=3.34.1" id="elementor-frontend-modules-js"></script>
+<script type="text/javascript" src="https://www.winblu.it/wp-includes/js/jquery/ui/core.min.js?ver=1.13.3" id="jquery-ui-core-js"></script>
+<script type="text/javascript" id="elementor-frontend-js-before">
+/* <![CDATA[ */
+var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"Condividi su Facebook","shareOnTwitter":"Condividi su Twitter","pinIt":"Pinterest","download":"Download","downloadImage":"Scarica immagine","fullscreen":"Schermo intero","zoom":"Zoom","share":"Condividi","playVideo":"Riproduci video","previous":"Precedente","next":"Successivo","close":"Chiudi","a11yCarouselPrevSlideMessage":"Diapositiva precedente","a11yCarouselNextSlideMessage":"Prossima diapositiva","a11yCarouselFirstSlideMessage":"Questa \u00e9 la prima diapositiva","a11yCarouselLastSlideMessage":"Questa \u00e8 l'ultima diapositiva","a11yCarouselPaginationBulletMessage":"Vai alla diapositiva"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Mobile Portrait","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Mobile Landscape","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet verticale","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet orizzontale","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Laptop","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"Widescreen","value":2400,"default_value":2400,"direction":"min","is_enabled":false}},"hasCustomBreakpoints":false},"version":"3.34.1","is_static":false,"experimentalFeatures":{"e_font_icon_svg":true,"additional_custom_breakpoints":true,"container":true,"theme_builder_v2":true,"landing-pages":true,"nested-elements":true,"home_screen":true,"global_classes_should_enforce_capabilities":true,"e_variables":true,"cloud-library":true,"e_opt_in_v4_page":true,"e_interactions":true,"import-export-customization":true,"mega-menu":true,"e_pro_variables":true},"urls":{"assets":"https:\/\/www.winblu.it\/wp-content\/plugins\/elementor\/assets\/","ajaxurl":"https:\/\/www.winblu.it\/wp-admin\/admin-ajax.php","uploadUrl":"http:\/\/www.winblu.it\/wp-content\/uploads"},"nonces":{"floatingButtonsClickTracking":"f2c6313ce7"},"swiperClass":"swiper","settings":{"page":[],"editorPreferences":[]},"kit":{"viewport_mobile":767,"active_breakpoints":["viewport_mobile","viewport_tablet"],"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description"},"post":{"id":3318,"title":"Errore%20%7C%20Winblu","excerpt":"","featuredImage":false}};
+//# sourceURL=elementor-frontend-js-before
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.winblu.it/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.34.1" id="elementor-frontend-js"></script>
+<script type="text/javascript" src="https://www.winblu.it/wp-content/plugins/elementor-pro/assets/lib/smartmenus/jquery.smartmenus.min.js?ver=1.2.1" id="smartmenus-js"></script>
+<script type="text/javascript" src="https://www.winblu.it/wp-content/plugins/elementor-pro/assets/lib/sticky/jquery.sticky.min.js?ver=3.34.0" id="e-sticky-js"></script>
+<script type="text/javascript"  defer="defer" src="https://www.winblu.it/wp-includes/js/imagesloaded.min.js?ver=5.0.0" id="imagesloaded-js"></script>
+<script type="text/javascript"  defer="defer" src="https://www.winblu.it/wp-includes/js/masonry.min.js?ver=4.2.2" id="masonry-js"></script>
+<script type="text/javascript" id="mesmerize-theme-js-extra">
+/* <![CDATA[ */
+var mesmerize_theme_pro_settings = {"reveal-effect":{"enabled":false}};
+//# sourceURL=mesmerize-theme-js-extra
+/* ]]> */
+</script>
+<script type="text/javascript"  defer="defer" src="https://www.winblu.it/wp-content/themes/highlight-pro/pro/assets/js/theme.bundle.min.js?ver=1.1.68" id="mesmerize-theme-js"></script>
+<script type="text/javascript" src="https://www.winblu.it/wp-content/plugins/elementor-pro/assets/js/webpack-pro.runtime.min.js?ver=3.34.0" id="elementor-pro-webpack-runtime-js"></script>
+<script type="text/javascript" src="https://www.winblu.it/wp-includes/js/dist/hooks.min.js?ver=dd5603f07f9220ed27f1" id="wp-hooks-js"></script>
+<script type="text/javascript" src="https://www.winblu.it/wp-includes/js/dist/i18n.min.js?ver=c26c3dc7bed366793375" id="wp-i18n-js"></script>
+<script type="text/javascript" id="wp-i18n-js-after">
+/* <![CDATA[ */
+wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
+//# sourceURL=wp-i18n-js-after
+/* ]]> */
+</script>
+<script type="text/javascript" id="elementor-pro-frontend-js-before">
+/* <![CDATA[ */
+var ElementorProFrontendConfig = {"ajaxurl":"https:\/\/www.winblu.it\/wp-admin\/admin-ajax.php","nonce":"85a06fd4ff","urls":{"assets":"https:\/\/www.winblu.it\/wp-content\/plugins\/elementor-pro\/assets\/","rest":"https:\/\/www.winblu.it\/wp-json\/"},"settings":{"lazy_load_background_images":true},"popup":{"hasPopUps":true},"shareButtonsNetworks":{"facebook":{"title":"Facebook","has_counter":true},"twitter":{"title":"Twitter"},"linkedin":{"title":"LinkedIn","has_counter":true},"pinterest":{"title":"Pinterest","has_counter":true},"reddit":{"title":"Reddit","has_counter":true},"vk":{"title":"VK","has_counter":true},"odnoklassniki":{"title":"OK","has_counter":true},"tumblr":{"title":"Tumblr"},"digg":{"title":"Digg"},"skype":{"title":"Skype"},"stumbleupon":{"title":"StumbleUpon","has_counter":true},"mix":{"title":"Mix"},"telegram":{"title":"Telegram"},"pocket":{"title":"Pocket","has_counter":true},"xing":{"title":"XING","has_counter":true},"whatsapp":{"title":"WhatsApp"},"email":{"title":"Email"},"print":{"title":"Print"},"x-twitter":{"title":"X"},"threads":{"title":"Threads"}},"facebook_sdk":{"lang":"it_IT","app_id":""},"lottie":{"defaultAnimationUrl":"https:\/\/www.winblu.it\/wp-content\/plugins\/elementor-pro\/modules\/lottie\/assets\/animations\/default.json"}};
+//# sourceURL=elementor-pro-frontend-js-before
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.winblu.it/wp-content/plugins/elementor-pro/assets/js/frontend.min.js?ver=3.34.0" id="elementor-pro-frontend-js"></script>
+<script type="text/javascript" src="https://www.winblu.it/wp-content/plugins/elementor-pro/assets/js/elements-handlers.min.js?ver=3.34.0" id="pro-elements-handlers-js"></script>
+    <script>
+        /(trident|msie)/i.test(navigator.userAgent) && document.getElementById && window.addEventListener && window.addEventListener("hashchange", function () {
+            var t, e = location.hash.substring(1);
+            /^[A-z0-9_-]+$/.test(e) && (t = document.getElementById(e)) && (/^(?:a|select|input|button|textarea)$/i.test(t.tagName) || (t.tabIndex = -1), t.focus())
+        }, !1);
+    </script>
+	<script id="wp-emoji-settings" type="application/json">
+{"baseUrl":"https://s.w.org/images/core/emoji/17.0.2/72x72/","ext":".png","svgUrl":"https://s.w.org/images/core/emoji/17.0.2/svg/","svgExt":".svg","source":{"concatemoji":"https://www.winblu.it/wp-includes/js/wp-emoji-release.min.js?ver=6.9"}}
+</script>
+<script type="module">
+/* <![CDATA[ */
+/*! This file is auto-generated */
+const a=JSON.parse(document.getElementById("wp-emoji-settings").textContent),o=(window._wpemojiSettings=a,"wpEmojiSettingsSupports"),s=["flag","emoji"];function i(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function c(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0);const a=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);return t.every((e,t)=>e===a[t])}function p(e,t){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var n=e.getImageData(16,16,1,1);for(let e=0;e<n.data.length;e++)if(0!==n.data[e])return!1;return!0}function u(e,t,n,a){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\udde8\ud83c\uddf6","\ud83c\udde8\u200b\ud83c\uddf6")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!a(e,"\ud83e\u1fac8")}return!1}function f(e,t,n,a){let r;const o=(r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):document.createElement("canvas")).getContext("2d",{willReadFrequently:!0}),s=(o.textBaseline="top",o.font="600 32px Arial",{});return e.forEach(e=>{s[e]=t(o,e,n,a)}),s}function r(e){var t=document.createElement("script");t.src=e,t.defer=!0,document.head.appendChild(t)}a.supports={everything:!0,everythingExceptFlag:!0},new Promise(t=>{let n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(s),u.toString(),c.toString(),p.toString()].join(",")+"));",a=new Blob([e],{type:"text/javascript"});const r=new Worker(URL.createObjectURL(a),{name:"wpTestEmojiSupports"});return void(r.onmessage=e=>{i(n=e.data),r.terminate(),t(n)})}catch(e){}i(n=f(s,u,c,p))}t(n)}).then(e=>{for(const n in e)a.supports[n]=e[n],a.supports.everything=a.supports.everything&&a.supports[n],"flag"!==n&&(a.supports.everythingExceptFlag=a.supports.everythingExceptFlag&&a.supports[n]);var t;a.supports.everythingExceptFlag=a.supports.everythingExceptFlag&&!a.supports.flag,a.supports.everything||((t=a.source||{}).concatemoji?r(t.concatemoji):t.wpemoji&&t.twemoji&&(r(t.twemoji),r(t.wpemoji)))});
+//# sourceURL=https://www.winblu.it/wp-includes/js/wp-emoji-loader.min.js
+/* ]]> */
+</script>
+
+</body>
+</html>
