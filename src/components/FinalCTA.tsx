@@ -39,7 +39,7 @@ export default function FinalCTA() {
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.95 }}
                     >
-                        <span className={styles.buttonText}>Richiedi Info B2B</span>
+                        <span className={styles.buttonText}>Richiedi Info</span>
                         <span className={styles.buttonIcon}>✉️</span>
                     </motion.button>
                 </div>

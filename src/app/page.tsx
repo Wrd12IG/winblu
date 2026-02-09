@@ -31,7 +31,7 @@ const heroSlides = [
     description: "Workstation certificate e server enterprise per i tuoi clienti più esigenti. Qualità garantita 3 anni e assistenza tecnica diretta 🇮🇹.",
     image: "/hero-workstation.png",
     ctaPrimary: "Canale Rivenditori",
-    ctaSecondary: "Richiedi Info B2B"
+    ctaSecondary: "Richiedi Info"
   },
   {
     id: 3,
