@@ -20,10 +20,6 @@ const staggerContainer = {
   }
 };
 
-export const metadata = {
-  title: 'Winblu Easy Pro | TOP computer travestito da Mini-PC',
-  description: 'Winblu Easy Pro: Prestazioni da desktop in soli 17,5 cm. Tecnologia avanzata in uno spazio compatto.',
-};
 
 export default function LineaEasyProPage() {
   return (
