@@ -1,6 +1,7 @@
 import styles from './punti-vendita.module.css';
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import StoreLocator from './StoreLocator';
 
 export const metadata = {
     title: 'Punti Vendita | Winblu',
@@ -18,6 +19,10 @@ export default function PuntiVenditaPage() {
                         Trova il rivenditore Winblu più vicino a te oppure contattaci per diventare partner.
                     </p>
                 </div>
+            </section>
+
+            <section style={{ padding: '0 2rem 4rem', maxWidth: '1400px', margin: '-4rem auto 0', position: 'relative', zIndex: 10 }}>
+                <StoreLocator />
             </section>
 
             <section style={{ padding: '4rem 2rem', maxWidth: '1200px', margin: '0 auto' }}>
