@@ -78,7 +78,7 @@ export default function LineaEasyProPage() {
               <span className={styles.gradient}>Grande Dentro</span>
             </h1>
             <p className={styles.heroDesc}>
-              Un TOP computer travestito da Mini-PC. Potenza, versatilità e compattezza per ogni esigenza, dall'ufficio all'home entertainment.
+              Un TOP computer travestito da Mini-PC. Se nella botte piccola sta il vino buono, nel nuovo Winblu EASY Pro il formato da 1 litro si sposa con la tecnologia più avanzata.
             </p>
             <div className={styles.heroCTAs}>
               <Link href="/punti-vendita" className={styles.ctaPrimary}>
@@ -115,13 +115,13 @@ export default function LineaEasyProPage() {
           <div className={`${styles.bentoCard} ${styles.cardLarge}`}>
             <div className={styles.cardContent}>
               <Minimize2 size={48} className={styles.cardIcon} />
-              <h2 className={styles.cardTitle}>Spazio e Potenza Ridefiniti</h2>
+              <h2 className={styles.cardTitle}>Vero "Salvaspazio"</h2>
               <p className={styles.cardText}>
-                Winblu Easy Pro sfida le leggi della fisica. Nonostante le dimensioni ridotte, offre prestazioni paragonabili a un desktop tower tradizionale.
+                Solo 20.5 cm di base, 17.6 cm di profondità ed un’altezza di 3.3 cm. EASY Pro è progettato per occupare il minimo spazio per il massimo dell’ergonomia.
               </p>
               <div className={styles.cardReveal}>
                 <p className={styles.cardText}>
-                  Ideale per scrivanie minimaliste, sale riunioni e postazioni di lavoro flessibili. Può essere montato direttamente dietro un monitor grazie al supporto VESA incluso.
+                  Posizionalo in verticale con il piedistallo, o applicalo sul retro del monitor con il supporto VESA. Perfetto per digital signage e postazioni minimal.
                 </p>
               </div>
             </div>
@@ -130,10 +130,10 @@ export default function LineaEasyProPage() {
           <div className={`${styles.bentoCard} ${styles.cardSmall} ${styles.cardHighlight}`}>
             <div className={styles.cardContent}>
               <Layout size={36} className={styles.cardIcon} style={{ color: '#0160A9' }} />
-              <h3 className={styles.cardTitle}>Full I/O</h3>
+              <h3 className={styles.cardTitle}>3 Monitor 4K</h3>
               <div className={styles.cardReveal}>
                 <p className={styles.cardTextSmall}>
-                  Non rinunciare a nulla: USB-C, HDMI, DisplayPort e connettori audio per collegare tutte le tue periferiche.
+                  Grafica Intel® UHD per risoluzione 4K UHD su fino a 3 display contemporaneamente (2x DP + 1x HDMI).
                 </p>
               </div>
             </div>
@@ -142,12 +142,47 @@ export default function LineaEasyProPage() {
           <div className={`${styles.bentoCard} ${styles.cardMedium}`}>
             <div className={styles.cardContent}>
               <Cpu size={48} className={styles.cardIcon} />
-              <h3 className={styles.cardTitle}>Intel Core Power</h3>
+              <h3 className={styles.cardTitle}>Performance da Desktop</h3>
               <p className={styles.cardText}>
-                Equipaggiato con processori Intel Core fino all'i7, Easy Pro gestisce multitasking e carichi di lavoro intensi con facilità.
+                Equipaggiato con CPU Intel® Core™ di 12ᴬ e 13ᴬ Gen (i3, i5, i7 a 65W) per velocità da autentico fuoriserie.
               </p>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Detailed Features Section - Restored Original Content */}
+      <section style={{ padding: '4rem 2rem', background: '#111', color: '#fff' }}>
+        <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            style={{ display: 'grid', gap: '4rem' }}
+          >
+            <div>
+              <h2 style={{ fontSize: '2.5rem', marginBottom: '1.5rem', color: '#00d2ff' }}>Performance da Desktop e completa espandibilità</h2>
+              <p style={{ fontSize: '1.1rem', lineHeight: '1.8', color: '#ccc' }}>
+                Performance potenti con i Mini EASY Pro grazie ai processori <strong>Intel® Core™ di 12A e 13A generazione</strong> per desktop, che offrono notevoli miglioramenti delle prestazioni per una maggiore produttività e un intrattenimento sbalorditivo.
+                Easy Pro supporta <strong>CPU da 65 watt</strong> ed è in grado quindi di gestire compiti di calcolo intensivi. Supporta fino a <strong>64GB di memoria veloce DDR4 3200Mhz</strong> che assicura un multitasking fluido e un design a due unità di archiviazione con un <strong>SSD M.2 PCIe® 3.0 x4</strong> e un drive da 2.5’’, il mix perfetto di trasferimenti di dati veloci e alta capacità di archiviazione.
+              </p>
+            </div>
+
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '3rem' }}>
+              <div>
+                <h3 style={{ fontSize: '1.8rem', marginBottom: '1rem', color: '#fff' }}>Connettività Flessibile</h3>
+                <p style={{ lineHeight: '1.7', color: '#aaa' }}>
+                  EASY Pro offre una connettività veloce e completa con n°2 porte <strong>USB 3.2 Gen2 Type C®</strong> e n°2 porte USB 3.2 Gen1 Type A sul pannello frontale, più n°2 porte USB 3.2 Gen1 e n°2 porte USB 2.0 Type A sul pannello posteriore. Il massimo della connettività è assicurato dalla <strong>LAN 2.5Gb</strong> e dal <strong>Wi-Fi 6 con Bluetooth 5.2</strong>, il quale permette velocità di trasferimento fino a 2.4Gbps. Inoltre la porta configurabile consente di aggiungere un connettore VGA oppure una porta COM/Seriale a scelta.
+                </p>
+              </div>
+              <div>
+                <h3 style={{ fontSize: '1.8rem', marginBottom: '1rem', color: '#fff' }}>Risoluzione 4K UHD</h3>
+                <p style={{ lineHeight: '1.7', color: '#aaa' }}>
+                  Il mini Pc EASY Pro è dotato di grafica <strong>Intel® UHD integrata</strong> per visualizzare video e immagini con una risoluzione <strong>4K UHD</strong> sorprendente. Con n°2 connettori DisplayPort e una porta HDMI (porta VGA opzionale), vi permette di estendere il vostro spazio di lavoro fino a <strong>n°3 display</strong>.
+                </p>
+              </div>
+            </div>
+          </motion.div>
         </div>
       </section>
 
