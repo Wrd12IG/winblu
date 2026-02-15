@@ -7,6 +7,10 @@ const nextConfig: NextConfig = {
         protocol: 'https',
         hostname: 'www.winblu.it',
       },
+      {
+        protocol: 'https',
+        hostname: 'winblu.it',
+      },
     ],
   },
 };

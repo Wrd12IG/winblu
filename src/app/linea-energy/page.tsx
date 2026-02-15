@@ -1,118 +1,186 @@
+"use client";
+
 import Link from 'next/link';
 import Image from 'next/image';
-import styles from '../linea-t-rok/linea-t-rok.module.css'; // Reusing styles for consistency
-import { Shield, Zap, Cpu, Monitor, Wifi, Award } from 'lucide-react';
+import styles from '../styles/product-bento.module.css';
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
+import SpecsCards from "@/components/SpecsCards";
+import { SpecCategory } from "@/components/SpecsAccordion";
+import B2BCTASection from "@/components/B2BCTASection";
+import { motion } from 'framer-motion';
+import { Shield, Zap, Cpu, Monitor, Wifi, Award, Settings, HardDrive, Box } from 'lucide-react';
 
-export const metadata = {
-    title: 'Linea Energy | Winblu',
-    description: 'Winblu Energy rappresenta il best-seller della gamma Winblu: robustezza, qualità e design elegante.',
-};
+const GridBackground = () => (
+    <div className={styles.gridBg} />
+);
 
-export default function LineaEnergy() {
-    const features = [
+export default function LineaEnergyPage() {
+    const technicalSpecs: SpecCategory[] = [
         {
-            title: "Processori Intel Core",
-            description: "Equipaggiata con Intel Core i3, i5 e i7 di 12esima generazione per la massima produttività.",
-            icon: <Cpu />
+            id: 'cpu',
+            title: 'Processore',
+            icon: <Cpu size={24} />,
+            items: [
+                { label: 'Generazione', value: 'Intel® Core™ 13a/14a Gen' },
+                { label: 'Modelli', value: 'i3 / i5 / i7' },
+                { label: 'Performance', value: 'Hybrid Architecture' },
+            ]
         },
         {
-            title: "Grafica 4K/8K",
-            description: "Intel UHD Graphics con supporto HDR fino a 8K o GPU NVIDIA GTX dedicata.",
-            icon: <Monitor />
+            id: 'graphics',
+            title: 'Grafica',
+            icon: <Monitor size={24} />,
+            items: [
+                { label: 'Integrata', value: 'Intel® UHD Graphics 700' },
+                { label: 'Opzionale', value: 'NVIDIA® GeForce® GTX Legacy' },
+                { label: 'Output', value: 'HDMI 2.1 / DisplayPort' },
+            ]
         },
         {
-            title: "Connettività Completa",
-            description: "USB 3.1 frontali, USB 3.2 posteriori e supporto Wi-Fi 6 opzionale.",
-            icon: <Wifi />
+            id: 'warranty',
+            title: 'Garanzia On-Site',
+            icon: <Shield size={24} />,
+            items: [
+                { label: 'Durata', value: '24 Mesi Standard' },
+                { label: 'Estensione', value: 'Opzionale fino a 36 Mesi' },
+                { label: 'Servizio', value: 'Intervento a Domicilio' },
+            ]
+        },
+        {
+            id: 'design',
+            title: 'Design & Build',
+            icon: <Box size={24} />,
+            items: [
+                { label: 'Case', value: 'Mid-Tower ATX' },
+                { label: 'Frontale', value: 'Carbon Fiber Texture' },
+                { label: 'Materiali', value: 'Acciaio SGCC 0.6mm' },
+            ]
         }
     ];
 
     return (
         <div className={styles.container}>
+            <GridBackground />
+
             {/* Hero Section */}
             <section className={styles.hero}>
                 <div className={styles.heroContent}>
-                    <h1 className={styles.heroTitle}>Linea Energy</h1>
-                    <h2 className={styles.heroSubtitle}>Qualità e Affidabilità</h2>
-                    <p className={styles.heroDescription}>
-                        Il best-seller della gamma Winblu che combina robustezza e qualità dei materiali con l&apos;eleganza e l&apos;ergonomia del design.
-                    </p>
-                </div>
-            </section>
-
-            {/* Main Image Setup */}
-            <div style={{ padding: '0 20px', maxWidth: '1200px', margin: '0 auto' }}>
-                <div style={{ position: 'relative', width: '100%', aspectRatio: '16/9', borderRadius: '20px', overflow: 'hidden', boxShadow: '0 20px 40px rgba(0,0,0,0.3)' }}>
-                    <Image
-                        src="/products/energy/energy-hero.jpg"
-                        alt="Winblu Energy Setup"
-                        fill
-                        style={{ objectFit: 'cover' }}
-                    />
-                </div>
-            </div>
-
-            {/* Features Section */}
-            <section className={styles.features}>
-                <div className={styles.featuresContent}>
-                    <h2>Prestazioni e Versatilità</h2>
-                    <div className={styles.featuresGrid}>
-                        <div className={styles.featureItem}>
-                            <Cpu className={styles.featureIcon} />
-                            <h4>Standard Energy</h4>
-                            <p>Ideale per ufficio e casa con processori Intel Core di 12a generazione.</p>
-                        </div>
-                        <div className={styles.featureItem}>
-                            <Monitor className={styles.featureIcon} />
-                            <h4>Energy 2</h4>
-                            <p>Potenziata con GPU NVIDIA GeForce GTX per creator e media streamer.</p>
-                        </div>
-                        <div className={styles.featureItem}>
-                            <Shield className={styles.featureIcon} />
-                            <h4>Garanzia On-Site</h4>
-                            <p>24 mesi di assistenza presso il tuo domicilio o ufficio, estendibile a 36.</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            {/* Detail Showcase */}
-            <section style={{ padding: '80px 20px', maxWidth: '1200px', margin: '0 auto' }}>
-                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '40px', alignItems: 'center' }}>
-                    <div>
-                        <Image
-                            src="/products/energy/energy-tower.jpg"
-                            alt="Energy Tower"
-                            width={500}
-                            height={500}
-                            style={{ width: '100%', height: 'auto', borderRadius: '12px' }}
-                        />
-                    </div>
-                    <div style={{ color: 'rgba(255,255,255,0.7)', fontSize: '1.1rem', lineHeight: '1.8' }}>
-                        <h3 style={{ color: '#00d2ff', fontSize: '2rem', marginBottom: '1.5rem' }}>Design ed Ergonomia</h3>
-                        <p>
-                            Il case della linea Energy è progettato per essere funzionale ed elegante.
-                            Il pannello frontale con texture carbon-fiber garantisce un look moderno,
-                            mentre l&apos;accesso facilitato alle porte I/O permette un utilizzo quotidiano senza stress.
+                    <motion.div
+                        className={styles.heroText}
+                        initial={{ opacity: 0, x: -50 }}
+                        animate={{ opacity: 1, x: 0 }}
+                        transition={{ duration: 0.8 }}
+                    >
+                        <span className={styles.heroTag}>Linea Energy</span>
+                        <h1 className={styles.heroTitle}>
+                            Qualità e<br />
+                            <span className={styles.gradient}>Affidabilità</span>
+                        </h1>
+                        <p className={styles.heroDesc}>
+                            Il best-seller della gamma Winblu. Una combinazione perfetta di robustezza, qualità dei materiali ed eleganza per ogni ambiente lavorativo.
                         </p>
-                        <div style={{ marginTop: '20px', borderRadius: '12px', overflow: 'hidden' }}>
+                        <div className={styles.heroCTAs}>
+                            <Link href="/punti-vendita" className={styles.ctaPrimary}>
+                                Configura Ora
+                            </Link>
+                            <Link href="/supporto" className={styles.ctaSecondary}>
+                                Servizi e Garanzia
+                            </Link>
+                        </div>
+                    </motion.div>
+
+                    <motion.div
+                        className={styles.heroVisual}
+                        initial={{ opacity: 0, scale: 0.9 }}
+                        animate={{ opacity: 1, scale: 1 }}
+                        transition={{ duration: 0.8, delay: 0.2 }}
+                    >
+                        <div className={styles.heroImageContainer}>
                             <Image
-                                src="/products/energy/energy-io.jpg"
-                                alt="Energy I/O Detail"
-                                width={400}
-                                height={200}
-                                style={{ width: '100%', height: 'auto' }}
+                                src="/assets/energy-hero.png"
+                                alt="Winblu Energy Tower"
+                                fill
+                                className={styles.heroProductImage}
+                                priority
                             />
                         </div>
+                    </motion.div>
+                </div>
+            </section>
+
+            {/* Bento Grid Section */}
+            <section className={styles.bentoSection}>
+                <div className={styles.bentoGrid}>
+                    <div className={`${styles.bentoCard} ${styles.cardLarge}`}>
+                        <div className={styles.cardContent}>
+                            <Award size={48} className={styles.cardIcon} />
+                            <h2 className={styles.cardTitle}>Il Cuore Pulsante del Business</h2>
+                            <p className={styles.cardText}>
+                                Progettata per garantire continuità operativa e prestazioni solide. Il case con texture in fibra di carbonio conferisce un look professionale che si adatta a qualsiasi ufficio moderno.
+                            </p>
+                            <div className={styles.cardReveal}>
+                                <p className={styles.cardText}>
+                                    Oltre all'estetica, la Linea Energy offre un'accessibilità superiore per la manutenzione e l'upgrade, garantendo un lungo ciclo di vita al tuo investimento IT.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className={`${styles.bentoCard} ${styles.cardSmall} ${styles.cardHighlight}`}>
+                        <div className={styles.cardContent}>
+                            <Shield size={36} className={styles.cardIcon} style={{ color: '#0160A9' }} />
+                            <h3 className={styles.cardTitle}>On-Site Service</h3>
+                            <div className={styles.cardReveal}>
+                                <p className={styles.cardTextSmall}>
+                                    Dormi sonni tranquilli con la garanzia On-Site: in caso di guasto, un tecnico verrà direttamente da te per risolvere il problema.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className={`${styles.bentoCard} ${styles.cardMedium}`}>
+                        <div className={styles.cardContent}>
+                            <Monitor size={48} className={styles.cardIcon} />
+                            <h3 className={styles.cardTitle}>Versatilità Grafica</h3>
+                            <p className={styles.cardText}>
+                                Dagli applicativi Office alla creazione di contenuti leggeri, la grafica Intel UHD (o la GPU NVIDIA opzionale) supporta flussi di lavoro multi-monitor fino all'8K.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </section>
 
-            <div className={styles.ctaSection}>
-                <Link href="/punti-vendita" className={styles.ctaButton}>
-                    Trova un punto vendita
-                </Link>
-            </div>
+            {/* Specs Cards Section */}
+            <section style={{ padding: '4rem 2rem', background: 'rgba(0,0,0,0.2)' }}>
+                <div style={{ maxWidth: '1600px', margin: '0 auto' }}>
+                    <motion.h2
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        style={{
+                            fontSize: '2.5rem',
+                            fontWeight: '700',
+                            textAlign: 'center',
+                            marginBottom: '4rem',
+                            background: 'linear-gradient(135deg, #fff 0%, #0160A9 100%)',
+                            WebkitBackgroundClip: 'text',
+                            WebkitTextFillColor: 'transparent',
+                            backgroundClip: 'text'
+                        }}
+                    >
+                        Specifiche Tecniche
+                    </motion.h2>
+                    <SpecsCards specs={technicalSpecs.map(spec => ({
+                        id: spec.id,
+                        title: spec.title,
+                        icon: spec.icon,
+                        description: spec.items.map(i => `${i.label}: ${i.value}`).join(' • ')
+                    }))} />
+                </div>
+            </section>
+
+            <B2BCTASection />
         </div>
     );
 }

@@ -2,59 +2,59 @@
 
 import Link from 'next/link';
 import Image from 'next/image';
-import styles from '../styles/product-bento.module.css';
+import styles from '../../styles/product-bento.module.css';
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import SpecsCards from "@/components/SpecsCards";
 import { SpecCategory } from "@/components/SpecsAccordion";
 import B2BCTASection from "@/components/B2BCTASection";
 import { motion } from 'framer-motion';
-import { Cpu, Zap, Database, Activity, Shield, Box, Monitor, Server } from 'lucide-react';
+import { MousePointer2, Layout, Sliders, Cpu, Move, PenTool } from 'lucide-react';
 
 const GridBackground = () => (
     <div className={styles.gridBg} />
 );
 
-export default function LineaExperiencePage() {
+export default function EVisionTouchPage() {
     const technicalSpecs: SpecCategory[] = [
         {
-            id: 'cpu-power',
-            title: 'Processing Power',
+            id: 'touch',
+            title: 'Display Interattivo',
+            icon: <MousePointer2 size={24} />,
+            items: [
+                { label: 'Tipologia', value: 'Capacitive Multi-Touch' },
+                { label: 'Punti', value: '10 Punti di Tocco Simultanei' },
+                { label: 'Superficie', value: 'Vetro Edge-to-Edge 7H' },
+            ]
+        },
+        {
+            id: 'ergonomics',
+            title: 'Ergonomia',
+            icon: <Move size={24} />,
+            items: [
+                { label: 'Stand', value: 'Dual-Hinge Stand' },
+                { label: 'Inclinazione', value: 'Da -5° a +60°' },
+                { label: 'Utilizzo', value: 'Desktop & Drafting Mode' },
+            ]
+        },
+        {
+            id: 'performance',
+            title: 'Potenza Creativa',
             icon: <Cpu size={24} />,
             items: [
-                { label: 'CPU', value: 'Intel® Core™ Ultra / Xeon W' },
-                { label: 'Cores', value: 'Fino a 56 Cores' },
-                { label: 'Chipset', value: 'W790 Workstation' },
-            ]
-        },
-        {
-            id: 'gpu-acceleration',
-            title: 'GPU Acceleration',
-            icon: <Zap size={24} />,
-            items: [
-                { label: 'GPU', value: 'Multi-GPU Support' },
-                { label: 'NVIDIA', value: 'RTX 6000 Ada Gen / GeForce RTX 4090' },
-                { label: 'VRAM', value: 'Fino a 48GB GDDR6 ECC' },
-            ]
-        },
-        {
-            id: 'memory',
-            title: 'Memory & Storage',
-            icon: <Database size={24} />,
-            items: [
-                { label: 'RAM', value: 'Fino a 2TB DDR5 ECC' },
-                { label: 'Storage', value: 'M.2 PCIe Gen5 NVMe' },
-                { label: 'RAID', value: '0/1/5/10 Support' },
+                { label: 'CPU', value: 'Intel® Core™ i5 / i7' },
+                { label: 'Grafica', value: 'Intel® Iris® Xe Graphics' },
+                { label: 'RAM', value: 'DDR4/DDR5 fino a 64GB' },
             ]
         },
         {
             id: 'connectivity',
-            title: 'Pro Connectivity',
-            icon: <Server size={24} />,
+            title: 'IO & Porte',
+            icon: <Layout size={24} />,
             items: [
-                { label: 'LAN', value: 'Dual 10GbE' },
-                { label: 'Thunderbolt', value: 'Thunderbolt 4 Ports' },
-                { label: 'Remote', value: 'IPMI Management' },
+                { label: 'USB Laterali', value: '2x USB 3.0 (Accesso Rapido)' },
+                { label: 'Video Out', value: 'HDMI + Daisy Chain Support' },
+                { label: 'Lettore', value: 'SD Card Reader Integrato' },
             ]
         }
     ];
@@ -72,20 +72,20 @@ export default function LineaExperiencePage() {
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.8 }}
                     >
-                        <span className={styles.heroTag}>Winblu Experience</span>
+                        <span className={styles.heroTag}>eVision Touch</span>
                         <h1 className={styles.heroTitle}>
-                            Professional<br />
-                            <span className={styles.gradient}>Calculus</span>
+                            Il Tuo Tocco<br />
+                            <span className={styles.gradient}>Creativo</span>
                         </h1>
                         <p className={styles.heroDesc}>
-                            La workstation su misura per te. Prestazioni senza compromessi e affidabilità certificata per i carichi di lavoro più critici: AI, Deep Learning, BIM e Rendering 8K.
+                            Interagisci direttamente con i tuoi contenuti. Un display reattivo e uno stand ergonomico per liberare la tua creatività.
                         </p>
                         <div className={styles.heroCTAs}>
                             <Link href="/punti-vendita" className={styles.ctaPrimary}>
-                                Configura Workstation
+                                Configura
                             </Link>
-                            <Link href="/supporto" className={styles.ctaSecondary}>
-                                Consulenza Tecnica
+                            <Link href="/linea-evision" className={styles.ctaSecondary}>
+                                Torna alla Serie
                             </Link>
                         </div>
                     </motion.div>
@@ -98,8 +98,8 @@ export default function LineaExperiencePage() {
                     >
                         <div className={styles.heroImageContainer}>
                             <Image
-                                src="/assets/experience-hero.png"
-                                alt="Winblu Experience Workstation"
+                                src="/assets/evision/touch-hero.png"
+                                alt="Winblu eVision Touch"
                                 fill
                                 className={styles.heroProductImage}
                                 priority
@@ -114,37 +114,35 @@ export default function LineaExperiencePage() {
                 <div className={styles.bentoGrid}>
                     <div className={`${styles.bentoCard} ${styles.cardLarge}`}>
                         <div className={styles.cardContent}>
-                            <Activity size={48} className={styles.cardIcon} />
-                            <h2 className={styles.cardTitle}>Performance Certificata</h2>
+                            <PenTool size={48} className={styles.cardIcon} />
+                            <h2 className={styles.cardTitle}>Progettato per l'Interazione</h2>
                             <p className={styles.cardText}>
-                                Ogni workstation Experience è testata e certificata per i principali software professionali (ISV) come Adobe, Autodesk e Dassault Systèmes, garantendo stabilità assoluta.
+                                Che tu stia disegnando, navigando o presentando, eVision Touch risponde a ogni tuo gesto con fluidità e precisione.
                             </p>
                             <div className={styles.cardReveal}>
                                 <p className={styles.cardText}>
-                                    Sistemi di raffreddamento a liquido custom e airflow ottimizzato permettono di mantenere le massime frequenze anche durante rendering di giorni interi.
+                                    La tecnologia touch capacitiva a 10 punti permette l'uso simultaneo di più dita, ideale per zoomare, ruotare e scorrere con naturalezza.
                                 </p>
                             </div>
                         </div>
                     </div>
 
-                    <div className={`${styles.bentoCard} ${styles.cardSmall} ${styles.cardHighlight}`}>
+                    <div className={`${styles.bentoCard} ${styles.cardMedium} ${styles.cardHighlight}`}>
                         <div className={styles.cardContent}>
-                            <Box size={36} className={styles.cardIcon} style={{ color: '#0160A9' }} />
-                            <h3 className={styles.cardTitle}>AI Ready</h3>
-                            <div className={styles.cardReveal}>
-                                <p className={styles.cardTextSmall}>
-                                    Ottimizzata per carichi di lavoro di Intelligenza Artificiale e Machine Learning grazie alle più potenti GPU sul mercato.
-                                </p>
-                            </div>
+                            <Sliders size={48} className={styles.cardIcon} style={{ color: '#0160A9' }} />
+                            <h3 className={styles.cardTitle}>Ergonomia Totale</h3>
+                            <p className={styles.cardText}>
+                                Inclina lo schermo fino a 60 gradi per trovare l'angolazione perfetta per scrivere o disegnare.
+                            </p>
                         </div>
                     </div>
 
                     <div className={`${styles.bentoCard} ${styles.cardMedium}`}>
                         <div className={styles.cardContent}>
-                            <Shield size={48} className={styles.cardIcon} />
-                            <h3 className={styles.cardTitle}>Mission Critical</h3>
+                            <Layout size={48} className={styles.cardIcon} />
+                            <h3 className={styles.cardTitle}>Chiosco Mode</h3>
                             <p className={styles.cardText}>
-                                Memorie ECC (Error Correction Code) per prevenire la corruzione dei dati e alimentatori ridondanti per garantire la business continuity.
+                                Soluzione perfetta anche per punti vendita e info-point interattivi, grazie alla robustezza del pannello frontale in vetro.
                             </p>
                         </div>
                     </div>

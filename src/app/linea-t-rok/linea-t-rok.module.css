@@ -4,20 +4,20 @@
   background-color: #0c0c14;
   color: #e2e8f0;
   overflow-x: hidden;
-  --accent-cyan: #00f0ff;
-  --accent-blue: #3b82f6;
-  --bg-card: rgba(255, 255, 255, 0.02);
+  --accent-blue: #0160A9;
+  --accent-glow: rgba(1, 96, 169, 0.5);
+  --bg-card: rgba(255, 255, 255, 0.03);
   --border-card: rgba(255, 255, 255, 0.08);
 }
 
 /* Hero Section */
 .hero {
   position: relative;
-  min-height: 100vh;
+  min-height: 90vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 240px 2rem 4rem;
+  padding: 10rem 2rem 4rem;
   overflow: hidden;
   background: radial-gradient(circle at 50% 30%, #1a1a2e 0%, #0c0c14 70%);
 }
@@ -26,7 +26,7 @@
   width: 100%;
   max-width: 1400px;
   display: grid;
-  grid-template-columns: 1fr 0.8fr;
+  grid-template-columns: 1fr 1fr;
   gap: 4rem;
   align-items: center;
   z-index: 2;
@@ -35,26 +35,27 @@
 .heroText {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1.5rem;
+  text-align: left;
 }
 
 .title {
-  font-size: 5rem;
+  font-size: clamp(3rem, 7vw, 5.5rem);
   font-weight: 800;
-  line-height: 1.1;
+  line-height: 1;
   text-transform: uppercase;
   letter-spacing: -0.02em;
-  background: linear-gradient(to right, #ffffff 20%, var(--accent-cyan));
+  background: linear-gradient(135deg, #fff 0%, var(--accent-blue) 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .subtitle {
-  font-size: 1.5rem;
-  color: var(--accent-cyan);
-  font-weight: 600;
-  letter-spacing: 0.1em;
+  font-size: 1rem;
+  color: var(--accent-blue);
+  font-weight: 700;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
   display: flex;
   align-items: center;
@@ -63,21 +64,21 @@
 
 .subtitle::before {
   content: '';
-  width: 50px;
+  width: 40px;
   height: 2px;
-  background: var(--accent-cyan);
+  background: var(--accent-blue);
 }
 
 .heroDescription {
   font-size: 1.25rem;
-  line-height: 1.7;
+  line-height: 1.6;
   color: #94a3b8;
   max-width: 600px;
 }
 
 .heroImageWrapper {
   position: relative;
-  height: 600px;
+  height: 450px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -85,149 +86,199 @@
 
 .heroImage {
   object-fit: contain;
-  filter: drop-shadow(0 0 50px rgba(0, 240, 255, 0.2));
+  filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.5));
   animation: float 6s ease-in-out infinite;
 }
 
 @keyframes float {
-  0% {
+
+  0%,
+  100% {
     transform: translateY(0px);
   }
 
   50% {
     transform: translateY(-20px);
   }
-
-  100% {
-    transform: translateY(0px);
-  }
 }
 
-/* Intro / Features Section */
-.intro {
-  padding: 8rem 2rem;
-  background: linear-gradient(180deg, #0c0c14 0%, #13131f 100%);
-}
-
-.introContent {
-  max-width: 1000px;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.introText {
-  font-size: 2rem;
-  line-height: 1.5;
-  color: #fff;
-  font-weight: 300;
-}
-
-/* Bento Grid Gallery */
-.gallery {
-  padding: 8rem 2rem;
-}
-
-.sectionTitle {
-  font-size: 3rem;
-  font-weight: 800;
-  text-align: center;
-  margin-bottom: 5rem;
-  color: #fff;
-}
-
-.grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
+/* Bento Grid System */
+.bentoSection {
+  padding: 4rem 2rem;
   max-width: 1400px;
   margin: 0 auto;
 }
 
-.card {
+.bentoGrid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 1.5rem;
+  grid-auto-rows: minmax(200px, auto);
+}
+
+/* Bento Card Base */
+.bentoCard {
   background: var(--bg-card);
   border: 1px solid var(--border-card);
   border-radius: 24px;
-  overflow: hidden;
+  padding: 2.5rem;
   position: relative;
-  transition: all 0.4s ease;
-  aspect-ratio: 4/3;
+  overflow: hidden;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  flex-direction: column;
   backdrop-filter: blur(10px);
 }
 
-/* Span classes for bento layout */
-.cardLarge {
-  grid-column: span 2;
-  aspect-ratio: 2/1;
+.bentoCard::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 3px;
+  background: linear-gradient(90deg, var(--accent-blue), #60a5fa);
+  transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 10;
+  box-shadow: 0 0 15px var(--accent-glow);
 }
 
-.cardTall {
-  grid-row: span 2;
-  aspect-ratio: 3/4;
+.bentoCard:hover::after {
+  width: 100%;
 }
 
-.card:hover {
+.bentoCard:hover {
   transform: translateY(-8px);
-  border-color: var(--accent-cyan);
-  box-shadow: 0 20px 40px rgba(0, 240, 255, 0.1);
+  border-color: rgba(1, 96, 169, 0.3);
+  box-shadow: 0 20px 40px rgba(1, 96, 169, 0.15);
+}
+
+/* Card Sizes */
+.cardLarge {
+  grid-column: span 8;
+  grid-row: span 2;
+}
+
+.cardMedium {
+  grid-column: span 6;
+  grid-row: span 2;
+}
+
+.cardSmall {
+  grid-column: span 4;
+  grid-row: span 1;
+}
+
+.cardOneThird {
+  grid-column: span 4;
+  grid-row: span 2;
+}
+
+.cardHighlight {
+  background: linear-gradient(135deg, rgba(1, 96, 169, 0.08), transparent);
 }
 
 .cardImageContainer {
+  position: relative;
   width: 100%;
-  height: 100%;
-  padding: 2rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  height: 250px;
+  margin-bottom: 2rem;
 }
 
-.card img {
+.modelImage {
   width: 100%;
   height: 100%;
   object-fit: contain;
-  transition: transform 0.5s ease;
+  mix-blend-mode: lighten;
 }
 
-.card:hover img {
-  transform: scale(1.05);
+.cardContent {
+  position: relative;
+  z-index: 1;
 }
 
-/* CTA Section */
-.ctaSection {
-  padding: 10rem 2rem;
-  text-align: center;
-  background: radial-gradient(circle at center, rgba(59, 130, 246, 0.1) 0%, transparent 70%);
+.cardTag {
+  color: var(--accent-blue);
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 1rem;
+  display: block;
 }
 
-.ctaContent {
-  max-width: 800px;
-  margin: 0 auto;
+.cardTitle {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.cardText {
+  color: #94a3b8;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+/* Tech Features Grid */
+.featuresGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 4rem;
+}
+
+.featureItem {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
-  align-items: center;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 2rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border-card);
+  border-radius: 20px;
+}
+
+.featureIcon {
+  color: var(--accent-blue);
+  width: 32px;
+  height: 32px;
+}
+
+/* CTAs */
+.ctaGroup {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
 }
 
 .ctaButton {
-  background: transparent;
-  border: 2px solid var(--accent-cyan);
-  color: var(--accent-cyan);
-  padding: 1rem 3rem;
-  border-radius: 100px;
+  padding: 1rem 2.5rem;
+  border-radius: 12px;
   font-weight: 700;
-  font-size: 1.1rem;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  transition: all 0.3s ease;
   text-decoration: none;
-  display: inline-flex;
-  align-items: center;
-  gap: 1rem;
+  transition: all 0.3s ease;
+  background: var(--accent-blue);
+  color: #fff;
 }
 
 .ctaButton:hover {
-  background: var(--accent-cyan);
-  color: #0c0c14;
-  box-shadow: 0 0 30px rgba(0, 240, 255, 0.4);
+  filter: brightness(1.2);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px var(--accent-glow);
+}
+
+.ctaSecondary {
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Custom Gradients */
+.gradientText {
+  background: linear-gradient(135deg, #fff 0%, var(--accent-blue) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 /* Responsive */
@@ -239,24 +290,20 @@
 
   .heroText {
     align-items: center;
+    text-align: center;
   }
 
-  .subtitle::before {
-    display: none;
-  }
-
-  .title {
-    font-size: 3.5rem;
-  }
-
-  .grid {
+  .bentoGrid {
     grid-template-columns: 1fr;
   }
 
   .cardLarge,
-  .cardTall {
+  .cardMedium,
+  .cardSmall {
     grid-column: span 1;
-    grid-row: span 1;
-    aspect-ratio: 4/3;
+  }
+
+  .featuresGrid {
+    grid-template-columns: 1fr;
   }
 }

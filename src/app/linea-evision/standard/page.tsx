@@ -2,59 +2,59 @@
 
 import Link from 'next/link';
 import Image from 'next/image';
-import styles from '../styles/product-bento.module.css';
+import styles from '../../styles/product-bento.module.css';
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import SpecsCards from "@/components/SpecsCards";
 import { SpecCategory } from "@/components/SpecsAccordion";
 import B2BCTASection from "@/components/B2BCTASection";
 import { motion } from 'framer-motion';
-import { Cpu, Zap, Database, Activity, Shield, Box, Monitor, Server } from 'lucide-react';
+import { Monitor, Camera, Wifi, Cpu, Layers, MousePointer2 } from 'lucide-react';
 
 const GridBackground = () => (
     <div className={styles.gridBg} />
 );
 
-export default function LineaExperiencePage() {
+export default function EVisionStandardPage() {
     const technicalSpecs: SpecCategory[] = [
         {
-            id: 'cpu-power',
-            title: 'Processing Power',
+            id: 'display',
+            title: 'Display Zero-Frame',
+            icon: <Monitor size={24} />,
+            items: [
+                { label: 'Dimensioni', value: '23.8" o 27" Full HD (1920x1080)' },
+                { label: 'Tecnologia', value: 'IPS Level, Anti-Glare' },
+                { label: 'Design', value: '3-Side Borderless' },
+            ]
+        },
+        {
+            id: 'performance',
+            title: 'Performance',
             icon: <Cpu size={24} />,
             items: [
-                { label: 'CPU', value: 'Intel® Core™ Ultra / Xeon W' },
-                { label: 'Cores', value: 'Fino a 56 Cores' },
-                { label: 'Chipset', value: 'W790 Workstation' },
+                { label: 'CPU', value: 'Intel® Core™ i3 / i5 / i7' },
+                { label: 'RAM', value: 'Fino a 64GB DDR4/DDR5' },
+                { label: 'Storage', value: 'M.2 NVMe SSD + 2.5" SATA' },
             ]
         },
         {
-            id: 'gpu-acceleration',
-            title: 'GPU Acceleration',
-            icon: <Zap size={24} />,
+            id: 'multimedia',
+            title: 'Multimedia',
+            icon: <Camera size={24} />,
             items: [
-                { label: 'GPU', value: 'Multi-GPU Support' },
-                { label: 'NVIDIA', value: 'RTX 6000 Ada Gen / GeForce RTX 4090' },
-                { label: 'VRAM', value: 'Fino a 48GB GDDR6 ECC' },
-            ]
-        },
-        {
-            id: 'memory',
-            title: 'Memory & Storage',
-            icon: <Database size={24} />,
-            items: [
-                { label: 'RAM', value: 'Fino a 2TB DDR5 ECC' },
-                { label: 'Storage', value: 'M.2 PCIe Gen5 NVMe' },
-                { label: 'RAID', value: '0/1/5/10 Support' },
+                { label: 'Webcam', value: '5MP Pop-up Privacy Camera' },
+                { label: 'Audio', value: 'Speaker Stereo Integrati 2x3W' },
+                { label: 'Microfono', value: 'Dual Array Digital Mic' },
             ]
         },
         {
             id: 'connectivity',
-            title: 'Pro Connectivity',
-            icon: <Server size={24} />,
+            title: 'Connettività',
+            icon: <Wifi size={24} />,
             items: [
-                { label: 'LAN', value: 'Dual 10GbE' },
-                { label: 'Thunderbolt', value: 'Thunderbolt 4 Ports' },
-                { label: 'Remote', value: 'IPMI Management' },
+                { label: 'Wireless', value: 'Wi-Fi 6 + Bluetooth 5.2' },
+                { label: 'LAN', value: 'Gigabit Ethernet' },
+                { label: 'Porte', value: 'USB 3.2, HDMI, Audio Jack' },
             ]
         }
     ];
@@ -72,20 +72,20 @@ export default function LineaExperiencePage() {
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.8 }}
                     >
-                        <span className={styles.heroTag}>Winblu Experience</span>
+                        <span className={styles.heroTag}>eVision Standard</span>
                         <h1 className={styles.heroTitle}>
-                            Professional<br />
-                            <span className={styles.gradient}>Calculus</span>
+                            L'Eccellenza<br />
+                            <span className={styles.gradient}>Quotidiana</span>
                         </h1>
                         <p className={styles.heroDesc}>
-                            La workstation su misura per te. Prestazioni senza compromessi e affidabilità certificata per i carichi di lavoro più critici: AI, Deep Learning, BIM e Rendering 8K.
+                            Il perfetto equilibrio tra design minimalista e potenza operativa. La scelta ideale per uffici moderni e home office di stile.
                         </p>
                         <div className={styles.heroCTAs}>
                             <Link href="/punti-vendita" className={styles.ctaPrimary}>
-                                Configura Workstation
+                                Configura
                             </Link>
-                            <Link href="/supporto" className={styles.ctaSecondary}>
-                                Consulenza Tecnica
+                            <Link href="/linea-evision" className={styles.ctaSecondary}>
+                                Torna alla Serie
                             </Link>
                         </div>
                     </motion.div>
@@ -98,8 +98,8 @@ export default function LineaExperiencePage() {
                     >
                         <div className={styles.heroImageContainer}>
                             <Image
-                                src="/assets/experience-hero.png"
-                                alt="Winblu Experience Workstation"
+                                src="/assets/evision/standard-hero.png"
+                                alt="Winblu eVision Standard"
                                 fill
                                 className={styles.heroProductImage}
                                 priority
@@ -114,26 +114,29 @@ export default function LineaExperiencePage() {
                 <div className={styles.bentoGrid}>
                     <div className={`${styles.bentoCard} ${styles.cardLarge}`}>
                         <div className={styles.cardContent}>
-                            <Activity size={48} className={styles.cardIcon} />
-                            <h2 className={styles.cardTitle}>Performance Certificata</h2>
+                            <Layers size={48} className={styles.cardIcon} />
+                            <h2 className={styles.cardTitle}>Minimalismo Funzionale</h2>
                             <p className={styles.cardText}>
-                                Ogni workstation Experience è testata e certificata per i principali software professionali (ISV) come Adobe, Autodesk e Dassault Systèmes, garantendo stabilità assoluta.
+                                Dimentica i cavi. Con il mouse e la tastiera wireless inclusi e il design ultra-compatto, la tua scrivania sarà sempre ordinata e pronta per la produttività.
                             </p>
                             <div className={styles.cardReveal}>
                                 <p className={styles.cardText}>
-                                    Sistemi di raffreddamento a liquido custom e airflow ottimizzato permettono di mantenere le massime frequenze anche durante rendering di giorni interi.
+                                    Lo stand in metallo satinato garantisce stabilità ed eleganza, mentre il sistema di cable management nasconde ogni distrazione.
                                 </p>
                             </div>
                         </div>
                     </div>
 
-                    <div className={`${styles.bentoCard} ${styles.cardSmall} ${styles.cardHighlight}`}>
+                    <div className={`${styles.bentoCard} ${styles.cardMedium} ${styles.cardHighlight}`}>
                         <div className={styles.cardContent}>
-                            <Box size={36} className={styles.cardIcon} style={{ color: '#0160A9' }} />
-                            <h3 className={styles.cardTitle}>AI Ready</h3>
+                            <Camera size={48} className={styles.cardIcon} style={{ color: '#0160A9' }} />
+                            <h3 className={styles.cardTitle}>Privacy Garantita</h3>
+                            <p className={styles.cardText}>
+                                La webcam pop-up da 5MP appare solo quando ne hai bisogno.
+                            </p>
                             <div className={styles.cardReveal}>
                                 <p className={styles.cardTextSmall}>
-                                    Ottimizzata per carichi di lavoro di Intelligenza Artificiale e Machine Learning grazie alle più potenti GPU sul mercato.
+                                    Spingila verso il basso per disattivarla fisicamente. Nessuno potrà spiarti.
                                 </p>
                             </div>
                         </div>
@@ -141,10 +144,10 @@ export default function LineaExperiencePage() {
 
                     <div className={`${styles.bentoCard} ${styles.cardMedium}`}>
                         <div className={styles.cardContent}>
-                            <Shield size={48} className={styles.cardIcon} />
-                            <h3 className={styles.cardTitle}>Mission Critical</h3>
+                            <Monitor size={48} className={styles.cardIcon} />
+                            <h3 className={styles.cardTitle}>Visuale Immersiva</h3>
                             <p className={styles.cardText}>
-                                Memorie ECC (Error Correction Code) per prevenire la corruzione dei dati e alimentatori ridondanti per garantire la business continuity.
+                                Pannello IPS con bordi ultrasottili su tre lati per un'esperienza visiva senza interruzioni.
                             </p>
                         </div>
                     </div>
