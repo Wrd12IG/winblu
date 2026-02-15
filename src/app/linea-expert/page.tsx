@@ -115,13 +115,13 @@ export default function LineaExpertPage() {
           <div className={`${styles.bentoCard} ${styles.cardLarge}`}>
             <div className={styles.cardContent}>
               <Settings size={48} className={styles.cardIcon} />
-              <h2 className={styles.cardTitle}>Engineered for Professionals</h2>
+              <h2 className={styles.cardTitle}>Performance senza compromessi</h2>
               <p className={styles.cardText}>
-                Dal rendering 3D all'editing video 8K, passando per la simulazione scientifica. La linea Expert è ottimizzata per garantire la massima stabilità con i software professionali più esigenti.
+                Massima produttività e silenziosità: la workstation ideale per chi gestisce carichi di lavoro intensi con stile.
               </p>
               <div className={styles.cardReveal}>
                 <p className={styles.cardText}>
-                  Il case è progettato per un airflow ottimale e il massimo silenzio, permettendoti di concentrarti solo sul tuo lavoro.
+                  Progettato per i professionisti che non si accontentano, offre potenza di calcolo superiore ed un'estetica raffinata per ogni ambiente lavorativo.
                 </p>
               </div>
             </div>
@@ -130,10 +130,10 @@ export default function LineaExpertPage() {
           <div className={`${styles.bentoCard} ${styles.cardSmall} ${styles.cardHighlight}`}>
             <div className={styles.cardContent}>
               <Zap size={36} className={styles.cardIcon} style={{ color: '#0160A9' }} />
-              <h3 className={styles.cardTitle}>Zero Colli di Bottiglia</h3>
+              <h3 className={styles.cardTitle}>Potenza e Affidabilità</h3>
               <div className={styles.cardReveal}>
                 <p className={styles.cardTextSmall}>
-                  Connessioni Thunderbolt 4, LAN 10Gb e Wi-Fi 6E per trasferire terabyte di dati in pochi istanti.
+                  Componenti selezionati per garantire stabilità operativa 24/7 e certificazione ISV per i principali software professionali.
                 </p>
               </div>
             </div>
@@ -142,9 +142,9 @@ export default function LineaExpertPage() {
           <div className={`${styles.bentoCard} ${styles.cardMedium}`}>
             <div className={styles.cardContent}>
               <Activity size={48} className={styles.cardIcon} />
-              <h3 className={styles.cardTitle}>24/7 Operation</h3>
+              <h3 className={styles.cardTitle}>Design Funzionale</h3>
               <p className={styles.cardText}>
-                Componenti di classe server e alimentatori ad alta efficienza per garantire operatività continua senza interruzioni.
+                Un case progettato per un airflow ottimale e una facile espandibilità, mantenendo un profilo acustico minimo.
               </p>
             </div>
           </div>

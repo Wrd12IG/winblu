@@ -74,18 +74,18 @@ export default function LineaExperiencePage() {
                     >
                         <span className={styles.heroTag}>Winblu Experience</span>
                         <h1 className={styles.heroTitle}>
-                            Professional<br />
-                            <span className={styles.gradient}>Calculus</span>
+                            La Workstation<br />
+                            <span className={styles.gradient}>su misura per te</span>
                         </h1>
                         <p className={styles.heroDesc}>
-                            La workstation su misura per te. Prestazioni senza compromessi e affidabilità certificata per i carichi di lavoro più critici: AI, Deep Learning, BIM e Rendering 8K.
+                            Progettata per i professionisti più esigenti: grafica 3D, BIM, CAD e rendering avanzato. Potenza certificata e affidabilità senza compromessi.
                         </p>
                         <div className={styles.heroCTAs}>
                             <Link href="/punti-vendita" className={styles.ctaPrimary}>
                                 Configura Workstation
                             </Link>
                             <Link href="/supporto" className={styles.ctaSecondary}>
-                                Consulenza Tecnica
+                                Servizio Premium
                             </Link>
                         </div>
                     </motion.div>
@@ -98,7 +98,7 @@ export default function LineaExperiencePage() {
                     >
                         <div className={styles.heroImageContainer}>
                             <Image
-                                src="/assets/experience-hero.png"
+                                src="/assets/experience-workstation-hero.png"
                                 alt="Winblu Experience Workstation"
                                 fill
                                 className={styles.heroProductImage}
@@ -115,13 +115,13 @@ export default function LineaExperiencePage() {
                     <div className={`${styles.bentoCard} ${styles.cardLarge}`}>
                         <div className={styles.cardContent}>
                             <Activity size={48} className={styles.cardIcon} />
-                            <h2 className={styles.cardTitle}>Performance Certificata</h2>
+                            <h2 className={styles.cardTitle}>Tecnologia Professionale</h2>
                             <p className={styles.cardText}>
-                                Ogni workstation Experience è testata e certificata per i principali software professionali (ISV) come Adobe, Autodesk e Dassault Systèmes, garantendo stabilità assoluta.
+                                Workstation scalabili con Intel Xeon per prestazioni multitasking senza precedenti.
                             </p>
                             <div className={styles.cardReveal}>
                                 <p className={styles.cardText}>
-                                    Sistemi di raffreddamento a liquido custom e airflow ottimizzato permettono di mantenere le massime frequenze anche durante rendering di giorni interi.
+                                    Le workstation Winblu Experience sono il risultato di anni di ottimizzazione. Ogni dettaglio è pensato per chi trasforma le idee in realtà.
                                 </p>
                             </div>
                         </div>
@@ -130,10 +130,10 @@ export default function LineaExperiencePage() {
                     <div className={`${styles.bentoCard} ${styles.cardSmall} ${styles.cardHighlight}`}>
                         <div className={styles.cardContent}>
                             <Box size={36} className={styles.cardIcon} style={{ color: '#0160A9' }} />
-                            <h3 className={styles.cardTitle}>AI Ready</h3>
+                            <h3 className={styles.cardTitle}>Calcolo Estremo</h3>
                             <div className={styles.cardReveal}>
                                 <p className={styles.cardTextSmall}>
-                                    Ottimizzata per carichi di lavoro di Intelligenza Artificiale e Machine Learning grazie alle più potenti GPU sul mercato.
+                                    Supporto Intel Xeon-W e Core-X fino a 18 core/36 thread per rendering cinematografico.
                                 </p>
                             </div>
                         </div>
@@ -142,9 +142,9 @@ export default function LineaExperiencePage() {
                     <div className={`${styles.bentoCard} ${styles.cardMedium}`}>
                         <div className={styles.cardContent}>
                             <Shield size={48} className={styles.cardIcon} />
-                            <h3 className={styles.cardTitle}>Mission Critical</h3>
+                            <h3 className={styles.cardTitle}>Affidabilità 24/7</h3>
                             <p className={styles.cardText}>
-                                Memorie ECC (Error Correction Code) per prevenire la corruzione dei dati e alimentatori ridondanti per garantire la business continuity.
+                                Componenti testati per carichi di lavoro continui e sistemi di raffreddamento silenziosi. Memoria ECC per flussi di lavoro critici.
                             </p>
                         </div>
                     </div>

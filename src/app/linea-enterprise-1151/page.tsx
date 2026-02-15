@@ -74,11 +74,11 @@ export default function LineaEnterprise1151Page() {
                     >
                         <span className={styles.heroTag}>Winblu Enterprise</span>
                         <h1 className={styles.heroTitle}>
-                            Robustezza<br />
-                            <span className={styles.gradient}>Essenziale</span>
+                            Winblu Enterprise<br />
+                            <span className={styles.gradient}>1151</span>
                         </h1>
                         <p className={styles.heroDesc}>
-                            Server entry-level monoprocessore basati su Intel Xeon E. La soluzione ideale per piccole e medie imprese che necessitano di un primo server affidabile e sicuro.
+                            I server Winblu della linea Enterprise 1151 supportano le più recenti tecnologie con le CPU Intel® Xeon® E. Prestazioni superiori per gestire i carichi di lavoro aziendali critici.
                         </p>
                         <div className={styles.heroCTAs}>
                             <Link href="/punti-vendita" className={styles.ctaPrimary}>
@@ -117,7 +117,7 @@ export default function LineaEnterprise1151Page() {
                             <Server size={48} className={styles.cardIcon} />
                             <h2 className={styles.cardTitle}>Fondamenta Solide per il tuo IT</h2>
                             <p className={styles.cardText}>
-                                Winblu Enterprise offre prestazioni di classe server in un form factor compatto. Ideale per file server, domain controller, e gestione database per PMI.
+                                Affidabilità, scalabilità e sicurezza: i server Enterprise 1151 sono la base solida per la tua infrastruttura IT. Ideali per piccole e medie imprese che necessitano di un server robusto e versatile.
                             </p>
                             <div className={styles.cardReveal}>
                                 <p className={styles.cardText}>

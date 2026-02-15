@@ -115,13 +115,13 @@ export default function LineaAcademicPage() {
           <div className={`${styles.bentoCard} ${styles.cardLarge}`}>
             <div className={styles.cardContent}>
               <Users size={48} className={styles.cardIcon} />
-              <h2 className={styles.cardTitle}>Apprendimento Senza Confini</h2>
+              <h2 className={styles.cardTitle}>Il Futuro dell'Istruzione</h2>
               <p className={styles.cardText}>
-                Progettati pensando alle esigenze specifiche delle scuole, i dispositivi Winblu Academic combinano robustezza, prestazioni e facilità di gestione centralizzata.
+                Soluzioni tecnologiche pensate per la scuola di oggi e di domani. Robustezza, sicurezza e facilità d'uso per studenti e insegnanti.
               </p>
               <div className={styles.cardReveal}>
                 <p className={styles.cardText}>
-                  Supportiamo la didattica innovativa con tecnologie che abilitano l'apprendimento digitale, dalla realtà aumentata al coding.
+                  Progettati pensando alle esigenze specifiche delle scuole, i dispositivi Winblu Academic combinano robustezza, prestazioni e facilità di gestione centralizzata.
                 </p>
               </div>
             </div>
@@ -133,7 +133,7 @@ export default function LineaAcademicPage() {
               <h3 className={styles.cardTitle}>A Prova di Studente</h3>
               <div className={styles.cardReveal}>
                 <p className={styles.cardTextSmall}>
-                  Chassis rinforzati e componenti testati per resistere all'uso quotidiano intenso in classe.
+                  Chassis rinforzati e componenti testati per resistere all'uso quotidiano intenso in classe e nei laboratori.
                 </p>
               </div>
             </div>
@@ -142,9 +142,9 @@ export default function LineaAcademicPage() {
           <div className={`${styles.bentoCard} ${styles.cardMedium}`}>
             <div className={styles.cardContent}>
               <Laptop size={48} className={styles.cardIcon} />
-              <h3 className={styles.cardTitle}>Ecosistema Education</h3>
+              <h3 className={styles.cardTitle}>Didattica Innovativa</h3>
               <p className={styles.cardText}>
-                Piena compatibilità con le piattaforme di e-learning più diffuse e integrazione nativa con gli strumenti Microsoft ed Google per l'a scuola.
+                Supportiamo la didattica innovativa con tecnologie che abilitano l'apprendimento digitale, dalla realtà aumentata al coding.
               </p>
             </div>
           </div>

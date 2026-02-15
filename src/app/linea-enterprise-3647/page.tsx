@@ -74,11 +74,11 @@ export default function LineaEnterprise3647Page() {
                     >
                         <span className={styles.heroTag}>Winblu Enterprise</span>
                         <h1 className={styles.heroTitle}>
-                            Scalabilità<br />
-                            <span className={styles.gradient}>Estrema</span>
+                            Winblu Enterprise<br />
+                            <span className={styles.gradient}>3647</span>
                         </h1>
                         <p className={styles.heroDesc}>
-                            Server Dual Socket progettati per carichi di lavoro intensivi: virtualizzazione, database complessi e calcolo scientifico. La massima potenza di calcolo senza compromessi.
+                            Nessun compromesso per la serie Winblu Enterprise 3647: equipaggiate con le più recenti tecnologie dei microprocessori Intel Xeon Scalable di 2nd generazione.
                         </p>
                         <div className={styles.heroCTAs}>
                             <Link href="/punti-vendita" className={styles.ctaPrimary}>
@@ -117,11 +117,11 @@ export default function LineaEnterprise3647Page() {
                             <Server size={48} className={styles.cardIcon} />
                             <h2 className={styles.cardTitle}>Infrastruttura Mission-Critical</h2>
                             <p className={styles.cardText}>
-                                La piattaforma Enterprise 3647 è il cuore pulsante del tuo data center. Supporto nativo per virtualizzazione VMWare/Hyper-V e containerizzazione con Docker/Kubernetes.
+                                Massima densità di calcolo e affidabilità mission-critical. I server Enterprise 3647 offrono configurazioni dual socket per gestire applicazioni aziendali complesse, database e infrastrutture cloud.
                             </p>
                             <div className={styles.cardReveal}>
                                 <p className={styles.cardText}>
-                                    Alimentatori ridondanti (1+1) Platinum grade per garantire la massima efficienza energetica e continuità operativa.
+                                    Alimentatori ridondanti e supporto per carichi di lavoro ad alta intensità fanno di questa linea la scelta ideale per il Data Center moderno.
                                 </p>
                             </div>
                         </div>
