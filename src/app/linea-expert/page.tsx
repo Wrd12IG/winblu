@@ -74,11 +74,11 @@ export default function LineaExpertPage() {
           >
             <span className={styles.heroTag}>Winblu Expert</span>
             <h1 className={styles.heroTitle}>
-              Potenza e<br />
-              <span className={styles.gradient}>Affidabilità</span>
+              Eleganza, Silenziosità<br />
+              <span className={styles.gradient}>e Praticità</span>
             </h1>
             <p className={styles.heroDesc}>
-              Progettato per i professionisti che non si accontentano. La linea Expert offre potenza di calcolo superiore ed un'estetica raffinata per ogni ambiente lavorativo.
+              Il professional computer pensato per garantirti prestazioni al top. Ideale per l’utente professionale e privato alla ricerca di componenti di ultima generazione in un case spazioso e silenzioso.
             </p>
             <div className={styles.heroCTAs}>
               <Link href="/punti-vendita" className={styles.ctaPrimary}>
@@ -115,13 +115,13 @@ export default function LineaExpertPage() {
           <div className={`${styles.bentoCard} ${styles.cardLarge}`}>
             <div className={styles.cardContent}>
               <Settings size={48} className={styles.cardIcon} />
-              <h2 className={styles.cardTitle}>Performance senza compromessi</h2>
+              <h2 className={styles.cardTitle}>Prestazioni al Top</h2>
               <p className={styles.cardText}>
-                Massima produttività e silenziosità: la workstation ideale per chi gestisce carichi di lavoro intensi con stile.
+                La Linea Expert è dedicata agli utilizzatori più esigenti. Dotata di pannelli fonoassorbenti che la rendono estremamente silenziosa.
               </p>
               <div className={styles.cardReveal}>
                 <p className={styles.cardText}>
-                  Progettato per i professionisti che non si accontentano, offre potenza di calcolo superiore ed un'estetica raffinata per ogni ambiente lavorativo.
+                  Filtri antipolvere frontali e posteriori facilmente accessibili e rimovibili per la pulizia, garantendo longevità e affidabilità nel tempo.
                 </p>
               </div>
             </div>
@@ -130,10 +130,10 @@ export default function LineaExpertPage() {
           <div className={`${styles.bentoCard} ${styles.cardSmall} ${styles.cardHighlight}`}>
             <div className={styles.cardContent}>
               <Zap size={36} className={styles.cardIcon} style={{ color: '#0160A9' }} />
-              <h3 className={styles.cardTitle}>Potenza e Affidabilità</h3>
+              <h3 className={styles.cardTitle}>ATX 3.0 Ready</h3>
               <div className={styles.cardReveal}>
                 <p className={styles.cardTextSmall}>
-                  Componenti selezionati per garantire stabilità operativa 24/7 e certificazione ISV per i principali software professionali.
+                  Alimentatori Multi-Rail ATX 3.0 con connettore 12VHPWR per fornire fino a 600W di potenza pura alle GPU di nuova generazione.
                 </p>
               </div>
             </div>
@@ -142,12 +142,46 @@ export default function LineaExpertPage() {
           <div className={`${styles.bentoCard} ${styles.cardMedium}`}>
             <div className={styles.cardContent}>
               <Activity size={48} className={styles.cardIcon} />
-              <h3 className={styles.cardTitle}>Design Funzionale</h3>
+              <h3 className={styles.cardTitle}>Raptor Lake Refresh</h3>
               <p className={styles.cardText}>
-                Un case progettato per un airflow ottimale e una facile espandibilità, mantenendo un profilo acustico minimo.
+                Supporto Intel® Core™ 14ᴬ Gen fino a 24 core (8P+16E) e 6.0GHz. Il processore desktop più veloce al mondo per creativi e pro.
               </p>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Detailed Features Section - Restored Original Content */}
+      <section style={{ padding: '4rem 2rem', background: '#111', color: '#fff' }}>
+        <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            style={{ display: 'grid', gap: '4rem' }}
+          >
+            <div>
+              <h2 style={{ fontSize: '2.5rem', marginBottom: '1.5rem', color: '#00d2ff' }}>Creatività senza confini con NVIDIA® RTX Serie 4000</h2>
+              <p style={{ fontSize: '1.1rem', lineHeight: '1.8', color: '#ccc' }}>
+                Sbarcano nella linea Expert le nuovissime GPU <strong>Nvidia® GeForce® serie 4000</strong>. Progettate sull'architettura <strong>Ada Lovelace</strong>, integrano fino a 16384 CUDA cores, Tensor core di 4a gen e Ray Tracing di 3a gen. Perfette per il rendering cinematografico in tempo reale, modellazione fotorealistica e per accelerare i flussi di lavoro AEC (BIM e CAD) con la massima precisione.
+              </p>
+            </div>
+
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '3rem' }}>
+              <div>
+                <h3 style={{ fontSize: '1.8rem', marginBottom: '1rem', color: '#fff' }}>Audio & Networking Premium</h3>
+                <p style={{ lineHeight: '1.7', color: '#aaa' }}>
+                  Esclusivo codec <strong>High Definition Audio</strong> con schermatura dedicata per una fedeltà eccezionale, ideale per creator. Networking ultraveloce garantito da <strong>LAN 2.5G</strong> e <strong>Wi-Fi 6 con Bluetooth 5.2</strong> (opzionali) per velocità fino a 2.4Gbps.
+                </p>
+              </div>
+              <div>
+                <h3 style={{ fontSize: '1.8rem', marginBottom: '1rem', color: '#fff' }}>Potenza Intel® 14ᴬ Gen & DDR5</h3>
+                <p style={{ lineHeight: '1.7', color: '#aaa' }}>
+                  La linea Expert Z790 supporta la 14ᴬ generazione <strong>Intel® Core™ (Raptor Lake Refresh)</strong> con frequenze fino a <strong>6.0GHz</strong> e memorie <strong>DDR5 fino a 7200MT/s</strong>. Un salto prestazionale per digital art, animazione, video editing e modellazione 3D.
+                </p>
+              </div>
+            </div>
+          </motion.div>
         </div>
       </section>
 
