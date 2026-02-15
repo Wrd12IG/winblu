@@ -2,14 +2,14 @@
 
 import Link from 'next/link';
 import Image from 'next/image';
-import styles from '../styles/product-bento.module.css';
+import styles from '../t-rok-styles/trok-premium.module.css';
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import SpecsCards from "@/components/SpecsCards";
 import { SpecCategory } from "@/components/SpecsAccordion";
 import B2BCTASection from "@/components/B2BCTASection";
 import { motion } from 'framer-motion';
-import { Shield, Zap, Cpu, Monitor, Wifi, Award, Box, Layers, Gauge, Sparkles, Activity, Settings } from 'lucide-react';
+import { Shield, Zap, Cpu, Monitor, Wifi, Award, Box, Layers, Gauge, Sparkles, Activity, Settings, TrendingUp, Package } from 'lucide-react';
 
 const fadeIn = {
     hidden: { opacity: 0, y: 20 },
@@ -98,16 +98,16 @@ export default function TRokTufH610Page() {
                         transition={{ duration: 0.8 }}
                         className={styles.heroText}
                     >
-                        <span className={styles.heroTag}>Winblu Powered by ASUS</span>
+                        <span className={styles.heroTag}>Powered by ASUS</span>
                         <h1 className={styles.heroTitle}>
                             T-Rok H610:<br />
-                            <span className={styles.gradient}>Bisonte Bianco</span>
+                            <span className={styles.gradient} style={{ background: 'linear-gradient(135deg, #fff 0%, #00d2ff 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>Bisonte Bianco</span>
                         </h1>
                         <p className={styles.heroDesc}>
                             Quando le leggende si fanno realtà. Ricordate il mitologico Bisonte Bianco delle Leggende Indiane? Una creatura fantastica che ora prende la forma di una poderosa game machine firmata Winblu.
                         </p>
                         <div className={styles.heroCTAs}>
-                            <Link href="/punti-vendita?tipo=fornitura" className={styles.ctaPrimary}>
+                            <Link href="/punti-vendita?tipo=fornitura" className={styles.ctaPrimary} style={{ borderColor: 'rgba(0, 210, 255, 0.4)', background: 'linear-gradient(135deg, rgba(0, 210, 255, 0.2), rgba(0, 210, 255, 0.1))' }}>
                                 Configura
                             </Link>
                             <Link href="/punti-vendita" className={styles.ctaSecondary}>
@@ -140,20 +140,30 @@ export default function TRokTufH610Page() {
             <section className={styles.bentoSection}>
                 <div className={styles.bentoGrid}>
                     <motion.div
-                        className={`${styles.bentoCard} ${styles.cardLarge}`}
+                        className={`${styles.bentoCard} ${styles.cardLarge} ${styles.cardWithImage}`}
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                     >
+                        <div className={styles.cardImageContainer}>
+                            <Image
+                                src="/products/t-rok/t-rok-white.png"
+                                alt="T-Rok H610 Overview"
+                                fill
+                                className={styles.cardImage}
+                                sizes="(max-width: 768px) 100vw, 66vw"
+                            />
+                            <div className={styles.cardOverlay} />
+                        </div>
                         <div className={styles.cardContent}>
-                            <Award size={48} className={styles.cardIcon} />
-                            <h2 className={styles.cardTitle}>Powered by ASUS</h2>
+                            <Sparkles size={48} className={styles.cardIcon} style={{ color: '#00d2ff' }} />
+                            <h2 className={styles.cardTitle}>L'eccellenza in Bianco</h2>
                             <p className={styles.cardText}>
-                                Progettata congiuntamente dai Laboratori R&D Winblu e ASUS, è certificata ufficialmente dal marchio <strong>PBA</strong>.
+                                Progettata dai Laboratori R&D Winblu e ASUS, certificata ufficialmente dal marchio <strong>PBA</strong>.
                             </p>
                             <div className={styles.cardReveal}>
                                 <p className={styles.cardText}>
-                                    Un connubio che regala standard prestazionali di assoluta eccellenza e un’esperienza di gioco straordinaria, in un'originale estetica bianca.
+                                    Un connubio che regala standard prestazionali di assoluta eccellenza e un’esperienza di gioco straordinaria, in un'originale estetica bianca ispirata alla leggenda del Bisonte Bianco.
                                 </p>
                             </div>
                         </div>
@@ -167,11 +177,11 @@ export default function TRokTufH610Page() {
                         transition={{ delay: 0.1 }}
                     >
                         <div className={styles.cardContent}>
-                            <Cpu size={36} className={styles.cardIcon} />
-                            <h3 className={styles.cardTitle}>14ᴬ Gen Intel</h3>
+                            <Package size={36} className={styles.cardIcon} style={{ color: '#00d2ff' }} />
+                            <h3 className={styles.cardTitle}>Pure Aesthetic</h3>
                             <div className={styles.cardReveal}>
                                 <p className={styles.cardTextSmall}>
-                                    Fino a 24 core e 32 thread per il massimo della capacità elaborativa.
+                                    Design compact mid-tower con vetro temperato laterale per mettere in mostra ogni dettaglio dell'hardware ASUS.
                                 </p>
                             </div>
                         </div>
@@ -185,11 +195,16 @@ export default function TRokTufH610Page() {
                         transition={{ delay: 0.2 }}
                     >
                         <div className={styles.cardContent}>
-                            <Monitor size={48} className={styles.cardIcon} />
-                            <h3 className={styles.cardTitle}>RTX Serie 4000</h3>
+                            <Cpu size={48} className={styles.cardIcon} style={{ color: '#00d2ff' }} />
+                            <h3 className={styles.cardTitle}>Intelligence Hybrid</h3>
                             <p className={styles.cardText}>
-                                Architettura Ada Lovelace per un'esperienza visiva davvero inimmaginabile.
+                                Supporta l'ultima generazione Intel Core per un multitasking senza precedenti e frame rate stabili.
                             </p>
+                            <div className={styles.cardReveal}>
+                                <p className={styles.cardText}>
+                                    Fino a 6.0GHz di frequenza per dominare ogni scenario competitivo, supportato da memorie DDR5 RGB ad alte prestazioni.
+                                </p>
+                            </div>
                         </div>
                     </motion.div>
 
@@ -201,67 +216,63 @@ export default function TRokTufH610Page() {
                         transition={{ delay: 0.3 }}
                     >
                         <div className={styles.cardContent}>
-                            <Zap size={48} className={styles.cardIcon} />
-                            <h3 className={styles.cardTitle}>DDR5 Memory</h3>
+                            <Monitor size={48} className={styles.cardIcon} style={{ color: '#00d2ff' }} />
+                            <h3 className={styles.cardTitle}>RTX Graphics</h3>
                             <p className={styles.cardText}>
-                                La nuova frontiera della velocità con dissipatore ed effetti luce RGB.
+                                Architettura NVIDIA Ada Lovelace con DLSS 3 per mondi virtuali iper-realistici e fluidità estrema.
                             </p>
+                            <div className={styles.cardReveal}>
+                                <p className={styles.cardText}>
+                                    Ottimizzazione termica avanzata che garantisce prestazioni silenziose anche durante i render più complessi o le sessioni di gioco prolungate.
+                                </p>
+                            </div>
                         </div>
                     </motion.div>
-                </div>
-            </section>
 
-            {/* Detailed Features Section - New Content */}
-            <section style={{ padding: '4rem 2rem', background: '#111', color: '#fff' }}>
-                <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
                     <motion.div
+                        className={`${styles.bentoCard} ${styles.cardSmall}`}
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
-                        style={{ display: 'grid', gap: '4rem' }}
+                        transition={{ delay: 0.4 }}
                     >
-                        <div>
-                            <h2 style={{ fontSize: '2.5rem', marginBottom: '1.5rem', color: '#00d2ff' }}>Powered By ASUS: L'eccellenza in Bianco</h2>
-                            <p style={{ fontSize: '1.1rem', lineHeight: '1.8', color: '#ccc' }}>
-                                Progettata congiuntamente dai Laboratori <strong>R&D Winblu e ASUS</strong>, T-ROK GAMING H610 è la nostra nuova proposta basata su hardware ASUS e quindi certificata ufficialmente dal marchio <strong>PBA – Powered By ASUS</strong>. Una soluzione innovativa anche nell’originale colore bianco che contraddistingue l’estetica di questo prodotto: davvero un’irresistibile simbiosi fra alte prestazioni ed esclusività del design. In questa nuova game machine ritroviamo l’indiscussa qualità progettuale e costruttiva Winblu valorizzata al meglio dalla componentistica ASUS, il brand Numero Uno al mondo nel settore Gaming.
-                            </p>
+                        <div className={styles.cardContent}>
+                            <Shield size={36} className={styles.cardIcon} style={{ color: '#00d2ff' }} />
+                            <h3 className={styles.cardTitle}>Gaming Sicuro</h3>
+                            <div className={styles.cardReveal}>
+                                <p className={styles.cardTextSmall}>
+                                    TPM 2.0 e Kaspersky Internet Security inclusi per proteggere le tue sessioni online da ogni minaccia.
+                                </p>
+                            </div>
                         </div>
+                    </motion.div>
 
-                        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '3rem' }}>
-                            <div>
-                                <h3 style={{ fontSize: '1.8rem', marginBottom: '1rem', color: '#fff' }}>Performance 14ᴬ Generazione</h3>
-                                <p style={{ lineHeight: '1.7', color: '#aaa' }}>
-                                    La linea T-ROK H610 supporta la <strong>Quattordicesima generazione</strong> di processori Intel® Core™, nome in codice Raptor Lake Refresh. Una nuova concezione di CPU che eredita le caratteristiche della serie 13, con core aumentati fino a 24 e thread fino a 32. Con i suoi <strong>6.0GHz di frequenza di punta</strong>, è definito come il più veloce processore da gaming al mondo. Il massimo della potenza è garantito anche dalle memorie <strong>DDR5</strong> con dissipatore ed effetti luce RGB.
-                                </p>
-                            </div>
-                            <div>
-                                <h3 style={{ fontSize: '1.8rem', marginBottom: '1rem', color: '#fff' }}>Grafica NVIDIA® RTX serie 4000</h3>
-                                <p style={{ lineHeight: '1.7', color: '#aaa' }}>
-                                    L’equipaggiamento raggiunge l’apice con le GPU <strong>Nvidia® GeForce® serie 4000</strong> basate su architettura Ada Lovelace. Un enorme passo avanti in termini di prestazioni, efficienza e grafica IA. Mondi virtuali dettagliati, massima libertà nella creazione di contenuti e una produttività senza precedenti, grazie all’accelerazione del flusso-dati nella fase di elaborazione architettonica o ingegneristica.
-                                </p>
-                            </div>
+                    <motion.div
+                        className={`${styles.bentoCard} ${styles.cardMedium} ${styles.cardHighlight}`}
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ delay: 0.5 }}
+                    >
+                        <div className={styles.cardContent}>
+                            <TrendingUp size={48} className={styles.cardIcon} style={{ color: '#00d2ff' }} />
+                            <h3 className={styles.cardTitle}>Productivity Pro</h3>
+                            <p className={styles.cardText}>
+                                Accelerazione IA per flussi di lavoro creativi, rendering 3D e modellazione fotorealistica.
+                            </p>
                         </div>
                     </motion.div>
                 </div>
             </section>
 
             {/* Specs Cards Section */}
-            <section style={{ padding: '6rem 2rem', background: 'rgba(0,0,0,0.2)' }}>
+            <section className={styles.specsSection}>
                 <div style={{ maxWidth: '1600px', margin: '0 auto' }}>
                     <motion.h2
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
-                        style={{
-                            fontSize: '3rem',
-                            fontWeight: '800',
-                            textAlign: 'center',
-                            marginBottom: '4rem',
-                            background: 'linear-gradient(135deg, #fff 0%, #0160A9 100%)',
-                            WebkitBackgroundClip: 'text',
-                            WebkitTextFillColor: 'transparent',
-                            backgroundClip: 'text'
-                        }}
+                        className={styles.specsTitle}
                     >
                         Specifiche Tecniche
                     </motion.h2>
