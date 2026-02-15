@@ -6,6 +6,12 @@
     /* Deeper black for gaming */
     color: #fff;
     font-family: 'Inter', sans-serif;
+
+    /* Default Theme Variables (can be overridden in page.tsx) */
+    --accent-primary: #ffffff;
+    --accent-secondary: #94a3b8;
+    --accent-rgb: 255, 255, 255;
+    --accent-gradient: linear-gradient(135deg, #fff 0%, #64748b 100%);
 }
 
 /* Hero Section */
@@ -76,12 +82,12 @@
 .heroTag {
     display: inline-block;
     padding: 0.5rem 1.5rem;
-    background: rgba(255, 0, 68, 0.1);
-    border: 1px solid rgba(255, 0, 68, 0.3);
+    background: rgba(var(--accent-rgb), 0.1);
+    border: 1px solid rgba(var(--accent-rgb), 0.3);
     border-radius: 50px;
     font-size: 0.875rem;
     font-weight: 500;
-    color: #ff0044;
+    color: var(--accent-primary);
     width: fit-content;
 }
 
@@ -94,7 +100,7 @@
 }
 
 .gradient {
-    background: linear-gradient(135deg, #ff0044 0%, #7e0021 100%);
+    background: var(--accent-gradient);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -127,16 +133,16 @@
 }
 
 .ctaPrimary {
-    background: linear-gradient(135deg, rgba(255, 0, 68, 0.2), rgba(255, 0, 68, 0.1));
-    border: 2px solid rgba(255, 0, 68, 0.4);
+    background: linear-gradient(135deg, rgba(var(--accent-rgb), 0.2), rgba(var(--accent-rgb), 0.1));
+    border: 2px solid rgba(var(--accent-rgb), 0.4);
     color: #fff;
 }
 
 .ctaPrimary:hover {
-    background: linear-gradient(135deg, rgba(255, 0, 68, 0.3), rgba(255, 0, 68, 0.2));
-    border-color: rgba(255, 0, 68, 0.6);
+    background: linear-gradient(135deg, rgba(var(--accent-rgb), 0.3), rgba(var(--accent-rgb), 0.2));
+    border-color: rgba(var(--accent-rgb), 0.6);
     transform: translateY(-2px);
-    box-shadow: 0 0 40px rgba(255, 0, 68, 0.4);
+    box-shadow: 0 0 40px rgba(var(--accent-rgb), 0.4);
 }
 
 .ctaSecondary {
@@ -182,7 +188,7 @@
     content: '';
     position: absolute;
     inset: 0;
-    background: linear-gradient(135deg, rgba(255, 0, 68, 0.05), transparent);
+    background: linear-gradient(135deg, rgba(var(--accent-rgb), 0.05), transparent);
     opacity: 0;
     transition: opacity 0.5s ease;
 }
@@ -192,11 +198,11 @@
 }
 
 .bentoCard:hover {
-    border-color: rgba(255, 0, 68, 0.3);
+    border-color: rgba(var(--accent-rgb), 0.3);
     transform: translateY(-10px) scale(1.01);
     box-shadow:
         0 30px 70px rgba(0, 0, 0, 0.8),
-        0 0 30px rgba(255, 0, 68, 0.1);
+        0 0 30px rgba(var(--accent-rgb), 0.1);
 }
 
 .bentoCard::after {
@@ -206,10 +212,10 @@
     left: 0;
     width: 0%;
     height: 3px;
-    background: linear-gradient(90deg, #ff0044, #ff6b8e);
+    background: var(--accent-gradient);
     transition: width 0.5s cubic-bezier(0.23, 1, 0.32, 1);
     z-index: 10;
-    box-shadow: 0 0 15px rgba(255, 0, 68, 0.6);
+    box-shadow: 0 0 15px rgba(var(--accent-rgb), 0.6);
 }
 
 .bentoCard:hover::after {
@@ -233,8 +239,8 @@
 }
 
 .cardHighlight {
-    background: linear-gradient(135deg, rgba(255, 0, 68, 0.04), rgba(255, 0, 68, 0.01));
-    border-color: rgba(255, 0, 68, 0.15);
+    background: linear-gradient(135deg, rgba(var(--accent-rgb), 0.04), rgba(var(--accent-rgb), 0.01));
+    border-color: rgba(var(--accent-rgb), 0.15);
 }
 
 /* Card Content */
@@ -247,7 +253,7 @@
 }
 
 .cardIcon {
-    color: #ff0044;
+    color: var(--accent-primary);
     margin-bottom: 2rem;
     opacity: 0.9;
 }
@@ -332,7 +338,7 @@
 /* Specs Section */
 .specsSection {
     padding: 8rem 2rem;
-    background: radial-gradient(circle at center, rgba(255, 0, 68, 0.05) 0%, transparent 70%);
+    background: radial-gradient(circle at center, rgba(var(--accent-rgb), 0.05) 0%, transparent 70%);
 }
 
 .specsTitle {

@@ -90,7 +90,14 @@ export default function TRokB760SEPage() {
     ];
 
     return (
-        <div className={styles.container}>
+        <div
+            className={styles.container}
+            style={{
+                '--accent-primary': '#00d2ff',
+                '--accent-rgb': '0, 210, 255',
+                '--accent-gradient': 'linear-gradient(135deg, #00d2ff 0%, #0056b3 100%)'
+            } as any}
+        >
             <Navbar />
             <section className={styles.hero}>
                 <GridBackground />
@@ -101,16 +108,16 @@ export default function TRokB760SEPage() {
                         transition={{ duration: 0.8 }}
                         className={styles.heroText}
                     >
-                        <span className={styles.heroTag} style={{ color: '#00d2ff', borderColor: 'rgba(0, 210, 255, 0.3)', background: 'rgba(0, 210, 255, 0.1)' }}>Aquarium Design PC</span>
+                        <span className={styles.heroTag}>Aquarium Design PC</span>
                         <h1 className={styles.heroTitle}>
                             T-Rok B760 SE:<br />
-                            <span className={styles.gradient} style={{ background: 'linear-gradient(135deg, #00d2ff 0%, #0056b3 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>Gioco Immersivo</span>
+                            <span className={styles.gradient}>Gioco Immersivo</span>
                         </h1>
                         <p className={styles.heroDesc}>
                             Rilevanti prestazioni e pregio estetico. Il nuovo T-Rok B760 SE apre le porte al futuro del gaming, pronto a ridefinire le regole del gioco grazie a un equipaggiamento d’avanguardia.
                         </p>
                         <div className={styles.heroCTAs}>
-                            <Link href="/punti-vendita?tipo=fornitura" className={styles.ctaPrimary} style={{ borderColor: 'rgba(0, 210, 255, 0.4)', background: 'linear-gradient(135deg, rgba(0, 210, 255, 0.2), rgba(0, 210, 255, 0.1))' }}>
+                            <Link href="/punti-vendita?tipo=fornitura" className={styles.ctaPrimary}>
                                 Configura
                             </Link>
                             <Link href="/punti-vendita" className={styles.ctaSecondary}>
@@ -276,7 +283,6 @@ export default function TRokB760SEPage() {
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         className={styles.specsTitle}
-                        style={{ background: 'linear-gradient(to bottom, #fff, #00d2ff)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}
                     >
                         Specifiche Tecniche
                     </motion.h2>

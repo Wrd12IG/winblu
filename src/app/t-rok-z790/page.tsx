@@ -87,7 +87,14 @@ export default function TRokZ790Page() {
     ];
 
     return (
-        <div className={styles.container}>
+        <div
+            className={styles.container}
+            style={{
+                '--accent-primary': '#0160A9',
+                '--accent-rgb': '1, 96, 169',
+                '--accent-gradient': 'linear-gradient(135deg, #0160A9 0%, #004e8a 100%)'
+            } as any}
+        >
             <Navbar />
             <section className={styles.hero}>
                 <GridBackground />
@@ -98,15 +105,15 @@ export default function TRokZ790Page() {
                         transition={{ duration: 0.8 }}
                         className={styles.heroText}
                     >
-                        <span className={styles.heroTag} style={{ color: '#0160A9', borderColor: 'rgba(1, 96, 169, 0.3)', background: 'rgba(1, 96, 169, 0.1)' }}>Performance No Limits</span>
+                        <span className={styles.heroTag}>Performance No Limits</span>
                         <h1 className={styles.heroTitle}>
-                            Winblu <span className={styles.gradient} style={{ background: 'linear-gradient(135deg, #0160A9 0%, #004e8a 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>T-ROK Z790</span>
+                            Winblu <span className={styles.gradient}>T-ROK Z790</span>
                         </h1>
                         <p className={styles.heroDesc}>
                             Varca i confini dell’immaginazione. Con i nuovi Winblu T-ROK Z790, potrete vivere esperienze di gioco a livelli finora impensabili. Una vera e propria bomba di tecnologia per l’appassionato di gaming estremo che cerca solo ed esclusivamente il top.
                         </p>
                         <div className={styles.heroCTAs}>
-                            <Link href="/punti-vendita?tipo=fornitura" className={styles.ctaPrimary} style={{ borderColor: 'rgba(1, 96, 169, 0.4)', background: 'linear-gradient(135deg, rgba(1, 96, 169, 0.2), rgba(1, 96, 169, 0.1))' }}>
+                            <Link href="/punti-vendita?tipo=fornitura" className={styles.ctaPrimary}>
                                 Configura il Top
                             </Link>
                             <Link href="/punti-vendita" className={styles.ctaSecondary}>
@@ -155,7 +162,7 @@ export default function TRokZ790Page() {
                             <div className={styles.cardOverlay} />
                         </div>
                         <div className={styles.cardContent}>
-                            <Sparkles size={48} className={styles.cardIcon} style={{ color: '#0160A9' }} />
+                            <Sparkles size={48} className={styles.cardIcon} />
                             <h2 className={styles.cardTitle}>Eleganza & Potenza</h2>
                             <p className={styles.cardText}>
                                 Un case d’eccezione con pannelli in <strong>vetro temperato da 4mm</strong> sui tre lati. Le quattro ventole ARGB servono incredibili effetti luminosi sincronizzabili con <strong>Aura RGB lighting</strong>.
@@ -177,7 +184,7 @@ export default function TRokZ790Page() {
                         style={{ background: 'linear-gradient(135deg, rgba(1, 96, 169, 0.08), rgba(1, 96, 169, 0.02))', borderColor: 'rgba(1, 96, 169, 0.2)' }}
                     >
                         <div className={styles.cardContent}>
-                            <Activity size={36} className={styles.cardIcon} style={{ color: '#0160A9' }} />
+                            <Activity size={36} className={styles.cardIcon} />
                             <h3 className={styles.cardTitle}>Audio ROG Supreme FX</h3>
                             <div className={styles.cardReveal}>
                                 <p className={styles.cardTextSmall}>
@@ -275,7 +282,6 @@ export default function TRokZ790Page() {
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         className={styles.specsTitle}
-                        style={{ background: 'linear-gradient(to bottom, #fff, #0160A9)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}
                     >
                         Specifiche Tecniche
                     </motion.h2>

@@ -87,7 +87,14 @@ export default function TRokTufH610Page() {
     ];
 
     return (
-        <div className={styles.container}>
+        <div
+            className={styles.container}
+            style={{
+                '--accent-primary': '#ffffff',
+                '--accent-rgb': '255, 255, 255',
+                '--accent-gradient': 'linear-gradient(135deg, #fff 0%, #64748b 100%)'
+            } as any}
+        >
             <Navbar />
             <section className={styles.hero}>
                 <GridBackground />
@@ -101,13 +108,13 @@ export default function TRokTufH610Page() {
                         <span className={styles.heroTag}>Powered by ASUS</span>
                         <h1 className={styles.heroTitle}>
                             T-Rok H610:<br />
-                            <span className={styles.gradient} style={{ background: 'linear-gradient(135deg, #fff 0%, #00d2ff 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>Bisonte Bianco</span>
+                            <span className={styles.gradient}>Bisonte Bianco</span>
                         </h1>
                         <p className={styles.heroDesc}>
                             Quando le leggende si fanno realtà. Ricordate il mitologico Bisonte Bianco delle Leggende Indiane? Una creatura fantastica che ora prende la forma di una poderosa game machine firmata Winblu.
                         </p>
                         <div className={styles.heroCTAs}>
-                            <Link href="/punti-vendita?tipo=fornitura" className={styles.ctaPrimary} style={{ borderColor: 'rgba(0, 210, 255, 0.4)', background: 'linear-gradient(135deg, rgba(0, 210, 255, 0.2), rgba(0, 210, 255, 0.1))' }}>
+                            <Link href="/punti-vendita?tipo=fornitura" className={styles.ctaPrimary}>
                                 Configura
                             </Link>
                             <Link href="/punti-vendita" className={styles.ctaSecondary}>
@@ -156,7 +163,7 @@ export default function TRokTufH610Page() {
                             <div className={styles.cardOverlay} />
                         </div>
                         <div className={styles.cardContent}>
-                            <Sparkles size={48} className={styles.cardIcon} style={{ color: '#00d2ff' }} />
+                            <Sparkles size={48} className={styles.cardIcon} />
                             <h2 className={styles.cardTitle}>L'eccellenza in Bianco</h2>
                             <p className={styles.cardText}>
                                 Progettata dai Laboratori R&D Winblu e ASUS, certificata ufficialmente dal marchio <strong>PBA</strong>.
