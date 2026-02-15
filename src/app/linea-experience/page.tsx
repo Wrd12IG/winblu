@@ -78,7 +78,7 @@ export default function LineaExperiencePage() {
                             <span className={styles.gradient}>su misura per te</span>
                         </h1>
                         <p className={styles.heroDesc}>
-                            Progettata per i professionisti più esigenti: grafica 3D, BIM, CAD e rendering avanzato. Potenza certificata e affidabilità senza compromessi.
+                            Prestazioni potenti con processori Intel® Xeon® e Core™ X-Series. La scelta definitiva per creatori di contenuti, ingegneri e professionisti del rendering.
                         </p>
                         <div className={styles.heroCTAs}>
                             <Link href="/punti-vendita" className={styles.ctaPrimary}>
@@ -115,13 +115,13 @@ export default function LineaExperiencePage() {
                     <div className={`${styles.bentoCard} ${styles.cardLarge}`}>
                         <div className={styles.cardContent}>
                             <Activity size={48} className={styles.cardIcon} />
-                            <h2 className={styles.cardTitle}>Tecnologia Professionale</h2>
+                            <h2 className={styles.cardTitle}>Incredibili Performance</h2>
                             <p className={styles.cardText}>
-                                Workstation scalabili con Intel Xeon per prestazioni multitasking senza precedenti.
+                                Basate su processori Xeon-W e Core-X fino a 18 core/36 thread. Supporto memoria ECC fino a 1TB per garantire affidabilità totale e prevenire crash di sistema.
                             </p>
                             <div className={styles.cardReveal}>
                                 <p className={styles.cardText}>
-                                    Le workstation Winblu Experience sono il risultato di anni di ottimizzazione. Ogni dettaglio è pensato per chi trasforma le idee in realtà.
+                                    La tecnologia Intel Turbo Boost Max 3.0 indirizza i carichi critici ai core più veloci, mentre il Deep Learning Boost accelera l'IA per tagging immagini e riconoscimento vocale.
                                 </p>
                             </div>
                         </div>
@@ -130,10 +130,10 @@ export default function LineaExperiencePage() {
                     <div className={`${styles.bentoCard} ${styles.cardSmall} ${styles.cardHighlight}`}>
                         <div className={styles.cardContent}>
                             <Box size={36} className={styles.cardIcon} style={{ color: '#0160A9' }} />
-                            <h3 className={styles.cardTitle}>Calcolo Estremo</h3>
+                            <h3 className={styles.cardTitle}>NVIDIA Studio</h3>
                             <div className={styles.cardReveal}>
                                 <p className={styles.cardTextSmall}>
-                                    Supporto Intel Xeon-W e Core-X fino a 18 core/36 thread per rendering cinematografico.
+                                    Supporto per NVIDIA® Quadro e GeForce con SLI fino a 3 vie. Rendering cinematografico e accelerazione BIM/CAD in tempo reale.
                                 </p>
                             </div>
                         </div>
@@ -141,10 +141,10 @@ export default function LineaExperiencePage() {
 
                     <div className={`${styles.bentoCard} ${styles.cardMedium}`}>
                         <div className={styles.cardContent}>
-                            <Shield size={48} className={styles.cardIcon} />
-                            <h3 className={styles.cardTitle}>Affidabilità 24/7</h3>
+                            <Database size={48} className={styles.cardIcon} />
+                            <h3 className={styles.cardTitle}>Storage Ultra Rapido</h3>
                             <p className={styles.cardText}>
-                                Componenti testati per carichi di lavoro continui e sistemi di raffreddamento silenziosi. Memoria ECC per flussi di lavoro critici.
+                                Fino a due SSD NVMe M.2 con RAID 0/1 nativo per prestazioni 5.3x superiori al SATA. USB 3.1 Type-A/C per trasferimenti a 10Gbps.
                             </p>
                         </div>
                     </div>
@@ -161,33 +161,25 @@ export default function LineaExperiencePage() {
                         style={{ display: 'grid', gap: '4rem' }}
                     >
                         <div>
-                            <h2 style={{ fontSize: '2.5rem', marginBottom: '1.5rem', color: '#00d2ff' }}>Incredibili performance con Intel Xeon e Intel Core-X</h2>
+                            <h2 style={{ fontSize: '2.5rem', marginBottom: '1.5rem', color: '#00d2ff' }}>Potenza di Calcolo Senza Compromessi</h2>
                             <p style={{ fontSize: '1.1rem', lineHeight: '1.8', color: '#ccc' }}>
-                                Prestazioni potenti con le Workstation grafiche Winblu Experience basate su processori <strong>Xeon-W serie 2000</strong> e <strong>Xeon-E</strong>, fino a 18 core e 36 thread (8 core e 16 thread con Xeon-E) e con il supporto alla memoria <strong>ECC (Error Correction Code)</strong> fino a un massimo di 1TB (secondo il modello), per il rilevamento e la riparazione automatici di errori di memoria a bit singolo, riducendo il rischio di crash del sistema e di corruzione dei dati, così garantendo prestazioni affidabili e reattive. Serve altra potenza? Con i processori <strong>Core X</strong> di decima generazione con il moltiplicatore sbloccato e le memorie OC, è possibile sprigionare tutta l’aggressività dell’architettura Cascade Lake-X di Intel con incredibili picchi di frequenza di boost.
+                                Le workstation Winblu Experience integrano processori <strong>Intel® Xeon-W</strong> e <strong>Core™ X-Series</strong> (Cascade Lake-X) con moltiplicatore sbloccato. La memoria <strong>ECC (Error Correction Code)</strong> rileva e ripara errori in tempo reale, fondamentale per rendering lunghi e calcoli scientifici.
                             </p>
                         </div>
 
                         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '3rem' }}>
                             <div>
-                                <h3 style={{ fontSize: '1.8rem', marginBottom: '1rem', color: '#fff' }}>Features all’avanguardia</h3>
+                                <h3 style={{ fontSize: '1.8rem', marginBottom: '1rem', color: '#fff' }}>Grafica Professionale & AI</h3>
                                 <p style={{ lineHeight: '1.7', color: '#aaa' }}>
-                                    La tecnologia <strong>Intel Turbo Boost Max 3.0</strong> (solo Experience 2066i e 2066x) incrementa la potenza di elaborazione della tua workstation indirizzando i carichi di lavoro più critici ai quattro core più veloci del processore, migliorando le prestazioni con le attività altamente “threaded”.
-                                    Un tagging dell’immagine più rapido, traduzioni di linguaggio, rilevamento di oggetti e volti, riconoscimento vocale, sono solo alcuni dei carichi di lavori tipici che possono invece beneficiare dell’<strong>Intel Deep Learning Boost (Intel DL Boost)</strong>, la feature progettata per accelerare l’intelligenza artificiale.
+                                    Supporto completo per <strong>NVIDIA® Quadro</strong> e <strong>GeForce</strong>, ideale per accelerare flussi AEC, BIM e CAD. La tecnologia <strong>Intel DL Boost</strong> velocizza i carichi di lavoro basati su Intelligenza Artificiale come il riconoscimento oggetti e traduzioni istantanee.
                                 </p>
                             </div>
                             <div>
-                                <h3 style={{ fontSize: '1.8rem', marginBottom: '1rem', color: '#fff' }}>Supporto Grafica Professionale</h3>
+                                <h3 style={{ fontSize: '1.8rem', marginBottom: '1rem', color: '#fff' }}>Connettività & Espandibilità</h3>
                                 <p style={{ lineHeight: '1.7', color: '#aaa' }}>
-                                    Cos’è una workstation grafica senza un comparto grafico di degno di questo nome? Per questo le workstation Winblu Experience sono equipaggiate con le insuperabili GPU <strong>NVIDIA® Quadro</strong> e <strong>GeForce</strong>, con possibilità di SLI fino a 3 vie (solo Experience 2066i e 2066x), rendendole macchine perfette per creatori di contenuti, media streamers e designers professionisti. nVIDIA Quadro ha il potenziale per accelerare i flussi di lavoro relativi ad architettura, ingegneria e costruzione (AEC), consentendo di completare progetti BIM e CAD in tempi record.
+                                    Slot M.2 con dissipatore integrato per <strong>SSD NVMe in RAID 0/1</strong>. Connettività estrema con porte <strong>USB 3.1 Type-C</strong> a 10Gbps e supporto multi-GPU per configurazioni SLI fino a 3 vie (su modelli selezionati).
                                 </p>
                             </div>
-                        </div>
-
-                        <div style={{ padding: '2rem', background: 'rgba(255,255,255,0.05)', borderRadius: '16px', borderLeft: '4px solid #00d2ff' }}>
-                            <h3 style={{ fontSize: '1.5rem', marginBottom: '0.5rem', color: '#fff' }}>Storage ultra rapido e I/O integrato</h3>
-                            <p style={{ margin: 0, color: '#ccc' }}>
-                                Tutte le workstation Winblu Experience offrono on-board la possibilità di installare fino a due drive <strong>SSD NVMe</strong> su socket m.2 con dissipatore integrato e supporto nativo a <strong>RAID 0/1</strong>, rompendo definitivamente i limiti di banda del bus SATA con prestazioni fino a 5.3 volte superiori. Le porte USB 3.1 in formato Type-A e Type-C forniscono una estrema flessibilità di connessione con velocità di trasferimento fino a 10Gbps.
-                            </p>
                         </div>
                     </motion.div>
                 </div>
