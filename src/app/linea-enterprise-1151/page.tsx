@@ -34,7 +34,7 @@ export default function LineaEnterprise1151Page() {
             items: [
                 { label: 'RAM', value: 'DDR4 ECC UDIMM' },
                 { label: 'Capacità', value: 'Fino a 128GB' },
-                { label: 'Speed', value: '3200 MT/s' },
+                { label: 'Speed', value: '2666/3200 MT/s' },
             ]
         },
         {
@@ -42,19 +42,19 @@ export default function LineaEnterprise1151Page() {
             title: 'Archiviazione',
             icon: <HardDrive size={24} />,
             items: [
-                { label: 'Bays', value: '4x 3.5" Hot-Swap SATA/SAS' },
-                { label: 'Boot', value: '2x M.2 NVMe (RAID 1)' },
-                { label: 'Controller', value: 'RAID Hardware Dedicato' },
+                { label: 'Bays', value: '4x 3.5" Hot-Swap (Espandibile)' },
+                { label: 'Boot', value: '2x M.2 NVMe (RAID 1 Support)' },
+                { label: 'Controller', value: 'ASUS PIKE II 3000 Series' },
             ]
         },
         {
             id: 'management',
-            title: 'Gestione',
+            title: 'Network & Gestione',
             icon: <Network size={24} />,
             items: [
-                { label: 'Remote', value: 'iKVM (IPMI 2.0)' },
-                { label: 'LAN', value: 'Dual Gigabit + Management Port' },
-                { label: 'OS', value: 'Windows Server / Linux / VMware' },
+                { label: 'LAN', value: '2-4x Intel® Gigabit Ethernet' },
+                { label: 'Features', value: 'Teaming & Failover Support' },
+                { label: 'Mgmt', value: 'iKVM / IPMI 2.0' },
             ]
         }
     ];
@@ -78,7 +78,7 @@ export default function LineaEnterprise1151Page() {
                             <span className={styles.gradient}>1151</span>
                         </h1>
                         <p className={styles.heroDesc}>
-                            I server Winblu della linea Enterprise 1151 supportano le più recenti tecnologie con le CPU Intel® Xeon® E. Prestazioni superiori per gestire i carichi di lavoro aziendali critici.
+                            Soluzioni ottimizzate per il carico di lavoro. I server Winblu Enterprise 1151 supportano le più recenti tecnologie con CPU Intel® Xeon® E per prestazioni estreme e affidabilità totale.
                         </p>
                         <div className={styles.heroCTAs}>
                             <Link href="/punti-vendita" className={styles.ctaPrimary}>
@@ -115,13 +115,13 @@ export default function LineaEnterprise1151Page() {
                     <div className={`${styles.bentoCard} ${styles.cardLarge}`}>
                         <div className={styles.cardContent}>
                             <Server size={48} className={styles.cardIcon} />
-                            <h2 className={styles.cardTitle}>Fondamenta Solide per il tuo IT</h2>
+                            <h2 className={styles.cardTitle}>La sicurezza di non fermarsi mai</h2>
                             <p className={styles.cardText}>
-                                Affidabilità, scalabilità e sicurezza: i server Enterprise 1151 sono la base solida per la tua infrastruttura IT. Ideali per piccole e medie imprese che necessitano di un server robusto e versatile.
+                                Basati su piattaforma ASUS, leader nel settore hardware server. Soluzioni ingegnerizzate in modo ottimale con componentistica selezionata e certificata per garantire continuità operativa.
                             </p>
                             <div className={styles.cardReveal}>
                                 <p className={styles.cardText}>
-                                    La memoria ECC garantisce l'integrità dei dati, mentre il supporto per drive Hot-Swap permette la manutenzione senza interruzioni di servizio.
+                                    Ideali per chi cerca totale sicurezza e affidabilità, caratteristiche imprescindibili per un server aziendale.
                                 </p>
                             </div>
                         </div>
@@ -130,10 +130,10 @@ export default function LineaEnterprise1151Page() {
                     <div className={`${styles.bentoCard} ${styles.cardSmall} ${styles.cardHighlight}`}>
                         <div className={styles.cardContent}>
                             <Shield size={36} className={styles.cardIcon} style={{ color: '#0160A9' }} />
-                            <h3 className={styles.cardTitle}>Data Protection</h3>
+                            <h3 className={styles.cardTitle}>Protezione Dati</h3>
                             <div className={styles.cardReveal}>
                                 <p className={styles.cardTextSmall}>
-                                    Proteggi i tuoi asset aziendali con TPM 2.0 e funzionalità di sicurezza hardware integrate.
+                                    Controller ASUS PIKE II 3000 per storage SAS a 12 Gbit/s e protezione RAID hardware integrata.
                                 </p>
                             </div>
                         </div>
@@ -142,12 +142,53 @@ export default function LineaEnterprise1151Page() {
                     <div className={`${styles.bentoCard} ${styles.cardMedium}`}>
                         <div className={styles.cardContent}>
                             <Network size={48} className={styles.cardIcon} />
-                            <h3 className={styles.cardTitle}>Gestione Remota</h3>
+                            <h3 className={styles.cardTitle}>Intel Gigabit Ethernet</h3>
                             <p className={styles.cardText}>
-                                Controlla il tuo server da qualsiasi luogo grazie all'interfaccia IPMI dedicata. Monitoraggio hardware, KVM remoto e aggiornamenti firmware semplificati.
+                                Da due a quattro porte Intel® Ethernet di classe server con supporto teaming e failover per una connessione ininterrotta.
                             </p>
                         </div>
                     </div>
+                </div>
+            </section>
+
+            {/* Detailed Features Section - Restored Original Content */}
+            <section style={{ padding: '4rem 2rem', background: '#111', color: '#fff' }}>
+                <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
+                    <motion.div
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        style={{ display: 'grid', gap: '4rem' }}
+                    >
+                        <div>
+                            <h2 style={{ fontSize: '2.5rem', marginBottom: '1.5rem', color: '#00d2ff' }}>Soluzioni ottimizzate per il carico di lavoro</h2>
+                            <p style={{ fontSize: '1.1rem', lineHeight: '1.8', color: '#ccc' }}>
+                                I server Winblu della linea Enterprise 1151 supportano le più recenti tecnologie con le CPU <strong>Intel® Xeon® E</strong>, 1.36x più veloci rispetto alla generazione precedente e funzionanti con TDP massimo di 95W per prestazioni estreme. I quattro slot di memoria supportano fino a <strong>128 GB di DDR4 ECC</strong> 2666MHz per elaborazioni a uso intensivo di RAM. I server Winblu Enterprise 1151 sono disponibili in formato 1 unità rack, 4 unità e 5 unità tower convertibile.
+                            </p>
+                        </div>
+
+                        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '3rem' }}>
+                            <div>
+                                <h3 style={{ fontSize: '1.8rem', marginBottom: '1rem', color: '#fff' }}>Flessibilità di espansione storage</h3>
+                                <p style={{ lineHeight: '1.7', color: '#aaa' }}>
+                                    La linea Enterprise 1151 ospita quattro bay da 2,5”/3,5″ sostituibili a caldo (Hot-Swap). La versione 5U è ulteriormente espandibile fino a otto bay per una maggiore capacità di archiviazione opzionale. Due slot <strong>M.2 NVMe</strong> ospitano SSD fino al formato 22110 con supporto al boot del sistema operativo e larghezza di banda PCIe Gen3 – 5,3 volte più veloce rispetto a SATA III – per velocità di avvio più elevate.
+                                </p>
+                            </div>
+                            <div>
+                                <h3 style={{ fontSize: '1.8rem', marginBottom: '1rem', color: '#fff' }}>Massimizzazione I/O e Protezione</h3>
+                                <p style={{ lineHeight: '1.7', color: '#aaa' }}>
+                                    Supporto per i controller della serie <strong>ASUS PIKE II 3000</strong>, la più recente soluzione di storage aziendale, con supporto per l’archiviazione SAS a 12 Gbit/s e protezione dei dati RAID integrata. I controller hardware ASUS PIKE sono una grande opzione di aggiornamento per migliorare immediatamente capacità e prestazioni.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div style={{ padding: '2rem', background: 'rgba(255,255,255,0.05)', borderRadius: '16px', borderLeft: '4px solid #00d2ff' }}>
+                            <h3 style={{ fontSize: '1.5rem', marginBottom: '0.5rem', color: '#fff' }}>Connettività Intel di Classe Server</h3>
+                            <p style={{ margin: 0, color: '#ccc' }}>
+                                Dotati di connettori <strong>Intel® Ethernet</strong> (da 2 a 4 secondo il modello) con controller I210 e I219. Il supporto <strong>Teaming</strong> estende la larghezza di banda della rete, mentre la funzione di <strong>Failover</strong> garantisce una connessione ininterrotta, rendendola la soluzione perfetta per applicazioni di virtualizzazione che richiedono una rete ultraveloce e affidabile.
+                            </p>
+                        </div>
+                    </motion.div>
                 </div>
             </section>
 
