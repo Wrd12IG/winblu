@@ -98,16 +98,15 @@ export default function TRokZ790Page() {
                         transition={{ duration: 0.8 }}
                         className={styles.heroText}
                     >
-                        <span className={styles.heroTag}>Performance No Limits</span>
+                        <span className={styles.heroTag} style={{ color: '#0160A9', borderColor: 'rgba(1, 96, 169, 0.3)', background: 'rgba(1, 96, 169, 0.1)' }}>Performance No Limits</span>
                         <h1 className={styles.heroTitle}>
-                            T-ROK Z790:<br />
-                            <span className={styles.gradient} style={{ background: 'linear-gradient(135deg, #ff0055 0%, #7e0021 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>No Limits Performance</span>
+                            Winblu <span className={styles.gradient} style={{ background: 'linear-gradient(135deg, #0160A9 0%, #004e8a 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>T-ROK Z790</span>
                         </h1>
                         <p className={styles.heroDesc}>
-                            Varca i confini dell’immaginazione. Potrai vivere esperienze di gioco a livelli impensabili. Una bomba di tecnologia per l’appassionato di gaming estremo che cerca solo ed esclusivamente il top.
+                            Varca i confini dell’immaginazione. Con i nuovi Winblu T-ROK Z790, potrete vivere esperienze di gioco a livelli finora impensabili. Una vera e propria bomba di tecnologia per l’appassionato di gaming estremo che cerca solo ed esclusivamente il top.
                         </p>
                         <div className={styles.heroCTAs}>
-                            <Link href="/punti-vendita?tipo=fornitura" className={styles.ctaPrimary}>
+                            <Link href="/punti-vendita?tipo=fornitura" className={styles.ctaPrimary} style={{ borderColor: 'rgba(1, 96, 169, 0.4)', background: 'linear-gradient(135deg, rgba(1, 96, 169, 0.2), rgba(1, 96, 169, 0.1))' }}>
                                 Configura il Top
                             </Link>
                             <Link href="/punti-vendita" className={styles.ctaSecondary}>
@@ -156,14 +155,14 @@ export default function TRokZ790Page() {
                             <div className={styles.cardOverlay} />
                         </div>
                         <div className={styles.cardContent}>
-                            <Sparkles size={48} className={styles.cardIcon} style={{ color: '#ff0055' }} />
-                            <h2 className={styles.cardTitle}>Massima Eleganza, Massima Potenza</h2>
+                            <Sparkles size={48} className={styles.cardIcon} style={{ color: '#0160A9' }} />
+                            <h2 className={styles.cardTitle}>Eleganza & Potenza</h2>
                             <p className={styles.cardText}>
-                                Case d’eccezione con pannelli in vetro temperato da 4mm sui tre lati e quattro ventole ARGB con Aura RGB lighting.
+                                Un case d’eccezione con pannelli in <strong>vetro temperato da 4mm</strong> sui tre lati. Le quattro ventole ARGB servono incredibili effetti luminosi sincronizzabili con <strong>Aura RGB lighting</strong>.
                             </p>
                             <div className={styles.cardReveal}>
                                 <p className={styles.cardText}>
-                                    Sincronizzazione luminosa totale e nuovo alimentatore ATX 3.0 PCIe 5.0 80Plus Gold per massima stabilità nelle sessioni estreme.
+                                    Per garantire la massima stabilità, la serie T-ROK Z790 prevede il nuovo alimentatore <strong>ATX 3.0 PCIe 5.0 80Plus Gold</strong>. Un concentrato di stile e affidabilità per sessioni di gioco senza interruzioni.
                                 </p>
                             </div>
                         </div>
@@ -175,13 +174,14 @@ export default function TRokZ790Page() {
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         transition={{ delay: 0.1 }}
+                        style={{ background: 'linear-gradient(135deg, rgba(1, 96, 169, 0.08), rgba(1, 96, 169, 0.02))', borderColor: 'rgba(1, 96, 169, 0.2)' }}
                     >
                         <div className={styles.cardContent}>
-                            <Zap size={36} className={styles.cardIcon} style={{ color: '#ff0055' }} />
-                            <h3 className={styles.cardTitle}>ATX 3.0 Ready</h3>
+                            <Activity size={36} className={styles.cardIcon} style={{ color: '#0160A9' }} />
+                            <h3 className={styles.cardTitle}>Audio ROG Supreme FX</h3>
                             <div className={styles.cardReveal}>
                                 <p className={styles.cardTextSmall}>
-                                    Alimentazione nativa PCIe 5.0 per gestire le richieste energetiche delle GPU più potenti al mondo.
+                                    La scheda madre Asus ROG Strix Z790-F Gaming WiFi eleva l'audio a nuovi livelli con l'esclusivo codec ALC4080 e i condensatori Nichicon™ Premium. Ogni battito e ogni effetto risulterà cristallino e avvolgente.
                                 </p>
                             </div>
                         </div>
@@ -195,14 +195,14 @@ export default function TRokZ790Page() {
                         transition={{ delay: 0.2 }}
                     >
                         <div className={styles.cardContent}>
-                            <Cpu size={48} className={styles.cardIcon} style={{ color: '#ff0055' }} />
-                            <h3 className={styles.cardTitle}>14ᴬ Gen Unlocked</h3>
+                            <Cpu size={48} className={styles.cardIcon} style={{ color: '#0160A9' }} />
+                            <h3 className={styles.cardTitle}>Evoluzione Hardware</h3>
                             <p className={styles.cardText}>
-                                Raptor Lake Refresh: fino a 6.0GHz sul modello i9-14900K. Il vertice assoluto della potenza computazionale.
+                                Sfrutta la potenza dei processori Intel® Core™ di 14ᵃ generazione serie K. Una piattaforma progettata per il futuro del gaming e della creazione di contenuti.
                             </p>
                             <div className={styles.cardReveal}>
                                 <p className={styles.cardText}>
-                                    Cache L3 massimizzata e gestione dei thread ottimizzata per un gaming fluido a risoluzione 4K e rendering in tempo reale.
+                                    Ottimizzati per il multitasking estremo, questi processori garantiscono frame rate elevatissimi anche nei titoli più esigenti e velocità di rendering senza precedenti.
                                 </p>
                             </div>
                         </div>
@@ -214,16 +214,17 @@ export default function TRokZ790Page() {
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         transition={{ delay: 0.3 }}
+                        style={{ background: 'linear-gradient(135deg, rgba(1, 96, 169, 0.08), rgba(1, 96, 169, 0.02))', borderColor: 'rgba(1, 96, 169, 0.2)' }}
                     >
                         <div className={styles.cardContent}>
-                            <Monitor size={48} className={styles.cardIcon} style={{ color: '#ff0055' }} />
-                            <h3 className={styles.cardTitle}>RTX series Extreme</h3>
+                            <Monitor size={48} className={styles.cardIcon} style={{ color: '#0160A9' }} />
+                            <h3 className={styles.cardTitle}>Grafica Incredibile</h3>
                             <p className={styles.cardText}>
-                                Ray Tracing di 3ᵃ gen per mondi virtuali iper-dettagliati. Grafica AI Ada Lovelace senza compromessi.
+                                Basato su architettura NVIDIA Ada Lovelace, T-ROK Z790 monta le potentissime GeForce RTX® 4000. Ray Tracing e IA per un realismo mai visto prima.
                             </p>
                             <div className={styles.cardReveal}>
                                 <p className={styles.cardText}>
-                                    Massima libertà nella creazione di contenuti e produttività ingegneristica senza precedenti grazie a DLSS 3.
+                                    La tecnologia DLSS 3 moltiplica le prestazioni garantendo un'esperienza fluida anche a risoluzione 4K, portando il fotorealismo direttamente sulla tua scrivania.
                                 </p>
                             </div>
                         </div>
@@ -237,11 +238,11 @@ export default function TRokZ790Page() {
                         transition={{ delay: 0.4 }}
                     >
                         <div className={styles.cardContent}>
-                            <Activity size={36} className={styles.cardIcon} style={{ color: '#ff0055' }} />
-                            <h3 className={styles.cardTitle}>Supreme FX Audio</h3>
+                            <Wifi size={36} className={styles.cardIcon} style={{ color: '#0160A9' }} />
+                            <h3 className={styles.cardTitle}>Connettività No-Limits</h3>
                             <div className={styles.cardReveal}>
                                 <p className={styles.cardTextSmall}>
-                                    Audio professionale a 32bit / 384 kHz con codec ALC4080 per un'immersione sonora totale.
+                                    Wi-Fi 6E Tri-Band e porta LAN da 2.5Gb per garantire la minima latenza possibile. Una rete stabile per dominare le classifiche online.
                                 </p>
                             </div>
                         </div>
@@ -253,12 +254,13 @@ export default function TRokZ790Page() {
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         transition={{ delay: 0.5 }}
+                        style={{ background: 'linear-gradient(135deg, rgba(1, 96, 169, 0.08), rgba(1, 96, 169, 0.02))', borderColor: 'rgba(1, 96, 169, 0.2)' }}
                     >
                         <div className={styles.cardContent}>
-                            <Wifi size={48} className={styles.cardIcon} style={{ color: '#ff0055' }} />
-                            <h3 className={styles.cardTitle}>Wi-Fi 6E Tri-Band</h3>
+                            <Gauge size={48} className={styles.cardIcon} style={{ color: '#0160A9' }} />
+                            <h3 className={styles.cardTitle}>Performance DDR5</h3>
                             <p className={styles.cardText}>
-                                Connessione fulminea e priva di lag grazie allo spettro dei 6GHz e porta LAN da 2.5Gb integrata.
+                                Memorie ad alta velocità fino a 7200 MT/s per abbattere ogni collo di bottiglia. La reattività che trasforma ogni comando in azione immediata.
                             </p>
                         </div>
                     </motion.div>
@@ -273,7 +275,7 @@ export default function TRokZ790Page() {
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         className={styles.specsTitle}
-                        style={{ background: 'linear-gradient(to bottom, #fff, #ff0055)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}
+                        style={{ background: 'linear-gradient(to bottom, #fff, #0160A9)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}
                     >
                         Specifiche Tecniche
                     </motion.h2>
