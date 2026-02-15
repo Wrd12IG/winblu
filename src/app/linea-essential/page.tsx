@@ -117,13 +117,13 @@ export default function LineaEssentialPage() {
             transition={{ duration: 0.8 }}
             className={styles.heroText}
           >
-            <span className={styles.heroTag}>Linea Essential</span>
+            <span className={styles.heroTag}>Winblu Essential</span>
             <h1 className={styles.heroTitle}>
               Dimensioni Small<br />
-              <span className={styles.gradient}>Prestazioni Extra</span>
+              <span className={styles.gradient}>Prestazioni Extra-Large</span>
             </h1>
             <p className={styles.heroDesc}>
-              Un autentico concentrato di potenza e tecnologia in soli 8.3 litri. La soluzione ideale per chi ha problemi di spazio e predilige il massimo della funzionalità senza compromessi.
+              Un autentico concentrato di potenza e tecnologia al servizio delle tue necessità. Grazie al design ultra-compatto SFF da 8.3 litri, la nuova Linea Essential è la soluzione ideale per chi predilige il massimo della funzionalità.
             </p>
             <div className={styles.heroCTAs}>
               <Link href="/punti-vendita" className={styles.ctaPrimary}>
@@ -176,13 +176,13 @@ export default function LineaEssentialPage() {
             </div>
             <div className={styles.cardContent}>
               <Box className={styles.cardIcon} size={48} />
-              <h2 className={styles.cardTitle}>Design Ultra-Compatto SFF</h2>
+              <h2 className={styles.cardTitle}>Solo 8.3 Litri</h2>
               <p className={styles.cardText}>
-                Il nuovo Winblu Essential misura solo 33.6cm di larghezza e 9.5cm di altezza (in orizzontale), per un volume totale di 8.3 litri.
+                27.2cm x 33.6cm x 9.5cm. Il formato SFF ultra-compatto che libera il tuo spazio vitale.
               </p>
               <div className={styles.cardReveal}>
                 <p className={styles.cardText}>
-                  Grazie al pratico supporto in dotazione, può essere posizionato anche in verticale, adattandosi a qualsiasi ambiente di lavoro, anche i più ristretti, mantenendo un'eleganza professionale.
+                  Grazie al pratico supporto in dotazione, può essere posizionato anche in verticale, adattandosi a qualsiasi ambiente di lavoro, anche i più ristretti.
                 </p>
               </div>
             </div>
@@ -197,11 +197,11 @@ export default function LineaEssentialPage() {
             transition={{ duration: 0.6, delay: 0.1 }}
           >
             <div className={styles.cardContent}>
-              <DollarSign className={styles.cardIcon} size={36} />
-              <h3 className={styles.cardTitle}>Convenienza</h3>
+              <Zap className={styles.cardIcon} size={36} />
+              <h3 className={styles.cardTitle}>65 Watt</h3>
               <div className={styles.cardReveal}>
                 <p className={styles.cardTextSmall}>
-                  Massima funzionalità nel design e nei contenuti tecnici con il miglior rapporto qualità-prezzo della categoria.
+                  Supporto pieno a CPU desktop Intel Core da 65W per gestire compiti di calcolo intensivi.
                 </p>
               </div>
             </div>
@@ -217,15 +217,10 @@ export default function LineaEssentialPage() {
           >
             <div className={styles.cardContent}>
               <Cpu className={styles.cardIcon} size={48} style={{ color: '#0160A9' }} />
-              <h3 className={styles.cardTitle}>Performance al Top</h3>
+              <h3 className={styles.cardTitle}>Performance 13ᴬ Gen</h3>
               <p className={styles.cardText}>
-                Equipaggiato con processori Intel® Core™ di 12ª, 13ª e 14ª generazione (fino a 65W) per una produttività senza interruzioni.
+                Intel® Core™ di 12ᴬ e 13ᴬ generazione per produttività senza interruzioni e intrattenimento sbalorditivo.
               </p>
-              <div className={styles.cardReveal}>
-                <p className={styles.cardText}>
-                  Nonostante le dimensioni ridotte, non rinuncia alla potenza: supporto RAM fino a 64GB DDR4 e storage ibrido SSD ultra-veloce + HDD capiente per gestire ogni carico di lavoro.
-                </p>
-              </div>
             </div>
           </motion.div>
 
@@ -238,21 +233,15 @@ export default function LineaEssentialPage() {
             transition={{ duration: 0.6, delay: 0.3 }}
           >
             <div className={styles.cardContent}>
-              <Zap className={styles.cardIcon} size={48} />
-              <h3 className={styles.cardTitle}>Piena Connettività</h3>
+              <Layout className={styles.cardIcon} size={48} />
+              <h3 className={styles.cardTitle}>Grafica 8K HDR</h3>
               <p className={styles.cardText}>
-                Perfetto come centro di gravità del tuo ufficio. Accesso rapido frontale a 4 porte USB e Audio per la massima comodità.
+                Intel® UHD 770/730 con supporto fino a 8K@60Hz HDR e media decoding a 12-bit per complessità visiva amplificata.
               </p>
-              <ul className={styles.featureList} style={{ marginTop: '1rem', gridTemplateColumns: '1fr' }}>
-                <li>4x USB Frontali (2x 3.0)</li>
-                <li>Video: HDMI + VGA + DP (opt)</li>
-                <li>Supporto Porta Seriale COM</li>
-              </ul>
             </div>
           </motion.div>
 
-
-          {/* Card Large: Graphics & Trust (Merging somewhat or keeping Layout) */}
+          {/* Card Large: Connectivity */}
           <motion.div
             className={`${styles.bentoCard} ${styles.cardLarge}`}
             initial={{ opacity: 0, y: 20 }}
@@ -261,14 +250,14 @@ export default function LineaEssentialPage() {
             transition={{ duration: 0.6, delay: 0.4 }}
           >
             <div className={styles.cardContent}>
-              <Layout className={styles.cardIcon} size={48} />
-              <h2 className={styles.cardTitle}>Versatilità Multimediale</h2>
+              <Network className={styles.cardIcon} size={48} />
+              <h2 className={styles.cardTitle}>Centro di Gravità Digitale</h2>
               <p className={styles.cardText}>
-                Core grafico Intel® UHD (architettura Xe) con supporto fino a 8K@60Hz HDR per video cristallini e supporto multi-monitor.
+                Connessioni frontali e posteriori complete per tutte le tue periferiche. La soluzione perfetta per l'interconnessione avanzata.
               </p>
               <div className={styles.cardReveal}>
                 <p className={styles.cardText}>
-                  Possibilità di integrare schede video dedicate Low Profile (es. NVIDIA T400/T1000) per accelerare i flussi di lavoro creativi e CAD 2D/3D leggeri, rendendo Essential una workstation compatta.
+                  Frontale: 2x USB 3.0, 2x USB 2.0, Audio. Retro: 2x USB 3.2, 2x USB 2.0, HDMI, VGA, e opzionali COM/Seriale. Espandibile con GPU Low Profile.
                 </p>
               </div>
             </div>
@@ -284,15 +273,49 @@ export default function LineaEssentialPage() {
           >
             <div className={styles.cardContent}>
               <Shield className={styles.cardIcon} size={36} />
-              <h3 className={styles.cardTitle}>3 Anni Garanzia</h3>
+              <h3 className={styles.cardTitle}>Affidabilità</h3>
               <div className={styles.cardReveal}>
                 <p className={styles.cardTextSmall}>
-                  La sicurezza di un prodotto certificato con assistenza tecnica dedicata Winblu.
+                  Design a due unità (SSD M.2 PCIe 4.0 + SSD/HDD 2.5") per velocità e capacità senza compromessi.
                 </p>
               </div>
             </div>
           </motion.div>
+        </div>
+      </section>
 
+      {/* Detailed Features Section - Restored Original Content */}
+      <section style={{ padding: '4rem 2rem', background: '#111', color: '#fff' }}>
+        <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            style={{ display: 'grid', gap: '4rem' }}
+          >
+            <div>
+              <h2 style={{ fontSize: '2.5rem', marginBottom: '1.5rem', color: '#00d2ff' }}>Performance al Top e completa espandibilità</h2>
+              <p style={{ fontSize: '1.1rem', lineHeight: '1.8', color: '#ccc' }}>
+                Performance potenti con il nuovo Essential 8.3L grazie ai processori <strong>Intel® Core™ di dodicesima e tredicesima generazione</strong>, che offrono notevoli miglioramenti delle prestazioni per una maggiore produttività e un intrattenimento sbalorditivo. La nuova linea supporta <strong>CPU da 65 watt</strong> ed è in grado quindi di gestire compiti di calcolo intensivi.
+                Supporta fino a <strong>64GB di memoria DDR4 3200Mhz</strong> che assicura un multitasking fluido e un design a due unità di archiviazione con un <strong>SSD M.2 PCIe® 4.0 x4</strong> e un drive SSD/HD da 2.5’’, il mix perfetto di trasferimenti di dati veloci e alta capacità di archiviazione.
+              </p>
+            </div>
+
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '3rem' }}>
+              <div>
+                <h3 style={{ fontSize: '1.8rem', marginBottom: '1rem', color: '#fff' }}>Connettività & Flexibilità</h3>
+                <p style={{ lineHeight: '1.7', color: '#aaa' }}>
+                  Grazie alla molteplicità di porte di connessione, i Pc Essential sono perfetti come <em>centro di gravità del tuo universo digitale</em>. Sul lato frontale sono agevolmente accessibili n°2 porte USB 3.0, n°2 porte USB 2.0 e le porte Audio. Sul retro sono fruibili ulteriori porte USB 3.2 e USB 2.0, e le uscite <strong>D-SUB (VGA) e HDMI</strong>, per sfruttare al meglio l’interconnessione con dispositivi di visualizzazione digitale. Configurabile anche con Masterizzatore Slim e porta COM/Seriale opzionali.
+                </p>
+              </div>
+              <div>
+                <h3 style={{ fontSize: '1.8rem', marginBottom: '1rem', color: '#fff' }}>Core Grafico Avanzato</h3>
+                <p style={{ lineHeight: '1.7', color: '#aaa' }}>
+                  Winblu Essential 8.3L integra il core grafico <strong>Intel® UHD 770/730</strong> basato su architettura Intel Xe, supportando fino all’incredibile risoluzione di <strong>8k@60Hz HDR</strong>, con migliorato supporto alla codifica/decodifica dei media a 12-bit. Per gli utilizzatori più esigenti, è possibile integrare una <strong>scheda video discreta</strong> su slot PCIe 4.0 x16 Low Profile (es. Nvidia® RTX T400), potenziando ulteriormente le capacità 3D e di elaborazione immagini.
+                </p>
+              </div>
+            </div>
+          </motion.div>
         </div>
       </section>
 
