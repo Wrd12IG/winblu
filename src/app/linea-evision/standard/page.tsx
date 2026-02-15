@@ -72,13 +72,13 @@ export default function EVisionStandardPage() {
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.8 }}
                     >
-                        <span className={styles.heroTag}>eVision Standard</span>
+                        <span className={styles.heroTag}>Winblu eVision Standard</span>
                         <h1 className={styles.heroTitle}>
-                            L'Eccellenza<br />
-                            <span className={styles.gradient}>Quotidiana</span>
+                            Qualità ed<br />
+                            <span className={styles.gradient}>Eleganza</span>
                         </h1>
                         <p className={styles.heroDesc}>
-                            Il perfetto equilibrio tra design minimalista e potenza operativa. La scelta ideale per uffici moderni e home office di stile.
+                            Bello da vedere, facile da utilizzare. Un’innovativa soluzione che abbina gli elevati livelli prestazionali dei PC Winblu con l’alta qualità di uno schermo Full HD integrato.
                         </p>
                         <div className={styles.heroCTAs}>
                             <Link href="/punti-vendita" className={styles.ctaPrimary}>
@@ -114,14 +114,14 @@ export default function EVisionStandardPage() {
                 <div className={styles.bentoGrid}>
                     <div className={`${styles.bentoCard} ${styles.cardLarge}`}>
                         <div className={styles.cardContent}>
-                            <Layers size={48} className={styles.cardIcon} />
-                            <h2 className={styles.cardTitle}>Minimalismo Funzionale</h2>
+                            <Monitor size={48} className={styles.cardIcon} />
+                            <h2 className={styles.cardTitle}>Parola d’ordine: Nitidezza</h2>
                             <p className={styles.cardText}>
-                                Dimentica i cavi. Con il mouse e la tastiera wireless inclusi e il design ultra-compatto, la tua scrivania sarà sempre ordinata e pronta per la produttività.
+                                Grazie al display Full HD e WEBCAM 5MP. Uno schermo da 23.8” o 27” LED retroilluminato con risoluzione 1920×1080 per immagini nitide e brillanti.
                             </p>
                             <div className={styles.cardReveal}>
                                 <p className={styles.cardText}>
-                                    Lo stand in metallo satinato garantisce stabilità ed eleganza, mentre il sistema di cable management nasconde ogni distrazione.
+                                    Perfetto per rendere prestigiosa la tua scrivania, la tua zona entertainment di casa o per ambienti space-saving come negozi e ristoranti.
                                 </p>
                             </div>
                         </div>
@@ -129,14 +129,14 @@ export default function EVisionStandardPage() {
 
                     <div className={`${styles.bentoCard} ${styles.cardMedium} ${styles.cardHighlight}`}>
                         <div className={styles.cardContent}>
-                            <Camera size={48} className={styles.cardIcon} style={{ color: '#0160A9' }} />
-                            <h3 className={styles.cardTitle}>Privacy Garantita</h3>
+                            <Cpu size={48} className={styles.cardIcon} style={{ color: '#0160A9' }} />
+                            <h3 className={styles.cardTitle}>14ᴬ Generazione</h3>
                             <p className={styles.cardText}>
-                                La webcam pop-up da 5MP appare solo quando ne hai bisogno.
+                                Prestazioni al top con Intel® Core™ i3, i5 e i7.
                             </p>
                             <div className={styles.cardReveal}>
                                 <p className={styles.cardTextSmall}>
-                                    Spingila verso il basso per disattivarla fisicamente. Nessuno potrà spiarti.
+                                    Capacità computazionale di primo livello, versatile e potente per ogni esigenza desktop.
                                 </p>
                             </div>
                         </div>
@@ -144,13 +144,47 @@ export default function EVisionStandardPage() {
 
                     <div className={`${styles.bentoCard} ${styles.cardMedium}`}>
                         <div className={styles.cardContent}>
-                            <Monitor size={48} className={styles.cardIcon} />
-                            <h3 className={styles.cardTitle}>Visuale Immersiva</h3>
+                            <Camera size={48} className={styles.cardIcon} />
+                            <h3 className={styles.cardTitle}>Multimedialità Totale</h3>
                             <p className={styles.cardText}>
-                                Pannello IPS con bordi ultrasottili su tre lati per un'esperienza visiva senza interruzioni.
+                                Webcam 5MP pull-up, speaker 2x2W e microfono integrati.
                             </p>
                         </div>
                     </div>
+                </div>
+            </section>
+
+            {/* Detailed Features Section - Restored Original Content */}
+            <section style={{ padding: '4rem 2rem', background: '#111', color: '#fff' }}>
+                <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
+                    <motion.div
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        style={{ display: 'grid', gap: '4rem' }}
+                    >
+                        <div>
+                            <h2 style={{ fontSize: '2.5rem', marginBottom: '1.5rem', color: '#00d2ff' }}>Prestazioni al top di gamma</h2>
+                            <p style={{ fontSize: '1.1rem', lineHeight: '1.8', color: '#ccc' }}>
+                                <strong>Winblu LCDPC eVision</strong> è capacità computazionale di primo livello, ancora più potente e versatile, grazie all’intera gamma dei processori <strong>Intel® Core™ fino alla 14A generazione</strong> versione desktop – i3, i5 e i7. Altrettanto completo il resto dell’architettura hardware, con possibilità di ospitare fino a <strong>64 GB di RAM DDR4</strong>, un Solid State Disk <strong>M.2 NVMe</strong> ultra veloce, più un ulteriore disco Sata3 – tradizionale o allo stato solido. Ottima anche la connettività con Gigabit LAN, Wifi, Bluetooth e lettore SD card integrati.
+                            </p>
+                        </div>
+
+                        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '3rem' }}>
+                            <div>
+                                <h3 style={{ fontSize: '1.8rem', marginBottom: '1rem', color: '#fff' }}>Design & Space Saving</h3>
+                                <p style={{ lineHeight: '1.7', color: '#aaa' }}>
+                                    Come descrivere la combo LCDPC in soli due aggettivi? Winblu eVision è tutta la compattezza di una piattaforma hardware che si esprime al meglio attraverso la nitidezza di un display Full HD integrato. Un computer All-In-One performante, ergonomico ed elegante, perfetto per rendere prestigiosa la tua scrivania, la tua zona entertainment di casa o come soluzione tutta-in-uno particolarmente adatta per specifiche ambientazioni, ad esempio negozi, ristoranti o situazioni che richiedono prodotti space-saving ovvero a minimo ingombro.
+                                </p>
+                            </div>
+                            <div>
+                                <h3 style={{ fontSize: '1.8rem', marginBottom: '1rem', color: '#fff' }}>Display & Multimedialità</h3>
+                                <p style={{ lineHeight: '1.7', color: '#aaa' }}>
+                                    La soluzione eVision è dotata di uno schermo da <strong>23.8” o 27” LED retroilluminato</strong> con risoluzione 1920×1080, in grado di restituire immagini nitide e brillanti. La linea eVision standard è disponibile in 2 colori a scelta, bianco/argento e nero. La grafica integrata <strong>Intel® UHD</strong> (in base alla CPU scelta), con connettore HDMI, permette la gestione simultanea di un ulteriore monitor. Completano il quadro un sistema audio con altoparlanti 2x2W, luce di cortesia, <strong>webcam 5MP pull-up</strong>, microfono e porta seriale/COM.
+                                </p>
+                            </div>
+                        </div>
+                    </motion.div>
                 </div>
             </section>
 
