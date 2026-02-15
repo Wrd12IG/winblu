@@ -100,17 +100,18 @@ export default function TRokZ790Page() {
                     >
                         <span className={styles.heroTag}>Performance No Limits</span>
                         <h1 className={styles.heroTitle}>
-                            Winblu <span className={styles.gradient}>T-ROK Z790</span>
+                            T-ROK Z790:<br />
+                            <span className={styles.gradient}>No Limits Performance</span>
                         </h1>
                         <p className={styles.heroDesc}>
-                            Scatena la tua furia di gioco. Il PC gaming progettato per dominare ogni scenario competitivo con la potenza del chipset Z790 Extreme.
+                            Varca i confini dell’immaginazione. Potrai vivere esperienze di gioco a livelli impensabili. Una bomba di tecnologia per l’appassionato di gaming estremo che cerca solo ed esclusivamente il top.
                         </p>
                         <div className={styles.heroCTAs}>
                             <Link href="/punti-vendita?tipo=fornitura" className={styles.ctaPrimary}>
                                 Configura il Top
                             </Link>
                             <Link href="/punti-vendita" className={styles.ctaSecondary}>
-                                Trova Rivenditore
+                                Rivenditori
                             </Link>
                         </div>
                     </motion.div>
@@ -145,14 +146,14 @@ export default function TRokZ790Page() {
                         viewport={{ once: true }}
                     >
                         <div className={styles.cardContent}>
-                            <TrendingUp size={48} className={styles.cardIcon} />
-                            <h2 className={styles.cardTitle}>Il vertice della potenza</h2>
+                            <Sparkles size={48} className={styles.cardIcon} />
+                            <h2 className={styles.cardTitle}>Eleganza & Potenza</h2>
                             <p className={styles.cardText}>
-                                Un'opera d'arte ingegneristica con pannelli in vetro temperato da 4mm e airflow ottimizzato per mantenere le temperature glaciali anche sotto carico estremo.
+                                Case d'eccezione con pannelli in vetro temperato da 4mm e quattro ventole Addressable-RGB con 20 diversi effetti luminosi.
                             </p>
                             <div className={styles.cardReveal}>
                                 <p className={styles.cardText}>
-                                    La serie T-ROK Z790 integra alimentatori ATX 3.0 PCIe 5.0 con certificazione 80Plus Gold, garantendo stabilità assoluta a processori e GPU flagship.
+                                    Sincronizzazione Aura RGB e nuovo alimentatore ATX 3.0 PCIe 5.0 80Plus Gold per massima stabilità e potenza senza compromessi.
                                 </p>
                             </div>
                         </div>
@@ -166,11 +167,11 @@ export default function TRokZ790Page() {
                         transition={{ delay: 0.1 }}
                     >
                         <div className={styles.cardContent}>
-                            <Sparkles size={36} className={styles.cardIcon} />
-                            <h3 className={styles.cardTitle}>Aura RGB Sync</h3>
+                            <Zap size={36} className={styles.cardIcon} />
+                            <h3 className={styles.cardTitle}>ATX 3.0</h3>
                             <div className={styles.cardReveal}>
                                 <p className={styles.cardTextSmall}>
-                                    Fino a 20 effetti luminosi ARGB completamente personalizzabili e sincronizzati con il tuo setup.
+                                    Alimentazione PCIe 5.0 pronta per le GPU del futuro.
                                 </p>
                             </div>
                         </div>
@@ -184,10 +185,10 @@ export default function TRokZ790Page() {
                         transition={{ delay: 0.2 }}
                     >
                         <div className={styles.cardContent}>
-                            <Activity size={48} className={styles.cardIcon} />
-                            <h3 className={styles.cardTitle}>Audio ROG Supreme FX</h3>
+                            <Cpu size={48} className={styles.cardIcon} />
+                            <h3 className={styles.cardTitle}>14ᴬ Gen Intel</h3>
                             <p className={styles.cardText}>
-                                Qualità sonora hi-fi con codec ALC4080 a 32bit/384 kHz per percepire ogni minimo dettaglio sonoro nel gioco competitivo.
+                                Raptor Lake Refresh: fino a 6.0GHz sul modello i9-14900K. Il massimo della potenza.
                             </p>
                         </div>
                     </motion.div>
@@ -200,10 +201,51 @@ export default function TRokZ790Page() {
                         transition={{ delay: 0.3 }}
                     >
                         <div className={styles.cardContent}>
-                            <Wifi size={48} className={styles.cardIcon} />
-                            <h3 className={styles.cardTitle}>Hi-Speed Network</h3>
+                            <Monitor size={48} className={styles.cardIcon} />
+                            <h3 className={styles.cardTitle}>RTX Serie 4000</h3>
                             <p className={styles.cardText}>
-                                Connettività Wi-Fi 6E dual-band e porta LAN 2.5G per sessioni online fluide e download fulminei di asset pesanti.
+                                Tensor core di 4ᵃ gen e Ray Tracing di 3ᵃ gen per mondi virtuali iper-dettagliati.
+                            </p>
+                        </div>
+                    </motion.div>
+                </div>
+            </section>
+
+            {/* Detailed Features Section */}
+            <section style={{ padding: '4rem 2rem', background: '#0a0a0a', color: '#fff' }}>
+                <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
+                    <motion.div
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        style={{ display: 'grid', gap: '5rem' }}
+                    >
+                        <div style={{ textAlign: 'center' }}>
+                            <h2 style={{ fontSize: '2.5rem', marginBottom: '1.5rem', color: '#ff0055' }}>Massima Eleganza, Massima Potenza</h2>
+                            <p style={{ fontSize: '1.1rem', lineHeight: '1.8', color: '#ccc', maxWidth: '900px', margin: '0 auto' }}>
+                                Un case d’eccezione con pannelli in <strong>vetro temperato da 4mm</strong> sui tre lati. Le quattro ventole ARGB servono incredibili effetti luminosi sincronizzabili con <strong>Aura RGB lighting</strong>. Per garantire la massima stabilità, la serie T-ROK Z790 prevede il nuovo alimentatore <strong>ATX 3.0 PCIe 5.0 80Plus Gold</strong>.
+                            </p>
+                        </div>
+
+                        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(400px, 1fr))', gap: '4rem' }}>
+                            <div>
+                                <h3 style={{ fontSize: '1.8rem', marginBottom: '1rem', color: '#fff' }}>Frontiera Elaborativa</h3>
+                                <p style={{ lineHeight: '1.7', color: '#aaa' }}>
+                                    Supporto alla <strong>Quattordicesima generazione</strong> Intel® Core™ (Raptor Lake Refresh) con core aumentati fino a 24 e thread fino a 32. Con i suoi <strong>6.0GHz</strong>, l'i9-14900K è definito come il più veloce al mondo, supportato da memorie <strong>DDR5 fino a 7200MT/s</strong>.
+                                </p>
+                            </div>
+                            <div>
+                                <h3 style={{ fontSize: '1.8rem', marginBottom: '1rem', color: '#fff' }}>Audio ROG Supreme FX</h3>
+                                <p style={{ lineHeight: '1.7', color: '#aaa' }}>
+                                    L'esclusivo codec <strong>ALC4080</strong> aumenta la risoluzione fino a <strong>32bit/384 kHz</strong>. I condensatori Nichicon™ e l'amplificatore <strong>Savitech</strong> forniscono un'acustica ad alta fedeltà verso cuffie professionali.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div style={{ borderTop: '1px solid #333', paddingTop: '3rem', textAlign: 'center' }}>
+                            <h3 style={{ fontSize: '1.8rem', marginBottom: '1rem', color: '#fff' }}>Connettività No-Limits</h3>
+                            <p style={{ lineHeight: '1.7', color: '#aaa', maxWidth: '800px', margin: '0 auto' }}>
+                                Protocollo <strong>WI-FI 6E tri-band</strong> con antenna regolabile e porta <strong>LAN 2.5Gb</strong> per una connessione fulminea e priva di lag nelle sessioni online più competitive.
                             </p>
                         </div>
                     </motion.div>

@@ -103,17 +103,18 @@ export default function TRokB760SEPage() {
                     >
                         <span className={styles.heroTag}>Aquarium Design PC</span>
                         <h1 className={styles.heroTitle}>
-                            T-ROK <span className={styles.gradient}>B760 SE</span>
+                            T-Rok B760 SE:<br />
+                            <span className={styles.gradient}>Gioco Immersivo</span>
                         </h1>
                         <p className={styles.heroDesc}>
-                            L'evoluzione dell'estetica gaming. Un design a doppia camera con trasparenza totale per chi vuole mettere in mostra la potenza del proprio hardware.
+                            Rilevanti prestazioni e pregio estetico. Il nuovo T-Rok B760 SE apre le porte al futuro del gaming, pronto a ridefinire le regole del gioco grazie a un equipaggiamento d’avanguardia.
                         </p>
                         <div className={styles.heroCTAs}>
                             <Link href="/punti-vendita?tipo=fornitura" className={styles.ctaPrimary}>
-                                Configura Ora
+                                Configura
                             </Link>
                             <Link href="/punti-vendita" className={styles.ctaSecondary}>
-                                Trova Rivenditore
+                                Rivenditori
                             </Link>
                         </div>
                     </motion.div>
@@ -149,13 +150,13 @@ export default function TRokB760SEPage() {
                     >
                         <div className={styles.cardContent}>
                             <Sparkles size={48} className={styles.cardIcon} />
-                            <h2 className={styles.cardTitle}>Spettacolo Visivo</h2>
+                            <h2 className={styles.cardTitle}>Effetti Speciali</h2>
                             <p className={styles.cardText}>
-                                Case Dual Chamber completamente riprogettato per favorire la dissipazione termica dei componenti più energivori, lasciando spazio alle espansioni più voluminose.
+                                Design a “doppia camera” riprogettato per favorire la dissipazione, con doppio vetro temperato a trasparenza totale.
                             </p>
                             <div className={styles.cardReveal}>
                                 <p className={styles.cardText}>
-                                    Vetro temperato a trasparenza totale su due lati e n°5 ventole ARGB di serie. Un’estetica premium per godere al meglio degli effetti luminosi gestiti dal sistema ASUS Aura Sync.
+                                    Un’evoluzione estetica per godere degli effetti luminosi gestiti dal sistema AURA, con un angolo di visuale da “prima fila”.
                                 </p>
                             </div>
                         </div>
@@ -169,11 +170,11 @@ export default function TRokB760SEPage() {
                         transition={{ delay: 0.1 }}
                     >
                         <div className={styles.cardContent}>
-                            <Cpu size={36} className={styles.cardIcon} />
-                            <h3 className={styles.cardTitle}>Intel 14th Gen</h3>
+                            <Gauge size={36} className={styles.cardIcon} />
+                            <h3 className={styles.cardTitle}>7200 MT/s</h3>
                             <div className={styles.cardReveal}>
                                 <p className={styles.cardTextSmall}>
-                                    Architettura Raptor Lake Refresh: fino a 24 core per gestire streaming e gaming simultaneo senza incertezze.
+                                    Memorie DDR5 ad altissima frequenza per un multitasking record.
                                 </p>
                             </div>
                         </div>
@@ -187,10 +188,10 @@ export default function TRokB760SEPage() {
                         transition={{ delay: 0.2 }}
                     >
                         <div className={styles.cardContent}>
-                            <Monitor size={48} className={styles.cardIcon} />
-                            <h3 className={styles.cardTitle}>Grafica RTX serie 40</h3>
+                            <Cpu size={48} className={styles.cardIcon} />
+                            <h3 className={styles.cardTitle}>14ᴬ Gen Intel</h3>
                             <p className={styles.cardText}>
-                                Basata su architettura NVIDIA Ada Lovelace. Ray Tracing e DLSS 3 per frame rate elevatissimi in risoluzione 4K.
+                                Fino a 24 core e 32 thread. Il più veloce processore da gaming al mondo.
                             </p>
                         </div>
                     </motion.div>
@@ -203,11 +204,51 @@ export default function TRokB760SEPage() {
                         transition={{ delay: 0.3 }}
                     >
                         <div className={styles.cardContent}>
-                            <Gauge size={48} className={styles.cardIcon} />
-                            <h3 className={styles.cardTitle}>DDR5 High Speed</h3>
+                            <Monitor size={48} className={styles.cardIcon} />
+                            <h3 className={styles.cardTitle}>RTX Serie 4000</h3>
                             <p className={styles.cardText}>
-                                Velocità fino a 7200MT/s per un sistema reattivo e multitasking fluido nelle sessioni di lavoro più pesanti.
+                                Architettura Ada Lovelace per un'esperienza visiva davvero inimmaginabile.
                             </p>
+                        </div>
+                    </motion.div>
+                </div>
+            </section>
+
+            {/* Detailed Features Section */}
+            <section style={{ padding: '4rem 2rem', background: '#0a0a0a', color: '#fff' }}>
+                <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
+                    <motion.div
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        style={{ display: 'grid', gap: '5rem' }}
+                    >
+                        <div style={{ textAlign: 'center' }}>
+                            <h2 style={{ fontSize: '2.5rem', marginBottom: '1.5rem', color: '#00d2ff' }}>Premio Oscar per gli effetti speciali</h2>
+                            <p style={{ fontSize: '1.1rem', lineHeight: '1.8', color: '#ccc', maxWidth: '900px', margin: '0 auto' }}>
+                                I laboratori R&D Winblu hanno progettato un design a <strong>“doppia camera”</strong> completamente rinnovato, con una disposizione modificata dei componenti interni per favorire la dissipazione; uno spazio più ampio per le espansioni più voluminose e un <strong>doppio vetro temperato a trasparenza totale</strong> con n°5 FAN di serie. Un’evoluzione estetica per godere degli effetti luminosi gestiti dal sistema <strong>AURA</strong>.
+                            </p>
+                        </div>
+
+                        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '3rem' }}>
+                            <div>
+                                <h3 style={{ fontSize: '1.8rem', marginBottom: '1rem', color: '#fff' }}>Potenza senza compatibilità</h3>
+                                <p style={{ lineHeight: '1.7', color: '#aaa' }}>
+                                    Supporta la <strong>Quattordicesima generazione</strong> di processori Intel® Core™ (Raptor Lake Refresh) con core aumentati fino a 24 e thread fino a 32. Il massimo della potenza è garantito anche dalle memorie <strong>DDR5 con frequenza fino a 7200MT/s</strong>, con dissipatore ed effetti luce RGB.
+                                </p>
+                            </div>
+                            <div>
+                                <h3 style={{ fontSize: '1.8rem', marginBottom: '1rem', color: '#fff' }}>Grafica Ada Lovelace</h3>
+                                <p style={{ lineHeight: '1.7', color: '#aaa' }}>
+                                    GPU <strong>Nvidia® GeForce® serie 4000</strong>: un enorme passo avanti in termini di prestazioni, efficienza e grafica IA. Rendering real time in qualità cinematografica e modellazione fotorealistica di oggetti complessi per una produttività senza precedenti.
+                                </p>
+                            </div>
+                            <div>
+                                <h3 style={{ fontSize: '1.8rem', marginBottom: '1rem', color: '#fff' }}>Giocare al massimo</h3>
+                                <p style={{ lineHeight: '1.7', color: '#aaa' }}>
+                                    Audio impeccabile con <strong>Surround 7.1</strong> (SNR 98dB) ed elaborazione DTS® per bassi più profondi. Connettività fulminea grazie al protocollo <strong>WI-FI 6</strong> e alla porta <strong>LAN 2.5Gb</strong>.
+                                </p>
+                            </div>
                         </div>
                     </motion.div>
                 </div>
