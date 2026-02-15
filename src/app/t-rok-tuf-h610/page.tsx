@@ -98,19 +98,20 @@ export default function TRokTufH610Page() {
                         transition={{ duration: 0.8 }}
                         className={styles.heroText}
                     >
-                        <span className={styles.heroTag}>Special White Edition</span>
+                        <span className={styles.heroTag}>Winblu Powered by ASUS</span>
                         <h1 className={styles.heroTitle}>
-                            Il Bisonte <span className={styles.gradient}>Bianco</span>
+                            T-Rok H610:<br />
+                            <span className={styles.gradient}>Bisonte Bianco</span>
                         </h1>
                         <p className={styles.heroDesc}>
-                            Estetica glaciale, prestazioni roventi. Un gaming PC compatto in edizione speciale bianca, certificato "Powered by ASUS" per un'affidabilità senza pari.
+                            Quando le leggende si fanno realtà. Ricordate il mitologico Bisonte Bianco delle Leggende Indiane? Una creatura fantastica che ora prende la forma di una poderosa game machine firmata Winblu.
                         </p>
                         <div className={styles.heroCTAs}>
                             <Link href="/punti-vendita?tipo=fornitura" className={styles.ctaPrimary}>
-                                Richiedi Preventivo
+                                Configura
                             </Link>
                             <Link href="/punti-vendita" className={styles.ctaSecondary}>
-                                Trova Rivenditore
+                                Rivenditori
                             </Link>
                         </div>
                     </motion.div>
@@ -148,11 +149,11 @@ export default function TRokTufH610Page() {
                             <Award size={48} className={styles.cardIcon} />
                             <h2 className={styles.cardTitle}>Powered by ASUS</h2>
                             <p className={styles.cardText}>
-                                Il T-ROK H610 White è basato su hardware ASUS e ufficialmente certificato dal marchio <strong>PBA</strong>. Una simbiosi perfetta fra prestazioni e design esclusivo "Pure White".
+                                Progettata congiuntamente dai Laboratori R&D Winblu e ASUS, è certificata ufficialmente dal marchio <strong>PBA</strong>.
                             </p>
                             <div className={styles.cardReveal}>
                                 <p className={styles.cardText}>
-                                    Utilizziamo componenti di grado militare per garantire stabilità assoluta. Il case Bisonte Bianco regala un impatto visivo unico nel suo genere, perfetto per setup minimalisti.
+                                    Un connubio che regala standard prestazionali di assoluta eccellenza e un’esperienza di gioco straordinaria, in un'originale estetica bianca.
                                 </p>
                             </div>
                         </div>
@@ -166,11 +167,11 @@ export default function TRokTufH610Page() {
                         transition={{ delay: 0.1 }}
                     >
                         <div className={styles.cardContent}>
-                            <Box size={36} className={styles.cardIcon} />
-                            <h3 className={styles.cardTitle}>Ultra Compact</h3>
+                            <Cpu size={36} className={styles.cardIcon} />
+                            <h3 className={styles.cardTitle}>14ᴬ Gen Intel</h3>
                             <div className={styles.cardReveal}>
                                 <p className={styles.cardTextSmall}>
-                                    Dimensioni ridotte senza sacrificare la potenza. Il compagno ideale per chi ha poco spazio ma non accetta limiti.
+                                    Fino a 24 core e 32 thread per il massimo della capacità elaborativa.
                                 </p>
                             </div>
                         </div>
@@ -184,10 +185,10 @@ export default function TRokTufH610Page() {
                         transition={{ delay: 0.2 }}
                     >
                         <div className={styles.cardContent}>
-                            <Zap size={48} className={styles.cardIcon} />
-                            <h3 className={styles.cardTitle}>DDR5 Memory</h3>
+                            <Monitor size={48} className={styles.cardIcon} />
+                            <h3 className={styles.cardTitle}>RTX Serie 4000</h3>
                             <p className={styles.cardText}>
-                                Supporto completo alla nuova frontiera della velocità con memorie DDR5 e processori Intel Core di 14a Generazione per un multitasking record.
+                                Architettura Ada Lovelace per un'esperienza visiva davvero inimmaginabile.
                             </p>
                         </div>
                     </motion.div>
@@ -200,11 +201,45 @@ export default function TRokTufH610Page() {
                         transition={{ delay: 0.3 }}
                     >
                         <div className={styles.cardContent}>
-                            <Monitor size={48} className={styles.cardIcon} />
-                            <h3 className={styles.cardTitle}>RTX Graphics</h3>
+                            <Zap size={48} className={styles.cardIcon} />
+                            <h3 className={styles.cardTitle}>DDR5 Memory</h3>
                             <p className={styles.cardText}>
-                                Grafica NVIDIA di ultima generazione con supporto DLSS 3. Prestazioni basate su IA per un'esperienza di gioco fluida ed estremamente immersiva.
+                                La nuova frontiera della velocità con dissipatore ed effetti luce RGB.
                             </p>
+                        </div>
+                    </motion.div>
+                </div>
+            </section>
+
+            {/* Detailed Features Section - New Content */}
+            <section style={{ padding: '4rem 2rem', background: '#111', color: '#fff' }}>
+                <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
+                    <motion.div
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        style={{ display: 'grid', gap: '4rem' }}
+                    >
+                        <div>
+                            <h2 style={{ fontSize: '2.5rem', marginBottom: '1.5rem', color: '#00d2ff' }}>Powered By ASUS: L'eccellenza in Bianco</h2>
+                            <p style={{ fontSize: '1.1rem', lineHeight: '1.8', color: '#ccc' }}>
+                                Progettata congiuntamente dai Laboratori <strong>R&D Winblu e ASUS</strong>, T-ROK GAMING H610 è la nostra nuova proposta basata su hardware ASUS e quindi certificata ufficialmente dal marchio <strong>PBA – Powered By ASUS</strong>. Una soluzione innovativa anche nell’originale colore bianco che contraddistingue l’estetica di questo prodotto: davvero un’irresistibile simbiosi fra alte prestazioni ed esclusività del design. In questa nuova game machine ritroviamo l’indiscussa qualità progettuale e costruttiva Winblu valorizzata al meglio dalla componentistica ASUS, il brand Numero Uno al mondo nel settore Gaming.
+                            </p>
+                        </div>
+
+                        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '3rem' }}>
+                            <div>
+                                <h3 style={{ fontSize: '1.8rem', marginBottom: '1rem', color: '#fff' }}>Performance 14ᴬ Generazione</h3>
+                                <p style={{ lineHeight: '1.7', color: '#aaa' }}>
+                                    La linea T-ROK H610 supporta la <strong>Quattordicesima generazione</strong> di processori Intel® Core™, nome in codice Raptor Lake Refresh. Una nuova concezione di CPU che eredita le caratteristiche della serie 13, con core aumentati fino a 24 e thread fino a 32. Con i suoi <strong>6.0GHz di frequenza di punta</strong>, è definito come il più veloce processore da gaming al mondo. Il massimo della potenza è garantito anche dalle memorie <strong>DDR5</strong> con dissipatore ed effetti luce RGB.
+                                </p>
+                            </div>
+                            <div>
+                                <h3 style={{ fontSize: '1.8rem', marginBottom: '1rem', color: '#fff' }}>Grafica NVIDIA® RTX serie 4000</h3>
+                                <p style={{ lineHeight: '1.7', color: '#aaa' }}>
+                                    L’equipaggiamento raggiunge l’apice con le GPU <strong>Nvidia® GeForce® serie 4000</strong> basate su architettura Ada Lovelace. Un enorme passo avanti in termini di prestazioni, efficienza e grafica IA. Mondi virtuali dettagliati, massima libertà nella creazione di contenuti e una produttività senza precedenti, grazie all’accelerazione del flusso-dati nella fase di elaborazione architettonica o ingegneristica.
+                                </p>
+                            </div>
                         </div>
                     </motion.div>
                 </div>
