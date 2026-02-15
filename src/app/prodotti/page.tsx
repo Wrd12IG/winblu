@@ -16,7 +16,7 @@ const products = [
         name: "Linea T-Rok",
         category: "gaming",
         price: "1.200",
-        image: "/products/t-rok/t-rok-black.png",
+        image: "/assets/trok-hero.png",
         tag: "GAMING",
         description: "Potenza pura per il gaming senza compromessi.",
         link: "/linea-t-rok",
@@ -26,9 +26,9 @@ const products = [
     {
         id: "experience",
         name: "Linea Experience",
-        category: "gaming",
+        category: "gaming", // Keeping category as is, though user noted it's workstation-like, the tag says PERFORMANCE
         price: "1.500",
-        image: "/products/experience/experience-hero.png",
+        image: "/assets/experience-workstation-hero.png",
         tag: "PERFORMANCE",
         description: "Per chi cerca qualcosa in più. Esperienza utente superiore.",
         link: "/linea-experience",
@@ -40,7 +40,7 @@ const products = [
         name: "Linea e-Motion",
         category: "workstation",
         price: "800",
-        image: "/products/e-motion/extracted_24.jpeg",
+        image: "/assets/emotion/product-main-v3.png",
         tag: "NOTEBOOK",
         description: "L'evoluzione della specie. Notebook performanti per professionisti in movimento.",
         link: "/linea-e-motion",
@@ -52,7 +52,7 @@ const products = [
         name: "Linea eVision",
         category: "workstation",
         price: "900",
-        image: "/products/evision/extracted_23.png",
+        image: "/assets/evision/hub-hero.png",
         tag: "ALL-IN-ONE",
         description: "Eleganza e prestazioni in un design All-In-One salvaspazio.",
         link: "/linea-evision",
@@ -64,7 +64,7 @@ const products = [
         name: "Linea Easy Pro",
         category: "workstation",
         price: "600",
-        image: "/products/easy-pro/extracted_24.png",
+        image: "/assets/easy-pro-hero.png",
         tag: "MINI-PC",
         description: "Un TOP computer travestito da Mini-PC. Potenza in formato ridotto.",
         link: "/linea-easy-pro",
@@ -72,11 +72,25 @@ const products = [
         specs: { cpu: "Intel Core", gpu: "Integrated", ram: "Up to 32GB", storage: "SSD" }
     },
     {
+        id: "energy", // Adding Energy which was missing or I need to check if I should replace one.
+        // Wait, original list: t-rok, experience, e-motion, evision, easy-pro, expert, academic, enterprise-1151, enterprise-3647
+        // Energy was missing? Let me check line 62 in original file.
+        // Ah, line 62 started 'easy-pro'. I must have missed Energy in my manual transcription or it wasn't there?
+        // Let's check the file content I read in step 506.
+        // Lines 63-73 is Easy Pro.
+        // Lines 75-85 is Expert.
+        // Energy is indeed missing from the list I read!
+        // But I generated an asset for it: energy-hero.png.
+        // I should probably add it if it's a main line.
+        // User didn't explicitly ask to ADD lines, just fix photos.
+        // I will stick to fixing existing ones for now to be safe, or check if I missed it in the view_file output.
+        // I reviewed step 506. Energy is NOT in the list.
+        // I will update the existing ones.
         id: "expert",
         name: "Linea Expert",
         category: "workstation",
         price: "1.000",
-        image: "/products/expert/extracted_26.png",
+        image: "/assets/expert-hero.png",
         tag: "PROFESSIONAL",
         description: "Prestazioni professionali al top per il tuo business.",
         link: "/linea-expert",
@@ -88,7 +102,7 @@ const products = [
         name: "Linea Academic",
         category: "workstation",
         price: "500",
-        image: "/products/academic/extracted_23.png",
+        image: "/assets/academic-hero.png",
         tag: "EDUCATION",
         description: "Soluzioni dedicate al mondo della scuola e dell'istruzione.",
         link: "/linea-academic",
@@ -100,7 +114,7 @@ const products = [
         name: "Enterprise 1151",
         category: "workstation",
         price: "1.800",
-        image: "/products/enterprise-1151/extracted_23.png",
+        image: "/assets/enterprise-1151-hero.png",
         tag: "SERVER 1151",
         description: "Server Monoprocessore potenti e affidabili su piattaforma Intel Xeon E.",
         link: "/linea-enterprise-1151",
@@ -112,7 +126,7 @@ const products = [
         name: "Enterprise 3647",
         category: "workstation",
         price: "3.500",
-        image: "/products/enterprise-3647/extracted_23.png",
+        image: "/assets/enterprise-3647-hero.png",
         tag: "SERVER 3647",
         description: "Massima potenza di calcolo con sistemi Dual Processor Intel Xeon Scalable.",
         link: "/linea-enterprise-3647",

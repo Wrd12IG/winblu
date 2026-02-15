@@ -151,6 +151,48 @@ export default function LineaExperiencePage() {
                 </div>
             </section>
 
+            {/* Detailed Features Section - Restored Original Content */}
+            <section style={{ padding: '4rem 2rem', background: '#111', color: '#fff' }}>
+                <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
+                    <motion.div
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        style={{ display: 'grid', gap: '4rem' }}
+                    >
+                        <div>
+                            <h2 style={{ fontSize: '2.5rem', marginBottom: '1.5rem', color: '#00d2ff' }}>Incredibili performance con Intel Xeon e Intel Core-X</h2>
+                            <p style={{ fontSize: '1.1rem', lineHeight: '1.8', color: '#ccc' }}>
+                                Prestazioni potenti con le Workstation grafiche Winblu Experience basate su processori <strong>Xeon-W serie 2000</strong> e <strong>Xeon-E</strong>, fino a 18 core e 36 thread (8 core e 16 thread con Xeon-E) e con il supporto alla memoria <strong>ECC (Error Correction Code)</strong> fino a un massimo di 1TB (secondo il modello), per il rilevamento e la riparazione automatici di errori di memoria a bit singolo, riducendo il rischio di crash del sistema e di corruzione dei dati, così garantendo prestazioni affidabili e reattive. Serve altra potenza? Con i processori <strong>Core X</strong> di decima generazione con il moltiplicatore sbloccato e le memorie OC, è possibile sprigionare tutta l’aggressività dell’architettura Cascade Lake-X di Intel con incredibili picchi di frequenza di boost.
+                            </p>
+                        </div>
+
+                        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '3rem' }}>
+                            <div>
+                                <h3 style={{ fontSize: '1.8rem', marginBottom: '1rem', color: '#fff' }}>Features all’avanguardia</h3>
+                                <p style={{ lineHeight: '1.7', color: '#aaa' }}>
+                                    La tecnologia <strong>Intel Turbo Boost Max 3.0</strong> (solo Experience 2066i e 2066x) incrementa la potenza di elaborazione della tua workstation indirizzando i carichi di lavoro più critici ai quattro core più veloci del processore, migliorando le prestazioni con le attività altamente “threaded”.
+                                    Un tagging dell’immagine più rapido, traduzioni di linguaggio, rilevamento di oggetti e volti, riconoscimento vocale, sono solo alcuni dei carichi di lavori tipici che possono invece beneficiare dell’<strong>Intel Deep Learning Boost (Intel DL Boost)</strong>, la feature progettata per accelerare l’intelligenza artificiale.
+                                </p>
+                            </div>
+                            <div>
+                                <h3 style={{ fontSize: '1.8rem', marginBottom: '1rem', color: '#fff' }}>Supporto Grafica Professionale</h3>
+                                <p style={{ lineHeight: '1.7', color: '#aaa' }}>
+                                    Cos’è una workstation grafica senza un comparto grafico di degno di questo nome? Per questo le workstation Winblu Experience sono equipaggiate con le insuperabili GPU <strong>NVIDIA® Quadro</strong> e <strong>GeForce</strong>, con possibilità di SLI fino a 3 vie (solo Experience 2066i e 2066x), rendendole macchine perfette per creatori di contenuti, media streamers e designers professionisti. nVIDIA Quadro ha il potenziale per accelerare i flussi di lavoro relativi ad architettura, ingegneria e costruzione (AEC), consentendo di completare progetti BIM e CAD in tempi record.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div style={{ padding: '2rem', background: 'rgba(255,255,255,0.05)', borderRadius: '16px', borderLeft: '4px solid #00d2ff' }}>
+                            <h3 style={{ fontSize: '1.5rem', marginBottom: '0.5rem', color: '#fff' }}>Storage ultra rapido e I/O integrato</h3>
+                            <p style={{ margin: 0, color: '#ccc' }}>
+                                Tutte le workstation Winblu Experience offrono on-board la possibilità di installare fino a due drive <strong>SSD NVMe</strong> su socket m.2 con dissipatore integrato e supporto nativo a <strong>RAID 0/1</strong>, rompendo definitivamente i limiti di banda del bus SATA con prestazioni fino a 5.3 volte superiori. Le porte USB 3.1 in formato Type-A e Type-C forniscono una estrema flessibilità di connessione con velocità di trasferimento fino a 10Gbps.
+                            </p>
+                        </div>
+                    </motion.div>
+                </div>
+            </section>
+
             {/* Specs Cards Section */}
             <section style={{ padding: '4rem 2rem', background: 'rgba(0,0,0,0.2)' }}>
                 <div style={{ maxWidth: '1600px', margin: '0 auto' }}>
