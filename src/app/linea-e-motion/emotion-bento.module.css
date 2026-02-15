@@ -12,7 +12,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 8rem 2rem 4rem;
+    padding: 10rem 2rem 6rem;
     overflow: hidden;
     z-index: 1;
 }
@@ -83,9 +83,11 @@
 }
 
 .heroTitle {
-    font-size: clamp(3rem, 6vw, 5rem);
+    font-size: clamp(3.5rem, 8vw, 6rem);
     font-weight: 800;
-    line-height: 1.1;
+    line-height: 1.05;
+    letter-spacing: -0.02em;
+    text-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
 }
 
 .gradient {
@@ -98,7 +100,8 @@
 .heroDesc {
     font-size: 1.25rem;
     line-height: 1.6;
-    color: #94a3b8;
+    color: #cbd5e1;
+    /* Lighter for accessibility */
     max-width: 600px;
 }
 
@@ -229,9 +232,11 @@
 }
 
 .bentoCard:hover {
-    border-color: rgba(1, 96, 169, 0.3);
-    transform: translateY(-4px);
-    box-shadow: 0 20px 60px rgba(1, 96, 169, 0.15);
+    border-color: rgba(1, 96, 169, 0.4);
+    transform: translateY(-8px);
+    box-shadow:
+        0 20px 60px rgba(1, 96, 169, 0.2),
+        0 0 20px rgba(1, 96, 169, 0.1);
 }
 
 /* HP-style Scrolling Top Border */
@@ -303,14 +308,16 @@
 .cardText {
     font-size: 1.05rem;
     line-height: 1.7;
-    color: #94a3b8;
+    color: #e2e8f0;
+    /* accessibility */
     margin-bottom: 1rem;
 }
 
 .cardTextSmall {
     font-size: 0.95rem;
     line-height: 1.6;
-    color: #94a3b8;
+    color: #cbd5e1;
+    /* accessibility */
 }
 
 /* Reveal Effect on Hover */
@@ -410,16 +417,29 @@
 
 @media (max-width: 768px) {
     .hero {
-        min-height: 70vh;
-        padding: 6rem 1.5rem 3rem;
+        padding: 6rem 1.5rem 4rem;
+    }
+
+    .heroVisual {
+        height: 350px;
+        /* Limit height on mobile */
+        margin-top: 2rem;
     }
 
     .heroTitle {
-        font-size: 2.5rem;
+        font-size: 3rem;
+        text-align: center;
     }
 
     .heroDesc {
         font-size: 1.1rem;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .heroText {
+        align-items: center;
+        text-align: center;
     }
 
     .bentoSection {

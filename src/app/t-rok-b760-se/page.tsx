@@ -91,7 +91,7 @@ export default function TRokB760SEPage() {
 
     return (
         <div className={styles.container}>
-            {/* Hero Section */}
+            <Navbar />
             <section className={styles.hero}>
                 <GridBackground />
                 <div className={styles.heroContent}>
@@ -101,13 +101,12 @@ export default function TRokB760SEPage() {
                         transition={{ duration: 0.8 }}
                         className={styles.heroText}
                     >
-                        <span className={styles.heroTag}>T-ROK B760 SE</span>
+                        <span className={styles.heroTag}>Aquarium Design PC</span>
                         <h1 className={styles.heroTitle}>
-                            Immersione<br />
-                            <span className={styles.gradient}>Totale</span>
+                            T-ROK <span className={styles.gradient}>B760 SE</span>
                         </h1>
                         <p className={styles.heroDesc}>
-                            Entra nel gioco come mai prima d’ora. Il PC gaming per tutti, dagli esperti ai principianti.
+                            L'evoluzione dell'estetica gaming. Un design a doppia camera con trasparenza totale per chi vuole mettere in mostra la potenza del proprio hardware.
                         </p>
                         <div className={styles.heroCTAs}>
                             <Link href="/punti-vendita?tipo=fornitura" className={styles.ctaPrimary}>
@@ -132,6 +131,7 @@ export default function TRokB760SEPage() {
                                 fill
                                 className={styles.heroProductImage}
                                 priority
+                                sizes="(max-width: 768px) 100vw, 50vw"
                             />
                         </div>
                     </motion.div>
@@ -146,17 +146,16 @@ export default function TRokB760SEPage() {
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
-                        transition={{ duration: 0.6 }}
                     >
                         <div className={styles.cardContent}>
                             <Sparkles size={48} className={styles.cardIcon} />
-                            <h2 className={styles.cardTitle}>Premio Oscar per gli effetti speciali</h2>
+                            <h2 className={styles.cardTitle}>Spettacolo Visivo</h2>
                             <p className={styles.cardText}>
-                                Design a "doppia camera" completamente rinnovato, con una disposizione modificata dei componenti interni volta a favorire la dissipazione; uno spazio più ampio per l'installazione delle espansioni più voluminose.
+                                Case Dual Chamber completamente riprogettato per favorire la dissipazione termica dei componenti più energivori, lasciando spazio alle espansioni più voluminose.
                             </p>
                             <div className={styles.cardReveal}>
                                 <p className={styles.cardText}>
-                                    Un doppio vetro temperato a trasparenza totale sui componenti interni ARGB, con un totale di n°5 FAN di serie. Un’evoluzione estetica per godere al meglio lo straordinario spettacolo degli effetti luminosi gestiti dal sistema AURA.
+                                    Vetro temperato a trasparenza totale su due lati e n°5 ventole ARGB di serie. Un’estetica premium per godere al meglio degli effetti luminosi gestiti dal sistema ASUS Aura Sync.
                                 </p>
                             </div>
                         </div>
@@ -167,14 +166,14 @@ export default function TRokB760SEPage() {
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
-                        transition={{ duration: 0.6, delay: 0.1 }}
+                        transition={{ delay: 0.1 }}
                     >
                         <div className={styles.cardContent}>
                             <Cpu size={36} className={styles.cardIcon} />
-                            <h3 className={styles.cardTitle}>Core 14A Gen</h3>
+                            <h3 className={styles.cardTitle}>Intel 14th Gen</h3>
                             <div className={styles.cardReveal}>
                                 <p className={styles.cardTextSmall}>
-                                    Supporto Raptor Lake Refresh: fino a 24 core e 32 thread per la massima potenza di calcolo.
+                                    Architettura Raptor Lake Refresh: fino a 24 core per gestire streaming e gaming simultaneo senza incertezze.
                                 </p>
                             </div>
                         </div>
@@ -185,13 +184,13 @@ export default function TRokB760SEPage() {
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
-                        transition={{ duration: 0.6, delay: 0.2 }}
+                        transition={{ delay: 0.2 }}
                     >
                         <div className={styles.cardContent}>
-                            <Monitor size={48} className={styles.cardIcon} style={{ color: '#0160A9' }} />
-                            <h3 className={styles.cardTitle}>Grafica RTX 4000</h3>
+                            <Monitor size={48} className={styles.cardIcon} />
+                            <h3 className={styles.cardTitle}>Grafica RTX serie 40</h3>
                             <p className={styles.cardText}>
-                                L'immaginazione diventa realtà con l'architettura NVIDIA Ada Lovelace. Ray Tracing di terza generazione per mondi virtuali fotorealistici.
+                                Basata su architettura NVIDIA Ada Lovelace. Ray Tracing e DLSS 3 per frame rate elevatissimi in risoluzione 4K.
                             </p>
                         </div>
                     </motion.div>
@@ -201,13 +200,13 @@ export default function TRokB760SEPage() {
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
-                        transition={{ duration: 0.6, delay: 0.3 }}
+                        transition={{ delay: 0.3 }}
                     >
                         <div className={styles.cardContent}>
                             <Gauge size={48} className={styles.cardIcon} />
-                            <h3 className={styles.cardTitle}>DDR5 7200</h3>
+                            <h3 className={styles.cardTitle}>DDR5 High Speed</h3>
                             <p className={styles.cardText}>
-                                Velocità fulminee fino a 7200MT/s con dissipatori RGB integrati per un multitasking senza precedenti.
+                                Velocità fino a 7200MT/s per un sistema reattivo e multitasking fluido nelle sessioni di lavoro più pesanti.
                             </p>
                         </div>
                     </motion.div>
@@ -215,15 +214,15 @@ export default function TRokB760SEPage() {
             </section>
 
             {/* Specs Cards Section */}
-            <section style={{ padding: '4rem 2rem', background: 'rgba(0,0,0,0.2)' }}>
+            <section style={{ padding: '6rem 2rem', background: 'rgba(0,0,0,0.2)' }}>
                 <div style={{ maxWidth: '1600px', margin: '0 auto' }}>
                     <motion.h2
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         style={{
-                            fontSize: '2.5rem',
-                            fontWeight: '700',
+                            fontSize: '3rem',
+                            fontWeight: '800',
                             textAlign: 'center',
                             marginBottom: '4rem',
                             background: 'linear-gradient(135deg, #fff 0%, #0160A9 100%)',
@@ -244,6 +243,7 @@ export default function TRokB760SEPage() {
             </section>
 
             <B2BCTASection />
+            <Footer />
         </div>
     );
 }

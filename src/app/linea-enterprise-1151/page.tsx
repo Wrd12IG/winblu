@@ -61,10 +61,9 @@ export default function LineaEnterprise1151Page() {
 
     return (
         <div className={styles.container}>
-            <GridBackground />
-
-            {/* Hero Section */}
+            <Navbar />
             <section className={styles.hero}>
+                <GridBackground />
                 <div className={styles.heroContent}>
                     <motion.div
                         className={styles.heroText}
@@ -72,28 +71,27 @@ export default function LineaEnterprise1151Page() {
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.8 }}
                     >
-                        <span className={styles.heroTag}>Winblu Enterprise</span>
+                        <span className={styles.heroTag}>Massima Affidabilità Aziendale</span>
                         <h1 className={styles.heroTitle}>
-                            Winblu Enterprise<br />
-                            <span className={styles.gradient}>1151</span>
+                            Winblu <span className={styles.gradient}>Enterprise 1151</span>
                         </h1>
                         <p className={styles.heroDesc}>
-                            Soluzioni ottimizzate per il carico di lavoro. I server Winblu Enterprise 1151 supportano le più recenti tecnologie con CPU Intel® Xeon® E per prestazioni estreme e affidabilità totale.
+                            Soluzioni ottimizzate per carichi di lavoro mission-critical. I server Winblu Enterprise 1151 integrano tecnologie Intel® Xeon® E per prestazioni estreme e continuità operativa totale.
                         </p>
                         <div className={styles.heroCTAs}>
                             <Link href="/punti-vendita" className={styles.ctaPrimary}>
                                 Configura Server
                             </Link>
-                            <Link href="/supporto" className={styles.ctaSecondary}>
-                                Supporto Enterprise
+                            <Link href="/punti-vendita" className={styles.ctaSecondary}>
+                                Trova Rivenditore
                             </Link>
                         </div>
                     </motion.div>
 
                     <motion.div
                         className={styles.heroVisual}
-                        initial={{ opacity: 0, scale: 0.9 }}
-                        animate={{ opacity: 1, scale: 1 }}
+                        initial={{ opacity: 0, x: 50 }}
+                        animate={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.8, delay: 0.2 }}
                     >
                         <div className={styles.heroImageContainer}>
@@ -103,6 +101,7 @@ export default function LineaEnterprise1151Page() {
                                 fill
                                 className={styles.heroProductImage}
                                 priority
+                                sizes="(max-width: 768px) 100vw, 50vw"
                             />
                         </div>
                     </motion.div>
@@ -112,80 +111,74 @@ export default function LineaEnterprise1151Page() {
             {/* Bento Grid Section */}
             <section className={styles.bentoSection}>
                 <div className={styles.bentoGrid}>
-                    <div className={`${styles.bentoCard} ${styles.cardLarge}`}>
-                        <div className={styles.cardContent}>
-                            <Server size={48} className={styles.cardIcon} />
-                            <h2 className={styles.cardTitle}>La sicurezza di non fermarsi mai</h2>
-                            <p className={styles.cardText}>
-                                Basati su piattaforma ASUS, leader nel settore hardware server. Soluzioni ingegnerizzate in modo ottimale con componentistica selezionata e certificata per garantire continuità operativa.
-                            </p>
-                            <div className={styles.cardReveal}>
-                                <p className={styles.cardText}>
-                                    Ideali per chi cerca totale sicurezza e affidabilità, caratteristiche imprescindibili per un server aziendale.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className={`${styles.bentoCard} ${styles.cardSmall} ${styles.cardHighlight}`}>
-                        <div className={styles.cardContent}>
-                            <Shield size={36} className={styles.cardIcon} style={{ color: '#0160A9' }} />
-                            <h3 className={styles.cardTitle}>Protezione Dati</h3>
-                            <div className={styles.cardReveal}>
-                                <p className={styles.cardTextSmall}>
-                                    Controller ASUS PIKE II 3000 per storage SAS a 12 Gbit/s e protezione RAID hardware integrata.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className={`${styles.bentoCard} ${styles.cardMedium}`}>
-                        <div className={styles.cardContent}>
-                            <Network size={48} className={styles.cardIcon} />
-                            <h3 className={styles.cardTitle}>Intel Gigabit Ethernet</h3>
-                            <p className={styles.cardText}>
-                                Da due a quattro porte Intel® Ethernet di classe server con supporto teaming e failover per una connessione ininterrotta.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            {/* Detailed Features Section - Restored Original Content */}
-            <section style={{ padding: '4rem 2rem', background: '#111', color: '#fff' }}>
-                <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
+                    {/* Row 1 */}
                     <motion.div
+                        className={`${styles.bentoCard} ${styles.cardLarge}`}
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
-                        style={{ display: 'grid', gap: '4rem' }}
                     >
-                        <div>
-                            <h2 style={{ fontSize: '2.5rem', marginBottom: '1.5rem', color: '#00d2ff' }}>Soluzioni ottimizzate per il carico di lavoro</h2>
-                            <p style={{ fontSize: '1.1rem', lineHeight: '1.8', color: '#ccc' }}>
-                                I server Winblu della linea Enterprise 1151 supportano le più recenti tecnologie con le CPU <strong>Intel® Xeon® E</strong>, 1.36x più veloci rispetto alla generazione precedente e funzionanti con TDP massimo di 95W per prestazioni estreme. I quattro slot di memoria supportano fino a <strong>128 GB di DDR4 ECC</strong> 2666MHz per elaborazioni a uso intensivo di RAM. I server Winblu Enterprise 1151 sono disponibili in formato 1 unità rack, 4 unità e 5 unità tower convertibile.
+                        <div className={styles.cardContent}>
+                            <Server size={48} className={styles.cardIcon} />
+                            <h2 className={styles.cardTitle}>Sicurezza e Continuità</h2>
+                            <p className={styles.cardText}>
+                                Basati su piattaforma ASUS e microprocessori Intel Xeon E fino a 8 core. Una componentistica selezionata per garantire che la tua azienda non si fermi mai, con efficienza termica ottimizzata.
+                            </p>
+                            <div className={styles.cardReveal}>
+                                <p className={styles.cardText}>
+                                    Supporto memorie DDR4 ECC fino a 128GB per elaborazioni sicure e integrità dei dati costante. Disponibile in formati Rack e Tower convertibili.
+                                </p>
+                            </div>
+                        </div>
+                    </motion.div>
+
+                    <motion.div
+                        className={`${styles.bentoCard} ${styles.cardSmall} ${styles.cardHighlight}`}
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ delay: 0.1 }}
+                    >
+                        <div className={styles.cardContent}>
+                            <Shield size={36} className={styles.cardIcon} />
+                            <h3 className={styles.cardTitle}>Controller PIKE II</h3>
+                            <div className={styles.cardReveal}>
+                                <p className={styles.cardTextSmall}>
+                                    Fino a 12 Gbit/s di trasferimento SAS e protezione RAID hardware integrata per una gestione dello storage di classe enterprise.
+                                </p>
+                            </div>
+                        </div>
+                    </motion.div>
+
+                    {/* Row 2 */}
+                    <motion.div
+                        className={`${styles.bentoCard} ${styles.cardMedium}`}
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ delay: 0.2 }}
+                    >
+                        <div className={styles.cardContent}>
+                            <HardDrive size={48} className={styles.cardIcon} />
+                            <h3 className={styles.cardTitle}>Storage Flessibile</h3>
+                            <p className={styles.cardText}>
+                                Fino a 8 bay Hot-Swap (secondo il modello) e doppio slot M.2 NVMe per velocità di avvio fino a 5,3 volte superiori rispetto a SATA III.
                             </p>
                         </div>
+                    </motion.div>
 
-                        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '3rem' }}>
-                            <div>
-                                <h3 style={{ fontSize: '1.8rem', marginBottom: '1rem', color: '#fff' }}>Flessibilità di espansione storage</h3>
-                                <p style={{ lineHeight: '1.7', color: '#aaa' }}>
-                                    La linea Enterprise 1151 ospita quattro bay da 2,5”/3,5″ sostituibili a caldo (Hot-Swap). La versione 5U è ulteriormente espandibile fino a otto bay per una maggiore capacità di archiviazione opzionale. Due slot <strong>M.2 NVMe</strong> ospitano SSD fino al formato 22110 con supporto al boot del sistema operativo e larghezza di banda PCIe Gen3 – 5,3 volte più veloce rispetto a SATA III – per velocità di avvio più elevate.
-                                </p>
-                            </div>
-                            <div>
-                                <h3 style={{ fontSize: '1.8rem', marginBottom: '1rem', color: '#fff' }}>Massimizzazione I/O e Protezione</h3>
-                                <p style={{ lineHeight: '1.7', color: '#aaa' }}>
-                                    Supporto per i controller della serie <strong>ASUS PIKE II 3000</strong>, la più recente soluzione di storage aziendale, con supporto per l’archiviazione SAS a 12 Gbit/s e protezione dei dati RAID integrata. I controller hardware ASUS PIKE sono una grande opzione di aggiornamento per migliorare immediatamente capacità e prestazioni.
-                                </p>
-                            </div>
-                        </div>
-
-                        <div style={{ padding: '2rem', background: 'rgba(255,255,255,0.05)', borderRadius: '16px', borderLeft: '4px solid #00d2ff' }}>
-                            <h3 style={{ fontSize: '1.5rem', marginBottom: '0.5rem', color: '#fff' }}>Connettività Intel di Classe Server</h3>
-                            <p style={{ margin: 0, color: '#ccc' }}>
-                                Dotati di connettori <strong>Intel® Ethernet</strong> (da 2 a 4 secondo il modello) con controller I210 e I219. Il supporto <strong>Teaming</strong> estende la larghezza di banda della rete, mentre la funzione di <strong>Failover</strong> garantisce una connessione ininterrotta, rendendola la soluzione perfetta per applicazioni di virtualizzazione che richiedono una rete ultraveloce e affidabile.
+                    <motion.div
+                        className={`${styles.bentoCard} ${styles.cardMedium} ${styles.cardHighlight}`}
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ delay: 0.3 }}
+                    >
+                        <div className={styles.cardContent}>
+                            <Network size={48} className={styles.cardIcon} />
+                            <h3 className={styles.cardTitle}>Network Failover</h3>
+                            <p className={styles.cardText}>
+                                Fino a 4 porte Intel® Ethernet con supporto Teaming e Failover per garantire che il tuo business resti sempre connesso.
                             </p>
                         </div>
                     </motion.div>
@@ -193,15 +186,15 @@ export default function LineaEnterprise1151Page() {
             </section>
 
             {/* Specs Cards Section */}
-            <section style={{ padding: '4rem 2rem', background: 'rgba(0,0,0,0.2)' }}>
+            <section style={{ padding: '6rem 2rem', background: 'rgba(0,0,0,0.2)' }}>
                 <div style={{ maxWidth: '1600px', margin: '0 auto' }}>
                     <motion.h2
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         style={{
-                            fontSize: '2.5rem',
-                            fontWeight: '700',
+                            fontSize: '3rem',
+                            fontWeight: '800',
                             textAlign: 'center',
                             marginBottom: '4rem',
                             background: 'linear-gradient(135deg, #fff 0%, #0160A9 100%)',
@@ -222,6 +215,7 @@ export default function LineaEnterprise1151Page() {
             </section>
 
             <B2BCTASection />
+            <Footer />
         </div>
     );
 }

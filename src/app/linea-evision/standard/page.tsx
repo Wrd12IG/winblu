@@ -61,6 +61,7 @@ export default function EVisionStandardPage() {
 
     return (
         <div className={styles.container}>
+            <Navbar />
             <GridBackground />
 
             {/* Hero Section */}
@@ -218,6 +219,7 @@ export default function EVisionStandardPage() {
             </section>
 
             <B2BCTASection />
+            <Footer />
         </div>
     );
 }

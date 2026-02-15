@@ -201,6 +201,7 @@ export default function LineaEMotionPage() {
                                 fill
                                 className={styles.heroProductImage}
                                 priority
+                                sizes="(max-width: 768px) 100vw, 50vw"
                             />
                         </div>
                     </motion.div>
@@ -224,6 +225,7 @@ export default function LineaEMotionPage() {
                                 alt="Notebook Winblu e-Motion"
                                 fill
                                 className={styles.cardImage}
+                                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 66vw, 50vw"
                             />
                             <div className={styles.cardOverlay} />
                         </div>
@@ -299,6 +301,7 @@ export default function LineaEMotionPage() {
                                 alt="Display e-Motion"
                                 fill
                                 className={styles.cardImage}
+                                sizes="(max-width: 768px) 100vw, 33vw"
                             />
                             <div className={styles.cardOverlay} />
                         </div>

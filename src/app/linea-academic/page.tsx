@@ -16,10 +16,9 @@ const GridBackground = () => (
 export default function LineaAcademicPage() {
   return (
     <div className={styles.container}>
-      <GridBackground />
-
-      {/* Hero Section */}
+      <Navbar />
       <section className={styles.hero}>
+        <GridBackground />
         <div className={styles.heroContent}>
           <motion.div
             className={styles.heroText}
@@ -39,16 +38,16 @@ export default function LineaAcademicPage() {
               <Link href="/punti-vendita" className={styles.ctaPrimary}>
                 Trova Rivenditore
               </Link>
-              <Link href="/supporto" className={styles.ctaSecondary}>
-                Contatta Education Team
+              <Link href="/punti-vendita" className={styles.ctaSecondary}>
+                Contatta Team Education
               </Link>
             </div>
           </motion.div>
 
           <motion.div
             className={styles.heroVisual}
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
+            initial={{ opacity: 0, x: 50 }}
+            animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
             <div className={styles.heroImageContainer}>
@@ -58,6 +57,7 @@ export default function LineaAcademicPage() {
                 fill
                 className={styles.heroProductImage}
                 priority
+                sizes="(max-width: 768px) 100vw, 50vw"
               />
             </div>
           </motion.div>
@@ -67,131 +67,139 @@ export default function LineaAcademicPage() {
       {/* Shape The Future Section */}
       <section className={styles.bentoSection}>
         <div className={styles.bentoGrid}>
-          <div className={`${styles.bentoCard} ${styles.cardLarge}`} style={{ background: 'linear-gradient(145deg, #1e1e1e, #111)' }}>
+          <motion.div
+            className={`${styles.bentoCard} ${styles.cardLarge} ${styles.cardHighlight}`}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+          >
             <div className={styles.cardContent}>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', marginBottom: '1rem' }}>
-                <Award size={48} className={styles.cardIcon} style={{ color: '#00d2ff', marginBottom: 0 }} />
-                <h2 className={styles.cardTitle} style={{ fontSize: '2rem', margin: 0 }}>Il Progetto "Shape The Future"</h2>
-              </div>
-              <p className={styles.cardText} style={{ fontSize: '1.2rem', lineHeight: '1.8' }}>
-                Winblu Academic è la linea dedicata al mondo della Scuola a un prezzo agevolato, grazie alle condizioni speciali di Microsoft per Windows 11 Professional.
-                Winblu è Partner Autorizzato per questo progetto, offrendo soluzioni certificate ISO 9001:2015 per rinnovare il parco macchine di scuole primarie e secondarie.
+              <Award size={48} className={styles.cardIcon} />
+              <h2 className={styles.cardTitle}>Il Progetto "Shape The Future"</h2>
+              <p className={styles.cardText}>
+                Winblu Academic è la linea dedicata al mondo della Scuola a un prezzo agevolato, grazie alle condizioni speciali di Microsoft per Windows 11 Professional Education.
               </p>
+              <div className={styles.cardReveal}>
+                <p className={styles.cardText}>
+                  Winblu è Partner Autorizzato per questo progetto, offrendo soluzioni certificate ISO 9001:2015 per rinnovare il parco macchine di scuole primarie e secondarie con tecnologie moderne e sicure.
+                </p>
+              </div>
             </div>
-          </div>
+          </motion.div>
         </div>
       </section>
 
       {/* Product Showcase Grid */}
-      <section style={{ padding: '2rem 2rem', background: 'transparent' }}>
-        <div style={{ maxWidth: '1600px', margin: '0 auto' }}>
+      <section style={{ padding: '4rem 2rem' }}>
+        <div style={{ maxWidth: '1400px', margin: '0 auto' }}>
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             style={{
-              fontSize: '2.5rem',
-              fontWeight: '700',
+              fontSize: '3rem',
+              fontWeight: '800',
               textAlign: 'center',
-              marginBottom: '3rem',
-              color: '#fff'
+              marginBottom: '4rem',
+              background: 'linear-gradient(135deg, #fff 0%, #0160A9 100%)',
+              WebkitBackgroundClip: 'text',
+              WebkitTextFillColor: 'transparent',
+              backgroundClip: 'text'
             }}
           >
             La Gamma Winblu Academic
           </motion.h2>
 
           <div className={styles.bentoGrid}>
-            {/* e-Motion */}
-            <div className={`${styles.bentoCard} ${styles.cardMedium}`}>
+            <motion.div
+              className={`${styles.bentoCard} ${styles.cardMedium}`}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+            >
               <div className={styles.cardContent}>
                 <Laptop size={48} className={styles.cardIcon} />
                 <h3 className={styles.cardTitle}>Linea e-Motion</h3>
                 <p className={styles.cardText}>
-                  Notebook 15.6” che unisce performance e design. Piccolo, leggero e funzionale: il compagno ideale per la DAD e la lezione in presenza. Sintesi perfetta tra eleganza e hardware di ultima generazione.
+                  Notebook 15.6” che unisce performance e design. Piccolo, leggero e funzionale: il compagno ideale per l'apprendimento ovunque.
                 </p>
               </div>
-            </div>
+            </motion.div>
 
-            {/* Easy Pro */}
-            <div className={`${styles.bentoCard} ${styles.cardMedium}`}>
+            <motion.div
+              className={`${styles.bentoCard} ${styles.cardMedium}`}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.1 }}
+            >
               <div className={styles.cardContent}>
                 <Box size={48} className={styles.cardIcon} />
                 <h3 className={styles.cardTitle}>Linea Easy Pro</h3>
                 <p className={styles.cardText}>
-                  PC ultracompatto (solo 1 Lt.) installabile anche dietro al monitor (VESA). Dimensioni minime, zero compromessi sulle prestazioni con processori Intel® Core™. Una scelta di... classe!
+                  PC ultracompatto da 1 Litro installabile dietro al monitor. Zero ingombro, massima concentrazione in classe.
                 </p>
               </div>
-            </div>
+            </motion.div>
 
-            {/* eVision */}
-            <div className={`${styles.bentoCard} ${styles.cardLarge}`}>
+            <motion.div
+              className={`${styles.bentoCard} ${styles.cardLarge} ${styles.cardHighlight}`}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.2 }}
+            >
               <div className={styles.cardContent}>
                 <Monitor size={48} className={styles.cardIcon} />
                 <h3 className={styles.cardTitle}>Linea eVision AIO</h3>
                 <p className={styles.cardText}>
-                  All-In-One 23.8” Full HD, disponibile anche in versione TOUCH. La soluzione space-saving perfetta per i laboratori, con grafica Intel UHD e supporto fino a 2 monitor aggiuntivi per la massima produttività.
+                  All-In-One 23.8” Full HD, disponibile anche TOUCH. La soluzione space-saving perfetta per laboratori interattivi e multimediali.
                 </p>
                 <div className={styles.cardReveal}>
                   <p className={styles.cardText}>
-                    Potenza computazionale di primo livello con CPU Intel® Core™ i3, i5, i7 desktop per gestire qualsiasi software didattico.
+                    Potenza computazionale con CPU Intel® Core™ desktop per gestire senza sforzo i software didattici più avanzati.
                   </p>
                 </div>
               </div>
-            </div>
+            </motion.div>
 
-            {/* Essential */}
-            <div className={`${styles.bentoCard} ${styles.cardMedium}`}>
+            <motion.div
+              className={`${styles.bentoCard} ${styles.cardMedium}`}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.3 }}
+            >
               <div className={styles.cardContent}>
                 <Cpu size={48} className={styles.cardIcon} />
                 <h3 className={styles.cardTitle}>Linea Essential</h3>
                 <p className={styles.cardText}>
-                  Concentrato di potenza in formato SFF da 8.3 Lt. Posizionabile in verticale o orizzontale, offre massima funzionalità e prezzi convenienti. Promossi a pieni voti!
+                  Potenza SFF da 8.3 Lt. Flessibilità di posizionamento e affidabilità per ogni postazione scolastica.
                 </p>
               </div>
-            </div>
+            </motion.div>
 
-            {/* Energy */}
-            <div className={`${styles.bentoCard} ${styles.cardMedium}`}>
+            <motion.div
+              className={`${styles.bentoCard} ${styles.cardMedium}`}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.4 }}
+            >
               <div className={styles.cardContent}>
                 <Zap size={48} className={styles.cardIcon} />
                 <h3 className={styles.cardTitle}>Linea Energy</h3>
                 <p className={styles.cardText}>
-                  Il best-seller Winblu: desktop tradizionale robusto e instancabile. Affidabilità totale per la Scuola 2.0, pronto a primeggiare sui banchi di studio con prestazioni brillanti.
+                  Il desktop tradizionale instancabile. Robustezza e prestazioni brillanti per la formazione di alto livello.
                 </p>
               </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* CTA Section for Teachers & Resellers */}
-      <section style={{ padding: '4rem 2rem', background: '#111' }}>
-        <div style={{ maxWidth: '1200px', margin: '0 auto', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '3rem' }}>
-          <div style={{ padding: '2rem', background: 'rgba(255,255,255,0.05)', borderRadius: '1rem', border: '1px solid rgba(255,255,255,0.1)' }}>
-            <Users size={32} style={{ color: '#00d2ff', marginBottom: '1rem' }} />
-            <h3 style={{ fontSize: '1.5rem', marginBottom: '1rem', color: '#fff' }}>Per Docenti e Scuole</h3>
-            <p style={{ color: '#ccc', lineHeight: '1.6', marginBottom: '1.5rem' }}>
-              Sei un Docente o Responsabile Acquisti? Scopri tutte le soluzioni Winblu Academic e scegli quelle adatte al tuo Istituto.
-            </p>
-            <Link href="/punti-vendita" className={styles.ctaPrimary} style={{ width: '100%', textAlign: 'center' }}>
-              Trova Rivenditore
-            </Link>
-          </div>
-
-          <div style={{ padding: '2rem', background: 'rgba(255,255,255,0.05)', borderRadius: '1rem', border: '1px solid rgba(255,255,255,0.1)' }}>
-            <Shield size={32} style={{ color: '#00d2ff', marginBottom: '1rem' }} />
-            <h3 style={{ fontSize: '1.5rem', marginBottom: '1rem', color: '#fff' }}>Per Rivenditori IT</h3>
-            <p style={{ color: '#ccc', lineHeight: '1.6', marginBottom: '1.5rem' }}>
-              Proponiti alle scuole con un'offerta vincente! Configurazione di serie o su misura, sempre in linea con i requisiti Microsoft.
-            </p>
-            <Link href="/diventa-partner" className={styles.ctaSecondary} style={{ width: '100%', textAlign: 'center' }}>
-              Diventa Partner Academic
-            </Link>
+            </motion.div>
           </div>
         </div>
       </section>
 
       <B2BCTASection />
+      <Footer />
     </div>
   );
 }

@@ -88,7 +88,7 @@ export default function TRokZ790Page() {
 
     return (
         <div className={styles.container}>
-            {/* Hero Section */}
+            <Navbar />
             <section className={styles.hero}>
                 <GridBackground />
                 <div className={styles.heroContent}>
@@ -98,13 +98,12 @@ export default function TRokZ790Page() {
                         transition={{ duration: 0.8 }}
                         className={styles.heroText}
                     >
-                        <span className={styles.heroTag}>Winblu T-ROK Z790</span>
+                        <span className={styles.heroTag}>Performance No Limits</span>
                         <h1 className={styles.heroTitle}>
-                            Performance<br />
-                            <span className={styles.gradient}>No Limits</span>
+                            Winblu <span className={styles.gradient}>T-ROK Z790</span>
                         </h1>
                         <p className={styles.heroDesc}>
-                            Scatena la tua furia di gioco. Il tuo PC gaming non è mai stato così potente.
+                            Scatena la tua furia di gioco. Il PC gaming progettato per dominare ogni scenario competitivo con la potenza del chipset Z790 Extreme.
                         </p>
                         <div className={styles.heroCTAs}>
                             <Link href="/punti-vendita?tipo=fornitura" className={styles.ctaPrimary}>
@@ -129,6 +128,7 @@ export default function TRokZ790Page() {
                                 fill
                                 className={styles.heroProductImage}
                                 priority
+                                sizes="(max-width: 768px) 100vw, 50vw"
                             />
                         </div>
                     </motion.div>
@@ -143,17 +143,16 @@ export default function TRokZ790Page() {
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
-                        transition={{ duration: 0.6 }}
                     >
                         <div className={styles.cardContent}>
-                            <TrendingUp size={48} className={styles.cardIcon} style={{ color: '#0160A9', marginBottom: '1.5rem' }} />
-                            <h2 className={styles.cardTitle}>Il vertice della potenza gaming</h2>
+                            <TrendingUp size={48} className={styles.cardIcon} />
+                            <h2 className={styles.cardTitle}>Il vertice della potenza</h2>
                             <p className={styles.cardText}>
-                                Case d'eccezione per la massima eleganza, con pannelli in vetro temperato da 4mm sul frontale e sui lati.
+                                Un'opera d'arte ingegneristica con pannelli in vetro temperato da 4mm e airflow ottimizzato per mantenere le temperature glaciali anche sotto carico estremo.
                             </p>
                             <div className={styles.cardReveal}>
                                 <p className={styles.cardText}>
-                                    Una sinfonia di luci ARGB in armonia con i componenti, gestibile via software. La serie T-ROK Z790 prevede alimentatori ATX 3.0 PCIe 5.0 80Plus Gold, garantendo stabilità assoluta.
+                                    La serie T-ROK Z790 integra alimentatori ATX 3.0 PCIe 5.0 con certificazione 80Plus Gold, garantendo stabilità assoluta a processori e GPU flagship.
                                 </p>
                             </div>
                         </div>
@@ -164,14 +163,14 @@ export default function TRokZ790Page() {
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
-                        transition={{ duration: 0.6, delay: 0.1 }}
+                        transition={{ delay: 0.1 }}
                     >
                         <div className={styles.cardContent}>
-                            <Sparkles size={36} className={styles.cardIcon} style={{ color: '#0160A9', marginBottom: '1rem' }} />
-                            <h3 className={styles.cardTitle}>Full ARGB</h3>
+                            <Sparkles size={36} className={styles.cardIcon} />
+                            <h3 className={styles.cardTitle}>Aura RGB Sync</h3>
                             <div className={styles.cardReveal}>
                                 <p className={styles.cardTextSmall}>
-                                    4 ventole ARGB con 20 diversi effetti luminosi sincronizzabili con l'ecosistema Aura RGB.
+                                    Fino a 20 effetti luminosi ARGB completamente personalizzabili e sincronizzati con il tuo setup.
                                 </p>
                             </div>
                         </div>
@@ -182,13 +181,13 @@ export default function TRokZ790Page() {
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
-                        transition={{ duration: 0.6, delay: 0.2 }}
+                        transition={{ delay: 0.2 }}
                     >
                         <div className={styles.cardContent}>
-                            <Activity size={48} className={styles.cardIcon} style={{ color: '#0160A9' }} />
+                            <Activity size={48} className={styles.cardIcon} />
                             <h3 className={styles.cardTitle}>Audio ROG Supreme FX</h3>
                             <p className={styles.cardText}>
-                                Fedeltà sonora assoluta con amplificatori Savitech e codec ALC4080. Audio a 32bit/384 kHz per un'immersione totale.
+                                Qualità sonora hi-fi con codec ALC4080 a 32bit/384 kHz per percepire ogni minimo dettaglio sonoro nel gioco competitivo.
                             </p>
                         </div>
                     </motion.div>
@@ -198,13 +197,13 @@ export default function TRokZ790Page() {
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
-                        transition={{ duration: 0.6, delay: 0.3 }}
+                        transition={{ delay: 0.3 }}
                     >
                         <div className={styles.cardContent}>
                             <Wifi size={48} className={styles.cardIcon} />
-                            <h3 className={styles.cardTitle}>Wi-Fi 6E & LAN 2.5G</h3>
+                            <h3 className={styles.cardTitle}>Hi-Speed Network</h3>
                             <p className={styles.cardText}>
-                                Connettività fulminea senza latenza. Protocollo tri-band con antenna regolabile per il gaming competitivo online.
+                                Connettività Wi-Fi 6E dual-band e porta LAN 2.5G per sessioni online fluide e download fulminei di asset pesanti.
                             </p>
                         </div>
                     </motion.div>
@@ -212,15 +211,15 @@ export default function TRokZ790Page() {
             </section>
 
             {/* Specs Cards Section */}
-            <section style={{ padding: '4rem 2rem', background: 'rgba(0,0,0,0.2)' }}>
+            <section style={{ padding: '6rem 2rem', background: 'rgba(0,0,0,0.2)' }}>
                 <div style={{ maxWidth: '1600px', margin: '0 auto' }}>
                     <motion.h2
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         style={{
-                            fontSize: '2.5rem',
-                            fontWeight: '700',
+                            fontSize: '3rem',
+                            fontWeight: '800',
                             textAlign: 'center',
                             marginBottom: '4rem',
                             background: 'linear-gradient(135deg, #fff 0%, #0160A9 100%)',
@@ -241,6 +240,7 @@ export default function TRokZ790Page() {
             </section>
 
             <B2BCTASection />
+            <Footer />
         </div>
     );
 }

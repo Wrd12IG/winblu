@@ -88,7 +88,7 @@ export default function TRokTufH610Page() {
 
     return (
         <div className={styles.container}>
-            {/* Hero Section */}
+            <Navbar />
             <section className={styles.hero}>
                 <GridBackground />
                 <div className={styles.heroContent}>
@@ -98,20 +98,19 @@ export default function TRokTufH610Page() {
                         transition={{ duration: 0.8 }}
                         className={styles.heroText}
                     >
-                        <span className={styles.heroTag}>Powered By ASUS</span>
+                        <span className={styles.heroTag}>Special White Edition</span>
                         <h1 className={styles.heroTitle}>
-                            Il Bisonte<br />
-                            <span className={styles.gradient}>Bianco</span>
+                            Il Bisonte <span className={styles.gradient}>Bianco</span>
                         </h1>
                         <p className={styles.heroDesc}>
-                            Un Gaming dalle piccole dimensioni, di un elegante color bianco, per il gamer che vuole il massimo!
+                            Estetica glaciale, prestazioni roventi. Un gaming PC compatto in edizione speciale bianca, certificato "Powered by ASUS" per un'affidabilità senza pari.
                         </p>
                         <div className={styles.heroCTAs}>
                             <Link href="/punti-vendita?tipo=fornitura" className={styles.ctaPrimary}>
                                 Richiedi Preventivo
                             </Link>
                             <Link href="/punti-vendita" className={styles.ctaSecondary}>
-                                Trova un Punto Vendita
+                                Trova Rivenditore
                             </Link>
                         </div>
                     </motion.div>
@@ -129,6 +128,7 @@ export default function TRokTufH610Page() {
                                 fill
                                 className={styles.heroProductImage}
                                 priority
+                                sizes="(max-width: 768px) 100vw, 50vw"
                             />
                         </div>
                     </motion.div>
@@ -143,17 +143,16 @@ export default function TRokTufH610Page() {
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
-                        transition={{ duration: 0.6 }}
                     >
                         <div className={styles.cardContent}>
-                            <Settings size={48} className={styles.cardIcon} />
-                            <h2 className={styles.cardTitle}>Progettazione Congiunta Winblu & ASUS</h2>
+                            <Award size={48} className={styles.cardIcon} />
+                            <h2 className={styles.cardTitle}>Powered by ASUS</h2>
                             <p className={styles.cardText}>
-                                T-ROK GAMING H610 è la nostra nuova proposta basata su hardware ASUS e certificata ufficialmente dal marchio <strong>PBA – Powered By ASUS</strong>. Una simbiosi irresistibile fra alte prestazioni ed esclusività del design.
+                                Il T-ROK H610 White è basato su hardware ASUS e ufficialmente certificato dal marchio <strong>PBA</strong>. Una simbiosi perfetta fra prestazioni e design esclusivo "Pure White".
                             </p>
                             <div className={styles.cardReveal}>
                                 <p className={styles.cardText}>
-                                    La componentistica ASUS, brand Numero Uno al mondo nel settore Gaming, regala standard prestazionali di assoluta eccellenza in un prodotto spettacolare anche alla vista grazie al moderno color bianco del case.
+                                    Utilizziamo componenti di grado militare per garantire stabilità assoluta. Il case Bisonte Bianco regala un impatto visivo unico nel suo genere, perfetto per setup minimalisti.
                                 </p>
                             </div>
                         </div>
@@ -164,14 +163,14 @@ export default function TRokTufH610Page() {
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
-                        transition={{ duration: 0.6, delay: 0.1 }}
+                        transition={{ delay: 0.1 }}
                     >
                         <div className={styles.cardContent}>
                             <Box size={36} className={styles.cardIcon} />
-                            <h3 className={styles.cardTitle}>Compatto & Potente</h3>
+                            <h3 className={styles.cardTitle}>Ultra Compact</h3>
                             <div className={styles.cardReveal}>
                                 <p className={styles.cardTextSmall}>
-                                    Un Gaming dalle piccole dimensioni per il gamer che vuole il massimo delle prestazioni in uno spazio ridotto.
+                                    Dimensioni ridotte senza sacrificare la potenza. Il compagno ideale per chi ha poco spazio ma non accetta limiti.
                                 </p>
                             </div>
                         </div>
@@ -182,13 +181,13 @@ export default function TRokTufH610Page() {
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
-                        transition={{ duration: 0.6, delay: 0.2 }}
+                        transition={{ delay: 0.2 }}
                     >
                         <div className={styles.cardContent}>
-                            <Zap size={48} className={styles.cardIcon} style={{ color: '#0160A9' }} />
-                            <h3 className={styles.cardTitle}>DDR5 Next Generation</h3>
+                            <Zap size={48} className={styles.cardIcon} />
+                            <h3 className={styles.cardTitle}>DDR5 Memory</h3>
                             <p className={styles.cardText}>
-                                Supporto completo alla nuova frontiera della capacità elaborativa con memorie DDR5 e processori Intel Core di 14a Generazione.
+                                Supporto completo alla nuova frontiera della velocità con memorie DDR5 e processori Intel Core di 14a Generazione per un multitasking record.
                             </p>
                         </div>
                     </motion.div>
@@ -198,13 +197,13 @@ export default function TRokTufH610Page() {
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
-                        transition={{ duration: 0.6, delay: 0.3 }}
+                        transition={{ delay: 0.3 }}
                     >
                         <div className={styles.cardContent}>
                             <Monitor size={48} className={styles.cardIcon} />
-                            <h3 className={styles.cardTitle}>RTX 4000 & DLSS 3</h3>
+                            <h3 className={styles.cardTitle}>RTX Graphics</h3>
                             <p className={styles.cardText}>
-                                Grafica NVIDIA di ultima generazione realizzata tramite IA. Prestazioni record ed efficienza energetica basata su architettura Ada Lovelace.
+                                Grafica NVIDIA di ultima generazione con supporto DLSS 3. Prestazioni basate su IA per un'esperienza di gioco fluida ed estremamente immersiva.
                             </p>
                         </div>
                     </motion.div>
@@ -212,15 +211,15 @@ export default function TRokTufH610Page() {
             </section>
 
             {/* Specs Cards Section */}
-            <section style={{ padding: '4rem 2rem', background: 'rgba(0,0,0,0.2)' }}>
+            <section style={{ padding: '6rem 2rem', background: 'rgba(0,0,0,0.2)' }}>
                 <div style={{ maxWidth: '1600px', margin: '0 auto' }}>
                     <motion.h2
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         style={{
-                            fontSize: '2.5rem',
-                            fontWeight: '700',
+                            fontSize: '3rem',
+                            fontWeight: '800',
                             textAlign: 'center',
                             marginBottom: '4rem',
                             background: 'linear-gradient(135deg, #fff 0%, #0160A9 100%)',
@@ -241,6 +240,7 @@ export default function TRokTufH610Page() {
             </section>
 
             <B2BCTASection />
+            <Footer />
         </div>
     );
 }

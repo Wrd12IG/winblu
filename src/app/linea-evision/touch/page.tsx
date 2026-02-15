@@ -61,6 +61,7 @@ export default function EVisionTouchPage() {
 
     return (
         <div className={styles.container}>
+            <Navbar />
             <GridBackground />
 
             {/* Hero Section */}
@@ -218,6 +219,7 @@ export default function EVisionTouchPage() {
             </section>
 
             <B2BCTASection />
+            <Footer />
         </div>
     );
 }
