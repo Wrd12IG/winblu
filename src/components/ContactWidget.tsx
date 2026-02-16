@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion, AnimatePresence, Variants } from 'framer-motion';
 import { MessageCircle, Mail, Phone, X, Calculator, HelpCircle, ChevronRight } from 'lucide-react';
 import Link from 'next/link';
 import styles from '../app/styles/contact-widget.module.css';
@@ -11,13 +11,13 @@ export default function ContactWidget() {
 
     const toggleOpen = () => setIsOpen(!isOpen);
 
-    const containerVariants = {
-        hidden: { opacity: 0, scale: 0.8, y: 20, pointerEvents: 'none' as const },
+    const containerVariants: Variants = {
+        hidden: { opacity: 0, scale: 0.8, y: 20, pointerEvents: 'none' },
         visible: {
             opacity: 1,
             scale: 1,
             y: 0,
-            pointerEvents: 'auto' as const,
+            pointerEvents: 'auto',
             transition: { type: 'spring', stiffness: 300, damping: 25 }
         },
         exit: { opacity: 0, scale: 0.8, y: 20, transition: { duration: 0.2 } }
