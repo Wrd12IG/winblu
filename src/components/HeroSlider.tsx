@@ -181,6 +181,16 @@ export default function HeroSlider() {
                     />
                 ))}
             </div>
+
+            {/* Preload Next Image */}
+            <div style={{ display: 'none' }}>
+                <Image
+                    src={products[(currentSlide + 1) % products.length].image}
+                    alt=""
+                    fill
+                    priority
+                />
+            </div>
         </div>
     );
 }

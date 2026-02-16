@@ -12,6 +12,22 @@ import MegaMenu from "./MegaMenu";
 export default function Navbar() {
     const [isProductsHovered, setIsProductsHovered] = useState(false);
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+    const [hoverTimeout, setHoverTimeout] = useState<NodeJS.Timeout | null>(null);
+
+    const handleMouseEnter = () => {
+        if (hoverTimeout) {
+            clearTimeout(hoverTimeout);
+            setHoverTimeout(null);
+        }
+        setIsProductsHovered(true);
+    };
+
+    const handleMouseLeave = () => {
+        const timeout = setTimeout(() => {
+            setIsProductsHovered(false);
+        }, 300); // 300ms delay prevents accidental closes
+        setHoverTimeout(timeout);
+    };
 
     return (
         <>
@@ -39,8 +55,8 @@ export default function Navbar() {
                     <div className={styles.menu}>
                         <div
                             className={styles.menuItemWithDropdown}
-                            onMouseEnter={() => setIsProductsHovered(true)}
-                            onMouseLeave={() => setIsProductsHovered(false)}
+                            onMouseEnter={handleMouseEnter}
+                            onMouseLeave={handleMouseLeave}
                         >
                             <Link href="/prodotti" className={styles.menuLink} style={{ display: 'flex', alignItems: 'center', gap: '4px' }}>
                                 Prodotti e soluzioni <ChevronDown size={14} />
@@ -59,7 +75,7 @@ export default function Navbar() {
 
                     {/* Actions */}
                     <div className={styles.actions}>
-                        <button className={styles.iconBtn}>
+                        <button className={styles.iconBtn} style={{ display: 'none' }}>
                             <Search size={20} />
                         </button>
 

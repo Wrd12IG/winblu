@@ -10,6 +10,7 @@ import { SpecCategory } from "@/components/SpecsAccordion";
 import B2BCTASection from "@/components/B2BCTASection";
 import { motion } from 'framer-motion';
 import { Zap, Shield, Box, Layout, Cpu, Monitor, Wifi, HardDrive, Settings, Activity, Lock, Speaker, Award } from 'lucide-react';
+import ScrollIndicator from "@/components/ScrollIndicator";
 
 const fadeIn = {
   hidden: { opacity: 0, y: 20 },
@@ -74,6 +75,7 @@ export default function LineaEssentialPage() {
             </div>
           </motion.div>
         </div>
+        <ScrollIndicator />
       </section>
 
       {/* Bento Grid Section */}
@@ -213,7 +215,7 @@ export default function LineaEssentialPage() {
               fontSize: '3rem',
               fontWeight: '800',
               textAlign: 'center',
-              marginBottom: '4rem',
+              marginBottom: '3rem',
               background: 'linear-gradient(135deg, #fff 0%, #0160A9 100%)',
               WebkitBackgroundClip: 'text',
               WebkitTextFillColor: 'transparent',

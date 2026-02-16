@@ -7,6 +7,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import SpecsCards from "@/components/SpecsCards";
 import B2BCTASection from "@/components/B2BCTASection";
+import ScrollIndicator from "@/components/ScrollIndicator";
 import { motion } from 'framer-motion';
 import { Monitor, Cpu, Box, Zap, Share2, Layers, HardDrive, Video, Settings, ShieldCheck, Package, Sparkles } from 'lucide-react';
 
@@ -65,6 +66,7 @@ export default function LineaEVisionStandardPage() {
                         </div>
                     </motion.div>
                 </div>
+                <ScrollIndicator />
             </section>
 
             {/* Performance Section */}

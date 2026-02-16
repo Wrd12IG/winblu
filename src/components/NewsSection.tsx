@@ -28,7 +28,7 @@ const newsItems = [
         title: "Winblu al Tech Expo 2024",
         date: "28 Gen 2024",
         excerpt: "Venite a trovarci al padiglione 4 per toccare con mano le novità della gamma 2024 e incontrare i nostri esperti.",
-        image: "/hero-office.png", // Using existing image
+        image: "/assets/evision-standard-hero.jpg", // Fixed broken reference
         category: "Eventi"
     }
 ];
