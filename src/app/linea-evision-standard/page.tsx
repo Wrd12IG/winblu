@@ -8,7 +8,7 @@ import Footer from "@/components/Footer";
 import SpecsCards from "@/components/SpecsCards";
 import B2BCTASection from "@/components/B2BCTASection";
 import { motion } from 'framer-motion';
-import { Monitor, Cpu, Box, Zap, Share2, Layers, HardDrive, Video, Settings, ShieldCheck } from 'lucide-react';
+import { Monitor, Cpu, Box, Zap, Share2, Layers, HardDrive, Video, Settings, ShieldCheck, Package, Sparkles } from 'lucide-react';
 
 const GridBackground = () => (
     <div className={styles.gridBg} />
@@ -70,12 +70,12 @@ export default function LineaEVisionStandardPage() {
             {/* Performance Section */}
             <section className={styles.bentoSection}>
                 <div className={styles.bentoGrid}>
+                    {/* Row 1: Performance (8) + Design (4) */}
                     <motion.div
-                        className={styles.bentoCard}
+                        className={`${styles.bentoCard} ${styles.cardLarge}`}
                         initial={{ opacity: 1, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
-                        style={{ gridColumn: 'span 12' }}
                     >
                         <div className={styles.cardContent}>
                             <Cpu size={48} className={styles.cardIcon} />
@@ -88,20 +88,61 @@ export default function LineaEVisionStandardPage() {
                     </motion.div>
 
                     <motion.div
-                        className={styles.bentoCard}
+                        className={`${styles.bentoCard} ${styles.cardSmall}`}
                         initial={{ opacity: 1, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         transition={{ delay: 0.1 }}
-                        style={{ gridColumn: 'span 12' }}
+                    >
+                        <div className={styles.cardContent}>
+                            <Package size={36} className={styles.cardIcon} />
+                            <h3 className={styles.cardTitle}>Eleganza e Compattezza</h3>
+                            <p className={styles.cardTextSmall}>
+                                Un design unico ed esclusivo, finalizzato alla massima ergonomia. eVision è la soluzione space-saving perfetta per negozi, ristoranti e ambienti che richiedono il minimo ingombro senza rinunciare allo stile.
+                            </p>
+                        </div>
+                    </motion.div>
+
+                    {/* Row 2: Image (6) + Display Text (6) */}
+                    <motion.div
+                        className={`${styles.bentoCard} ${styles.cardMedium} ${styles.cardWithImage}`}
+                        initial={{ opacity: 1, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ delay: 0.2 }}
+                    >
+                        <div className={styles.cardImageContainer}>
+                            <Image
+                                src="/assets/evision-standard-hero.jpg"
+                                alt="Winblu eVision Display"
+                                fill
+                                className={styles.cardImage}
+                                sizes="(max-width: 768px) 100vw, 50vw"
+                                style={{ objectFit: 'cover' }}
+                            />
+                            <div className={styles.cardOverlay} />
+                        </div>
+                    </motion.div>
+
+                    <motion.div
+                        className={`${styles.bentoCard} ${styles.cardMedium}`}
+                        initial={{ opacity: 1, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ delay: 0.3 }}
                     >
                         <div className={styles.cardContent}>
                             <Monitor size={48} className={styles.cardIcon} />
                             <h3 className={styles.cardTitle}>Parola d’ordine: nitidezza.</h3>
                             <h4 style={{ color: '#00f0ff', marginBottom: '1rem', fontWeight: '600' }}>Grazie al display Full HD e WEBCAM 5MP</h4>
                             <p className={styles.cardText}>
-                                Come descrivere la combo LCDPC in soli due aggettivi? Winblu eVision è tutta la compattezza di una piattaforma hardware che si esprime al meglio attraverso la nitidezza di un display Full HD integrato. La soluzione eVision è dotata di uno schermo da 23.8” o 27” LED retroilluminato con risoluzione 1920×1080, in grado di restituire immagini nitide e brillanti. La linea eVision standard è disponibile in 2 colori a scelta, bianco/argento e nero, soluzioni perfette per abbellire ogni ambiente. La grafica integrata Intel ® UHD (in base alla CPU scelta), con connettore HDMI, permette la gestione simultanea di un ulteriore monitor. Completano il quadro un sistema audio con altoparlanti 2x2W, luce di cortesia, webcam 5MP pull-up, microfono e porta seriale/COM, per il massimo della multimedialità.
+                                Come descrivere la combo LCDPC in soli due aggettivi? Winblu eVision è tutta la compattezza di una piattaforma hardware che si esprime al meglio attraverso la nitidezza di un display Full HD integrato. La soluzione eVision è dotata di uno schermo da 23.8” o 27” LED retroilluminato con risoluzione 1920×1080, in grado di restituire immagini nitide e brillanti. La linea eVision standard è disponibile in 2 colori a scelta, bianco/argento e nero.
                             </p>
+                            <div className={styles.cardReveal} style={{ maxHeight: 'none', opacity: 1, marginTop: '1rem' }}>
+                                <p className={styles.cardTextSmall}>
+                                    La grafica integrata Intel ® UHD (in base alla CPU scelta), con connettore HDMI, permette la gestione simultanea di un ulteriore monitor. Completano il quadro un sistema audio con altoparlanti 2x2W, luce di cortesia, webcam 5MP pull-up, microfono e porta seriale/COM, per il massimo della multimedialità.
+                                </p>
+                            </div>
                         </div>
                     </motion.div>
                 </div>
