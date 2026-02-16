@@ -8,7 +8,7 @@ import Footer from "@/components/Footer";
 import SpecsCards from "@/components/SpecsCards";
 import B2BCTASection from "@/components/B2BCTASection";
 import { motion } from 'framer-motion';
-import { Monitor, Cpu, Box, MousePointerClick, Share2, Layers, HardDrive } from 'lucide-react';
+import { Monitor, Cpu, Box, Zap, Share2, Layers, HardDrive, Video, Settings, ShieldCheck, MousePointerClick } from 'lucide-react';
 
 const GridBackground = () => (
     <div className={styles.gridBg} />
@@ -64,7 +64,7 @@ export default function LineaEVisionMTouchPage() {
                 </div>
             </section>
 
-            {/* Specs Cards Section */}
+            {/* Specs Cards Section - Full 12 Specs */}
             <section style={{ padding: '6rem 2rem', background: 'rgba(0,0,0,0.2)' }}>
                 <div style={{ maxWidth: '1600px', margin: '0 auto' }}>
                     <motion.h2
@@ -85,12 +85,18 @@ export default function LineaEVisionMTouchPage() {
                         Specifiche Tecniche
                     </motion.h2>
                     <SpecsCards specs={[
-                        { id: 'display', title: 'Display Touch', description: '23.8" Full HD (1920x1080) Multitouch Capacitivo', icon: <MousePointerClick size={24} /> },
-                        { id: 'cpu', title: 'Processore', description: 'Intel® Core™ i3 / i5 / i7 Desktop', icon: <Cpu size={24} /> },
-                        { id: 'storage', title: 'Archiviazione', description: 'SSD NVMe PCIe + 2.5" SATA Slot', icon: <HardDrive size={24} /> },
-                        { id: 'connectivity', title: 'Connettività', description: 'Wi-Fi integrato, Bluetooth, LAN Gigabit', icon: <Share2 size={24} /> },
-                        { id: 'design', title: 'Design', description: 'Ultra-slim, piedistallo regolabile, VESA Mount', icon: <Box size={24} /> },
-                        { id: 'multimedia', title: 'Multimedia', description: 'Webcam integrata (opzionale), Speaker stereo', icon: <Layers size={24} /> },
+                        { id: 'display', title: 'Display Touch', description: '23.8" Full HD (1920x1080) Multitouch Capacitivo 10 Punti', icon: <MousePointerClick size={24} /> },
+                        { id: 'cpu', title: 'Processore', description: 'Supporto Intel® Core™ i3 / i5 / i7 12ª/13ª Gen', icon: <Cpu size={24} /> },
+                        { id: 'ram', title: 'Memoria RAM', description: 'Supporto DDR4 SO-DIMM fino a 64GB', icon: <Layers size={24} /> },
+                        { id: 'ssd', title: 'Storage SSD', description: 'Slot M.2 NVMe PCIe Gen3/Gen4 ultrarapido', icon: <HardDrive size={24} /> },
+                        { id: 'hdd', title: 'Storage Secondario', description: 'Slot 2.5" SATA3 per HDD/SSD aggiuntivo', icon: <Box size={24} /> },
+                        { id: 'graphics', title: 'Grafica', description: 'Intel® UHD Graphics 730/770 Integrata', icon: <Zap size={24} /> },
+                        { id: 'connectivity', title: 'Networking', description: 'Wi-Fi 6, Bluetooth 5.2, LAN Gigabit', icon: <Share2 size={24} /> },
+                        { id: 'webcam', title: 'Multimedia', description: 'Webcam 5MP Pop-up + Mic + Speaker Stereo', icon: <Video size={24} /> },
+                        { id: 'ports', title: 'Output Video', description: 'HDMI 2.0 + VGA (Supporto doppio monitor)', icon: <Monitor size={24} /> },
+                        { id: 'io', title: 'Porte I/O', description: '4x USB 3.2, 2x USB 2.0, Card Reader SD', icon: <Settings size={24} /> },
+                        { id: 'security', title: 'Sicurezza', description: 'TPM 2.0 Hardware, Kensington Connect, Drive Encryption', icon: <ShieldCheck size={24} /> },
+                        { id: 'os', title: 'Sistema Operativo', description: 'Windows 11 Pro con licenza ufficiale', icon: <Cpu size={24} /> },
                     ]} />
                 </div>
             </section>
