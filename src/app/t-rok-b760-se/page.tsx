@@ -24,24 +24,32 @@ export default function TRokB760SEPage() {
     const technicalSpecs: SpecCategory[] = [
         {
             id: 'cpu',
-            title: 'Processore',
+            title: 'Processori',
             icon: <Cpu size={24} />,
             items: [
-                { label: 'Generazione', value: 'Intel® Core™ Quattordicesima Generazione' },
-                { label: 'Architettura', value: 'Raptor Lake Refresh' },
-                { label: 'Core Max', value: 'Fino a 24 Core / 32 Thread' },
-                { label: 'Frequenza Max', value: 'Fino a 6.0 GHz' },
+                { label: 'Supporto', value: 'Intel® Core™ i5, i7, i9' },
+                { label: 'Generazione', value: '12ᵃ, 13ᵃ e 14ᵃ Gen (Raptor Lake Refresh)' },
+                { label: 'Serie', value: 'Supporta Serie K 125W' },
+                { label: 'Raffreddamento', value: 'Liquido RGB con radiatore 240mm' },
             ]
         },
         {
-            id: 'design',
-            title: 'Design Case',
+            id: 'chipset',
+            title: 'Chipset',
+            icon: <Cpu size={24} />,
+            items: [
+                { label: 'Modello', value: 'Intel® B760' },
+            ]
+        },
+        {
+            id: 'case_psu',
+            title: 'Case e Alimentatore',
             icon: <Boxes size={24} />,
             items: [
-                { label: 'Tipo', value: 'Aquarium Dual Chamber' },
-                { label: 'Materiale', value: 'Vetro Temperato Trasparenza Totale' },
-                { label: 'Ventole', value: 'n°5 FAN ARGB di serie' },
-                { label: 'Illuminazione', value: 'Sistema ASUS Aura Sync' },
+                { label: 'Formato', value: 'Mid-tower nero, vetro frontale/laterale' },
+                { label: 'Alimentatore', value: '850W 80Plus Bronze' },
+                { label: 'Dimensioni', value: '420x285x380mm' },
+                { label: 'Ventole', value: '3x 120mm ARGB + controller' },
             ]
         },
         {
@@ -49,31 +57,36 @@ export default function TRokB760SEPage() {
             title: 'Memoria RAM',
             icon: <Gauge size={24} />,
             items: [
-                { label: 'Tipo', value: 'DDR4 / DDR5 SO-DIMM' },
-                { label: 'Frequenza', value: 'Fino a 7200 MT/s' },
-                { label: 'Effetti', value: 'RGB Sync' },
-                { label: 'Dual Channel', value: 'Supportato' },
+                { label: 'Tecnologia', value: 'DDR5 RGB' },
+                { label: 'Velocità', value: 'Fino a 7200MT/s' },
+                { label: 'Capacità', value: 'Massimo 128GB' },
+            ]
+        },
+        {
+            id: 'storage',
+            title: 'Archiviazione',
+            icon: <HardDrive size={24} />,
+            items: [
+                { label: 'M.2', value: '2x PCIe 4.0 NVMe' },
+                { label: 'SATA', value: '2x SATA3 3.5”/2.5”' },
             ]
         },
         {
             id: 'graphics',
-            title: 'Grafica',
+            title: 'Sezione Video',
             icon: <Monitor size={24} />,
             items: [
-                { label: 'Serie', value: 'NVIDIA® GeForce® RTX serie 4000' },
-                { label: 'Architettura', value: 'Ada Lovelace' },
-                { label: 'Core CUDA', value: 'Fino a 16384' },
-                { label: 'Tecnologie', value: 'Ray Tracing Gen 3, Tensor Core Gen 4' },
+                { label: 'Modelli', value: 'NVIDIA® GeForce® RTX 4000 / 3000' },
+                { label: 'Slot', value: 'PCIe 5.0/4.0/3.0 x16' },
             ]
         },
         {
-            id: 'cooling',
-            title: 'Raffreddamento',
-            icon: <Wind size={24} />,
+            id: 'audio',
+            title: 'Sezione Audio',
+            icon: <Activity size={24} />,
             items: [
-                { label: 'Tipo', value: 'Dissipazione a Liquido' },
-                { label: 'Radiatore', value: 'AIO 240mm (opzionale)' },
-                { label: 'Airflow', value: 'Ottimizzato a doppia camera' },
+                { label: 'Codec', value: 'Realtek® 7.1 HD Audio' },
+                { label: 'Uscite', value: 'Optical S/PDIF, 5 jacks audio' },
             ]
         },
         {
@@ -81,10 +94,43 @@ export default function TRokB760SEPage() {
             title: 'Connettività',
             icon: <Wifi size={24} />,
             items: [
-                { label: 'WiFi', value: 'Intel® Wi-Fi 6' },
-                { label: 'Ethernet', value: 'Realtek® LAN 2.5Gb' },
-                { label: 'Audio', value: 'Realtek 7.1 Surround (SNR 98dB)' },
-                { label: 'DTS', value: 'DTS® Audio Processing' },
+                { label: 'LAN', value: 'Realtek® 2.5Gb' },
+                { label: 'Wireless', value: 'Wi-Fi 6 2×2 + Bluetooth 5.2' },
+                { label: 'USB Top', value: '2x USB3.0, 1x USB3.2 Gen2 Type-C' },
+                { label: 'USB Rear', value: '1x Gen2x2 Type-C, 1x Gen2, 3x Gen1, 1x USB2.0' },
+                { label: 'Sicurezza', value: 'Firmware TPM 2.0' },
+            ]
+        },
+        {
+            id: 'software',
+            title: 'Software',
+            icon: <Shield size={24} />,
+            items: [
+                { label: 'OS', value: 'Windows 11 Professional o Home' },
+            ]
+        },
+        {
+            id: 'peripherals',
+            title: 'Periferiche',
+            icon: <Package size={24} />,
+            items: [
+                { label: 'Disponibilità', value: 'Opzionali su richiesta' },
+            ]
+        },
+        {
+            id: 'energy',
+            title: 'Efficienza Energetica',
+            icon: <Zap size={24} />,
+            items: [
+                { label: 'Stato', value: 'In fase di aggiornamento' },
+            ]
+        },
+        {
+            id: 'warranty',
+            title: 'Garanzia',
+            icon: <Award size={24} />,
+            items: [
+                { label: 'Copertura', value: '24 mesi On Site (escluse isole minori)' },
             ]
         }
     ];
@@ -108,13 +154,13 @@ export default function TRokB760SEPage() {
                         transition={{ duration: 0.8 }}
                         className={styles.heroText}
                     >
-                        <span className={styles.heroTag}>Aquarium Design PC</span>
+                        <span className={styles.heroTag}>Linea Gaming Winblu</span>
                         <h1 className={styles.heroTitle}>
-                            T-Rok B760 SE:<br />
-                            <span className={styles.gradient}>Gioco Immersivo</span>
+                            T-ROK B760 SE:<br />
+                            <span className={styles.gradient}>Senza Compromessi</span>
                         </h1>
                         <p className={styles.heroDesc}>
-                            Rilevanti prestazioni e pregio estetico. Il nuovo T-Rok B760 SE apre le porte al futuro del gaming, pronto a ridefinire le regole del gioco grazie a un equipaggiamento d’avanguardia.
+                            Pronto a vivere un’esperienza di gioco straordinaria? Il nuovo T-Rok B760 SE apre le porte al futuro del gaming, pronto a ridefinire le regole del gioco, grazie anche al suo equipaggiamento d’avanguardia. Il restyling di linea, prende infatti tutto il meglio del suo predecessore, per amplificarne le prestazioni e il pregio estetico.
                         </p>
                         <div className={styles.heroCTAs}>
                             <Link href="/punti-vendita?tipo=fornitura" className={styles.ctaPrimary}>
@@ -158,7 +204,7 @@ export default function TRokB760SEPage() {
                         <div className={styles.cardImageContainer}>
                             <Image
                                 src="https://www.winblu.it/wp-content/uploads/2024/07/winblu-0143-1872x2048.png"
-                                alt="T-Rok B760 SE Overview"
+                                alt="T-Rok B760 SE Design"
                                 fill
                                 className={styles.cardImage}
                                 sizes="(max-width: 768px) 100vw, 66vw"
@@ -169,11 +215,11 @@ export default function TRokB760SEPage() {
                             <Sparkles size={48} className={styles.cardIcon} style={{ color: '#00d2ff' }} />
                             <h2 className={styles.cardTitle}>Premio Oscar per gli effetti speciali</h2>
                             <p className={styles.cardText}>
-                                Design a “doppia camera” riprogettato per favorire la dissipazione, con doppio vetro temperato a trasparenza totale.
+                                Design a “doppia camera” completamente rinnovato, con disposizione modificata per favorire la dissipazione e doppio vetro temperato a trasparenza totale.
                             </p>
                             <div className={styles.cardReveal}>
                                 <p className={styles.cardText}>
-                                    Un’evoluzione estetica per godere degli effetti luminosi gestiti dal sistema AURA, con n°5 FAN di serie e un angolo di visuale da “prima fila”.
+                                    Un’evoluzione estetica per godere dello straordinario spettacolo degli effetti luminosi gestiti dal sistema AURA, con n°5 FAN di serie e un angolo di visuale da “prima fila”.
                                 </p>
                             </div>
                         </div>
@@ -187,11 +233,11 @@ export default function TRokB760SEPage() {
                         transition={{ delay: 0.1 }}
                     >
                         <div className={styles.cardContent}>
-                            <Gauge size={36} className={styles.cardIcon} style={{ color: '#00d2ff' }} />
-                            <h3 className={styles.cardTitle}>7200 MT/s</h3>
+                            <Cpu size={36} className={styles.cardIcon} style={{ color: '#00d2ff' }} />
+                            <h3 className={styles.cardTitle}>14ᴬ Gen Intel</h3>
                             <div className={styles.cardReveal}>
                                 <p className={styles.cardTextSmall}>
-                                    Memorie DDR5 ad altissima frequenza per un multitasking record e caricamenti istantanei.
+                                    Nome in codice Raptor Lake Refresh: fino a 24 Core (8 P-core + 16 E-core) e 32 Thread per una potenza di calcolo estrema.
                                 </p>
                             </div>
                         </div>
@@ -205,14 +251,14 @@ export default function TRokB760SEPage() {
                         transition={{ delay: 0.2 }}
                     >
                         <div className={styles.cardContent}>
-                            <Cpu size={48} className={styles.cardIcon} style={{ color: '#00d2ff' }} />
-                            <h3 className={styles.cardTitle}>14ᴬ Gen Intel</h3>
+                            <Monitor size={48} className={styles.cardIcon} style={{ color: '#00d2ff' }} />
+                            <h3 className={styles.cardTitle}>NVIDIA® RTX 4000</h3>
                             <p className={styles.cardText}>
-                                Fino a 24 core e 32 thread. Il più veloce processore da gaming al mondo con architettura Raptor Lake Refresh.
+                                Basate su architettura Ada Lovelace, con Tensor core di quarta generazione e Ray Tracing di terza generazione.
                             </p>
                             <div className={styles.cardReveal}>
                                 <p className={styles.cardText}>
-                                    Ottimizzazione intelligente del carico di lavoro tra P-core ed E-core per massime prestazioni costanti.
+                                    Un’esperienza visiva inimmaginabile: mondi virtuali dettagliati, rendering real-time cinematografico e produttività senza precedenti.
                                 </p>
                             </div>
                         </div>
@@ -226,14 +272,14 @@ export default function TRokB760SEPage() {
                         transition={{ delay: 0.3 }}
                     >
                         <div className={styles.cardContent}>
-                            <Monitor size={48} className={styles.cardIcon} style={{ color: '#00d2ff' }} />
-                            <h3 className={styles.cardTitle}>Ada Lovelace</h3>
+                            <Zap size={48} className={styles.cardIcon} style={{ color: '#00d2ff' }} />
+                            <h3 className={styles.cardTitle}>Giocare al massimo</h3>
                             <p className={styles.cardText}>
-                                NVIDIA GeForce RTX serie 4000: un enorme passo avanti in termini di prestazioni, efficienza e grafica IA.
+                                Realtek 7.1 Surround (SNR 98dB) e DTS® Audio Processing per un suono incontaminato e bassi profondi.
                             </p>
                             <div className={styles.cardReveal}>
                                 <p className={styles.cardText}>
-                                    Rendering real-time in qualità cinematografica per un'immersione visiva senza precedenti.
+                                    Connettività fulminea con WI-FI 6 e LAN 2.5Gb per dominare ogni partita online senza lag.
                                 </p>
                             </div>
                         </div>
@@ -247,11 +293,11 @@ export default function TRokB760SEPage() {
                         transition={{ delay: 0.4 }}
                     >
                         <div className={styles.cardContent}>
-                            <Wifi size={36} className={styles.cardIcon} style={{ color: '#00d2ff' }} />
-                            <h3 className={styles.cardTitle}>Connettività 2.5Gb</h3>
+                            <Shield size={36} className={styles.cardIcon} style={{ color: '#00d2ff' }} />
+                            <h3 className={styles.cardTitle}>Windows 11</h3>
                             <div className={styles.cardReveal}>
                                 <p className={styles.cardTextSmall}>
-                                    Porta LAN ultra-rapida e Wi-Fi 6 per sessioni multiplayer senza lag e download immediati.
+                                    L’ideale per gestire al meglio la propria postazione gaming: migliora produttività, prestazioni e sicurezza.
                                 </p>
                             </div>
                         </div>
@@ -265,11 +311,16 @@ export default function TRokB760SEPage() {
                         transition={{ delay: 0.5 }}
                     >
                         <div className={styles.cardContent}>
-                            <Activity size={48} className={styles.cardIcon} style={{ color: '#00d2ff' }} />
-                            <h3 className={styles.cardTitle}>Audio Surround 7.1</h3>
+                            <Award size={48} className={styles.cardIcon} style={{ color: '#00d2ff' }} />
+                            <h3 className={styles.cardTitle}>Soddisfatti e Garantiti</h3>
                             <p className={styles.cardText}>
-                                Chip Realtek ad alta fedeltà con elaborazione DTS® per bassi profondi e suono cristallino.
+                                24 mesi di Garanzia On Site con intervento a domicilio di tecnico specializzato.
                             </p>
+                            <div className={styles.cardReveal}>
+                                <p className={styles.cardText}>
+                                    In più, con Windows 11 Home, un mese di accesso gratuito al catalogo XBOX Game Pass!
+                                </p>
+                            </div>
                         </div>
                     </motion.div>
                 </div>

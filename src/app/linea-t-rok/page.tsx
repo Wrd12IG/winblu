@@ -28,7 +28,7 @@ export default function LineaTRok() {
             image: "https://www.winblu.it/wp-content/uploads/2024/07/winblu-0323-1872x2048.png",
             specs: ["Intel Core i9 14th Gen", "Z790 Chipset", "Aura RGB", "DDR5 7200"],
             href: "/t-rok-z790",
-            size: "cardLarge" // Changed from oneThird to cardLarge/Medium to fit bento
+            size: "cardMedium"
         },
         {
             id: 'b760-se',
@@ -104,29 +104,29 @@ export default function LineaTRok() {
             {/* Bento Grid Gallery */}
             <section id="gallery" className={styles.bentoSection}>
                 <div className={styles.bentoGrid}>
-                    {/* Z790 - Large Card */}
+                    {/* Z790 - Third Card */}
                     <motion.div
-                        className={`${styles.bentoCard} ${styles.cardLarge} ${styles.cardWithImage}`}
+                        className={`${styles.bentoCard} ${styles.cardThird} ${styles.cardWithImage}`}
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                     >
                         <Link href="/t-rok-z790" className={styles.cardLink}>
-                            <div className={styles.cardImageContainer}>
+                            <div className={styles.cardImageContainerSmall}>
                                 <Image
                                     src={models[0].image}
                                     alt={models[0].name}
                                     fill
                                     className={styles.cardImage}
-                                    sizes="(max-width: 768px) 100vw, 800px"
+                                    sizes="(max-width: 768px) 100vw, 400px"
                                 />
                                 <div className={styles.cardOverlay} />
                             </div>
                             <div className={styles.cardContent}>
-                                <span className={styles.heroTag} style={{ fontSize: '0.8rem' }}>{models[0].tagline}</span>
-                                <h2 className={styles.cardTitle}>{models[0].name}</h2>
-                                <p className={styles.cardText}>{models[0].description}</p>
+                                <span className={styles.heroTag} style={{ fontSize: '0.7rem' }}>{models[0].tagline}</span>
+                                <h3 className={styles.cardTitle}>{models[0].name}</h3>
                                 <div className={styles.cardReveal}>
+                                    <p className={styles.cardTextSmall}>{models[0].description}</p>
                                     <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.4rem', marginTop: '1rem' }}>
                                         {models[0].specs.map((spec, i) => (
                                             <span key={i} className={styles.heroTag} style={{ fontSize: '0.7rem' }}>{spec}</span>
@@ -140,30 +140,13 @@ export default function LineaTRok() {
                         </Link>
                     </motion.div>
 
-                    {/* Features Small */}
+                    {/* B760 SE - Third */}
                     <motion.div
-                        className={`${styles.bentoCard} ${styles.cardSmall}`}
+                        className={`${styles.bentoCard} ${styles.cardThird} ${styles.cardWithImage}`}
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         transition={{ delay: 0.1 }}
-                    >
-                        <div className={styles.cardContent}>
-                            <Wind size={36} className={styles.cardIcon} />
-                            <h3 className={styles.cardTitle}>Cooling</h3>
-                            <div className={styles.cardReveal}>
-                                <p className={styles.cardTextSmall}>AIO 360mm e airflow ottimizzato per maratone di gioco estreme.</p>
-                            </div>
-                        </div>
-                    </motion.div>
-
-                    {/* B760 SE - Medium */}
-                    <motion.div
-                        className={`${styles.bentoCard} ${styles.cardMedium} ${styles.cardWithImage}`}
-                        initial={{ opacity: 0, y: 20 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true }}
-                        transition={{ delay: 0.2 }}
                     >
                         <Link href="/t-rok-b760-se" className={styles.cardLink}>
                             <div className={styles.cardImageContainerSmall}>
@@ -189,13 +172,13 @@ export default function LineaTRok() {
                         </Link>
                     </motion.div>
 
-                    {/* H610 - Medium */}
+                    {/* H610 - Third */}
                     <motion.div
-                        className={`${styles.bentoCard} ${styles.cardMedium} ${styles.cardWithImage}`}
+                        className={`${styles.bentoCard} ${styles.cardThird} ${styles.cardWithImage}`}
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
-                        transition={{ delay: 0.3 }}
+                        transition={{ delay: 0.2 }}
                     >
                         <Link href="/t-rok-tuf-h610" className={styles.cardLink}>
                             <div className={styles.cardImageContainerSmall}>
@@ -221,36 +204,46 @@ export default function LineaTRok() {
                         </Link>
                     </motion.div>
 
-                    {/* Row 3 - Small Features */}
+                    {/* Features - Aligned to fit grid (Medium) */}
                     <motion.div
-                        className={`${styles.bentoCard} ${styles.cardSmall} ${styles.cardHighlight}`}
+                        className={`${styles.bentoCard} ${styles.cardMedium}`}
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ delay: 0.3 }}
+                    >
+                        <div className={styles.cardContent}>
+                            <Wind size={48} className={styles.cardIcon} />
+                            <h3 className={styles.cardTitle}>Cooling</h3>
+                            <p className={styles.cardText}>AIO 360mm e airflow ottimizzato per maratone di gioco estreme.</p>
+                        </div>
+                    </motion.div>
+
+                    <motion.div
+                        className={`${styles.bentoCard} ${styles.cardMedium} ${styles.cardHighlight}`}
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         transition={{ delay: 0.4 }}
                     >
                         <div className={styles.cardContent}>
-                            <Layers size={36} className={styles.cardIcon} />
+                            <Layers size={48} className={styles.cardIcon} />
                             <h3 className={styles.cardTitle}>Vista 270°</h3>
-                            <div className={styles.cardReveal}>
-                                <p className={styles.cardTextSmall}>Design panoramico con vetro curvo o aquarium case.</p>
-                            </div>
+                            <p className={styles.cardText}>Design panoramico con vetro curvo o aquarium case.</p>
                         </div>
                     </motion.div>
 
                     <motion.div
-                        className={`${styles.bentoCard} ${styles.cardSmall}`}
+                        className={`${styles.bentoCard} ${styles.cardMedium}`}
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         transition={{ delay: 0.5 }}
                     >
                         <div className={styles.cardContent}>
-                            <Sparkles size={36} className={styles.cardIcon} />
+                            <Sparkles size={48} className={styles.cardIcon} />
                             <h3 className={styles.cardTitle}>RGB Aura</h3>
-                            <div className={styles.cardReveal}>
-                                <p className={styles.cardTextSmall}>Sincronizzazione ARGB completa con ASUS Aura Sync.</p>
-                            </div>
+                            <p className={styles.cardText}>Sincronizzazione ARGB completa con ASUS Aura Sync.</p>
                         </div>
                     </motion.div>
                 </div>

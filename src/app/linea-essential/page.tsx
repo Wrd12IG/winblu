@@ -1,15 +1,15 @@
 "use client";
 
-import styles from '../styles/product-bento.module.css';
-import { motion } from 'framer-motion';
-import { Zap, DollarSign, Wrench, Shield, Box, Layout, Cpu, Database, ChevronRight, Monitor, Wifi, HardDrive, Keyboard, Fingerprint, Usb, Settings, Package, Battery, Award, Network } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
-import B2BCTASection from "@/components/B2BCTASection";
+import styles from '../styles/product-bento.module.css';
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import SpecsCards from "@/components/SpecsCards";
 import { SpecCategory } from "@/components/SpecsAccordion";
+import B2BCTASection from "@/components/B2BCTASection";
+import { motion } from 'framer-motion';
+import { Zap, Shield, Box, Layout, Cpu, Monitor, Wifi, HardDrive, Settings, Activity, Lock, Speaker, Award } from 'lucide-react';
 
 const fadeIn = {
   hidden: { opacity: 0, y: 20 },
@@ -21,92 +21,6 @@ const GridBackground = () => (
 );
 
 export default function LineaEssentialPage() {
-  const technicalSpecs: SpecCategory[] = [
-    {
-      id: 'design',
-      title: 'Design & Dimensioni',
-      icon: <Box size={24} />,
-      items: [
-        { label: 'Formato', value: 'SFF (Small Form Factor)' },
-        { label: 'Volume', value: '8.3 Litri' },
-        { label: 'Dimensioni', value: '336 x 272 x 95 mm' },
-        { label: 'Orientamento', value: 'Orizzontale o Verticale' },
-      ]
-    },
-    {
-      id: 'cpu',
-      title: 'Processore & Chipset',
-      icon: <Cpu size={24} />,
-      items: [
-        { label: 'CPU', value: 'Intel® Core™ 12ª/13ª/14ª Gen (Max 65W)' },
-        { label: 'Socket', value: 'LGA1700' },
-        { label: 'Chipset', value: 'Intel® H610 / B660 / B760' },
-      ]
-    },
-    {
-      id: 'memory',
-      title: 'Memoria RAM',
-      icon: <HardDrive size={24} />,
-      items: [
-        { label: 'Tipo', value: 'DDR4 3200MHz' },
-        { label: 'Slot', value: '2x DIMM' },
-        { label: 'Capacità Max', value: 'Fino a 64GB' },
-        { label: 'Canale', value: 'Dual Channel Support' },
-      ]
-    },
-    {
-      id: 'storage',
-      title: 'Archiviazione',
-      icon: <Database size={24} />, // Changed icon
-      items: [
-        { label: 'M.2', value: '1x M.2 NVMe PCIe 4.0/3.0' },
-        { label: 'SATA', value: '1x 2.5" SSD/HDD + 1x 3.5" HDD (opz)' },
-        { label: 'ODD', value: 'Supporto Slim ODD 9mm' },
-      ]
-    },
-    {
-      id: 'graphics',
-      title: 'Grafica',
-      icon: <Monitor size={24} />,
-      items: [
-        { label: 'Integrata', value: 'Intel® UHD Graphics 770/730' },
-        { label: 'Risoluzione', value: 'Supporto fino a 4K/8K' },
-        { label: 'Espansione', value: 'Supporto GPU Low Profile (es. T400)' },
-      ]
-    },
-    {
-      id: 'connectivity',
-      title: 'Connettività',
-      icon: <Wifi size={24} />,
-      items: [
-        { label: 'Frontale', value: '2x USB 3.0 + 2x USB 2.0 + Audio' },
-        { label: 'Posteriore', value: '2x USB 3.2 + 2x USB 2.0 + RJ45' },
-        { label: 'Video Out', value: 'HDMI + VGA + DP (opz)' },
-        { label: 'Wireless', value: 'Opzionale (M.2 Key-E)' },
-      ]
-    },
-    {
-      id: 'software',
-      title: 'Software & OS',
-      icon: <Settings size={24} />,
-      items: [
-        { label: 'OS', value: 'Windows 11 Pro / Home' },
-        { label: 'Compatibilità', value: 'Windows 10 Supportato' },
-        { label: 'Sicurezza', value: 'TPM 2.0 Firmware' },
-      ]
-    },
-    {
-      id: 'warranty',
-      title: 'Garanzia',
-      icon: <Shield size={24} />,
-      items: [
-        { label: 'Standard', value: '24 Mesi On-Center' },
-        { label: 'Estensioni', value: 'Disponibili su richiesta' },
-        { label: 'Supporto', value: 'Assistenza Tecnica Italiana' },
-      ]
-    }
-  ];
-
   return (
     <div className={styles.container}>
       <Navbar />
@@ -119,16 +33,22 @@ export default function LineaEssentialPage() {
             transition={{ duration: 0.8 }}
             className={styles.heroText}
           >
-            <span className={styles.heroTag}>Performance Extra-Large</span>
+            <span className={styles.heroTag}>Linea Essential</span>
             <h1 className={styles.heroTitle}>
               Winblu <span className={styles.gradient}>Essential</span>
             </h1>
-            <p className={styles.heroDesc}>
-              Dimensioni Small, prestazioni Extra-Large. Un concentrato di potenza in un design ultra-compatto SFF da 8.3 litri, ideale per chi cerca il massimo della funzionalità nel minimo spazio.
-            </p>
+            <h2 className={styles.heroSubtitle}>Dimensioni Small in soli 8.3L… prestazioni Extra-Large</h2>
+            <div className={styles.heroDesc}>
+              <p>
+                Un autentico concentrato di potenza e tecnologia al servizio delle tue necessità. Grazie al design ultra-compatto SFF da 8.3 litri, la nuova Linea Essential di Winblu è la soluzione ideale per chi ha problemi di spazio e predilige il massimo della funzionalità, nel design e nei contenuti tecnici.
+              </p>
+              <p>
+                Il nuovo Winblu Essential misura, in posizione orizzontale, 27.2 centimetri di profondità, solo 33.6 di larghezza e 9.5 in altezza. Grazie al pratico supporto in dotazione, può essere posizionato anche in verticale.
+              </p>
+            </div>
             <div className={styles.heroCTAs}>
               <Link href="/punti-vendita?tipo=fornitura" className={styles.ctaPrimary}>
-                Configura Ora
+                Configura Winblu
               </Link>
               <Link href="/punti-vendita" className={styles.ctaSecondary}>
                 Trova Rivenditore
@@ -160,29 +80,20 @@ export default function LineaEssentialPage() {
       <section className={styles.bentoSection}>
         <div className={styles.bentoGrid}>
           <motion.div
-            className={`${styles.bentoCard} ${styles.cardLarge} ${styles.cardWithImage}`}
+            className={`${styles.bentoCard} ${styles.cardLarge}`}
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
           >
-            <div className={styles.cardImageContainer}>
-              <Image
-                src="https://www.winblu.it/wp-content/uploads/2025/07/WINBLU_2025-07_Essential_1280x854-1.jpeg"
-                alt="Essential 8.3L Design"
-                fill
-                className={styles.cardImage}
-              />
-              <div className={styles.cardOverlay} />
-            </div>
             <div className={styles.cardContent}>
-              <Box size={48} className={styles.cardIcon} />
-              <h2 className={styles.cardTitle}>Solo 8.3 Litri</h2>
+              <Cpu size={48} className={styles.cardIcon} style={{ color: '#0160A9' }} />
+              <h2 className={styles.cardTitle}>Performance al Top</h2>
               <p className={styles.cardText}>
-                Il formato SFF (Small Form Factor) che libera il tuo spazio vitale senza sacrificare l'espandibilità interna e la potenza di calcolo.
+                Performance potenti con il nuovo Essential 8.3L grazie ai processori Intel® Core™ di 12A e 13A generazione, che offrono notevoli miglioramenti delle prestazioni per una maggiore produttività.
               </p>
               <div className={styles.cardReveal}>
                 <p className={styles.cardText}>
-                  Adattabile ad ogni ambiente grazie al supporto per posizionamento verticale o orizzontale. La soluzione perfetta per uffici dinamici e postazioni home-office.
+                  La nuova linea supporta CPU da 65 watt per gestire compiti di calcolo intensivi. Supporta fino a 64GB di memoria DDR4 3200Mhz e design a due unità di archiviazione (SSD M.2 PCIe 4.0 + SSD/HD 2.5”).
                 </p>
               </div>
             </div>
@@ -196,11 +107,11 @@ export default function LineaEssentialPage() {
             transition={{ delay: 0.1 }}
           >
             <div className={styles.cardContent}>
-              <Zap size={36} className={styles.cardIcon} />
-              <h3 className={styles.cardTitle}>Desktop Power</h3>
+              <Wifi size={36} className={styles.cardIcon} />
+              <h3 className={styles.cardTitle}>Piena connettività</h3>
               <div className={styles.cardReveal}>
                 <p className={styles.cardTextSmall}>
-                  Supporto completo a processori Intel® Core™ da 65W per gestire carichi di lavoro professionali.
+                  Sul lato frontale 2x USB 3.0, 2x USB 2.0 e Audio. Sul retro ulteriori USB, uscite D-SUB (VGA) e HDMI (in base al modello). Opzionali Masterizzatore Slim e porta COM/Seriale.
                 </p>
               </div>
             </div>
@@ -214,11 +125,16 @@ export default function LineaEssentialPage() {
             transition={{ delay: 0.2 }}
           >
             <div className={styles.cardContent}>
-              <Cpu size={48} className={styles.cardIcon} />
-              <h3 className={styles.cardTitle}>Performance 14th Gen</h3>
+              <Monitor size={48} className={styles.cardIcon} />
+              <h3 className={styles.cardTitle}>Core grafico eccellente</h3>
               <p className={styles.cardText}>
-                Basato su chipset Intel® di ultima generazione per un multitasking fluido e un'efficienza energetica senza precedenti.
+                Winblu Essential 8.3L integra il core grafico Intel® UHD 770/730 con supporto fino a 8k@60Hz HDR e media a 12-bit.
               </p>
+              <div className={styles.cardReveal}>
+                <p className={styles.cardText}>
+                  Per gli utilizzatori più esigenti, è possibile integrare una scheda video discreta su slot PCIe 4.0 x16 Low Profile, come ad esempio una Nvidia® RTX T400.
+                </p>
+              </div>
             </div>
           </motion.div>
 
@@ -230,13 +146,59 @@ export default function LineaEssentialPage() {
             transition={{ delay: 0.3 }}
           >
             <div className={styles.cardContent}>
-              <Monitor size={48} className={styles.cardIcon} />
-              <h3 className={styles.cardTitle}>Grafica 8K HDR</h3>
+              <Lock size={48} className={styles.cardIcon} />
+              <h3 className={styles.cardTitle}>Windows 11 e Sicurezza</h3>
               <p className={styles.cardText}>
-                Supporto fino a risoluzione 8K@60Hz e decodifica media a 12-bit per una qualità visiva di grado cinematografico.
+                Winblu Essential suggerisce Windows 11 Professional, l’ideale per gestire al meglio il proprio computer in contesto lavorativo.
               </p>
+              <div className={styles.cardReveal}>
+                <p className={styles.cardText}>
+                  Un sistema operativo progettato per migliorare produttività, prestazioni e sicurezza. Windows 11 Pro è sinonimo di business.
+                </p>
+              </div>
             </div>
           </motion.div>
+
+          {/* Row 3 */}
+          <motion.div
+            className={`${styles.bentoCard} ${styles.cardLarge}`}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.4 }}
+          >
+            <div className={styles.cardContent}>
+              <Award size={48} className={styles.cardIcon} style={{ color: '#0160A9' }} />
+              <h2 className={styles.cardTitle}>Soddisfatti e Garantiti</h2>
+              <p className={styles.cardText}>
+                I Pc Essential sono garantiti 24 mesi con formula On Site, con la possibilità di estendere il servizio di ulteriori 12 mesi.
+              </p>
+              <div className={styles.cardReveal}>
+                <p className={styles.cardText}>
+                  Questa specifica formula prevede l’intervento a domicilio di un tecnico specializzato e altamente qualificato per la riparazione del dispositivo (escluse isole minori).
+                </p>
+              </div>
+            </div>
+          </motion.div>
+
+          <motion.div
+            className={`${styles.bentoCard} ${styles.cardSmall} ${styles.cardHighlight}`}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.5 }}
+          >
+            <div className={styles.cardContent}>
+              <Activity size={36} className={styles.cardIcon} />
+              <h3 className={styles.cardTitle}>Efficienza Energetica</h3>
+              <div className={styles.cardReveal}>
+                <p className={styles.cardTextSmall}>
+                  In fase di aggiornamento. Il design compatto e l'uso di componenti efficienti contribuiscono a ridurre i consumi e l'impatto ambientale.
+                </p>
+              </div>
+            </div>
+          </motion.div>
+
         </div>
       </section>
 
@@ -260,12 +222,20 @@ export default function LineaEssentialPage() {
           >
             Specifiche Tecniche
           </motion.h2>
-          <SpecsCards specs={technicalSpecs.map(spec => ({
-            id: spec.id,
-            title: spec.title,
-            icon: spec.icon,
-            description: spec.items.map(i => `${i.label}: ${i.value}`).join(' • ')
-          }))} />
+          <SpecsCards specs={[
+            { id: 'cpu', title: 'Processori', description: 'Intel® Core™ i3, i5, i7 serie Alder Lake 12A Generazione e serie Raptor Lake 13A Generazione, Socket LGA1700 65W', icon: <Cpu size={24} /> },
+            { id: 'chipset', title: 'Chipset', description: 'Intel® H610', icon: <Settings size={24} /> },
+            { id: 'memory', title: 'Memoria', description: 'RAM DDR4 3200MHz su n°2 alloggiamenti, massimo 64GB', icon: <HardDrive size={24} /> },
+            { id: 'storage', title: 'Archiviazione', description: 'Supporta n°1 SSD M.2 PCIe® 4.0 x4 e n°1 HD/SSD 2.5’’ Sata3, Unità ottica slim opzionale, Lettore card non presenti', icon: <HardDrive size={24} /> },
+            { id: 'video', title: 'Sezione Video', description: 'Core grafico Intel® UHD 770/730 (in base alla cpu), connettori D-SUB (VGA) e HDMI 2.1 (4K@60Hz), possibilità di scheda video aggiuntiva su slot PCIe 4.0/3.0 x16 Low Profile', icon: <Monitor size={24} /> },
+            { id: 'audio', title: 'Sezione Audio', description: 'Realtek® ALC897, 7.1 canali HD, n°3 jacks audio posteriori', icon: <Speaker size={24} /> },
+            { id: 'connectivity', title: 'Connettività e Sicurezza', description: 'LAN Gigabit Realtek® 8111H integrata, scheda Wi-fi 6 + Bluetooth 5.0 PCIe opzionale, scheda LAN Gigabit PCIe opzionale, n°2 USB3.0 e n°2 USB2.0 frontali, n°2 USB3.2 Gen1 e n°4 USB2.0 posteriori, Firmware TPM 2.0 integrato, Modulo TPM hardware opzionale', icon: <Wifi size={24} /> },
+            { id: 'software', title: 'Compatibilità Software', description: 'Windows 11 in versione Professional o Home, anche in versione Educational per le scuole', icon: <Settings size={24} /> },
+            { id: 'case', title: 'Case e Alimentatore', description: 'Desktop Small Form Factor 8.3 litri nero, Alimentatore 350W 80Plus Bronze, 272x336x95mm, n°2 porte Audio frontali, piedistallo in dotazione, Kensington slot per chiusura di sicurezza posteriore', icon: <Box size={24} /> },
+            { id: 'included', title: 'In Dotazione', description: 'Tastiera e Mouse USB (opzionali), Kit Drivers e Manuali Utente (dove previsto)', icon: <Box size={24} /> },
+            { id: 'energy', title: 'Efficienza Energetica', description: 'In fase di aggiornamento', icon: <Activity size={24} /> },
+            { id: 'warranty', title: 'Garanzia', description: 'Garanzia di 24/36 mesi On Site con intervento a domicilio entro 48 ore lavorative (escluse isole minori)', icon: <Award size={24} /> },
+          ]} />
         </div>
       </section>
 

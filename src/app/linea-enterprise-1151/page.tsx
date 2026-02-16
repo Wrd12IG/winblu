@@ -2,102 +2,67 @@
 
 import Link from 'next/link';
 import Image from 'next/image';
+import { motion } from 'framer-motion';
+import { ShieldCheck, Database, HardDrive, Network, Server, Shield, Activity, Lock, Cpu, Settings, Monitor, Disc, Usb, Terminal, Box, Award } from 'lucide-react';
 import styles from '../styles/product-bento.module.css';
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import SpecsCards from "@/components/SpecsCards";
 import { SpecCategory } from "@/components/SpecsAccordion";
 import B2BCTASection from "@/components/B2BCTASection";
-import { motion } from 'framer-motion';
-import { Server, Shield, Database, Activity, HardDrive, Network, Lock, Cpu } from 'lucide-react';
 
 const GridBackground = () => (
     <div className={styles.gridBg} />
 );
 
 export default function LineaEnterprise1151Page() {
-    const technicalSpecs: SpecCategory[] = [
-        {
-            id: 'processor',
-            title: 'Processore',
-            icon: <Cpu size={24} />,
-            items: [
-                { label: 'CPU', value: 'Intel® Xeon® E-2300 Series' },
-                { label: 'Socket', value: 'LGA 1200' },
-                { label: 'Cores', value: 'Fino a 8 Cores / 16 Threads' },
-            ]
-        },
-        {
-            id: 'memory',
-            title: 'Memoria',
-            icon: <Database size={24} />,
-            items: [
-                { label: 'RAM', value: 'DDR4 ECC UDIMM' },
-                { label: 'Capacità', value: 'Fino a 128GB' },
-                { label: 'Speed', value: '2666/3200 MT/s' },
-            ]
-        },
-        {
-            id: 'storage',
-            title: 'Archiviazione',
-            icon: <HardDrive size={24} />,
-            items: [
-                { label: 'Bays', value: '4x 3.5" Hot-Swap (Espandibile)' },
-                { label: 'Boot', value: '2x M.2 NVMe (RAID 1 Support)' },
-                { label: 'Controller', value: 'ASUS PIKE II 3000 Series' },
-            ]
-        },
-        {
-            id: 'management',
-            title: 'Network & Gestione',
-            icon: <Network size={24} />,
-            items: [
-                { label: 'LAN', value: '2-4x Intel® Gigabit Ethernet' },
-                { label: 'Features', value: 'Teaming & Failover Support' },
-                { label: 'Mgmt', value: 'iKVM / IPMI 2.0' },
-            ]
-        }
-    ];
+    // Specs configuration moved directly to component
 
     return (
         <div className={styles.container}>
             <Navbar />
+            {/* Hero Section */}
             <section className={styles.hero}>
-                <GridBackground />
                 <div className={styles.heroContent}>
                     <motion.div
-                        className={styles.heroText}
                         initial={{ opacity: 0, x: -50 }}
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.8 }}
+                        className={styles.heroText}
                     >
-                        <span className={styles.heroTag}>Massima Affidabilità Aziendale</span>
+                        <span className={styles.heroTag}>Enterprise Series</span>
                         <h1 className={styles.heroTitle}>
                             Winblu <span className={styles.gradient}>Enterprise 1151</span>
                         </h1>
-                        <p className={styles.heroDesc}>
-                            Soluzioni ottimizzate per carichi di lavoro mission-critical. I server Winblu Enterprise 1151 integrano tecnologie Intel® Xeon® E per prestazioni estreme e continuità operativa totale.
-                        </p>
+                        <h2 className={styles.heroSubtitle}>Soluzioni ottimizzate per il carico di lavoro</h2>
+                        <div className={styles.heroDesc}>
+                            <p>
+                                I server Winblu della linea Enterprise 1151 supportano le più recenti tecnologie con le CPU Intel® Xeon® E, 1.36x più veloci rispetto alla generazione precedente e funzionanti con TDP massimo di 95W per prestazioni estreme. I quattro slot di memoria supportano fino a 128 GB di DDR4 ECC 2666MHz per elaborazioni a uso intensivo di RAM.
+                            </p>
+                            <p>
+                                I server Winblu Enterprise 1151 sono disponibili in formato 1 unità, 4 unità e 5 unità.
+                            </p>
+                        </div>
                         <div className={styles.heroCTAs}>
-                            <Link href="/punti-vendita" className={styles.ctaPrimary}>
+                            <Link href="/punti-vendita?tipo=fornitura" className={styles.ctaPrimary}>
                                 Configura Server
                             </Link>
                             <Link href="/punti-vendita" className={styles.ctaSecondary}>
-                                Trova Rivenditore
+                                Contatta Esperto
                             </Link>
                         </div>
                     </motion.div>
 
                     <motion.div
-                        className={styles.heroVisual}
                         initial={{ opacity: 0, x: 50 }}
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.8, delay: 0.2 }}
+                        className={styles.heroVisual}
                     >
                         <div className={styles.heroImageContainer}>
                             <Image
-                                src="/assets/enterprise-1151-hero.png"
-                                alt="Winblu Enterprise 1151 Server"
+                                src="/products/enterprise-1151_hero_v4.png"
+                                alt="Winblu Enterprise 1151"
                                 fill
                                 className={styles.heroProductImage}
                                 priority
@@ -111,59 +76,52 @@ export default function LineaEnterprise1151Page() {
             {/* Bento Grid Section */}
             <section className={styles.bentoSection}>
                 <div className={styles.bentoGrid}>
-                    {/* Row 1 */}
                     <motion.div
-                        className={`${styles.bentoCard} ${styles.cardLarge}`}
+                        className={`${styles.bentoCard} ${styles.cardLarge} ${styles.cardWithImage}`}
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                     >
+                        <div className={styles.cardImageContainer}>
+                            <Image
+                                src="/products/enterprise-1151/extracted_24.png"
+                                alt="Sicurezza Enterprise"
+                                fill
+                                className={styles.cardImage}
+                                sizes="(max-width: 768px) 100vw, 66vw"
+                            />
+                            <div className={styles.cardOverlay} />
+                        </div>
                         <div className={styles.cardContent}>
-                            <Server size={48} className={styles.cardIcon} />
-                            <h2 className={styles.cardTitle}>Sicurezza e Continuità</h2>
+                            <ShieldCheck size={48} className={styles.cardIcon} />
+                            <h2 className={styles.cardTitle}>La sicurezza di non fermarsi mai</h2>
                             <p className={styles.cardText}>
-                                Basati su piattaforma ASUS e microprocessori Intel Xeon E fino a 8 core. Una componentistica selezionata per garantire che la tua azienda non si fermi mai, con efficienza termica ottimizzata.
+                                I sistemi della linea Enterprise 1151 rispondono al meglio al bisogno di totale sicurezza e affidabilità, caratteristiche imprescindibili per un server.
                             </p>
                             <div className={styles.cardReveal}>
                                 <p className={styles.cardText}>
-                                    Supporto memorie DDR4 ECC fino a 128GB per elaborazioni sicure e integrità dei dati costante. Disponibile in formati Rack e Tower convertibili.
+                                    Basati su piattaforma Asus, azienda leader nel settore hardware e fra le più innovative in materia di ricerca e sviluppo, offrono soluzioni ingegnerizzate in modo ottimale e ricche di funzionalità intelligenti, con componentistica selezionata e certificata.
                                 </p>
                             </div>
                         </div>
                     </motion.div>
 
                     <motion.div
-                        className={`${styles.bentoCard} ${styles.cardSmall} ${styles.cardHighlight}`}
+                        className={`${styles.bentoCard} ${styles.cardSmall}`}
+                        style={{ gridRow: 'span 2' }}
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         transition={{ delay: 0.1 }}
                     >
                         <div className={styles.cardContent}>
-                            <Shield size={36} className={styles.cardIcon} />
-                            <h3 className={styles.cardTitle}>Controller PIKE II</h3>
+                            <Network size={36} className={styles.cardIcon} style={{ color: '#0160A9' }} />
+                            <h3 className={styles.cardTitle}>Intel Gigabit Ethernet</h3>
                             <div className={styles.cardReveal}>
                                 <p className={styles.cardTextSmall}>
-                                    Fino a 12 Gbit/s di trasferimento SAS e protezione RAID hardware integrata per una gestione dello storage di classe enterprise.
+                                    Da due a quattro connettori (secondo il modello) Intel® Ethernet di classe server con controller I210 e I219, e supporto teaming che estende la larghezza di banda della rete mentre la funzione di failover garantisce una connessione di rete ininterrotta. La soluzione perfetta per applicazioni di virtualizzazione che richiedono una rete ultraveloce e affidabile.
                                 </p>
                             </div>
-                        </div>
-                    </motion.div>
-
-                    {/* Row 2 */}
-                    <motion.div
-                        className={`${styles.bentoCard} ${styles.cardMedium}`}
-                        initial={{ opacity: 0, y: 20 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true }}
-                        transition={{ delay: 0.2 }}
-                    >
-                        <div className={styles.cardContent}>
-                            <HardDrive size={48} className={styles.cardIcon} />
-                            <h3 className={styles.cardTitle}>Storage Flessibile</h3>
-                            <p className={styles.cardText}>
-                                Fino a 8 bay Hot-Swap (secondo il modello) e doppio slot M.2 NVMe per velocità di avvio fino a 5,3 volte superiori rispetto a SATA III.
-                            </p>
                         </div>
                     </motion.div>
 
@@ -172,14 +130,40 @@ export default function LineaEnterprise1151Page() {
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
+                        transition={{ delay: 0.2 }}
+                    >
+                        <div className={styles.cardContent}>
+                            <Database size={48} className={styles.cardIcon} style={{ color: '#0160A9' }} />
+                            <h3 className={styles.cardTitle}>Flessibilità di espansione per una migliore gestione dello storage</h3>
+                            <p className={styles.cardText}>
+                                La linea Enterprise 1151 a 5 unità tower convertibile e 1 unità rack, ospitano quattro bay da 2,5”/3,5″ sostituibili a caldo.
+                            </p>
+                            <div className={styles.cardReveal}>
+                                <p className={styles.cardText}>
+                                    La versione 5U è inoltre ulteriormente espandibile fino a otto bay per una maggiore capacità di archiviazione opzionale. Due slot M.2 ospitano SSD fino al formato 22110 con supporto al boot del sistema operativo e larghezza di banda PCIe Gen3 – 5,3 volte più veloce rispetto a SATA III da 6 Gb/s – per velocità di avvio più elevate.
+                                </p>
+                            </div>
+                        </div>
+                    </motion.div>
+
+                    <motion.div
+                        className={`${styles.bentoCard} ${styles.cardMedium}`}
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
                         transition={{ delay: 0.3 }}
                     >
                         <div className={styles.cardContent}>
-                            <Network size={48} className={styles.cardIcon} />
-                            <h3 className={styles.cardTitle}>Network Failover</h3>
+                            <HardDrive size={48} className={styles.cardIcon} style={{ color: '#0160A9' }} />
+                            <h3 className={styles.cardTitle}>Massimizzazione delle prestazioni I/O e della protezione dei dati</h3>
                             <p className={styles.cardText}>
-                                Fino a 4 porte Intel® Ethernet con supporto Teaming e Failover per garantire che il tuo business resti sempre connesso.
+                                La linea Enterprise 1151 a 5 unità tower convertibile e 1 unità rack supportano i controller della serie ASUS PIKE II 3000, la più recente soluzione di storage aziendale.
                             </p>
+                            <div className={styles.cardReveal}>
+                                <p className={styles.cardText}>
+                                    Con supporto per l’archiviazione SAS a 12 Gbit/s e protezione dei dati RAID integrata. I controller hardware ASUS PIKE sono una grande opzione di aggiornamento con le quali è possibile immediatamente migliorare la capacità di memorizzazione e le prestazioni dei server Enterprise 1151.
+                                </p>
+                            </div>
                         </div>
                     </motion.div>
                 </div>
@@ -205,12 +189,20 @@ export default function LineaEnterprise1151Page() {
                     >
                         Specifiche Tecniche
                     </motion.h2>
-                    <SpecsCards specs={technicalSpecs.map(spec => ({
-                        id: spec.id,
-                        title: spec.title,
-                        icon: spec.icon,
-                        description: spec.items.map(i => `${i.label}: ${i.value}`).join(' • ')
-                    }))} />
+                    <SpecsCards specs={[
+                        { id: 'cpu', title: 'Processori', description: 'Intel Xeon-E 21xx/22xx e Intel® Core™ i3/i5/i7 di 9a generazione “Coffee Lake”', icon: <Cpu size={24} /> },
+                        { id: 'chipset', title: 'Chipset', description: 'Intel® C242 per i sistemi server a singolo processore socket 1151 (Tower 4U e Rack 1U) Intel® C246 per i sistemi server a singolo processore socket 1151 (Tower 5U)', icon: <Settings size={24} /> },
+                        { id: 'memory', title: 'Memoria', description: 'RAM DDR4 ECC 2666MHz di Classe Enterprise', icon: <Database size={24} /> },
+                        { id: 'disk', title: 'Sottosistema Disco', description: 'Moduli M.2 NVMe e SATA da 250GB a 2TB SSD SATA Datacenter Enterprise per carico di lavoro misto 480/960/1920GB SSD NVMe U.2 Datacenter Enterprise per carico di lavoro misto 960/1920/3840GB Dischi meccanici SAS/SATA Enterprise 7200/15000rpm da 1TB a 6TB Espandibilità fino a 12+2+2 unità disco (solo su alcune versioni)', icon: <HardDrive size={24} /> },
+                        { id: 'optical', title: 'Lettore Ottico', description: 'Masterizzatore DVD Dual Layer', icon: <Disc size={24} /> },
+                        { id: 'controller', title: 'Controller', description: 'Intel® Rapid Storage Technology Enterprise (RSTe) Integrato – SATA RAID 0/1/5/10 (Windows e Linux) Intel® VROC (richiede chiave di attivazione Intel) – NVMe RAID 0/1/5/10 (Windows e Linux) SAS/SATA RAID hardware fino a 8 dischi con controller Asus Pike opzionale', icon: <Settings size={24} /> },
+                        { id: 'video', title: 'Sezione Video', description: 'Scheda Video Aspeed AST2500 con 64MB VRAM integrata', icon: <Monitor size={24} /> },
+                        { id: 'network', title: 'Schede di Rete', description: 'Da 2 a 4 schede di rete (secondo il modello) integrate Intel® Gigabit LAN I210AT e i219-LM Porta RJ45 di Management dedicata (solo Tower 5U e Rack 1U – richiede modulo ASMB9-iKVM opzionale)', icon: <Network size={24} /> },
+                        { id: 'io', title: 'I/O', description: 'Ampia dotazione di interfacce I/O', icon: <Usb size={24} /> },
+                        { id: 'software', title: 'Software', description: 'Microsoft® Windows Server 2016/2019, Linux Red Hat 7.x, SUSE Enterprise 12 SP3, CentOS 7.4, Ubuntu 16/17/18, ESXi 6.7 U3 (la compatibilità può essere soggetta a differenze secondo il modello).', icon: <Terminal size={24} /> },
+                        { id: 'cabinet', title: 'Cabinet', description: 'Tower 4U con alimentatore 300W 80 Plus BRONZE – 435 x 190 x 423 mm Tower 5U Rackmountable con alimentatore 500W 80 Plus GOLD – 545 x 217,5 x 455 mm Rack 1U con alimentatore ridondante 2x450W 80 Plus GOLD – 615 x 444 x 44 mm', icon: <Box size={24} /> },
+                        { id: 'warranty', title: 'Garanzia', description: '24 mesi Carry-in Advanced Replacement estendibile con formula On Site a 24/36 mesi, intervento entro 24 ore lavorative (escluse isole minori)', icon: <Award size={24} /> },
+                    ]} />
                 </div>
             </section>
 

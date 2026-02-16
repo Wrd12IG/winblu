@@ -29,29 +29,37 @@ export default function TRokTufH610Page() {
             items: [
                 { label: 'Generazione', value: 'Intel® Core™ Quattordicesima Generazione' },
                 { label: 'Architettura', value: 'Raptor Lake Refresh' },
-                { label: 'E-core/P-core', value: 'Fino a 24 Core complessivi' },
-                { label: 'Turbo Freq', value: 'Fino a 6.0 GHz' },
+                { label: 'Modelli', value: 'i5, i7, i9' },
+                { label: 'Frequenza', value: 'Fino a 6.0 GHz' },
             ]
         },
         {
-            id: 'pba',
-            title: 'Powered by ASUS',
-            icon: <Award size={24} />,
+            id: 'chipset',
+            title: 'Chipset',
+            icon: <Settings size={24} />,
             items: [
-                { label: 'Certificazione', value: 'PBA - Powered By ASUS' },
-                { label: 'Scheda Madre', value: 'ASUS serie TUF / Prime H610' },
-                { label: 'Qualità', value: 'Componentistica di Grado Militare' },
+                { label: 'Modello', value: 'Intel® H610' },
             ]
         },
         {
-            id: 'design',
-            title: 'Design Bianco',
+            id: 'case',
+            title: 'Case e Alimentatore',
             icon: <Box size={24} />,
             items: [
-                { label: 'Case', value: 'Bisonte Bianco Special Edition' },
-                { label: 'Colore', value: 'Pure White Aesthetic' },
-                { label: 'Forma', value: 'Compact Mid-Tower' },
-                { label: 'Visual', value: 'Vetro Temperato Laterale' },
+                { label: 'Case', value: 'Micro-Atx compatto ASUS bianco' },
+                { label: 'Design', value: 'Pannello laterale in vetro, rete antipolvere' },
+                { label: 'Alimentatore', value: 'ASUS 750W 80Plus Gold bianco' },
+                { label: 'Dimensioni', value: '460x205x350mm' },
+            ]
+        },
+        {
+            id: 'cooling',
+            title: 'Raffreddamento',
+            icon: <Activity size={24} />,
+            items: [
+                { label: 'Opzione 1', value: 'Dissipatore heat pipe ARGB' },
+                { label: 'Opzione 2', value: 'Liquido ASUS ROG STRIX LC II 240 ARGB White' },
+                { label: 'Ventole', value: '1x posteriore 120mm ARGB' },
             ]
         },
         {
@@ -59,29 +67,71 @@ export default function TRokTufH610Page() {
             title: 'Memoria RAM',
             icon: <Gauge size={24} />,
             items: [
-                { label: 'Supporto', value: 'DDR5 New Frontier' },
-                { label: 'Capacità', value: 'Fino a 128GB (2 slot)' },
-                { label: 'Frequenza', value: 'DDR5 Velocità Estrema' },
+                { label: 'Tipo', value: 'DDR5 5600Mhz RGB' },
+                { label: 'Capacità', value: 'Massimo 64GB' },
+            ]
+        },
+        {
+            id: 'storage',
+            title: 'Archiviazione',
+            icon: <Layers size={24} />,
+            items: [
+                { label: 'Slot M.2', value: '1x PCIe NVMe' },
+                { label: 'SATA', value: '1x HD/SSD SATA3 3.5”/2.5”' },
             ]
         },
         {
             id: 'graphics',
-            title: 'Grafica',
+            title: 'Sezione Video',
             icon: <Monitor size={24} />,
             items: [
-                { label: 'Serie', value: 'NVIDIA® GeForce® RTX serie 4000' },
-                { label: 'AI Power', value: 'NVIDIA DLSS 3 Support' },
-                { label: 'Visual', value: 'Ray Tracing Avanzato' },
+                { label: 'Schede', value: 'ASUS Nvidia® Geforce ® GTX e RTX serie 4000 e 3000' },
+                { label: 'Slot', value: 'PCIe 4.0 x16' },
+            ]
+        },
+        {
+            id: 'audio',
+            title: 'Audio',
+            icon: <Sparkles size={24} />,
+            items: [
+                { label: 'Codec', value: 'Realtek® 7.1 HD Audio CODEC' },
+                { label: 'Porte', value: '3x jacks audio' },
+            ]
+        },
+        {
+            id: 'connectivity',
+            title: 'Connettività',
+            icon: <Wifi size={24} />,
+            items: [
+                { label: 'LAN', value: 'Gigabit Realtek®' },
+                { label: 'USB Frontali', value: '2x USB3.2 Gen1' },
+                { label: 'USB Posteriori', value: '2x USB3.2 Gen1, 4x USB2.0' },
             ]
         },
         {
             id: 'software',
-            title: 'OS & Security',
+            title: 'Software & OS',
             icon: <Shield size={24} />,
             items: [
-                { label: 'S.O.', value: 'Windows 11 Professional' },
-                { label: 'Antivirus', value: 'Kaspersky Internet Security incluso' },
-                { label: 'Sicurezza', value: 'TPM 2.0 Ready' },
+                { label: 'OS', value: 'Windows 11 Professional o Home' },
+                { label: 'Sicurezza', value: 'Firmware TPM 2.0' },
+            ]
+        },
+        {
+            id: 'energy',
+            title: 'Efficienza Energetica',
+            icon: <Zap size={24} />,
+            items: [
+                { label: 'ETEC', value: '296.69 kWh/year' },
+                { label: 'Efficienza', value: 'Alimentatore 80Plus Gold' },
+            ]
+        },
+        {
+            id: 'warranty',
+            title: 'Garanzia',
+            icon: <Award size={24} />,
+            items: [
+                { label: 'Durata', value: '24 mesi On Site (domicilio)' },
             ]
         }
     ];
@@ -107,11 +157,11 @@ export default function TRokTufH610Page() {
                     >
                         <span className={styles.heroTag}>Powered by ASUS</span>
                         <h1 className={styles.heroTitle}>
-                            T-Rok H610:<br />
-                            <span className={styles.gradient}>Bisonte Bianco</span>
+                            T-Rok Gaming H610:<br />
+                            <span className={styles.gradient}>Quando le leggende si fanno realtà</span>
                         </h1>
                         <p className={styles.heroDesc}>
-                            Quando le leggende si fanno realtà. Ricordate il mitologico Bisonte Bianco delle Leggende Indiane? Una creatura fantastica che ora prende la forma di una poderosa game machine firmata Winblu.
+                            Ricordate White Buffalo, il mitologico Bisonte Bianco delle Leggende Indiane? Una creatura fantastica, che ora prende la forma di una poderosa game machine firmata Winblu: stiamo parlando di T-ROK H610 White Color, la nuovissima soluzione Powered By ASUS progettata per gli appassionati di Gaming estremo o comunque di alta qualità.
                         </p>
                         <div className={styles.heroCTAs}>
                             <Link href="/punti-vendita?tipo=fornitura" className={styles.ctaPrimary}>
@@ -163,14 +213,14 @@ export default function TRokTufH610Page() {
                             <div className={styles.cardOverlay} />
                         </div>
                         <div className={styles.cardContent}>
-                            <Sparkles size={48} className={styles.cardIcon} />
-                            <h2 className={styles.cardTitle}>L'eccellenza in Bianco</h2>
+                            <Award size={48} className={styles.cardIcon} />
+                            <h2 className={styles.cardTitle}>Powered By ASUS</h2>
                             <p className={styles.cardText}>
-                                Progettata dai Laboratori R&D Winblu e ASUS, certificata ufficialmente dal marchio <strong>PBA</strong>.
+                                Progettata congiuntamente dai Laboratori R&D Winblu e ASUS, T-ROK GAMING H610 è la nostra nuova proposta basata su hardware ASUS e quindi certificata ufficialmente dal marchio PBA.
                             </p>
                             <div className={styles.cardReveal}>
                                 <p className={styles.cardText}>
-                                    Un connubio che regala standard prestazionali di assoluta eccellenza e un’esperienza di gioco straordinaria, in un'originale estetica bianca ispirata alla leggenda del Bisonte Bianco.
+                                    Una soluzione innovativa anche nell’originale colore bianco che contraddistingue l’estetica di questo prodotto: davvero un’irresistibile simbiosi fra alte prestazioni ed esclusività del design.
                                 </p>
                             </div>
                         </div>
@@ -184,11 +234,11 @@ export default function TRokTufH610Page() {
                         transition={{ delay: 0.1 }}
                     >
                         <div className={styles.cardContent}>
-                            <Package size={36} className={styles.cardIcon} style={{ color: '#00d2ff' }} />
-                            <h3 className={styles.cardTitle}>Pure Aesthetic</h3>
+                            <Cpu size={36} className={styles.cardIcon} style={{ color: '#00d2ff' }} />
+                            <h3 className={styles.cardTitle}>Intel® Core™ 14a Gen</h3>
                             <div className={styles.cardReveal}>
                                 <p className={styles.cardTextSmall}>
-                                    Design compact mid-tower con vetro temperato laterale per mettere in mostra ogni dettaglio dell'hardware ASUS.
+                                    Supporta la 14a generazione "Raptor Lake Refresh" con frequenza fino a 6.0GHz (i9-14900K). Il massimo della potenza garantito.
                                 </p>
                             </div>
                         </div>
@@ -202,14 +252,14 @@ export default function TRokTufH610Page() {
                         transition={{ delay: 0.2 }}
                     >
                         <div className={styles.cardContent}>
-                            <Cpu size={48} className={styles.cardIcon} style={{ color: '#00d2ff' }} />
-                            <h3 className={styles.cardTitle}>Intelligence Hybrid</h3>
+                            <Monitor size={48} className={styles.cardIcon} style={{ color: '#00d2ff' }} />
+                            <h3 className={styles.cardTitle}>NVIDIA® RTX™ 4000</h3>
                             <p className={styles.cardText}>
-                                Supporta l'ultima generazione Intel Core per un multitasking senza precedenti e frame rate stabili.
+                                L’equipaggiamento raggiunge l’apice con le GPU Nvidia® GeForce® serie 4000.
                             </p>
                             <div className={styles.cardReveal}>
                                 <p className={styles.cardText}>
-                                    Fino a 6.0GHz di frequenza per dominare ogni scenario competitivo, supportato da memorie DDR5 RGB ad alte prestazioni.
+                                    Basate su architettura Ada Lovelace, offrono prestazioni ed efficienza record con DLSS 3 e Ray Tracing di terza generazione.
                                 </p>
                             </div>
                         </div>
@@ -223,14 +273,14 @@ export default function TRokTufH610Page() {
                         transition={{ delay: 0.3 }}
                     >
                         <div className={styles.cardContent}>
-                            <Monitor size={48} className={styles.cardIcon} style={{ color: '#00d2ff' }} />
-                            <h3 className={styles.cardTitle}>RTX Graphics</h3>
+                            <Gauge size={48} className={styles.cardIcon} style={{ color: '#00d2ff' }} />
+                            <h3 className={styles.cardTitle}>DDR5 Velocità Estrema</h3>
                             <p className={styles.cardText}>
-                                Architettura NVIDIA Ada Lovelace con DLSS 3 per mondi virtuali iper-realistici e fluidità estrema.
+                                Il massimo della potenza è garantito anche dalle memorie DDR5 con dissipatore ed effetti luce RGB.
                             </p>
                             <div className={styles.cardReveal}>
                                 <p className={styles.cardText}>
-                                    Ottimizzazione termica avanzata che garantisce prestazioni silenziose anche durante i render più complessi o le sessioni di gioco prolungate.
+                                    Una nuova frontiera della capacità elaborativa per un sistema sempre reattivo e performante.
                                 </p>
                             </div>
                         </div>
@@ -245,10 +295,10 @@ export default function TRokTufH610Page() {
                     >
                         <div className={styles.cardContent}>
                             <Shield size={36} className={styles.cardIcon} style={{ color: '#00d2ff' }} />
-                            <h3 className={styles.cardTitle}>Gaming Sicuro</h3>
+                            <h3 className={styles.cardTitle}>Windows 11 & Sicurezza</h3>
                             <div className={styles.cardReveal}>
                                 <p className={styles.cardTextSmall}>
-                                    TPM 2.0 e Kaspersky Internet Security inclusi per proteggere le tue sessioni online da ogni minaccia.
+                                    Include Windows 11 e software Kaspersky Internet Security per la massima protezione.
                                 </p>
                             </div>
                         </div>
@@ -262,10 +312,10 @@ export default function TRokTufH610Page() {
                         transition={{ delay: 0.5 }}
                     >
                         <div className={styles.cardContent}>
-                            <TrendingUp size={48} className={styles.cardIcon} style={{ color: '#00d2ff' }} />
-                            <h3 className={styles.cardTitle}>Productivity Pro</h3>
+                            <Sparkles size={48} className={styles.cardIcon} style={{ color: '#00d2ff' }} />
+                            <h3 className={styles.cardTitle}>XBOX Game Pass</h3>
                             <p className={styles.cardText}>
-                                Accelerazione IA per flussi di lavoro creativi, rendering 3D e modellazione fotorealistica.
+                                Per chi acquista T-Rok, un mese di accesso libero all’intero catalogo giochi XBOX!
                             </p>
                         </div>
                     </motion.div>

@@ -1,14 +1,17 @@
 "use client";
 
 
-
+import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { motion } from "framer-motion";
-import { Menu, Search, ShoppingBag } from "lucide-react";
+import { motion, AnimatePresence } from "framer-motion";
+import { Menu, Search, ShoppingBag, ChevronDown } from "lucide-react";
 import styles from "./Navbar.module.css";
+import MegaMenu from "./MegaMenu";
 
 export default function Navbar() {
+    const [isProductsHovered, setIsProductsHovered] = useState(false);
+
     return (
         <motion.nav
             initial={{ y: -100, opacity: 0 }}
@@ -32,7 +35,19 @@ export default function Navbar() {
 
                 {/* Desktop Menu */}
                 <div className={styles.menu}>
-                    <Link href="/prodotti" className={styles.menuLink}>Prodotti e soluzioni</Link>
+                    <div
+                        className={styles.menuItemWithDropdown}
+                        onMouseEnter={() => setIsProductsHovered(true)}
+                        onMouseLeave={() => setIsProductsHovered(false)}
+                    >
+                        <Link href="/prodotti" className={styles.menuLink} style={{ display: 'flex', alignItems: 'center', gap: '4px' }}>
+                            Prodotti e soluzioni <ChevronDown size={14} />
+                        </Link>
+                        <AnimatePresence>
+                            {isProductsHovered && <MegaMenu />}
+                        </AnimatePresence>
+                    </div>
+
                     <Link href="/perche-sceglierci" className={styles.menuLink}>Perché sceglierci</Link>
                     <Link href="/punti-vendita" className={styles.menuLink}>Punti vendita</Link>
                     <Link href="/garanzia" className={styles.menuLink}>Garanzia</Link>

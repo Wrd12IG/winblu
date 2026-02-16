@@ -8,6 +8,8 @@ import USPSection from "@/components/USPSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
 import FinalCTA from "@/components/FinalCTA";
 import Footer from "@/components/Footer";
+import NewsSection from "@/components/NewsSection";
+import SocialWall from "@/components/SocialWall";
 import styles from "./page.module.css";
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -129,7 +131,9 @@ export default function Home() {
 
       <WorldsSection />
       <USPSection />
+      <NewsSection />
       <TestimonialsSection />
+      <SocialWall />
       <FinalCTA />
       <Footer />
     </main>

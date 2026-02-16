@@ -9,56 +9,13 @@ import SpecsCards from "@/components/SpecsCards";
 import { SpecCategory } from "@/components/SpecsAccordion";
 import B2BCTASection from "@/components/B2BCTASection";
 import { motion } from 'framer-motion';
-import { Cpu, Zap, Database, Activity, Shield, Box, Monitor, Server } from 'lucide-react';
+import { Cpu, Zap, Database, Activity, Shield, Box, Monitor, Server, Settings, Disc, Speaker, Layers, HardDrive } from 'lucide-react';
 
 const GridBackground = () => (
     <div className={styles.gridBg} />
 );
 
 export default function LineaExperiencePage() {
-    const technicalSpecs: SpecCategory[] = [
-        {
-            id: 'cpu-power',
-            title: 'Processing Power',
-            icon: <Cpu size={24} />,
-            items: [
-                { label: 'CPU', value: 'Intel® Core™ Ultra / Xeon W' },
-                { label: 'Cores', value: 'Fino a 56 Cores' },
-                { label: 'Chipset', value: 'W790 Workstation' },
-            ]
-        },
-        {
-            id: 'gpu-acceleration',
-            title: 'GPU Acceleration',
-            icon: <Zap size={24} />,
-            items: [
-                { label: 'GPU', value: 'Multi-GPU Support' },
-                { label: 'NVIDIA', value: 'RTX 6000 Ada Gen / GeForce RTX 4090' },
-                { label: 'VRAM', value: 'Fino a 48GB GDDR6 ECC' },
-            ]
-        },
-        {
-            id: 'memory',
-            title: 'Memory & Storage',
-            icon: <Database size={24} />,
-            items: [
-                { label: 'RAM', value: 'Fino a 2TB DDR5 ECC' },
-                { label: 'Storage', value: 'M.2 PCIe Gen5 NVMe' },
-                { label: 'RAID', value: '0/1/5/10 Support' },
-            ]
-        },
-        {
-            id: 'connectivity',
-            title: 'Pro Connectivity',
-            icon: <Server size={24} />,
-            items: [
-                { label: 'LAN', value: 'Dual 10GbE' },
-                { label: 'Thunderbolt', value: 'Thunderbolt 4 Ports' },
-                { label: 'Remote', value: 'IPMI Management' },
-            ]
-        }
-    ];
-
     return (
         <div className={styles.container}>
             <Navbar />
@@ -71,15 +28,16 @@ export default function LineaExperiencePage() {
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.8 }}
                     >
-                        <span className={styles.heroTag}>Potenza Senza Compromessi</span>
+                        <span className={styles.heroTag}>Winblu Experience</span>
                         <h1 className={styles.heroTitle}>
-                            Winblu <span className={styles.gradient}>Experience</span>
+                            La workstation<br />
+                            <span className={styles.gradient}>su misura per te</span>
                         </h1>
                         <p className={styles.heroDesc}>
-                            Prestazioni estreme con processori Intel® Xeon® e Core™ X-Series. La scelta definitiva per creatori di contenuti, ingegneri e professionisti del rendering che non accettano limiti.
+                            Prestazioni potenti con le Workstation grafiche Winblu Experience basate su processori Xeon-W e Core-X. Fino a 18 core e 36 thread, supporto memoria ECC e grafica NVIDIA® Quadro o GeForce. La scelta definitiva per creatori di contenuti, ingegneri e professionisti.
                         </p>
                         <div className={styles.heroCTAs}>
-                            <Link href="/punti-vendita" className={styles.ctaPrimary}>
+                            <Link href="/punti-vendita?tipo=fornitura" className={styles.ctaPrimary}>
                                 Configura Workstation
                             </Link>
                             <Link href="/punti-vendita" className={styles.ctaSecondary}>
@@ -96,7 +54,7 @@ export default function LineaExperiencePage() {
                     >
                         <div className={styles.heroImageContainer}>
                             <Image
-                                src="/assets/experience-workstation-hero.png"
+                                src="/assets/experience-workstation.png"
                                 alt="Winblu Experience Workstation"
                                 fill
                                 className={styles.heroProductImage}
@@ -119,14 +77,14 @@ export default function LineaExperiencePage() {
                         viewport={{ once: true }}
                     >
                         <div className={styles.cardContent}>
-                            <Activity size={48} className={styles.cardIcon} />
+                            <Activity size={48} className={styles.cardIcon} style={{ color: '#0160A9' }} />
                             <h2 className={styles.cardTitle}>Incredibili Performance</h2>
                             <p className={styles.cardText}>
-                                Basate su processori Xeon-W e Core-X fino a 18 core/36 thread. Supporto memoria ECC fino a 1TB per garantire affidabilità totale e prevenire crash durante i calcoli più complessi.
+                                Basate su processori Xeon-W serie 2000, Xeon-E e Core-X fino a 18 core/36 thread. Supporto memoria ECC fino a 1TB per rilevare e riparare errori, garantendo affidabilità totale.
                             </p>
                             <div className={styles.cardReveal}>
                                 <p className={styles.cardText}>
-                                    La tecnologia Intel Turbo Boost Max 3.0 indirizza i carichi critici ai core più veloci, mentre il Deep Learning Boost accelera l'IA per flussi di lavoro creativi e scientifici.
+                                    La tecnologia Intel Turbo Boost Max 3.0 e Intel Deep Learning Boost accelerano i carichi di lavoro più critici e l'IA, come il tagging delle immagini e il riconoscimento vocale.
                                 </p>
                             </div>
                         </div>
@@ -141,10 +99,10 @@ export default function LineaExperiencePage() {
                     >
                         <div className={styles.cardContent}>
                             <Shield size={36} className={styles.cardIcon} />
-                            <h3 className={styles.cardTitle}>NVIDIA Studio</h3>
+                            <h3 className={styles.cardTitle}>NVIDIA Quadro</h3>
                             <div className={styles.cardReveal}>
                                 <p className={styles.cardTextSmall}>
-                                    Supporto completo per NVIDIA® RTX Professional e GeForce. Rendering cinematografico e accelerazione BIM/CAD certificata per i principali software ISV.
+                                    Equipaggiate con GPU NVIDIA® Quadro e GeForce, con possibilità di SLI fino a 3 vie. Perfette per rendering cinematografico, BIM e CAD.
                                 </p>
                             </div>
                         </div>
@@ -162,8 +120,13 @@ export default function LineaExperiencePage() {
                             <Database size={48} className={styles.cardIcon} />
                             <h3 className={styles.cardTitle}>Storage Ultra Rapido</h3>
                             <p className={styles.cardText}>
-                                Fino a due SSD NVMe M.2 con RAID 0/1 nativo per prestazioni 5.3x superiori al SATA. La velocità di accesso ai dati che serve ai professionisti del video 8K.
+                                Fino a due SSD NVMe M.2 con dissipatore integrato e RAID 0/1 nativo.
                             </p>
+                            <div className={styles.cardReveal}>
+                                <p className={styles.cardText}>
+                                    Prestazioni fino a 5.3 volte superiori al SATA. Porte USB 3.1 Type-A/C fino a 10Gbps.
+                                </p>
+                            </div>
                         </div>
                     </motion.div>
 
@@ -176,12 +139,53 @@ export default function LineaExperiencePage() {
                     >
                         <div className={styles.cardContent}>
                             <Server size={48} className={styles.cardIcon} />
-                            <h3 className={styles.cardTitle}>Connettività Pro</h3>
+                            <h3 className={styles.cardTitle}>Intel Gigabit Server-Class</h3>
                             <p className={styles.cardText}>
-                                Dual 10GbE, Thunderbolt 4 e gestione remota IPMI. Una workstation che si integra perfettamente in infrastrutture server e datacenter.
+                                Dual Intel Gigabit LAN per una rete affidabile, basso utilizzo CPU e supporto Teaming per maggiore throughput o ridondanza.
                             </p>
                         </div>
                     </motion.div>
+
+                    {/* Row 3 */}
+                    <motion.div
+                        className={`${styles.bentoCard} ${styles.cardLarge}`}
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ delay: 0.4 }}
+                    >
+                        <div className={styles.cardContent}>
+                            <Speaker size={48} className={styles.cardIcon} style={{ color: '#0160A9' }} />
+                            <h2 className={styles.cardTitle}>Audio Straordinario</h2>
+                            <p className={styles.cardText}>
+                                Codec Realtek ALC S1220A 7.1 canali con rapporto segnale-rumore di 120dB (uscita) e 113dB (ingresso).
+                            </p>
+                            <div className={styles.cardReveal}>
+                                <p className={styles.cardText}>
+                                    Condensatori audio giapponesi per un suono caldo, naturale e avvolgente. Ideale per i creatori di contenuti.
+                                </p>
+                            </div>
+                        </div>
+                    </motion.div>
+
+                    <motion.div
+                        className={`${styles.bentoCard} ${styles.cardSmall} ${styles.cardHighlight}`}
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ delay: 0.5 }}
+                    >
+                        <div className={styles.cardContent}>
+                            <Layers size={36} className={styles.cardIcon} />
+                            <h3 className={styles.cardTitle}>Garanzia On-Site</h3>
+                            <div className={styles.cardReveal}>
+                                <p className={styles.cardTextSmall}>
+                                    24 mesi di garanzia con estensione fino a 3 anni On Site e intervento in 24 ore.
+                                </p>
+                            </div>
+                        </div>
+                    </motion.div>
+
                 </div>
             </section>
 
@@ -205,12 +209,21 @@ export default function LineaExperiencePage() {
                     >
                         Specifiche Tecniche
                     </motion.h2>
-                    <SpecsCards specs={technicalSpecs.map(spec => ({
-                        id: spec.id,
-                        title: spec.title,
-                        icon: spec.icon,
-                        description: spec.items.map(i => `${i.label}: ${i.value}`).join(' • ')
-                    }))} />
+                    <SpecsCards specs={[
+                        { id: 'cpu', title: 'Processori', description: 'Intel® Core™ i5/i7/i9 (1151c), Intel® Xeon® E/W (2066x/1151c), Intel® Core™ i9 serie X (2066i)', icon: <Cpu size={24} /> },
+                        { id: 'chipset', title: 'Chipset', description: 'Intel® C246 (1151c), Intel® C422 (2066x), Intel® X299 (2066i)', icon: <Settings size={24} /> },
+                        { id: 'memory', title: 'Memoria', description: 'ECC DDR4 2666MHz (max 1TB su 2066x), DDR4 2666MHz HyperX (max 128GB su 2066i/1151c)', icon: <Database size={24} /> },
+                        { id: 'storage', title: 'Archiviazione', description: 'M.2 NVMe e SATA (250GB-2TB), SSD SATA (256GB-2TB), HDD Enterprise 7200rpm (1TB-4TB), Masterizzatore Dual Layer', icon: <HardDrive size={24} /> },
+                        { id: 'video', title: 'Sezione Video', description: 'NVIDIA® Quadro™ (P400 - RTX™4000), NVIDIA® GeForce™ (GTX 1050 - RTX 2080)', icon: <Monitor size={24} /> },
+                        { id: 'audio', title: 'Sezione Audio', description: 'Realtek® ALC S1220A 7.1 (2066x/i) con Crystal Sound 3, Realtek® ALC887 8-channel (1151c)', icon: <Speaker size={24} /> },
+                        { id: 'connectivity', title: 'Connettività', description: 'Intel® Gigabit LAN I210AT e i219-LM, USB 3.1 gen 2 Type-A/C fino a 10Gbps', icon: <Server size={24} /> },
+                        { id: 'os', title: 'Sistema Operativo', description: 'Microsoft Windows 10 Pro / Pro for Workstations', icon: <Settings size={24} /> },
+                        { id: 'case', title: 'Case e Alimentatore', description: 'Tower 4U, Alimentatori 500W/700W/850W 80Plus Gold (Full Modular su 2066i)', icon: <Box size={24} /> },
+                        { id: 'controller', title: 'Controller', description: 'Intel® RSTe Integrato – SATA/NVMe RAID 0/1/5/10 (Windows e Linux)', icon: <Settings size={24} /> },
+                        { id: 'warranty', title: 'Garanzia', description: '24/36 mesi On Site con intervento a domicilio entro 48 ore lavorative (escluse isole minori)', icon: <Shield size={24} /> },
+                        { id: 'optical', title: 'Lettori', description: 'Masterizzatore Dual Layer', icon: <Disc size={24} /> },
+
+                    ]} />
                 </div>
             </section>
 

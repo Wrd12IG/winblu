@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Outfit } from "next/font/google";
+import ContactWidget from "@/components/ContactWidget";
 import "./globals.css";
 
 const outfit = Outfit({ subsets: ["latin"] });
@@ -16,7 +17,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="it" suppressHydrationWarning>
-      <body className={outfit.className} suppressHydrationWarning>{children}</body>
+      <body className={outfit.className} suppressHydrationWarning>
+        {children}
+        <ContactWidget />
+      </body>
     </html>
   );
 }

@@ -2,18 +2,18 @@
 
 import Link from 'next/link';
 import Image from 'next/image';
-import { motion } from 'framer-motion';
-import { Shield, Zap, Cpu, Monitor, Wifi, Award, ChevronRight, Layers, MousePointer2, Eye, LayoutGrid, Smartphone, Box } from 'lucide-react';
 import styles from '../styles/product-bento.module.css';
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import B2BCTASection from "@/components/B2BCTASection";
+import { motion } from 'framer-motion';
+import { Monitor, MousePointerClick, ChevronRight } from 'lucide-react';
 
 const GridBackground = () => (
   <div className={styles.gridBg} />
 );
 
-export default function LineaEVisionPage() {
+export default function LineaEVisionHub() {
   return (
     <div className={styles.container}>
       <Navbar />
@@ -21,38 +21,35 @@ export default function LineaEVisionPage() {
         <GridBackground />
         <div className={styles.heroContent}>
           <motion.div
+            className={styles.heroText}
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
-            className={styles.heroText}
           >
-            <span className={styles.heroTag}>L'Arte del Minimalismo</span>
+            <span className={styles.heroTag}>All-In-One</span>
             <h1 className={styles.heroTitle}>
               Winblu <span className={styles.gradient}>eVision</span>
             </h1>
             <p className={styles.heroDesc}>
-              Eleganza e potenza in un unico corpo All-In-One. Elimina l'ingombro dei cavi e trasforma il tuo spazio di lavoro con la serie eVision, dove il design incontra la tecnologia più evoluta.
+              L'eleganza incontra la performance. Soluzioni All-In-One perfette per ogni ambiente, dal business all'entertainment, con design space-saving e tecnologia di ultima generazione.
             </p>
             <div className={styles.heroCTAs}>
-              <Link href="/punti-vendita?tipo=fornitura" className={styles.ctaPrimary}>
-                Configura Ora
-              </Link>
-              <Link href="/punti-vendita" className={styles.ctaSecondary}>
+              <Link href="/punti-vendita" className={styles.ctaPrimary}>
                 Trova Rivenditore
               </Link>
             </div>
           </motion.div>
 
           <motion.div
+            className={styles.heroVisual}
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className={styles.heroVisual}
           >
             <div className={styles.heroImageContainer}>
               <Image
-                src="/assets/evision/hub-hero.png"
-                alt="Winblu eVision All-in-One"
+                src="/assets/evision-hub-hero.png"
+                alt="Winblu eVision Hub"
                 fill
                 className={styles.heroProductImage}
                 priority
@@ -63,50 +60,38 @@ export default function LineaEVisionPage() {
         </div>
       </section>
 
-      {/* Models Section - Bento Grid */}
       <section className={styles.bentoSection}>
         <div className={styles.bentoGrid}>
           <motion.div
-            className={`${styles.bentoCard} ${styles.cardLarge}`}
+            className={`${styles.bentoCard} ${styles.cardMedium} ${styles.cardWithImage}`}
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
           >
-            <Link href="/linea-evision/standard" style={{ textDecoration: 'none', color: 'inherit' }}>
+            <Link href="/linea-evision-standard" className={styles.cardLink}>
+              <div className={styles.cardImageContainer}>
+                <Image
+                  src="/assets/evision-standard-hero.jpg"
+                  alt="eVision Standard"
+                  fill
+                  className={styles.cardImage}
+                  sizes="(max-width: 768px) 100vw, 800px"
+                />
+                <div className={styles.cardOverlay} />
+              </div>
               <div className={styles.cardContent}>
-                <Monitor size={48} className={styles.cardIcon} />
-                <h2 className={styles.cardTitle}>eVision Standard</h2>
-                <p className={styles.cardText}>
-                  La soluzione definitiva per ufficio e home-office. Display Zero-Frame da 24" e 27" con webcam pop-up a scomparsa per la massima privacy.
+                <Monitor size={48} className={styles.cardIcon} style={{ color: '#fff' }} />
+                <h2 className={styles.cardTitle} style={{ color: '#fff' }}>eVision Standard</h2>
+                <p className={styles.cardText} style={{ color: 'rgba(255,255,255,0.9)' }}>
+                  Un computer All-In-One performante, ergonomico ed elegante, perfetto per rendere prestigiosa la tua scrivania.
                 </p>
                 <div className={styles.cardReveal}>
-                  <p className={styles.cardText}>
-                    Pannelli IPS vividi, set completo di connessioni e un design pulito che trasforma ogni scrivania in un workspace d'eccellenza.
-                  </p>
-                  <span className={styles.ctaButton} style={{ marginTop: '1rem', display: 'inline-block' }}>
-                    Scopri Standard
-                  </span>
+                  <div style={{ marginTop: '1.5rem', display: 'flex', alignItems: 'center', color: '#fff', fontWeight: '800' }}>
+                    Scopri eVision Standard <ChevronRight size={16} style={{ marginLeft: '0.5rem' }} />
+                  </div>
                 </div>
               </div>
             </Link>
-          </motion.div>
-
-          <motion.div
-            className={`${styles.bentoCard} ${styles.cardSmall} ${styles.cardHighlight}`}
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.1 }}
-          >
-            <div className={styles.cardContent}>
-              <Eye size={36} className={styles.cardIcon} />
-              <h3 className={styles.cardTitle}>Privacy-First</h3>
-              <div className={styles.cardReveal}>
-                <p className={styles.cardTextSmall}>
-                  Webcam fisica a scomparsa meccanica. Tu decidi quando essere visto, senza compromessi.
-                </p>
-              </div>
-            </div>
           </motion.div>
 
           <motion.div
@@ -114,42 +99,32 @@ export default function LineaEVisionPage() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ delay: 0.2 }}
+            transition={{ delay: 0.1 }}
           >
-            <Link href="/linea-evision/touch" style={{ textDecoration: 'none', color: 'inherit' }}>
+            <Link href="/linea-evision-m-touch" className={styles.cardLink}>
               <div className={styles.cardImageContainer}>
                 <Image
-                  src="/assets/evision/touch-hero.png"
-                  alt="eVision Touch"
+                  src="/assets/evision-touch-hero.jpg"
+                  alt="eVision M-TOUCH"
                   fill
                   className={styles.cardImage}
+                  sizes="(max-width: 768px) 100vw, 800px"
                 />
                 <div className={styles.cardOverlay} />
               </div>
-              <div className={styles.cardContent} style={{ position: 'relative', zIndex: 2 }}>
-                <MousePointer2 size={40} className={styles.cardIcon} />
-                <h3 className={styles.cardTitle}>eVision Touch</h3>
-                <p className={styles.cardText}>
-                  Interazione naturale 10-point multi-touch. Ideale per chioschi informativi e creatività interattiva.
+              <div className={styles.cardContent}>
+                <MousePointerClick size={48} className={styles.cardIcon} style={{ color: '#fff' }} />
+                <h2 className={styles.cardTitle} style={{ color: '#fff' }}>eVision M-TOUCH</h2>
+                <p className={styles.cardText} style={{ color: 'rgba(255,255,255,0.9)' }}>
+                  Innovativa soluzione con schermo Touch Full HD. Prestazioni ad hoc e linee pulite, perfette per abbellire ogni ambiente con il minimo ingombro.
                 </p>
+                <div className={styles.cardReveal}>
+                  <div style={{ marginTop: '1.5rem', display: 'flex', alignItems: 'center', color: '#fff', fontWeight: '800' }}>
+                    Scopri eVision M-TOUCH <ChevronRight size={16} style={{ marginLeft: '0.5rem' }} />
+                  </div>
+                </div>
               </div>
             </Link>
-          </motion.div>
-
-          <motion.div
-            className={`${styles.bentoCard} ${styles.cardMedium} ${styles.cardHighlight}`}
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.3 }}
-          >
-            <div className={styles.cardContent}>
-              <LayoutGrid size={48} className={styles.cardIcon} />
-              <h3 className={styles.cardTitle}>Zero Cavi</h3>
-              <p className={styles.cardText}>
-                Alimentazione singola e periferiche wireless incluse. Un'estetica pulita per una mente più focalizzata sul lavoro.
-              </p>
-            </div>
           </motion.div>
         </div>
       </section>

@@ -87,6 +87,7 @@
     line-height: 1.05;
     letter-spacing: -0.02em;
     text-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    white-space: nowrap;
 }
 
 .gradient {
@@ -210,6 +211,11 @@
     grid-row: span 1;
 }
 
+.cardThird {
+    grid-column: span 4;
+    grid-row: span 2;
+}
+
 .cardHighlight {
     background: linear-gradient(135deg, rgba(1, 96, 169, 0.08), rgba(1, 96, 169, 0.02));
     border-color: rgba(1, 96, 169, 0.2);
@@ -273,20 +279,33 @@
     overflow: hidden;
 }
 
-.cardImage {
-    object-fit: contain;
-    padding: 1rem;
-    transition: transform 0.5s ease;
+.cardWithImage .cardContent {
+    padding: 2.5rem;
+    background: linear-gradient(to top, rgba(12, 12, 20, 0.95), rgba(12, 12, 20, 0.4));
 }
 
-.bentoCard:hover .cardImage {
-    transform: scale(1.05);
+.cardWithImage .cardTitle,
+.cardWithImage .cardText {
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
 }
 
 /* Responsive Adjustments */
 @media (max-width: 1200px) {
     .bentoGrid {
         grid-template-columns: repeat(8, 1fr);
+    }
+
+    .cardLarge {
+        grid-column: span 8;
+    }
+
+    .cardMedium,
+    .cardThird {
+        grid-column: span 4;
+    }
+
+    .cardSmall {
+        grid-column: span 4;
     }
 }
 
@@ -301,7 +320,7 @@
     }
 
     .heroTitle {
-        font-size: 3rem;
+        font-size: clamp(1.5rem, 8vw, 3rem);
         text-align: center;
     }
 
@@ -321,7 +340,8 @@
 
     .cardLarge,
     .cardMedium,
-    .cardSmall {
+    .cardSmall,
+    .cardThird {
         grid-column: span 1;
     }
 

@@ -1,0 +1,175 @@
+.widgetContainer {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    font-family: 'Inter', sans-serif;
+}
+
+.fab {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #0160a9 0%, #014374 100%);
+    border: none;
+    color: white;
+    box-shadow: 0 4px 20px rgba(1, 96, 169, 0.4);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1002;
+    -webkit-font-smoothing: antialiased;
+}
+
+.fab:hover {
+    box-shadow: 0 6px 25px rgba(1, 96, 169, 0.6);
+}
+
+.menuPanel {
+    position: absolute;
+    bottom: 80px;
+    right: 0;
+    width: 320px;
+    background: rgba(10, 10, 15, 0.95);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 20px;
+    padding: 1.5rem;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+    transform-origin: bottom right;
+    overflow: hidden;
+}
+
+.menuHeader {
+    margin-bottom: 1.5rem;
+}
+
+.menuHeader h3 {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: white;
+}
+
+.menuHeader p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.menuOptions {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.optionCard {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.optionCard:hover {
+    background: rgba(255, 255, 255, 0.08);
+    transform: translateY(-2px);
+}
+
+.optionCard.highlight {
+    background: linear-gradient(135deg, rgba(1, 96, 169, 0.15), rgba(1, 96, 169, 0.05));
+    border-color: rgba(1, 96, 169, 0.3);
+}
+
+.optionCard.highlight:hover {
+    background: linear-gradient(135deg, rgba(1, 96, 169, 0.25), rgba(1, 96, 169, 0.1));
+}
+
+.iconWrapper {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1rem;
+    color: white;
+}
+
+.iconWrapperHighlight {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    background: rgba(1, 96, 169, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1rem;
+    color: #4facfe;
+}
+
+.optionContent {
+    flex: 1;
+}
+
+.optionContent h4 {
+    margin: 0;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: white;
+}
+
+.optionContent span {
+    font-size: 0.75rem;
+    color: rgba(255, 255, 255, 0.5);
+    display: block;
+    margin-top: 2px;
+}
+
+.arrow {
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.menuFooter {
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 0.75rem;
+    color: rgba(255, 255, 255, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.onlineStatus {
+    width: 8px;
+    height: 8px;
+    background-color: #10b981;
+    border-radius: 50%;
+    box-shadow: 0 0 8px rgba(16, 185, 129, 0.4);
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+    .widgetContainer {
+        bottom: 1.5rem;
+        right: 1.5rem;
+    }
+
+    .menuPanel {
+        width: calc(100vw - 3rem);
+        right: 0;
+        bottom: 70px;
+    }
+}
