@@ -166,7 +166,7 @@ export default function LineaEMotionPage() {
                 <GridBackground />
                 <div className={styles.heroContent}>
                     <motion.div
-                        initial={{ opacity: 0, x: -50 }}
+                        initial={{ opacity: 1, x: -50 }}
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.8 }}
                         className={styles.heroText}
@@ -189,7 +189,7 @@ export default function LineaEMotionPage() {
                     </motion.div>
 
                     <motion.div
-                        initial={{ opacity: 0, x: 50 }}
+                        initial={{ opacity: 1, x: 50 }}
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.8, delay: 0.2 }}
                         className={styles.heroVisual}
@@ -214,7 +214,7 @@ export default function LineaEMotionPage() {
                     {/* Row 1: Overview (8) + Design (4) */}
                     <motion.div
                         className={`${styles.bentoCard} ${styles.cardLarge} ${styles.cardWithImage}`}
-                        initial={{ opacity: 0, y: 20 }}
+                        initial={{ opacity: 1, y: 0 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.6 }}
@@ -248,7 +248,7 @@ export default function LineaEMotionPage() {
 
                     <motion.div
                         className={`${styles.bentoCard} ${styles.cardSmall}`}
-                        initial={{ opacity: 0, y: 20 }}
+                        initial={{ opacity: 1, y: 0 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.6, delay: 0.1 }}
@@ -267,7 +267,7 @@ export default function LineaEMotionPage() {
                     {/* Row 2: Performance (6) + Display (6) */}
                     <motion.div
                         className={`${styles.bentoCard} ${styles.cardMedium}`}
-                        initial={{ opacity: 0, y: 20 }}
+                        initial={{ opacity: 1, y: 0 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.6, delay: 0.2 }}
@@ -290,7 +290,7 @@ export default function LineaEMotionPage() {
 
                     <motion.div
                         className={`${styles.bentoCard} ${styles.cardMedium} ${styles.cardWithImage}`}
-                        initial={{ opacity: 0, y: 20 }}
+                        initial={{ opacity: 1, y: 0 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.6, delay: 0.3 }}
@@ -322,7 +322,7 @@ export default function LineaEMotionPage() {
                     {/* Row 3: Windows 11 (8) + Connectivity (4) */}
                     <motion.div
                         className={`${styles.bentoCard} ${styles.cardLarge} ${styles.cardHighlight}`}
-                        initial={{ opacity: 0, y: 20 }}
+                        initial={{ opacity: 1, y: 0 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.6, delay: 0.4 }}
@@ -344,7 +344,7 @@ export default function LineaEMotionPage() {
 
                     <motion.div
                         className={`${styles.bentoCard} ${styles.cardSmall} ${styles.cardIconFocus}`}
-                        initial={{ opacity: 0, y: 20 }}
+                        initial={{ opacity: 1, y: 0 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.6, delay: 0.5 }}
@@ -368,7 +368,7 @@ export default function LineaEMotionPage() {
                     {/* Row 4: Security (6) + Warranty (6) */}
                     <motion.div
                         className={`${styles.bentoCard} ${styles.cardMedium}`}
-                        initial={{ opacity: 0, y: 20 }}
+                        initial={{ opacity: 1, y: 0 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.6, delay: 0.6 }}
@@ -384,7 +384,7 @@ export default function LineaEMotionPage() {
 
                     <motion.div
                         className={`${styles.bentoCard} ${styles.cardMedium} ${styles.cardHighlight}`}
-                        initial={{ opacity: 0, y: 20 }}
+                        initial={{ opacity: 1, y: 0 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.6, delay: 0.7 }}
@@ -409,7 +409,7 @@ export default function LineaEMotionPage() {
             <section style={{ padding: '4rem 2rem', background: 'rgba(0,0,0,0.2)' }}>
                 <div style={{ maxWidth: '1600px', margin: '0 auto' }}>
                     <motion.h2
-                        initial={{ opacity: 0, y: 20 }}
+                        initial={{ opacity: 1, y: 0 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         style={{

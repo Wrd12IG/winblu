@@ -22,7 +22,7 @@ export default function LineaEVisionHub() {
         <div className={styles.heroContent}>
           <motion.div
             className={styles.heroText}
-            initial={{ opacity: 0, x: -50 }}
+            initial={{ opacity: 1, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
           >
@@ -42,7 +42,7 @@ export default function LineaEVisionHub() {
 
           <motion.div
             className={styles.heroVisual}
-            initial={{ opacity: 0, x: 50 }}
+            initial={{ opacity: 1, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
@@ -64,7 +64,7 @@ export default function LineaEVisionHub() {
         <div className={styles.bentoGrid}>
           <motion.div
             className={`${styles.bentoCard} ${styles.cardMedium} ${styles.cardWithImage}`}
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 1, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
           >
@@ -96,7 +96,7 @@ export default function LineaEVisionHub() {
 
           <motion.div
             className={`${styles.bentoCard} ${styles.cardMedium} ${styles.cardWithImage}`}
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 1, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}

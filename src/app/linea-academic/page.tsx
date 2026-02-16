@@ -22,7 +22,7 @@ export default function LineaAcademicPage() {
         <div className={styles.heroContent}>
           <motion.div
             className={styles.heroText}
-            initial={{ opacity: 0, x: -50 }}
+            initial={{ opacity: 1, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
           >
@@ -47,7 +47,7 @@ export default function LineaAcademicPage() {
           {/* New Hero Image */}
           <motion.div
             className={styles.heroVisual}
-            initial={{ opacity: 0, x: 50 }}
+            initial={{ opacity: 1, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
@@ -70,7 +70,7 @@ export default function LineaAcademicPage() {
         <div className={styles.bentoGrid}>
           <motion.div
             className={`${styles.bentoCard} ${styles.cardLarge} ${styles.cardHighlight}`}
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 1, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
           >
@@ -90,7 +90,7 @@ export default function LineaAcademicPage() {
 
           <motion.div
             className={`${styles.bentoCard} ${styles.cardMedium}`}
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 1, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
@@ -106,7 +106,7 @@ export default function LineaAcademicPage() {
 
           <motion.div
             className={`${styles.bentoCard} ${styles.cardMedium} ${styles.cardHighlight}`}
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 1, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.2 }}
@@ -126,7 +126,7 @@ export default function LineaAcademicPage() {
       <section style={{ padding: '4rem 2rem' }}>
         <div style={{ maxWidth: '1400px', margin: '0 auto' }}>
           <motion.h2
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 1, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             style={{
@@ -146,7 +146,7 @@ export default function LineaAcademicPage() {
           <div className={styles.bentoGrid}>
             <motion.div
               className={`${styles.bentoCard} ${styles.cardLarge} ${styles.cardWithImage}`}
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 1, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
             >
@@ -170,7 +170,7 @@ export default function LineaAcademicPage() {
 
             <motion.div
               className={`${styles.bentoCard} ${styles.cardLarge} ${styles.cardWithImage}`}
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 1, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.1 }}
@@ -195,7 +195,7 @@ export default function LineaAcademicPage() {
 
             <motion.div
               className={`${styles.bentoCard} ${styles.cardLarge} ${styles.cardHighlight} ${styles.cardWithImage}`}
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 1, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.2 }}
@@ -220,7 +220,7 @@ export default function LineaAcademicPage() {
 
             <motion.div
               className={`${styles.bentoCard} ${styles.cardMedium} ${styles.cardWithImage}`}
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 1, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.3 }}
@@ -245,7 +245,7 @@ export default function LineaAcademicPage() {
 
             <motion.div
               className={`${styles.bentoCard} ${styles.cardMedium} ${styles.cardWithImage}`}
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 1, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.4 }}
@@ -270,7 +270,7 @@ export default function LineaAcademicPage() {
 
             <motion.div
               className={`${styles.bentoCard} ${styles.cardSmall} ${styles.cardHighlight}`}
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 1, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.5 }}

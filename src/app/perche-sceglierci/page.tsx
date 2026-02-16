@@ -93,7 +93,7 @@ export default function PercheSceglierciPage() {
                 <div className={styles.introContent}>
                     <motion.h2
                         className={styles.sectionTitle}
-                        initial={{ opacity: 0, y: 20 }}
+                        initial={{ opacity: 1, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                     >
@@ -133,7 +133,7 @@ export default function PercheSceglierciPage() {
                 <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 2rem' }}>
                     <motion.h2
                         className={styles.sectionTitle}
-                        initial={{ opacity: 0, y: 20 }}
+                        initial={{ opacity: 1, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                     >
@@ -150,7 +150,7 @@ export default function PercheSceglierciPage() {
                         {stats.map((stat, index) => (
                             <motion.div
                                 key={index}
-                                initial={{ opacity: 0, scale: 0.8 }}
+                                initial={{ opacity: 1, scale: 0.8 }}
                                 whileInView={{ opacity: 1, scale: 1 }}
                                 viewport={{ once: true }}
                                 transition={{ delay: index * 0.1, duration: 0.5 }}
@@ -184,7 +184,7 @@ export default function PercheSceglierciPage() {
             {/* Testimonial / Trust Section */}
             <section style={{ padding: '8rem 2rem', maxWidth: '1000px', margin: '0 auto', textAlign: 'center' }}>
                 <motion.div
-                    initial={{ opacity: 0, y: 30 }}
+                    initial={{ opacity: 1, y: 30 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     style={{
@@ -247,7 +247,7 @@ export default function PercheSceglierciPage() {
             <section className={styles.ctaSection}>
                 <motion.div
                     className={styles.ctaContent}
-                    initial={{ opacity: 0, scale: 0.9 }}
+                    initial={{ opacity: 1, scale: 0.9 }}
                     whileInView={{ opacity: 1, scale: 1 }}
                     viewport={{ once: true }}
                 >

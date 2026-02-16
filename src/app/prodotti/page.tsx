@@ -160,7 +160,7 @@ export default function ProdottiPage() {
             <section className={styles.hero}>
                 <motion.div
                     className={styles.heroContent}
-                    initial={{ opacity: 0, y: 30 }}
+                    initial={{ opacity: 1, y: 30 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8 }}
                 >
@@ -206,7 +206,7 @@ export default function ProdottiPage() {
                             <motion.div
                                 key={product.id}
                                 className={styles.productCard}
-                                initial={{ opacity: 0, y: 30 }}
+                                initial={{ opacity: 1, y: 30 }}
                                 animate={{ opacity: 1, y: 0 }}
                                 transition={{ duration: 0.5, delay: index * 0.1 }}
                                 whileHover={{ y: -10 }}

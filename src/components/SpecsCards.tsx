@@ -22,7 +22,7 @@ export default function SpecsCards({ specs }: SpecsCardsProps) {
                 <motion.div
                     key={spec.id}
                     className={styles.specCard}
-                    initial={{ opacity: 0, y: 20 }}
+                    initial={{ opacity: 1, y: 0 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.5, delay: index * 0.05 }}

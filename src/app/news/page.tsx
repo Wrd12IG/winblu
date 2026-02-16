@@ -234,7 +234,7 @@ export default function NewsPage() {
             <section className={styles.ctaSection}>
                 <motion.div
                     className={styles.ctaContent}
-                    initial={{ opacity: 0, scale: 0.9 }}
+                    initial={{ opacity: 1, scale: 0.9 }}
                     whileInView={{ opacity: 1, scale: 1 }}
                     viewport={{ once: true }}
                 >

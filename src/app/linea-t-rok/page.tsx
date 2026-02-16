@@ -59,7 +59,7 @@ export default function LineaTRok() {
                 <GridBackground />
                 <div className={styles.heroContent}>
                     <motion.div
-                        initial={{ opacity: 0, x: -50 }}
+                        initial={{ opacity: 1, x: -50 }}
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.8 }}
                         className={styles.heroText}
@@ -82,7 +82,7 @@ export default function LineaTRok() {
                     </motion.div>
 
                     <motion.div
-                        initial={{ opacity: 0, x: 50 }}
+                        initial={{ opacity: 1, x: 50 }}
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.8, delay: 0.2 }}
                         className={styles.heroVisual}
@@ -107,7 +107,7 @@ export default function LineaTRok() {
                     {/* Z790 - Third Card */}
                     <motion.div
                         className={`${styles.bentoCard} ${styles.cardThird} ${styles.cardWithImage}`}
-                        initial={{ opacity: 0, y: 20 }}
+                        initial={{ opacity: 1, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                     >
@@ -143,7 +143,7 @@ export default function LineaTRok() {
                     {/* B760 SE - Third */}
                     <motion.div
                         className={`${styles.bentoCard} ${styles.cardThird} ${styles.cardWithImage}`}
-                        initial={{ opacity: 0, y: 20 }}
+                        initial={{ opacity: 1, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         transition={{ delay: 0.1 }}
@@ -175,7 +175,7 @@ export default function LineaTRok() {
                     {/* H610 - Third */}
                     <motion.div
                         className={`${styles.bentoCard} ${styles.cardThird} ${styles.cardWithImage}`}
-                        initial={{ opacity: 0, y: 20 }}
+                        initial={{ opacity: 1, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         transition={{ delay: 0.2 }}
@@ -207,7 +207,7 @@ export default function LineaTRok() {
                     {/* Features - Aligned to fit grid (Medium) */}
                     <motion.div
                         className={`${styles.bentoCard} ${styles.cardMedium}`}
-                        initial={{ opacity: 0, y: 20 }}
+                        initial={{ opacity: 1, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         transition={{ delay: 0.3 }}
@@ -221,7 +221,7 @@ export default function LineaTRok() {
 
                     <motion.div
                         className={`${styles.bentoCard} ${styles.cardMedium} ${styles.cardHighlight}`}
-                        initial={{ opacity: 0, y: 20 }}
+                        initial={{ opacity: 1, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         transition={{ delay: 0.4 }}
@@ -235,7 +235,7 @@ export default function LineaTRok() {
 
                     <motion.div
                         className={`${styles.bentoCard} ${styles.cardMedium}`}
-                        initial={{ opacity: 0, y: 20 }}
+                        initial={{ opacity: 1, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         transition={{ delay: 0.5 }}

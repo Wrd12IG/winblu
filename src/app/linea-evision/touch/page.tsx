@@ -69,7 +69,7 @@ export default function EVisionTouchPage() {
                 <div className={styles.heroContent}>
                     <motion.div
                         className={styles.heroText}
-                        initial={{ opacity: 0, x: -50 }}
+                        initial={{ opacity: 1, x: -50 }}
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.8 }}
                     >
@@ -93,7 +93,7 @@ export default function EVisionTouchPage() {
 
                     <motion.div
                         className={styles.heroVisual}
-                        initial={{ opacity: 0, scale: 0.9 }}
+                        initial={{ opacity: 1, scale: 0.9 }}
                         animate={{ opacity: 1, scale: 1 }}
                         transition={{ duration: 0.8, delay: 0.2 }}
                     >
@@ -159,7 +159,7 @@ export default function EVisionTouchPage() {
             <section style={{ padding: '4rem 2rem', background: '#111', color: '#fff' }}>
                 <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
                     <motion.div
-                        initial={{ opacity: 0, y: 20 }}
+                        initial={{ opacity: 1, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         style={{ display: 'grid', gap: '4rem' }}
@@ -193,7 +193,7 @@ export default function EVisionTouchPage() {
             <section style={{ padding: '4rem 2rem', background: 'rgba(0,0,0,0.2)' }}>
                 <div style={{ maxWidth: '1600px', margin: '0 auto' }}>
                     <motion.h2
-                        initial={{ opacity: 0, y: 20 }}
+                        initial={{ opacity: 1, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         style={{

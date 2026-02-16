@@ -25,7 +25,7 @@ export default function LineaEnterprise3647Page() {
             <section className={styles.hero}>
                 <div className={styles.heroContent}>
                     <motion.div
-                        initial={{ opacity: 0, x: -50 }}
+                        initial={{ opacity: 1, x: -50 }}
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.8 }}
                         className={styles.heroText}
@@ -54,7 +54,7 @@ export default function LineaEnterprise3647Page() {
                     </motion.div>
 
                     <motion.div
-                        initial={{ opacity: 0, x: 50 }}
+                        initial={{ opacity: 1, x: 50 }}
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.8, delay: 0.2 }}
                         className={styles.heroVisual}
@@ -78,7 +78,7 @@ export default function LineaEnterprise3647Page() {
                 <div className={styles.bentoGrid}>
                     <motion.div
                         className={`${styles.bentoCard} ${styles.cardLarge} ${styles.cardWithImage}`}
-                        initial={{ opacity: 0, y: 20 }}
+                        initial={{ opacity: 1, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                     >
@@ -110,7 +110,7 @@ export default function LineaEnterprise3647Page() {
                     <motion.div
                         className={`${styles.bentoCard} ${styles.cardSmall} ${styles.cardHighlight}`}
                         style={{ background: 'linear-gradient(135deg, rgba(1, 96, 169, 0.08), rgba(1, 96, 169, 0.02))', borderColor: 'rgba(1, 96, 169, 0.2)', gridRow: 'span 2' }}
-                        initial={{ opacity: 0, y: 20 }}
+                        initial={{ opacity: 1, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         transition={{ delay: 0.1 }}
@@ -128,7 +128,7 @@ export default function LineaEnterprise3647Page() {
 
                     <motion.div
                         className={`${styles.bentoCard} ${styles.cardMedium} ${styles.cardHighlight}`}
-                        initial={{ opacity: 0, y: 20 }}
+                        initial={{ opacity: 1, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         transition={{ delay: 0.2 }}
@@ -146,7 +146,7 @@ export default function LineaEnterprise3647Page() {
 
                     <motion.div
                         className={`${styles.bentoCard} ${styles.cardMedium}`}
-                        initial={{ opacity: 0, y: 20 }}
+                        initial={{ opacity: 1, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         transition={{ delay: 0.3 }}
@@ -171,7 +171,7 @@ export default function LineaEnterprise3647Page() {
             <section style={{ padding: '6rem 2rem', background: 'rgba(0,0,0,0.2)' }}>
                 <div style={{ maxWidth: '1600px', margin: '0 auto' }}>
                     <motion.h2
-                        initial={{ opacity: 0, y: 20 }}
+                        initial={{ opacity: 1, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         style={{

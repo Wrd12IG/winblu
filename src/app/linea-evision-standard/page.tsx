@@ -23,7 +23,7 @@ export default function LineaEVisionStandardPage() {
                 <div className={styles.heroContent}>
                     <motion.div
                         className={styles.heroText}
-                        initial={{ opacity: 0, x: -50 }}
+                        initial={{ opacity: 1, x: -50 }}
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.8 }}
                     >
@@ -46,7 +46,7 @@ export default function LineaEVisionStandardPage() {
 
                     <motion.div
                         className={styles.heroVisual}
-                        initial={{ opacity: 0, x: 50 }}
+                        initial={{ opacity: 1, x: 50 }}
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.8, delay: 0.2 }}
                     >
@@ -68,7 +68,7 @@ export default function LineaEVisionStandardPage() {
             <section style={{ padding: '6rem 2rem', background: 'rgba(0,0,0,0.2)' }}>
                 <div style={{ maxWidth: '1600px', margin: '0 auto' }}>
                     <motion.h2
-                        initial={{ opacity: 0, y: 20 }}
+                        initial={{ opacity: 1, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         style={{
