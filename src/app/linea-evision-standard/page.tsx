@@ -29,10 +29,13 @@ export default function LineaEVisionStandardPage() {
                     >
                         <span className={styles.heroTag}>All-In-One Standard</span>
                         <h1 className={styles.heroTitle}>
-                            Winblu <span className={styles.gradient}>eVision</span>
+                            Winblu <span className={styles.gradient}>eVision Standard</span>
                         </h1>
+                        <h2 className={styles.heroSubtitle} style={{ fontSize: '1.5rem', fontWeight: '600', color: '#fff', marginBottom: '1rem' }}>
+                            Alta qualità ed eleganza: bello da vedere, facile da utilizzare.
+                        </h2>
                         <p className={styles.heroDesc}>
-                            Un computer All-In-One performante, ergonomico ed elegante, perfetto per rendere prestigiosa la tua scrivania, la tua zona entertainment di casa o come soluzione tutta-in-uno particolarmente adatta per specifiche ambientazioni, ad esempio negozi, ristoranti o situazioni che richiedono prodotti space-saving ovvero a minimo ingombro.
+                            Per la più accattivante proposta Winblu abbiamo scelto un nome che racchiudesse tutta la potenza della tecnologia e riservasse al tempo stesso uno sguardo al futuro. eVision è un’innovativa soluzione che abbina gli elevati livelli prestazionali dei PC Winblu con l’alta qualità di uno schermo Full HD integrato. Risultato? Un computer All-In-One performante, ergonomico ed elegante, perfetto per rendere prestigiosa la tua scrivania, la tua zona entertainment di casa o come soluzione tutta-in-uno particolarmente adatta per specifiche ambientazioni, ad esempio negozi, ristoranti o situazioni che richiedono prodotti space-saving ovvero a minimo ingombro.
                         </p>
                         <div className={styles.heroCTAs}>
                             <Link href="/punti-vendita" className={styles.ctaPrimary}>
@@ -59,6 +62,46 @@ export default function LineaEVisionStandardPage() {
                                 priority
                                 sizes="(max-width: 768px) 100vw, 50vw"
                             />
+                        </div>
+                    </motion.div>
+                </div>
+            </section>
+
+            {/* Performance Section */}
+            <section className={styles.bentoSection}>
+                <div className={styles.bentoGrid}>
+                    <motion.div
+                        className={styles.bentoCard}
+                        initial={{ opacity: 1, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        style={{ gridColumn: 'span 12' }}
+                    >
+                        <div className={styles.cardContent}>
+                            <Cpu size={48} className={styles.cardIcon} />
+                            <h3 className={styles.cardTitle}>Prestazioni al top di gamma</h3>
+                            <h4 style={{ color: '#00f0ff', marginBottom: '1rem', fontWeight: '600' }}>Con i processori Intel® Core™ di 14A generazione</h4>
+                            <p className={styles.cardText}>
+                                Winblu LCDPC eVision è capacità computazionale di primo livello, ancora più potente e versatile, grazie all’intera gamma dei processori Intel® Core™ fino alla 14A generazione versione dekstop – i3, i5 e i7; altrettanto completo il resto dell’architettura hardware, con possibilità di ospitare fino a 64 GB di RAM DDR4, un Solid State Disk M.2 NVMe ultra veloce, più un ulteriore disco Sata3 – tradizionale o allo stato solido. Ottima anche la connettività con Gigabit LAN, Wifi, Bluetooth e lettore SD card integrati.
+                            </p>
+                        </div>
+                    </motion.div>
+
+                    <motion.div
+                        className={styles.bentoCard}
+                        initial={{ opacity: 1, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ delay: 0.1 }}
+                        style={{ gridColumn: 'span 12' }}
+                    >
+                        <div className={styles.cardContent}>
+                            <Monitor size={48} className={styles.cardIcon} />
+                            <h3 className={styles.cardTitle}>Parola d’ordine: nitidezza.</h3>
+                            <h4 style={{ color: '#00f0ff', marginBottom: '1rem', fontWeight: '600' }}>Grazie al display Full HD e WEBCAM 5MP</h4>
+                            <p className={styles.cardText}>
+                                Come descrivere la combo LCDPC in soli due aggettivi? Winblu eVision è tutta la compattezza di una piattaforma hardware che si esprime al meglio attraverso la nitidezza di un display Full HD integrato. La soluzione eVision è dotata di uno schermo da 23.8” o 27” LED retroilluminato con risoluzione 1920×1080, in grado di restituire immagini nitide e brillanti. La linea eVision standard è disponibile in 2 colori a scelta, bianco/argento e nero, soluzioni perfette per abbellire ogni ambiente. La grafica integrata Intel ® UHD (in base alla CPU scelta), con connettore HDMI, permette la gestione simultanea di un ulteriore monitor. Completano il quadro un sistema audio con altoparlanti 2x2W, luce di cortesia, webcam 5MP pull-up, microfono e porta seriale/COM, per il massimo della multimedialità.
+                            </p>
                         </div>
                     </motion.div>
                 </div>
