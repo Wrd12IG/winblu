@@ -8,10 +8,13 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Menu, Search, ShoppingBag, ChevronDown, X } from "lucide-react";
 import styles from "./Navbar.module.css";
 import MegaMenu from "./MegaMenu";
+import Modal from "./Modal";
+import PartnerRequestForm from "./PartnerRequestForm";
 
 export default function Navbar() {
     const [isProductsHovered, setIsProductsHovered] = useState(false);
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+    const [isPartnerModalOpen, setIsPartnerModalOpen] = useState(false);
     const [hoverTimeout, setHoverTimeout] = useState<NodeJS.Timeout | null>(null);
 
     const handleMouseEnter = () => {
@@ -86,12 +89,12 @@ export default function Navbar() {
                             <Menu size={20} />
                         </button>
 
-                        <Link
-                            href="#"
+                        <button
                             className={`${styles.ctaBtn} ${styles.hideMobile}`}
+                            onClick={() => setIsPartnerModalOpen(true)}
                         >
                             Diventa Rivenditore
-                        </Link>
+                        </button>
                     </div>
                 </div>
             </motion.nav>
@@ -173,18 +176,27 @@ export default function Navbar() {
                                 >
                                     News
                                 </Link>
-                                <Link
-                                    href="#"
+                                <button
                                     className={styles.mobileMenuCTA}
-                                    onClick={() => setIsMobileMenuOpen(false)}
+                                    onClick={() => {
+                                        setIsMobileMenuOpen(false);
+                                        setIsPartnerModalOpen(true);
+                                    }}
                                 >
                                     Diventa Rivenditore
-                                </Link>
+                                </button>
                             </nav>
                         </motion.div>
                     </>
                 )}
             </AnimatePresence>
+            <Modal
+                isOpen={isPartnerModalOpen}
+                onClose={() => setIsPartnerModalOpen(false)}
+                title="Diventa Rivenditore Winblu"
+            >
+                <PartnerRequestForm />
+            </Modal>
         </>
     );
 }

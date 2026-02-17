@@ -2,6 +2,7 @@ import styles from './punti-vendita.module.css';
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import StoreLocator from './StoreLocator';
+import ResellerCTA from './ResellerCTA';
 
 export const metadata = {
     title: 'Punti Vendita | Winblu',
@@ -55,13 +56,7 @@ export default function PuntiVenditaPage() {
                         Sei interessato a diventare un rivenditore autorizzato Winblu? Contattaci per scoprire le condizioni commerciali,
                         il supporto dedicato e i vantaggi riservati ai nostri partner.
                     </p>
-                    <a
-                        href="mailto:info@winblu.it"
-                        className={styles.ctaButton}
-                        style={{ display: 'inline-block' }}
-                    >
-                        Richiedi Informazioni
-                    </a>
+                    <ResellerCTA />
                 </div>
             </section>
 

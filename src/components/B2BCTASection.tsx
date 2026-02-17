@@ -1,9 +1,12 @@
 "use client";
 
+import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Building2, FileText, ArrowRight } from 'lucide-react';
 import Link from 'next/link';
 import styles from './B2BCTASection.module.css';
+import Modal from './Modal';
+import PartnerRequestForm from './PartnerRequestForm';
 
 const fadeInUp = {
     hidden: { opacity: 0, y: 30 },
@@ -11,6 +14,8 @@ const fadeInUp = {
 };
 
 export default function B2BCTASection() {
+    const [isPartnerModalOpen, setIsPartnerModalOpen] = useState(false);
+
     return (
         <section className={styles.container}>
             <motion.div
@@ -45,10 +50,10 @@ export default function B2BCTASection() {
                             <li>Margini competitivi e listini riservati</li>
                             <li>Formazione tecnica e certificazione</li>
                         </ul>
-                        <Link href="/punti-vendita?tipo=rivenditore" className={styles.ctaButton}>
+                        <button onClick={() => setIsPartnerModalOpen(true)} className={styles.ctaButton}>
                             Richiedi Informazioni Partnership
                             <ArrowRight size={20} />
-                        </Link>
+                        </button>
                     </motion.div>
 
                     {/* CTA 2: Fornitura Aziendale */}
@@ -92,6 +97,14 @@ export default function B2BCTASection() {
                     </div>
                 </div>
             </motion.div>
+
+            <Modal
+                isOpen={isPartnerModalOpen}
+                onClose={() => setIsPartnerModalOpen(false)}
+                title="Diventa Rivenditore Winblu"
+            >
+                <PartnerRequestForm />
+            </Modal>
         </section>
     );
 }

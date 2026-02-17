@@ -12,6 +12,8 @@ import NewsSection from "@/components/NewsSection";
 import SocialWall from "@/components/SocialWall";
 import styles from "./page.module.css";
 import { motion, AnimatePresence } from "framer-motion";
+import Modal from "@/components/Modal";
+import PartnerRequestForm from "@/components/PartnerRequestForm";
 
 // Hero slides data
 const heroSlides = [
@@ -49,6 +51,14 @@ const heroSlides = [
 
 export default function Home() {
   const [currentSlide, setCurrentSlide] = useState(0);
+  const [isPartnerModalOpen, setIsPartnerModalOpen] = useState(false);
+
+  const handleHeroCTAClick = (ctaLabel: string) => {
+    if (ctaLabel === "Diventa Rivenditore") {
+      setIsPartnerModalOpen(true);
+    }
+    // Add other handlers if needed
+  };
 
   // Auto-advance slides every 6 seconds
   useEffect(() => {
@@ -87,7 +97,12 @@ export default function Home() {
               </p>
 
               <div className={styles.ctaGroup}>
-                <button className={styles.primaryBtn}>{slide.ctaPrimary}</button>
+                <button
+                  className={styles.primaryBtn}
+                  onClick={() => handleHeroCTAClick(slide.ctaPrimary)}
+                >
+                  {slide.ctaPrimary}
+                </button>
                 <button className={styles.secondaryBtn}>{slide.ctaSecondary}</button>
               </div>
             </motion.div>
@@ -134,8 +149,17 @@ export default function Home() {
       <NewsSection />
       <TestimonialsSection />
       <SocialWall />
+      <SocialWall />
       <FinalCTA />
       <Footer />
+
+      <Modal
+        isOpen={isPartnerModalOpen}
+        onClose={() => setIsPartnerModalOpen(false)}
+        title="Diventa Rivenditore Winblu"
+      >
+        <PartnerRequestForm />
+      </Modal>
     </main>
   );
 }
